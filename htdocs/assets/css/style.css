@@ -316,6 +316,7 @@ svg {
 }
 
 .c-menu-modal {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -326,7 +327,7 @@ svg {
   background-color: #F0F0F0;
 }
 .c-menu-modal__contents {
-  padding: 24px 32px 62px;
+  padding: 24px 32px 127px;
 }
 .c-menu-modal .l-grid {
   gap: 15px;
@@ -378,6 +379,7 @@ svg {
   width: 100%;
   padding: 8px 27px 8px 32px;
   border-top: 1px solid #DDDDDD;
+  background-color: #F0F0F0;
 }
 .c-menu-modal__close .logo {
   width: 86px;
