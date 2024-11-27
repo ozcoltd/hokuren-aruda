@@ -195,7 +195,7 @@ svg {
 }
 
 .l-footer {
-  margin-bottom: 76px;
+  margin-bottom: 56px;
   padding: 56px 16px 0;
   text-align: center;
   background: url(/assets/images/common/bg_footer.png) center top no-repeat #FFFFFF;
@@ -225,7 +225,7 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 74px;
+  height: 80px;
   margin: 0 -16px;
   background-image: url(/assets/images/common/bg_footer.png), url(/assets/images/common/bg_copyright.png);
   background-blend-mode: multiply;
@@ -240,6 +240,53 @@ svg {
 
 .l-main {
   padding-top: 57px;
+}
+
+.c-fixed-menu {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 11px 6px 6px;
+  background-color: #FFFFFF;
+}
+.c-fixed-menu ul {
+  display: flex;
+}
+.c-fixed-menu ul li {
+  width: 20.1%;
+}
+.c-fixed-menu ul li:nth-child(3) {
+  position: relative;
+  width: 19.2%;
+}
+.c-fixed-menu ul li:nth-child(3) a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  background-color: #2C933A;
+  border-radius: 50%;
+}
+.c-fixed-menu ul li a {
+  display: block;
+  text-align: center;
+}
+.c-fixed-menu ul li a img {
+  width: 32px;
+  margin: 0 auto;
+}
+.c-fixed-menu ul li a span {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .u-fs-16 {
