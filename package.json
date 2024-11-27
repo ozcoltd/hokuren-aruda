@@ -1,0 +1,15 @@
+{
+  "name": "hokuren-aruda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ejs": "ejs-cli --base-dir ejs/ \"index.ejs\"   --out htdocs/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs-cli": "^2.2.3"
+  }
+}
