@@ -1,0 +1,18 @@
+.c-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    color: $c-text-link;
+    font-size: $fs-t;
+    font-weight: 700;
+    border: 1px solid $c-border-primary;
+    border-radius: 24px;
+    .u-ico {
+        margin-right: 4px;
+    }
+    &[data-type="solid"]{
+        color: $c-text-w;
+        background-color: $c-bg-primary;
+    }
+}
