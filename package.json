@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ejs": "ejs-cli --base-dir ejs/ \"index.ejs\"   --out htdocs/"
+    "ejs": "ejs-cli --base-dir ./aruda './*.ejs' --out ./htdocs/",
+    "watch:ejs": "nodemon --watch ./aruda --exec \"npm run ejs\"",
+    "start": "npm-run-all watch:ejs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ejs-cli": "^2.2.3"
+    "ejs-cli": "^2.2.3",
+    "nodemon": "^3.1.7",
+    "npm-run-all": "^4.1.5"
   }
 }

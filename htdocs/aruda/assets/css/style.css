@@ -198,7 +198,7 @@ svg {
   margin-bottom: 56px;
   padding: 56px 16px 0;
   text-align: center;
-  background: url(/assets/images/common/bg_footer.png) center top no-repeat #FFFFFF;
+  background: url(/aruda/assets/images/common/bg_footer.png) center top no-repeat #FFFFFF;
   background-size: 1920px auto;
 }
 .l-footer .logo {
@@ -227,7 +227,7 @@ svg {
   align-items: center;
   height: 80px;
   margin: 0 -16px;
-  background-image: url(/assets/images/common/bg_footer.png), url(/assets/images/common/bg_copyright.png);
+  background-image: url(/aruda/assets/images/common/bg_footer.png), url(/aruda/assets/images/common/bg_copyright.png);
   background-blend-mode: multiply;
   background-size: 1920px auto, cover;
   background-repeat: no-repeat, no-repeat;
@@ -348,7 +348,7 @@ svg {
   color: #4B4B4B;
   font-size: 16px;
   font-weight: 700;
-  background: url(/assets/images/common/ico_right_g.svg) right center no-repeat;
+  background: url(/aruda/assets/images/common/ico_right_g.svg) right center no-repeat;
   background-size: 32px auto;
 }
 .c-menu-modal__bottom li {
