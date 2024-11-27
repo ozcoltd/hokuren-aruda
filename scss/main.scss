@@ -1,23 +1,23 @@
 // Foundation
-@use 'foundation/variables';
-@use 'foundation/mixins';
-@use 'foundation/functions';
-@use 'foundation/base';
+@import 'foundation/variables';
+@import 'foundation/mixins';
+@import 'foundation/functions';
+@import 'foundation/base';
 
 // Layout
-@use 'layout/header';
-@use 'layout/footer';
-@use 'layout/grid';
-@use 'layout/container';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/container';
 
 // Object
-@use 'object/component/button';
-@use 'object/component/card';
-@use 'object/project/form';
-@use 'object/project/modal';
-@use 'object/utility/align';
-@use 'object/utility/text';
-@use 'object/utility/visibility';
+@import 'object/component/button';
+@import 'object/component/card';
+@import 'object/project/form';
+@import 'object/project/modal';
+@import 'object/utility/align';
+@import 'object/utility/text';
+@import 'object/utility/visibility';
 
 // Page
-@use 'object/project/page/top';
+@import 'object/project/page/top';

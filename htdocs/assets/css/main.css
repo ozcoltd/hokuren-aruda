@@ -50,3 +50,110 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: revert;
+  cursor: revert;
+  min-width: 375px;
+  font-size: 62.5%;
+  font-family: Zen Kaku Gothic New;
+  color: #4B4B4B;
+  line-break: normal;
+  overflow-wrap: anywhere;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+th {
+  font-weight: inherit;
+}
+
+address {
+  font-style: inherit;
+}
+
+fieldset {
+  border: 0;
+  min-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+h1 {
+  margin: 0;
+}
+
+cite,
+dfn,
+em,
+i,
+var {
+  font-style: inherit;
+}
+
+small {
+  font-size: inherit;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  border: 0;
+  padding: 0;
+}
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+}
+
+button {
+  touch-action: manipulation;
+}
+button:not(:disabled, [aria-disabled=true]) {
+  cursor: pointer;
+}
+
+[hidden][hidden] {
+  display: none !important;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
