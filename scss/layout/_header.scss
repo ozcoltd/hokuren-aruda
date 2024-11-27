@@ -1,0 +1,42 @@
+.l-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid $c-border;
+    background-color: $c-bg-main;
+    h1 {
+        a {
+            display: block;
+            padding: 8px 16px;
+        }
+        img {
+            width: 108px;
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            li {
+                a {
+                    display: block;
+                    width: 56px;
+                    height: 56px;
+                    padding-top: 5px;
+                    text-align: center;
+                }
+                img {
+                    width: 32px;
+                    margin: 0 auto;
+                }
+                span {
+                    display: block;
+                    font-size: 10px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.l-footer {
+    margin-bottom: 76px;
+    padding: 56px 16px 0;
+    text-align: center;
+    background: url(/assets/images/common/bg_footer.png) center top no-repeat $c-bg-main;
+    background-size: 1920px auto;
+    .logo {
+        margin-bottom: 48px;
+        a {
+            display: block;
+            width: 141px;
+            margin: 0 auto;
+        }
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 32px;
+        justify-content: center;
+        padding-bottom: 43px;
+        a {
+            color: $c-text-sub;
+            font-size: $fs-t-s;
+            text-decoration: underline;
+        }
+    }
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 74px;
+        margin: 0 -16px;
+        background-image: url(/assets/images/common/bg_footer.png), url(/assets/images/common/bg_copyright.png);
+        background-blend-mode: multiply;
+        background-size: 1920px auto, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center bottom;
+        p {
+            color: $c-text-w;
+            font-size: $fs-t-ss;
+        }
+    }
+}

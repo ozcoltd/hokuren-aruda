@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head prefix="og: http://ogp.me/ns#">
   <title>EJS</title>
-  <% var hoge = '<p>hello, World</p>' %>
+  <meta name="description" content="description">
+  <%- include('./inc/ogp') %>
+  <%- include('./inc/meta') %>
 </head>
 <body>
-  <%- include('./inc/header') %>
-  <%- hoge %>
+  <%- include('./inc/header-login') %>
+  <main class="l-main p-top">
+    <img src="https://placehold.jp/375x1000.png" alt="ダミー">
+  </main>
   <%- include('./inc/footer') %>
 </body>
 </html>
