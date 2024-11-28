@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 48px;
     color: $c-text-link;
     font-size: $fs-t;
@@ -21,8 +22,29 @@
         color: $c-text-w;
         background-color: $c-bg-primary;
     }
+    &[data-type="solid-icon-left"]{
+        position: relative;
+        padding: 0 $m-s;
+        color: $c-text-w;
+        background-color: $c-bg-primary;
+        .u-ico {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+    }
+    &[data-type="icon-left"]{
+        position: relative;
+        .u-ico {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+    }
     &[data-size="l"]{
-        min-width: 276px;
+        max-width: 276px;
         height: 56px;
         border-radius: 28px;
     }

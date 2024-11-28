@@ -277,6 +277,7 @@ select option:disabled {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 48px;
   color: #2C933A;
   font-size: 16px;
@@ -297,10 +298,65 @@ select option:disabled {
   color: #fff;
   background-color: #2C933A;
 }
+.c-btn[data-type=solid-icon-left] {
+  position: relative;
+  padding: 0 16px;
+  color: #fff;
+  background-color: #2C933A;
+}
+.c-btn[data-type=solid-icon-left] .u-ico {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.c-btn[data-type=icon-left] {
+  position: relative;
+}
+.c-btn[data-type=icon-left] .u-ico {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
 .c-btn[data-size=l] {
-  min-width: 276px;
+  max-width: 276px;
   height: 56px;
   border-radius: 28px;
+}
+
+.c-card img {
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+.c-card__name {
+  color: #4B4B4B;
+  font-size: 16px;
+}
+.c-card__id {
+  margin-bottom: 4px;
+  color: #8E8E8E;
+  font-size: 12px;
+  font-weight: 700;
+}
+.c-card__manufacturer {
+  margin-bottom: 8px;
+  color: #8E8E8E;
+  font-size: 12px;
+}
+.c-card__price {
+  margin-bottom: 8px;
+  color: #4B4B4B;
+  font-size: 20px;
+  font-weight: 700;
+}
+.c-card__price span {
+  font-size: 10px;
+  font-weight: normal;
+}
+.c-card__shop {
+  color: #8E8E8E;
+  font-size: 12px;
 }
 
 .c-tab .js-tab-contents {
@@ -473,6 +529,11 @@ select option:disabled {
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px solid #DDDDDD;
+}
+
+.c-card-block {
+  padding: 32px 16px 40px;
+  background-color: #FFFFFF;
 }
 
 .c-tag {
@@ -739,6 +800,18 @@ select option:disabled {
   text-align: right;
 }
 
+.u-m-center {
+  margin: 0 auto;
+}
+
+.u-mt-40 {
+  margin-top: 40px;
+}
+
+.u-mt-20 {
+  margin-top: 20px;
+}
+
 .u-h-lv2 {
   font-size: 28px;
   line-height: 42px;
@@ -799,4 +872,20 @@ select option:disabled {
 }
 .p-top-search .u-h-lv2 .u-ico {
   margin: 0 auto;
+}
+.p-top-machinery {
+  padding-top: 40px;
+}
+.p-top-machinery .u-h-lv2 {
+  margin-bottom: 24px;
+}
+.p-top-machinery .u-h-lv2 .u-ico {
+  margin: 0 auto;
+}
+.p-top-machinery .c-tab-list {
+  width: calc(100% - 32px);
+  margin: 0 auto 12px;
+}
+.p-top-machinery .l-grid {
+  gap: 32px 8px;
 }

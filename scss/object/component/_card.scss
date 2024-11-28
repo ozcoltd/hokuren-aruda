@@ -1,0 +1,35 @@
+.c-card {
+    img {
+        margin-bottom: $m-ss;
+        border-radius: $b-r-s;
+    }
+    &__name {
+        color: $c-text;
+        font-size: $fs-t;
+    }
+    &__id {
+        margin-bottom: $m-sss;
+        color: $c-text-g;
+        font-size: $fs-t-ss;
+        font-weight: 700;
+    }
+    &__manufacturer {
+        margin-bottom: $m-ss;
+        color: $c-text-g;
+        font-size: $fs-t-ss;
+    }
+    &__price {
+        margin-bottom: $m-ss;
+        color: $c-text;
+        font-size: $fs-h-lv4;
+        font-weight: 700;
+        span {
+            font-size: 10px;
+            font-weight: normal;
+        }
+    }
+    &__shop {
+        color: $c-text-g;
+        font-size: $fs-t-ss;
+    }
+}

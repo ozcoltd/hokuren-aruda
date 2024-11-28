@@ -16,4 +16,20 @@
             }
         }
     }
+    &-machinery {
+        padding-top: $m-ml;
+        .u-h-lv2 {
+            margin-bottom: $m-sl;
+            .u-ico {
+                margin: 0 auto;
+            }
+        }
+        .c-tab-list {
+            width: calc(100% - 32px);
+            margin: 0 auto 12px;
+        }
+        .l-grid {
+            gap: $m-m $m-ss;
+        }
+    }
 }
