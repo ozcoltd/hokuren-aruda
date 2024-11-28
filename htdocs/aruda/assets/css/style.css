@@ -956,6 +956,11 @@ select option:disabled {
   font-size: 12px;
 }
 
+.u-link {
+  color: #2C933A;
+  text-decoration: underline;
+}
+
 .u-ico {
   width: 32px;
 }
