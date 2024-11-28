@@ -22,7 +22,37 @@ $(function(){
             $this.find('.js-tab-contents').removeClass('is-current').hide();
             $this.find('.js-tab-contents').eq(index).fadeIn().addClass('is-current');
         });
-
     });
-
+    //menu
+    let scrollPosition = 0;
+    $('.js-menu-trigger').on('click',function(e){
+        e.preventDefault();
+        scrollPosition = $(window).scrollTop();
+        $('body').addClass('is-fixed');
+        $('body').css({top: `-${scrollPosition}px`});
+        $('.js-menu-modal').fadeIn();
+    });
+    $('.js-menu-close-trigger').on('click',function(e){
+        e.preventDefault();
+        $('body').removeClass('is-fixed');
+        $('body').css({top: ''});
+        $(window).scrollTop(scrollPosition);
+        $('.js-menu-modal').fadeOut();
+    });
+    //会員証モーダル
+    $('.js-membership-trigger').on('click',function(e){
+        e.preventDefault();
+        scrollPosition = $(window).scrollTop();
+        $('body').addClass('is-fixed');
+        $('body').css({top: `-${scrollPosition}px`});
+        $('.js-membership-modal').fadeIn();
+    });
+    $('.js-membership-close-trigger').on('click',function(e){
+        e.preventDefault();
+        $('body').removeClass('is-fixed');
+        $('body').css({top: ''});
+        $(window).scrollTop(scrollPosition);
+        $('.js-membership-modal').fadeOut();
+    });
+    
 });

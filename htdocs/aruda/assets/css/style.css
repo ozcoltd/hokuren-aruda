@@ -66,12 +66,18 @@ html {
   color: #4B4B4B;
   line-break: normal;
   overflow-wrap: anywhere;
-  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
   background-color: #F0F0F0;
+}
+body.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 li {
@@ -179,6 +185,7 @@ select option:disabled {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -750,6 +757,7 @@ select option:disabled {
 .c-membership-modal {
   display: none;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;

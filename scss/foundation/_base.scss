@@ -13,12 +13,19 @@ html {
 	color: $c-text;
 	line-break: normal;
 	overflow-wrap: anywhere;
-	scroll-behavior: smooth;
+	// scroll-behavior: smooth;
 }
 
 body {
 	font-size: 1.6rem;
 	background-color: $c-bg-main-sub;
+	&.is-fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
 }
 
 li {
