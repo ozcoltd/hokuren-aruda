@@ -791,6 +791,15 @@ select option:disabled {
   color: #2C933A;
 }
 
+.c-bnr {
+  display: block;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}
+.c-bnr + .c-bnr {
+  margin-top: 16px;
+}
+
 .u-t-center {
   text-align: center;
 }
@@ -912,4 +921,8 @@ select option:disabled {
 }
 .p-top-history .c-more-block__btn {
   background: transparent;
+}
+.p-top-bnr {
+  padding: 56px 60px 80px;
+  background-color: #FFFFFF;
 }

@@ -1,0 +1,8 @@
+.c-bnr {
+    display: block;
+    border: 1px solid $c-border;
+    border-radius: $b-r-s;
+    & + .c-bnr {
+        margin-top: $m-s;
+    }
+}
