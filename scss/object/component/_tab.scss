@@ -1,9 +1,15 @@
 .c-tab {
-
+    .js-tab-contents {
+        display: none;
+        &.is-current {
+            display: block;
+        }
+    }
 }
 .c-tab-list {
     position: relative;
     display: flex;
+    margin-bottom: 12px;
     border: 1px solid $c-border;
     border-radius: 16px;
     background-color: $c-bg-main;
@@ -12,9 +18,25 @@
         &::before {
             width: 33.3%;
         }
-        &[data-current="1"] {
+        &[data-current="0"] {
             &::after {
                 left: 14.4%;
+            }
+        }
+        &[data-current="1"] {
+            &::before {
+                left: 33.3%;
+            }
+            &::after {
+                left: 48%;
+            }
+        }
+        &[data-current="2"] {
+            &::before {
+                left: 67%;
+            }
+            &::after {
+                left: 81%;
             }
         }
     }
@@ -31,7 +53,7 @@
         height: 32px;
         background-color: $c-bg-primary;
         border-radius: 16px;
-        transition: left 0.3s;
+        transition: all 0.5s;
     }
     &::after {
         content: '';
@@ -43,7 +65,7 @@
         background-color: $c-bg-primary;
         border-radius: 2px;
         transform: rotate(45deg) skew(10deg, 10deg);
-        transition: left 0.3s;
+        transition: all 0.5s;
     }
     a {
         display: block;
