@@ -71,6 +71,13 @@
     }
     .u-f-bold.u-fs-14 {
         color: $c-text;
+        width: 100%;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        max-height: 48px;
     }
     &__item {
         display: block;

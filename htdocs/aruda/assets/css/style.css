@@ -418,6 +418,13 @@ svg {
 }
 .c-info-block .u-f-bold.u-fs-14 {
   color: #4B4B4B;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-height: 48px;
 }
 .c-info-block__item {
   display: block;
