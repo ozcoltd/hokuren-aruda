@@ -1,0 +1,26 @@
+@import '../../../../foundation/variables';
+.p-login {
+    background-color: $c-bg-main;
+
+    &-section {
+        padding-top: $m-s;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+        .c-form {
+            background-color: $c-bg-main;
+            border-radius: $b-r-s;
+        }
+        .c-txt-hr {
+            margin-top: $m-m;
+            margin-bottom: $m-m;
+        }
+    }
+    &-contents {
+        padding: $m-ml $m-s;
+        background-color: $c-bg-main-sub;
+    }
+    &-signup {
+        padding: 40px $m-sl;
+    }
+}

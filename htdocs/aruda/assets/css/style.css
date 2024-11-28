@@ -289,6 +289,7 @@ select option:disabled {
   color: #2C933A;
   font-size: 16px;
   font-weight: 700;
+  background-color: #FFFFFF;
   border: 1px solid #2C933A;
   border-radius: 24px;
 }
@@ -864,12 +865,32 @@ select option:disabled {
   margin: 0 auto;
 }
 
-.u-mt-40 {
-  margin-top: 40px;
+.u-mt-16 {
+  margin-top: 16px;
 }
 
 .u-mt-20 {
   margin-top: 20px;
+}
+
+.u-mt-32 {
+  margin-top: 32px;
+}
+
+.u-mt-40 {
+  margin-top: 40px;
+}
+
+.u-mb-8 {
+  margin-bottom: 8px;
+}
+
+.u-mb-16 {
+  margin-bottom: 16px;
+}
+
+.u-mb-24 {
+  margin-bottom: 24px;
 }
 
 .u-h-lv2 {
@@ -907,6 +928,32 @@ select option:disabled {
 
 .u-f-bold {
   font-weight: 700;
+}
+
+.c-txt-hr {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.c-txt-hr::before, .c-txt-hr::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 1px;
+  background-color: #DDDDDD;
+}
+.c-txt-hr::before {
+  left: -34px;
+}
+.c-txt-hr::after {
+  right: -34px;
+}
+
+.u-f-notes {
+  padding-left: 1em;
+  text-indent: -1em;
+  font-size: 12px;
 }
 
 .u-ico {
@@ -978,9 +1025,27 @@ select option:disabled {
   background-color: #FFFFFF;
 }
 
-.p-login-contents {
+.p-login {
+  background-color: #FFFFFF;
+}
+.p-login-section {
   padding-top: 16px;
 }
-.p-login-contents .c-form {
+.p-login-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+.p-login-section .c-form {
   background-color: #FFFFFF;
+  border-radius: 4px;
+}
+.p-login-section .c-txt-hr {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.p-login-contents {
+  padding: 40px 16px;
+  background-color: #F0F0F0;
+}
+.p-login-signup {
+  padding: 40px 24px;
 }

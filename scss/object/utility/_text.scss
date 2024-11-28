@@ -29,4 +29,28 @@
 .u-f-bold {
     font-weight: 700;
 }
-
+.c-txt-hr {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 50%;
+        height: 1px; 
+        background-color: $c-border;
+    }
+    &::before {
+        left: -34px;
+    }
+    &::after {
+        right: -34px;
+    }
+}
+.u-f-notes {
+    padding-left: 1em;
+    text-indent: -1em;
+    font-size: $fs-t-ss;
+}

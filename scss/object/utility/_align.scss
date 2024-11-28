@@ -10,11 +10,27 @@
 .u-m-center {
     margin: 0 auto;
 }
-.u-mt-40 {
-    margin-top: $m-ml;
+.u-mt-16 {
+    margin-top: $m-s;
 }
 .u-mt-20 {
     margin-top: 20px;
+}
+.u-mt-32 {
+    margin-top: $m-m;
+}
+.u-mt-40 {
+    margin-top: $m-ml;
+}
+
+.u-mb-8 {
+    margin-bottom: $m-ss;
+}
+.u-mb-16 {
+    margin-bottom: $m-s;
+}
+.u-mb-24 {
+    margin-bottom: $m-sl;
 }
 
 // $m-ll:56px;
