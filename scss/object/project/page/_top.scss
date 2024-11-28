@@ -6,4 +6,14 @@
         margin-bottom: $m-ss;
         padding: $m-sl $m-s;
     }
+    &-search {
+        padding: $m-ml $m-s;
+        background-color: $c-bg-main;
+        .u-h-lv2 {
+            margin-bottom: $m-sl;
+            .u-ico {
+                margin: 0 auto;
+            }
+        }
+    }
 }

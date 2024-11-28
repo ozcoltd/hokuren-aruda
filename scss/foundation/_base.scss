@@ -105,3 +105,16 @@ svg {
 	height: auto;
 	overflow: visible;
 }
+
+input::-webkit-input-placeholder { /* Chrome, Safari, Edge */
+	color: $c-placehlder;
+}
+input:-ms-input-placeholder { /* Internet Explorer */
+	color: $c-placehlder;
+}
+input::placeholder { /* Firefox */
+	color: $c-placehlder;
+}
+select option:disabled{
+	color: $c-placehlder;
+}

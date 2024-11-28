@@ -13,6 +13,25 @@
     border: 1px solid $c-border;
     border-radius: 16px;
     background-color: $c-bg-main;
+    &[data-col="2"] {
+        li,
+        &::before {
+            width: 50%;
+        }
+        &[data-current="0"] {
+            &::after {
+                left: 22%;
+            }
+        }
+        &[data-current="1"] {
+            &::before {
+                left: 50%;
+            }
+            &::after {
+                left: 73%;
+            }
+        }
+    }
     &[data-col="3"] {
         li,
         &::before {
