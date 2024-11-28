@@ -2,7 +2,11 @@
     position: relative;
     overflow: hidden;
     padding: 16px;
-
+    &.is-open {
+        .c-more-block__contents {
+            opacity: 1;
+        }
+    }
     &__btn {
         position: absolute;
         bottom: 0;

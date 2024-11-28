@@ -3,7 +3,7 @@ $(function(){
     var $jsMoreBtn = $('.js-more-btn');
     $jsMoreBtn.on('click',function(e){
         e.preventDefault();
-        $(this).parent('.js-more-block').height('100%');
+        $(this).parent('.js-more-block').height('100%').addClass('is-open');
         $(this).hide();
     });
 

@@ -448,6 +448,9 @@ select option:disabled {
   overflow: hidden;
   padding: 16px;
 }
+.c-more-block.is-open .c-more-block__contents {
+  opacity: 1;
+}
 .c-more-block__btn {
   position: absolute;
   bottom: 0;
@@ -888,4 +891,25 @@ select option:disabled {
 }
 .p-top-machinery .l-grid {
   gap: 32px 8px;
+}
+.p-top-history {
+  padding: 40px 16px;
+  background-color: #F0F0F0;
+}
+.p-top-history .u-h-lv2 {
+  margin-bottom: 24px;
+}
+.p-top-history .l-grid {
+  gap: 32px 8px;
+}
+.p-top-history .c-more-block {
+  height: 41px;
+  margin-top: 32px;
+  padding: 0;
+}
+.p-top-history .c-more-block__contents {
+  opacity: 0;
+}
+.p-top-history .c-more-block__btn {
+  background: transparent;
 }
