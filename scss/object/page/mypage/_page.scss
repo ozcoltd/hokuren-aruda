@@ -26,6 +26,17 @@
         .l-grid {
             gap: $m-m $m-ss;
         }
+        .c-more-block {
+            height: 41px;
+            margin-top: $m-m;
+            padding: 0;
+            &__contents {
+                opacity: 0;
+            }
+            &__btn {
+                background: transparent;
+            }
+        }
     }
     &-info {
         position: relative;
