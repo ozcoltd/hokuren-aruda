@@ -15,4 +15,15 @@
         color: $c-text-w;
         background-color: $c-bg-primary;
     }
+    &[data-type="solid-icon"]{
+        padding: 0 $m-s;
+        justify-content: space-between;
+        color: $c-text-w;
+        background-color: $c-bg-primary;
+    }
+    &[data-size="l"]{
+        min-width: 276px;
+        height: 56px;
+        border-radius: 28px;
+    }
 }

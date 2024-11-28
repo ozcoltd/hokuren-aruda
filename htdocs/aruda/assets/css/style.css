@@ -291,6 +291,17 @@ select option:disabled {
   color: #fff;
   background-color: #2C933A;
 }
+.c-btn[data-type=solid-icon] {
+  padding: 0 16px;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #2C933A;
+}
+.c-btn[data-size=l] {
+  min-width: 276px;
+  height: 56px;
+  border-radius: 28px;
+}
 
 .c-tab .js-tab-contents {
   display: none;
@@ -587,6 +598,12 @@ select option:disabled {
 .c-form__budget span + div {
   margin-left: 4px;
 }
+.c-form__submit {
+  margin-top: 32px;
+}
+.c-form__submit .c-btn {
+  margin: 0 auto;
+}
 
 .c-menu-modal {
   display: none;
@@ -761,6 +778,9 @@ select option:disabled {
 
 .u-ico {
   width: 32px;
+}
+.u-ico[data-size=s] {
+  width: 24px;
 }
 
 .p-top-info {
