@@ -96,3 +96,79 @@
     padding: $m-m $m-s $m-ml;
     background-color: $c-bg-main;
 }
+.c-mypage-block {
+    padding: $m-ml $m-s;
+    background-color: $c-bg-main-sub;
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $m-s;
+    }
+    &__name {
+        color: $c-text;
+        font-size: $fs-t;
+        font-weight: 700;
+        span {
+            font-size: $fs-t-ss;
+        }
+    }
+    &__edit {
+        a {
+            display: flex;
+            align-items: center;
+            color: $c-text;
+            font-size: $fs-t-ss;
+            font-weight: bold;
+        }
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            margin-left: $m-sss;
+            background-color: $c-bg-main;
+            border-radius: 12px;
+            border: 1px solid $c-border;
+        }
+    }
+    &__body {
+        .l-grid {
+            gap : $m-ss;
+            &[data-col="2"] {
+               a {
+                    padding: 17px 10px 11px;
+                    color: $c-text-w;
+                    font-size: $fs-h-lv4;
+                    font-weight: 700;
+                    text-align: center;
+                    background-color: $c-bg-primary;
+                    border-radius: $b-r-s;
+                    span {
+                        display: block;
+                        font-size: $fs-t;
+                    }
+                    img {
+                        margin-bottom: $m-sss;
+                    }
+                }
+            }
+            &[data-col="3"] {
+                margin-top: $m-ss;
+                a {
+                    padding: 13px 8px 8px;
+                    font-size: $fs-t-s;
+                    font-weight: 700;
+                    text-align: center;
+                    background-color: $c-bg-main;
+                    border-radius: $b-r-s;
+                    border: 1px solid $c-border-primary;
+                    img {
+                        margin-bottom: $m-sss;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head prefix="og: http://ogp.me/ns#">
-  <title>中ログイン | 中古農機情報サイト アルーダ</title>
+  <title>中古農機情報サイトアルーダ | トップページ</title>
   <meta name="description" content="中古農機情報サイトアルーダは、トラクター、コンバイン、田植機をはじめ、多種多様な優良中古農業機械を多数掲載！みなさまの中古農機探しを応援します!!中古農機の出品も受け付けております。お気軽にお問い合わせください。">
   <meta property="og:title" content="title">
 <meta property="og:description" content="description">
@@ -42,51 +42,49 @@
         </ul>
     </nav>
 </header>
-  <main class="l-main p-login">
+  <main class="l-main p-mypage">
     <nav class="c-breadcrumbs">
         <ul>
             <li><a href="/">ホーム</a></li>
-            <li><span>ログイン</span></li>
+            <li><span>マイページ</span></li>
         </ul>
     </nav>
-    <section class="p-login-section">
-      <h2 class="u-h-lv2 u-t-center">ログイン</h2>
-        <div class="p-login-contents">  
-            <form action="/aruda/auth/login" method="POST" class="c-form">
-                <a href="/" class="c-btn u-m-center" data-type="line" data-size="l">
-                    <img src="/aruda/assets/images/common/ico_line.svg" alt="" class="u-ico" data-size="l">
-                    LINEでログイン
-                    <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
-                </a>
-                <p class="c-txt-hr">または</p>
-                <h3 class="u-h-lv4 u-t-center u-mb-16">メールアドレスでログイン</h3>
-                <p class="u-fs-14 u-mb-24">登録時に入力されたメールアドレスとパスワードでログインしてください。</p>
-
-                <label>
-                    <p class="c-form__ttl u-mb-8">メールアドレス</p>
-                    <input type="email" name="cu_mail_address" class="c-form__text" placeholder="メールアドレスを記入してください">
-                </label>
-                <label>
-                    <p class="c-form__ttl u-mb-8">パスワード</p>
-                    <input type="password" name="password" class="c-form__text" placeholder="パスワードを記入してください">
-                </label>
-                <p class="u-f-notes u-mt-16">※パスワードを忘れた方は<a href="/aruda/password/email" class="u-link">こちら</a>からパスワードの再発行を行ってください。</p>
-
-                <div class="u-mt-32">
-                    <button class="c-btn u-m-center" data-type="solid-icon-left" data-size="l">
-                        メールアドレスで<br>ログイン
-                        <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
-                    </button>
-                </div>
-            </form>
-            <div class="p-login-signup">
-                <p class="u-fs-16">利用登録が済んでいない方はこちらから新規利用登録してください。</p>
-                <a href="/aruda/newcustomer" class="c-btn u-mt-32" data-type="icon-left" data-size="l">
-                    新規登録
-                    <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-                </a>
-            </div>
+    <section class="p-mypage-section">
+      <h2 class="u-h-lv2 u-t-center">マイページ</h2>
+      <div class="c-mypage-block">
+        <div class="c-mypage-block__head">
+          <p class="c-mypage-block__name">ようこそ 或田<span>さん</span></p>
+          <p class="c-mypage-block__edit">
+            <a href="#">マイページ情報の編集<span><img src="/aruda/assets/images/common/ico_down_g.svg" alt=""></span></a>
+          </p>
         </div>
+        <div class="c-mypage-block__body">
+          <div class="l-grid" data-col="2">
+            <a href="/">
+              <img src="/aruda/assets/images/common/dummy.svg" alt="" class="u-ico u-m-center" data-size="l">
+              <p>買いたい<span>情報登録</span></p>
+            </a>
+            <a href="/">
+              <img src="/aruda/assets/images/common/dummy.svg" alt="" class="u-ico u-m-center" data-size="l">
+              <p>売りたい<span>情報登録</span></p>
+            </a>
+          </div>
+          <div class="l-grid" data-col="3">
+            <a href="/">
+              <img src="/aruda/assets/images/common/ico_favorite.svg" alt="" class="u-ico u-m-center">
+              <p>お気に入り</p>
+            </a>
+            <a href="/">
+              <img src="/aruda/assets/images/common/ico_search-cond.svg" alt="" class="u-ico u-m-center">
+              <p>検索条件</p>
+            </a>
+            <a href="/">
+              <img src="/aruda/assets/images/common/dummy.svg" alt="" class="u-ico u-m-center">
+              <p>お知らせ</p>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="l-footer">

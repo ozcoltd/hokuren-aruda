@@ -1,0 +1,12 @@
+@import '../../../foundation/variables';
+.p-mypage {
+    background-color: $c-bg-main;
+
+    &-section {
+        padding-top: $m-s;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+
+    }
+}
