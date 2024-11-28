@@ -1,0 +1,15 @@
+@import '../../../../foundation/variables';
+.p-logout {
+    background-color: $c-bg-main;
+
+    &-section {
+        padding-top: $m-s;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+    }
+    &-contents {
+        padding: $m-ml $m-s 120px;
+        background-color: $c-bg-main-sub;
+    }
+}
