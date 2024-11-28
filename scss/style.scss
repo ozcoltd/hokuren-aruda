@@ -21,8 +21,14 @@
 @import 'object/component/form';
 @import 'object/component/modal';
 @import 'object/component/bnr';
+@import 'object/component/breadcrumbs';
 
 @import 'object/utility/align';
 @import 'object/utility/text';
 @import 'object/utility/visibility';
 @import 'object/utility/icon';
+
+//page TODO:個別に出力する
+@import 'object/page/top';
+@import 'object/page/auth/login/page';
+

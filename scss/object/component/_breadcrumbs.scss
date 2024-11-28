@@ -1,0 +1,33 @@
+.c-breadcrumbs {
+    padding: $m-s $m-s $m-ss;
+
+    ul {
+        display: flex;
+        gap: $m-s;
+    }
+    li {
+        position: relative;
+        a {
+            display: block;
+            color: $c-text;
+            font-size: $fs-t-ss;
+            text-decoration: underline;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -12px;
+                width: 8px;
+                height: 8px;
+                background: url(/aruda/assets/images/common/ico_breadcrumbs.svg) center no-repeat;
+                background-size: 8px;
+                transform: translateY(-50%);
+            }
+        }
+        span {
+            display: block;
+            color: $c-text-g;
+            font-size: $fs-t-ss;
+        }
+    }
+}

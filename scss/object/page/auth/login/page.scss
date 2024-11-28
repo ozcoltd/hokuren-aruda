@@ -1,4 +1,10 @@
 @import '../../../../foundation/variables';
 .p-login {
+    &-contents {
+        padding-top: $m-s;
+        .c-form {
+            background-color: $c-bg-main;
+        }
+    }
 
 }

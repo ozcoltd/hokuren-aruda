@@ -22,6 +22,13 @@
         color: $c-text-w;
         background-color: $c-bg-primary;
     }
+    &[data-type="line"]{
+        padding: 0 $m-s;
+        justify-content: space-between;
+        color: $c-text-w;
+        background-color: $c-line;
+        border-color: $c-line;
+    }
     &[data-type="solid-icon-left"]{
         position: relative;
         padding: 0 $m-s;
