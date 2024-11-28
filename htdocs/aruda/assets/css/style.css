@@ -683,6 +683,9 @@ select option:disabled {
 .c-form__submit .c-btn {
   margin: 0 auto;
 }
+.c-form__error {
+  border-color: #E80000;
+}
 
 .c-menu-modal {
   display: none;
@@ -930,6 +933,23 @@ select option:disabled {
   font-weight: 700;
 }
 
+.u-f-notes {
+  padding-left: 1em;
+  text-indent: -1em;
+  font-size: 12px;
+}
+
+.u-link {
+  color: #2C933A;
+  text-decoration: underline;
+}
+
+.u-error-message {
+  margin-top: 4px;
+  color: #E80000;
+  font-size: 12px;
+}
+
 .c-txt-hr {
   overflow: hidden;
   position: relative;
@@ -950,15 +970,15 @@ select option:disabled {
   right: -34px;
 }
 
-.u-f-notes {
-  padding-left: 1em;
-  text-indent: -1em;
+.c-alert-txt {
+  display: flex;
+  align-items: center;
+  color: #E80000;
   font-size: 12px;
+  font-weight: 700;
 }
-
-.u-link {
-  color: #2C933A;
-  text-decoration: underline;
+.c-alert-txt .u-ico {
+  margin-right: 4px;
 }
 
 .u-ico {
@@ -1043,6 +1063,7 @@ select option:disabled {
   background-color: #FFFFFF;
   border-radius: 4px;
 }
+.p-login-section .c-alert-txt,
 .p-login-section .c-txt-hr {
   margin-top: 32px;
   margin-bottom: 32px;

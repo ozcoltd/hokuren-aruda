@@ -65,4 +65,7 @@
             margin: 0 auto;
         }
     }
+    &__error {
+        border-color: $c-border-alert;
+    }
 }

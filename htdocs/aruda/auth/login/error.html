@@ -58,17 +58,22 @@
                     LINEでログイン
                     <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
                 </a>
-                <p class="c-txt-hr">または</p>
+                <p class="c-alert-txt">
+                    <img src="/aruda/assets/images/common/ico_error.svg" alt="error" class="u-ico" data-size="s">
+                    入力エラー  赤い文字の項目をご確認ください。 
+                </p>
                 <h3 class="u-h-lv4 u-t-center u-mb-16">メールアドレスでログイン</h3>
                 <p class="u-fs-14 u-mb-24">登録時に入力されたメールアドレスとパスワードでログインしてください。</p>
 
                 <label>
                     <p class="c-form__ttl u-mb-8">メールアドレス</p>
-                    <input type="email" name="cu_mail_address" class="c-form__text" placeholder="メールアドレスを記入してください">
+                    <input type="email" name="cu_mail_address" class="c-form__text c-form__error" placeholder="メールアドレスを記入してください">
+                    <p class="u-error-message">メールアドレスは必須項目です</p>
                 </label>
                 <label>
                     <p class="c-form__ttl u-mb-8">パスワード</p>
-                    <input type="password" name="password" class="c-form__text" placeholder="パスワードを記入してください">
+                    <input type="password" name="password" class="c-form__text c-form__error" placeholder="パスワードを記入してください">
+                    <p class="u-error-message">パスワードは必須項目です</p>
                 </label>
                 <p class="u-f-notes u-mt-16">※パスワードを忘れた方は<a href="/aruda/password/email" class="u-link">こちら</a>からパスワードの再発行を行ってください。</p>
 

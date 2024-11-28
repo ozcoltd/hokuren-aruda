@@ -29,6 +29,21 @@
 .u-f-bold {
     font-weight: 700;
 }
+.u-f-notes {
+    padding-left: 1em;
+    text-indent: -1em;
+    font-size: $fs-t-ss;
+}
+.u-link {
+    color: $c-text-link;
+    text-decoration: underline;
+}
+.u-error-message {
+    margin-top: $m-sss;
+    color: $c-text-alert;
+    font-size: $fs-t-ss;
+}
+
 .c-txt-hr {
     overflow: hidden;
     position: relative;
@@ -49,12 +64,13 @@
         right: -34px;
     }
 }
-.u-f-notes {
-    padding-left: 1em;
-    text-indent: -1em;
+.c-alert-txt {
+    display: flex;
+    align-items: center;
+    color: $c-text-alert;
     font-size: $fs-t-ss;
-}
-.u-link {
-    color: $c-text-link;
-    text-decoration: underline;
+    font-weight: 700;
+    .u-ico {
+        margin-right: $m-sss;
+    }
 }
