@@ -1,0 +1,109 @@
+@import '../../../../foundation/variables';
+.p-notification_list {
+    background-color: $c-bg-main;
+
+    &-section {
+        padding-top: $m-s;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+    }
+    &-recommendation {
+        padding: $m-ml $m-s;
+        .u-h-lv3 {
+            margin-bottom: $m-sl;
+        }
+        .l-grid {
+            gap: $m-m $m-ss;
+        }
+    }
+    &-favorite {
+        padding: $m-ml $m-s;
+        background-color: $c-bg-main-sub;
+        .u-h-lv3 {
+            margin-bottom: $m-sl;
+        }
+        .l-grid {
+            gap: $m-m $m-ss;
+        }
+        .c-more-block {
+            height: 41px;
+            margin-top: $m-m;
+            padding: 0;
+            &__contents {
+                opacity: 0;
+            }
+            &__btn {
+                background: transparent;
+            }
+        }
+    }
+    &-info {
+        position: relative;
+        padding: $m-ml $m-s 0;
+        background-color: $c-bg-main-sub;
+        .u-h-lv4 {
+            margin-bottom: $m-s;
+        }
+        &__box {
+            padding: $m-s;
+            font-size: $fs-t-s;
+            font-weight: 700;
+            background-color: $c-bg-main;
+            border: 1px solid $c-border;
+            border-radius: $b-r-s;
+        }
+        &__no-message {
+            color: $c-text-g;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: calc(100% - 32px);
+            height: 1px;
+            background-color: $c-border;
+            transform: translateX(-50%);
+        }
+    }
+    &-history {
+        padding: $m-ml $m-s;
+        background-color: $c-bg-main-sub;
+        .u-h-lv4 {
+            margin-bottom: $m-s;
+        }
+        .l-grid {
+            gap: $m-m $m-ss;
+        }
+        .c-more-block {
+            height: 41px;
+            margin-top: $m-m;
+            padding: 0;
+            &__contents {
+                opacity: 0;
+            }
+            &__btn {
+                background: transparent;
+            }
+        }
+    }
+    &-btn {
+        background-color: $c-bg-main-sub;
+        padding: 0 $m-s $m-xl;
+        &__inner {
+            padding: $m-m $m-ss;
+            background-color: $c-bg-main;
+            border-radius: $b-r-s;
+            .u-h-lv4 {
+                margin-bottom: $m-sl;
+            }
+            .c-btn {
+                & + .c-btn {
+                    margin-top: $m-sl;
+                }
+            }
+        }
+
+    }
+}
