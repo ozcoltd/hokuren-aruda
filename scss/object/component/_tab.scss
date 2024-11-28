@@ -1,0 +1,59 @@
+.c-tab {
+
+}
+.c-tab-list {
+    position: relative;
+    display: flex;
+    border: 1px solid $c-border;
+    border-radius: 16px;
+    background-color: $c-bg-main;
+    &[data-col="3"] {
+        li,
+        &::before {
+            width: 33.3%;
+        }
+        &[data-current="1"] {
+            &::after {
+                left: 14.4%;
+            }
+        }
+    }
+    li {
+        position: relative;
+        z-index: 2;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 32px;
+        background-color: $c-bg-primary;
+        border-radius: 16px;
+        transition: left 0.3s;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-color: $c-bg-primary;
+        border-radius: 2px;
+        transform: rotate(45deg) skew(10deg, 10deg);
+        transition: left 0.3s;
+    }
+    a {
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        color: $c-text-g;
+        font-size: $fs-t-ss;
+        text-align: center;
+        &.is-current {
+            color: $c-text-w;
+        }
+    }
+}

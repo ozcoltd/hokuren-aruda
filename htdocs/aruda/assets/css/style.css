@@ -70,6 +70,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-color: #F0F0F0;
 }
 
 li {
@@ -274,6 +275,58 @@ svg {
   background-color: #2C933A;
 }
 
+.c-tab-list {
+  position: relative;
+  display: flex;
+  border: 1px solid #DDDDDD;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+}
+.c-tab-list[data-col="3"] li, .c-tab-list[data-col="3"]::before {
+  width: 33.3%;
+}
+.c-tab-list[data-col="3"][data-current="1"]::after {
+  left: 14.4%;
+}
+.c-tab-list li {
+  position: relative;
+  z-index: 2;
+}
+.c-tab-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 32px;
+  background-color: #2C933A;
+  border-radius: 16px;
+  transition: left 0.3s;
+}
+.c-tab-list::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #2C933A;
+  border-radius: 2px;
+  transform: rotate(45deg) skew(10deg, 10deg);
+  transition: left 0.3s;
+}
+.c-tab-list a {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  color: #8E8E8E;
+  font-size: 12px;
+  text-align: center;
+}
+.c-tab-list a.is-current {
+  color: #fff;
+}
+
 .c-fixed-menu {
   position: fixed;
   z-index: 10;
@@ -443,6 +496,18 @@ svg {
   color: #2C933A;
 }
 
+.u-t-center {
+  text-align: center;
+}
+
+.u-t-left {
+  text-align: left;
+}
+
+.u-t-right {
+  text-align: right;
+}
+
 .u-h-lv2 {
   font-size: 28px;
   line-height: 42px;
@@ -478,4 +543,12 @@ svg {
 
 .u-ico {
   width: 32px;
+}
+
+.p-top-info {
+  margin-bottom: 8px;
+  padding: 24px 16px;
+}
+.p-top-info .u-h-lv4 {
+  margin-bottom: 16px;
 }

@@ -1,3 +1,9 @@
 .p-top {
-
+    &-info {
+        .u-h-lv4 {
+            margin-bottom: $m-s;
+        }
+        margin-bottom: $m-ss;
+        padding: $m-sl $m-s;
+    }
 }
