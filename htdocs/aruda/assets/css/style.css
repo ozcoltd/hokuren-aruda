@@ -195,6 +195,7 @@ svg {
 }
 
 .l-footer {
+  position: relative;
   margin-bottom: 56px;
   padding: 56px 16px 0;
   text-align: center;
@@ -236,6 +237,11 @@ svg {
 .l-footer .copyright p {
   color: #fff;
   font-size: 12px;
+}
+.l-footer .pagetop {
+  position: absolute;
+  top: -62px;
+  right: 8px;
 }
 
 .l-main {
