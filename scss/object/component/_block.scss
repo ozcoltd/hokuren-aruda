@@ -57,5 +57,27 @@
     //TOP
     .c-more-block {
         height: 112px;
+        padding-bottom: 0;
+    }
+    &__head {
+        display: flex;
+        margin-bottom: $m-ss;
+    }
+    &__date {
+        padding-top: 5px;
+        margin-right: 5px;
+        color: $c-text-g;
+        font-size: $fs-t-ss;
+    }
+    .u-f-bold.u-fs-14 {
+        color: $c-text;
+    }
+    &__item {
+        display: block;
+        & + .c-info-block__item {
+            margin-top: $m-s;
+            padding-top: $m-s;
+            border-top: 1px solid $c-border;
+        }
     }
 }

@@ -404,6 +404,43 @@ svg {
 }
 .c-info-block .c-more-block {
   height: 112px;
+  padding-bottom: 0;
+}
+.c-info-block__head {
+  display: flex;
+  margin-bottom: 8px;
+}
+.c-info-block__date {
+  padding-top: 5px;
+  margin-right: 5px;
+  color: #8E8E8E;
+  font-size: 12px;
+}
+.c-info-block .u-f-bold.u-fs-14 {
+  color: #4B4B4B;
+}
+.c-info-block__item {
+  display: block;
+}
+.c-info-block__item + .c-info-block__item {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #DDDDDD;
+}
+
+.c-tag {
+  height: 19px;
+  padding: 2px 8px;
+  color: #4B4B4B;
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: #ECF6ED;
+}
+
+.c-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
 .c-fixed-menu {
@@ -618,6 +655,10 @@ svg {
 .u-fs-12 {
   font-size: 12px;
   line-height: 21.6px;
+}
+
+.u-f-bold {
+  font-weight: 700;
 }
 
 .u-ico {

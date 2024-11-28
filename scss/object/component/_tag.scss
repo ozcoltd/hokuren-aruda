@@ -1,0 +1,13 @@
+.c-tag {
+    height: 19px;
+    padding: 2px 8px;
+    color: $c-text;
+    font-size: $fs-t-ss;
+    border-radius: 10px;
+    background-color: $c-bg-tertiary;
+}
+.c-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
