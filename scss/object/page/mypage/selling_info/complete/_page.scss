@@ -1,5 +1,5 @@
 @import '../../../../../foundation/variables';
-.p-selling_info-confirm {
+.p-selling_info-complete {
     background-color: $c-bg-main;
 
     &-section {
@@ -7,14 +7,9 @@
         .u-h-lv2 {
             margin-bottom: $m-m;
         }
-        .p-confirm-block {
+        .p-complete-block {
             padding: $m-ml $m-s;
             background-color: $c-bg-main-sub;
-            .c-form {
-                background-color: $c-bg-main;
-                border: 1px solid $c-border;
-                border-radius: $b-r-s;
-            }
         }
         .c-mypage-btn-block {
             padding-top: 0;
