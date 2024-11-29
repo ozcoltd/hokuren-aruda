@@ -348,8 +348,15 @@ select option:disabled {
   transform: translateY(-50%);
 }
 .c-btn[data-type=delete] {
+  position: relative;
   color: #E80000;
   border-color: #E80000;
+}
+.c-btn[data-type=delete] .u-ico {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 .c-btn[data-size=l] {
   max-width: 276px;
@@ -902,6 +909,66 @@ select option:disabled {
 }
 .c-form__list[data-col="2"] li {
   width: 50%;
+}
+.c-form__list[data-type=date] {
+  gap: 16px;
+}
+.c-form__list[data-type=date] .c-form__select {
+  width: 100%;
+}
+.c-form__list[data-type=date] li {
+  width: 26.2%;
+}
+.c-form__list[data-type=date] li:nth-child(1) {
+  width: 38.1%;
+}
+.c-form__list[data-type=date] label {
+  display: flex;
+  align-items: center;
+}
+.c-form__list[data-type=date] label .c-form__subttl {
+  margin: 0 0 0 4px;
+  font-weight: 700;
+}
+.c-form__list[data-type=kubun] {
+  display: block;
+}
+.c-form__list[data-type=kubun] .c-form__select + .c-form__select {
+  margin-top: 8px;
+}
+.c-form__list[data-type=zip-code] {
+  gap: 22px;
+}
+.c-form__list[data-type=zip-code] li {
+  width: 29.15%;
+}
+.c-form__list[data-type=zip-code] li:nth-child(1) {
+  position: relative;
+  width: 20.4%;
+}
+.c-form__list[data-type=zip-code] li:nth-child(1)::after {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+}
+.c-form__list[data-type=tel] {
+  gap: 22px;
+}
+.c-form__list[data-type=tel] li {
+  position: relative;
+  width: 28.86%;
+}
+.c-form__list[data-type=tel] li::after {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+}
+.c-form__list[data-type=tel] li:last-child::after {
+  content: none;
 }
 .c-form__radio input {
   display: none;
@@ -1766,11 +1833,11 @@ select option:disabled {
 .p-customer-section {
   padding-top: 16px;
 }
-.p-customer-section .u-h-lv2 {
+.p-customer-section .u-h-lv4 {
   margin-bottom: 32px;
 }
 .p-customer-form {
-  padding: 40px 16px;
+  padding: 40px 16px 0;
 }
 .p-customer-form .u-h-lv3 {
   margin-bottom: 24px;
@@ -1779,8 +1846,18 @@ select option:disabled {
   padding: 24px 0;
   background-color: #FFFFFF;
 }
+.p-customer-form .c-form__list[data-col="2"] {
+  gap: 8px;
+}
+.p-customer-form .c-form .u-f-notes {
+  color: #8E8E8E;
+}
 .p-customer-form .c-form .u-f-alert {
   margin-bottom: 32px;
   padding-bottom: 32px;
   border-bottom: 1px solid #DDDDDD;
+}
+.p-customer-btn {
+  padding-top: 40px;
+  background-color: #F0F0F0;
 }

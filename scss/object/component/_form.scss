@@ -83,6 +83,68 @@
                 width: 50%;
             }
         }
+        &[data-type="date"] {
+            gap: $m-s;
+            .c-form__select {
+                width: 100%;
+            }
+            li {
+                width: 26.2%;
+                &:nth-child(1) {
+                    width: 38.1%;
+                }
+            }
+            label {
+                display: flex;
+                align-items: center;
+                .c-form__subttl {
+                    margin: 0 0 0 $m-sss;
+                    font-weight: 700;
+                }
+            }
+        }
+        &[data-type="kubun"] {
+            display: block;
+            .c-form__select + .c-form__select {
+                margin-top: $m-ss;
+            }
+        }
+        &[data-type="zip-code"] {
+            gap: 22px;
+            li {
+                width: 29.15%;
+                &:nth-child(1) {
+                    position: relative;
+                    width: 20.4%;
+                    &::after {
+                        content: '-';
+                        position: absolute;
+                        top: 50%;
+                        right: -15px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+        &[data-type="tel"] {
+            gap: 22px;
+            li {
+                position: relative;
+                width: 28.86%;
+                &::after {
+                    content: '-';
+                    position: absolute;
+                    top: 50%;
+                    right: -15px;
+                    transform: translateY(-50%);
+                }
+                &:last-child {
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
     }
     &__radio {
         input {

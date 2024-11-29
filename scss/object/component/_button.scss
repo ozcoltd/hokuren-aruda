@@ -61,8 +61,15 @@
         }
     }
     &[data-type="delete"]{
+        position: relative;
         color: $c-text-alert;
         border-color: $c-border-alert;
+        .u-ico {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
     }
     &[data-size="l"]{
         max-width: 276px;

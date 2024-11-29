@@ -4,23 +4,35 @@
 
     &-section {
         padding-top: $m-s;
-        .u-h-lv2 {
+        .u-h-lv4 {
             margin-bottom: $m-m;
         }
     }
     &-form {
-        padding: $m-ml $m-s;
+        padding: $m-ml $m-s 0;
         .u-h-lv3 {
             margin-bottom: $m-sl;
         }
         .c-form {
             padding: $m-sl 0;
             background-color: $c-bg-main;
+            &__list {
+                &[data-col="2"] {
+                    gap: $m-ss;
+                }
+            }
+            .u-f-notes {
+                color: $c-text-g;
+            }
             .u-f-alert {
                 margin-bottom: $m-m;
                 padding-bottom: $m-m;
                 border-bottom: 1px solid $c-border;
             }
         }
+    }
+    &-btn {
+        padding-top: $m-ml;
+        background-color: $c-bg-main-sub;
     }
 }
