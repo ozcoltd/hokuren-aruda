@@ -734,6 +734,22 @@ select option:disabled {
   padding: 16px 0;
   border-bottom: 1px solid #DDDDDD;
 }
+.c-mail-setting__count {
+  margin-bottom: 16px;
+  color: #8E8E8E;
+  font-size: 14px;
+  text-align: center;
+}
+.c-mail-setting__count > span {
+  margin-left: 8px;
+  color: #4B4B4B;
+  font-size: 14px;
+  font-weight: 500;
+}
+.c-mail-setting__count > span span {
+  font-size: 20px;
+  font-weight: 700;
+}
 
 .c-tag {
   height: 19px;
@@ -1791,6 +1807,9 @@ select option:disabled {
 }
 .p-mail_notification_settings-contents .l-grid {
   gap: 32px 8px;
+}
+.p-mail_notification_settings-contents .c-mail-setting + .c-mail-setting {
+  margin-top: 24px;
 }
 .p-mail_notification_settings-btn {
   background-color: #F0F0F0;

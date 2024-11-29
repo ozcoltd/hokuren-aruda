@@ -257,4 +257,20 @@
             border-bottom: 1px solid $c-border;
         } 
     }
+    &__count {
+        margin-bottom: $m-s;
+        color: $c-text-g;
+        font-size: $fs-t-s;
+        text-align: center;
+        & > span {
+            margin-left: $m-ss;
+            color: $c-text;
+            font-size: $fs-t-s;
+            font-weight: 500;
+            span {
+                font-size: $fs-h-lv4;
+                font-weight: 700;
+            }
+        }
+    }
 }

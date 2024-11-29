@@ -16,6 +16,9 @@
         .l-grid {
             gap: $m-m $m-ss;
         }
+        .c-mail-setting + .c-mail-setting {
+            margin-top: $m-sl;
+        }
     }
     &-btn {
         background-color: $c-bg-main-sub;
