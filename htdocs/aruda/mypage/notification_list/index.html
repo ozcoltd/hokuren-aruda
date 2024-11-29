@@ -44,13 +44,14 @@
 </header>
   <main class="l-main p-notification_list">
     <nav class="c-breadcrumbs">
-        <ul>
-            <li><a href="/">ホーム</a></li>
-            <li><span>マイページ</span></li>
-        </ul>
+      <ul>
+        <li><a href="/aruda/">ホーム</a></li>
+        <li><a href="/aruda/mypage/">マイページ</a></li>
+        <li><span>お知らせ一覧</span></li>
+      </ul>
     </nav>
     <section class="p-notification_list-section">
-      <h2 class="u-h-lv2 u-t-center">マイページ</h2>
+      <h2 class="u-h-lv2 u-t-center">お知らせ一覧</h2>
       <div class="c-mypage-block">
         <div class="c-mypage-block__head">
           <p class="c-mypage-block__name">ようこそ 或田<span>さん</span></p>
@@ -69,274 +70,18 @@
               <p>売りたい<span>情報登録</span></p>
             </a>
           </div>
-          <div class="l-grid" data-col="3">
-            <a href="/aruda/mypage/favorite_machine_list/">
-              <img src="/aruda/assets/images/common/ico_favorite.svg" alt="" class="u-ico u-m-center">
-              <p>お気に入り</p>
-            </a>
-            <a href="/aruda/mypage/search_condition/">
-              <img src="/aruda/assets/images/common/ico_search-cond.svg" alt="" class="u-ico u-m-center">
-              <p>検索条件</p>
-            </a>
-            <a href="/aruda/mypage/notification_list/">
-              <img src="/aruda/assets/images/common/dummy.svg" alt="" class="u-ico u-m-center">
-              <p>お知らせ</p>
-            </a>
-          </div>
+          <ul class="c-tab-list" data-col="3" data-current="2">
+            <li><a href="/aruda/mypage/favorite_machine_list/">お気に入り</a></li>
+            <li><a href="/aruda/mypage/search_condition/">検索条件</a></li>
+            <li><a href="/aruda/mypage/notification_list/" class="is-current">お知らせ</a></li>
+          </ul>
         </div>
       </div>
 
-      <div class="p-notification_list-recommendation">
-        <h3 class="u-h-lv3 u-t-center">或田さんへの<br>おすすめ情報</h3>
-        <div class="l-grid" data-col="2">
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ブルーヒーター</p>
-            <p class="c-card__id">KBR-173</p>
-            <p class="c-card__manufacturer">サンポット</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ岩見沢</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ツインレーキ</p>
-            <p class="c-card__id">TGR7310</p>
-            <p class="c-card__manufacturer">スター</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ日高中部</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ツインレーキ</p>
-            <p class="c-card__id">TGR7310</p>
-            <p class="c-card__manufacturer">スター</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ日高中部</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ブルーヒーター</p>
-            <p class="c-card__id">KBR-173</p>
-            <p class="c-card__manufacturer">サンポット</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ岩見沢</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ブルーヒーター</p>
-            <p class="c-card__id">KBR-173</p>
-            <p class="c-card__manufacturer">サンポット</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ岩見沢</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ツインレーキ</p>
-            <p class="c-card__id">TGR7310</p>
-            <p class="c-card__manufacturer">スター</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ日高中部</p>
-          </a>
-        </div>
-        <div class="u-mt-40">
-          <a href="/" class="c-btn u-m-center" data-type="solid-icon-left" data-size="l">
-            一覧を見る
-            <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
-          </a>
-        </div>
-      </div>
-
-      <div class="p-notification_list-favorite">
-        <h3 class="u-h-lv3 u-t-center">お気に入りの中古農機</h3>
-        <div class="l-grid" data-col="2">
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ブルーヒーター</p>
-            <p class="c-card__id">KBR-173</p>
-            <p class="c-card__manufacturer">サンポット</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ岩見沢</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ツインレーキ</p>
-            <p class="c-card__id">TGR7310</p>
-            <p class="c-card__manufacturer">スター</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ日高中部</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ツインレーキ</p>
-            <p class="c-card__id">TGR7310</p>
-            <p class="c-card__manufacturer">スター</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ日高中部</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ブルーヒーター</p>
-            <p class="c-card__id">KBR-173</p>
-            <p class="c-card__manufacturer">サンポット</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ岩見沢</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ブルーヒーター</p>
-            <p class="c-card__id">KBR-173</p>
-            <p class="c-card__manufacturer">サンポット</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ岩見沢</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ツインレーキ</p>
-            <p class="c-card__id">TGR7310</p>
-            <p class="c-card__manufacturer">スター</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ日高中部</p>
-          </a>
-        </div>
-        <div class="c-more-block js-more-block">
-          <div class="c-more-block__contents">
-            <div class="l-grid" data-col="2">
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ブルーヒーター</p>
-                <p class="c-card__id">KBR-173</p>
-                <p class="c-card__manufacturer">サンポット</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ岩見沢</p>
-              </a>
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ツインレーキ</p>
-                <p class="c-card__id">TGR7310</p>
-                <p class="c-card__manufacturer">スター</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ日高中部</p>
-              </a>
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ツインレーキ</p>
-                <p class="c-card__id">TGR7310</p>
-                <p class="c-card__manufacturer">スター</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ日高中部</p>
-              </a>
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ブルーヒーター</p>
-                <p class="c-card__id">KBR-173</p>
-                <p class="c-card__manufacturer">サンポット</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ岩見沢</p>
-              </a>
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ブルーヒーター</p>
-                <p class="c-card__id">KBR-173</p>
-                <p class="c-card__manufacturer">サンポット</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ岩見沢</p>
-              </a>
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ツインレーキ</p>
-                <p class="c-card__id">TGR7310</p>
-                <p class="c-card__manufacturer">スター</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ日高中部</p>
-              </a>
-            </div>
-          </div>
-          <a href="#" class="c-more-block__btn js-more-btn">さらに表示する<span><img src="/aruda/assets/images/common/ico_add_g.svg" alt=""></span></a>
-        </div>
-      </div>
       <div class="p-notification_list-info">
-        <h4 class="u-h-lv4 u-t-center">登録した展示場からのお知らせ</h4>
+        <h3 class="u-h-lv3 u-t-center">登録した展示場からの<br>お知らせ</h3>
         <div class="p-notification_list-info__box">
           <p class="p-notification_list-info__no-message">現在、お知らせはありません。</p>
-        </div>
-      </div>
-
-      <div class="p-notification_list-history">
-        <h4 class="u-h-lv4 u-t-center">
-          閲覧履歴
-        </h4>
-        <div class="l-grid" data-col="2">
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ブルーヒーター</p>
-            <p class="c-card__id">KBR-173</p>
-            <p class="c-card__manufacturer">サンポット</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ岩見沢</p>
-          </a>
-          <a href="/" class="c-card">
-            <img src="https://placehold.jp/167x125.png" alt="">
-            <p class="c-card__name">ツインレーキ</p>
-            <p class="c-card__id">TGR7310</p>
-            <p class="c-card__manufacturer">スター</p>
-            <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-            <p class="c-card__shop">アルーダ日高中部</p>
-          </a>
-        </div>
-        <div class="c-more-block js-more-block">
-          <div class="c-more-block__contents">
-            <div class="l-grid" data-col="2">
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ブルーヒーター</p>
-                <p class="c-card__id">KBR-173</p>
-                <p class="c-card__manufacturer">サンポット</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ岩見沢</p>
-              </a>
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ツインレーキ</p>
-                <p class="c-card__id">TGR7310</p>
-                <p class="c-card__manufacturer">スター</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ日高中部</p>
-              </a>
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ツインレーキ</p>
-                <p class="c-card__id">TGR7310</p>
-                <p class="c-card__manufacturer">スター</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ日高中部</p>
-              </a>
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ブルーヒーター</p>
-                <p class="c-card__id">KBR-173</p>
-                <p class="c-card__manufacturer">サンポット</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ岩見沢</p>
-              </a>
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ブルーヒーター</p>
-                <p class="c-card__id">KBR-173</p>
-                <p class="c-card__manufacturer">サンポット</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ岩見沢</p>
-              </a>
-              <a href="/" class="c-card">
-                <img src="https://placehold.jp/167x125.png" alt="">
-                <p class="c-card__name">ツインレーキ</p>
-                <p class="c-card__id">TGR7310</p>
-                <p class="c-card__manufacturer">スター</p>
-                <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                <p class="c-card__shop">アルーダ日高中部</p>
-              </a>
-            </div>
-          </div>
-          <a href="#" class="c-more-block__btn js-more-btn">さらに表示する<span><img src="/aruda/assets/images/common/ico_add_g.svg" alt=""></span></a>
         </div>
       </div>
 
