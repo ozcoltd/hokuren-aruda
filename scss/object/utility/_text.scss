@@ -38,6 +38,13 @@
     color: $c-text-link;
     text-decoration: underline;
 }
+.u-f-required {
+    color: $c-text-alert;
+}
+.u-f-alert {
+    color: $c-text-alert;
+    font-size: $fs-t-ss;
+}
 .u-error-message {
     margin-top: $m-sss;
     color: $c-text-alert;

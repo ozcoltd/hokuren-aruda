@@ -807,6 +807,11 @@ select option:disabled {
 .c-form__ttl .u-ico {
   margin-right: 8px;
 }
+.c-form__subttl {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
 .c-form__budget {
   display: flex;
   align-items: center;
@@ -1083,6 +1088,15 @@ select option:disabled {
 .u-link {
   color: #2C933A;
   text-decoration: underline;
+}
+
+.u-f-required {
+  color: #E80000;
+}
+
+.u-f-alert {
+  color: #E80000;
+  font-size: 12px;
 }
 
 .u-error-message {
@@ -1566,89 +1580,24 @@ select option:disabled {
 .p-selling_info-section .u-h-lv2 {
   margin-bottom: 32px;
 }
-.p-selling_info-recommendation {
+.p-selling_info-form {
   padding: 40px 16px;
 }
-.p-selling_info-recommendation .u-h-lv3 {
+.p-selling_info-form .u-h-lv3 {
   margin-bottom: 24px;
 }
-.p-selling_info-recommendation .l-grid {
-  gap: 32px 8px;
-}
-.p-selling_info-favorite {
-  padding: 40px 16px;
-  background-color: #F0F0F0;
-}
-.p-selling_info-favorite .u-h-lv3 {
-  margin-bottom: 24px;
-}
-.p-selling_info-favorite .l-grid {
-  gap: 32px 8px;
-}
-.p-selling_info-favorite .c-more-block {
-  height: 41px;
-  margin-top: 32px;
-  padding: 0;
-}
-.p-selling_info-favorite .c-more-block__contents {
-  opacity: 0;
-}
-.p-selling_info-favorite .c-more-block__btn {
-  background: transparent;
-}
-.p-selling_info-info {
-  position: relative;
-  padding: 40px 16px 0;
-  background-color: #F0F0F0;
-}
-.p-selling_info-info .u-h-lv4 {
-  margin-bottom: 16px;
-}
-.p-selling_info-info__box {
-  padding: 16px;
-  font-size: 14px;
-  font-weight: 700;
+.p-selling_info-form .c-form {
+  padding: 24px 0;
   background-color: #FFFFFF;
-  border: 1px solid #DDDDDD;
-  border-radius: 4px;
 }
-.p-selling_info-info__no-message {
-  color: #8E8E8E;
-}
-.p-selling_info-info:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: calc(100% - 32px);
-  height: 1px;
-  background-color: #DDDDDD;
-  transform: translateX(-50%);
-}
-.p-selling_info-history {
-  padding: 40px 16px;
-  background-color: #F0F0F0;
-}
-.p-selling_info-history .u-h-lv4 {
-  margin-bottom: 16px;
-}
-.p-selling_info-history .l-grid {
-  gap: 32px 8px;
-}
-.p-selling_info-history .c-more-block {
-  height: 41px;
-  margin-top: 32px;
-  padding: 0;
-}
-.p-selling_info-history .c-more-block__contents {
-  opacity: 0;
-}
-.p-selling_info-history .c-more-block__btn {
-  background: transparent;
+.p-selling_info-form .c-form .u-f-alert {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #DDDDDD;
 }
 .p-selling_info-btn {
   background-color: #F0F0F0;
-  padding: 0 16px 80px;
+  padding: 40px 16px 80px;
 }
 .p-selling_info-btn__inner {
   padding: 32px 8px;

@@ -48,6 +48,11 @@
             margin-right: $m-ss;
         }
     }
+    &__subttl {
+        margin-top: $m-ss;
+        margin-bottom: $m-sss;
+        font-size: $fs-t-s;
+    }
     &__budget {
         display: flex;
         align-items: center;
