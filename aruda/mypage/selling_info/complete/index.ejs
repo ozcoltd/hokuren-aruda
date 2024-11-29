@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <title>中古農機情報サイトアルーダ | マイページ | 売りたい情報登録</title>
+  <meta name="description" content="中古農機情報サイトアルーダは、トラクター、コンバイン、田植機をはじめ、多種多様な優良中古農業機械を多数掲載！みなさまの中古農機探しを応援します!!中古農機の出品も受け付けております。お気軽にお問い合わせください。">
+  <%- include('../../../inc/ogp') %>
+  <%- include('../../../inc/meta') %>
+</head>
+<body>
+  <%- include('../../../inc/header') %>
+  <main class="l-main p-selling_info-confirm">
+    <nav class="c-breadcrumbs">
+      <ul>
+        <li><a href="/aruda/">ホーム</a></li>
+        <li><a href="/aruda/mypage/">マイページ</a></li>
+        <li><a href="/aruda/mypage/selling_info/">売りたい情報登録</a></li>
+        <li><span>送信完了</span></li>
+    </ul>
+    </nav>
+    <section class="p-selling_info-confirm-section">
+      <h2 class="u-h-lv2 u-t-center">送信完了</h2>
+
+      <div class="p-confirm-block">
+        <p class="u-fs-16">お問い合わせありがとうございます。<br>
+          担当者が内容を確認次第、折り返しご連絡いたします。<br>
+          もうしばらくお待ちください。</p>
+      </div>
+
+      <div class="p-selling_info-confirm-btn">
+        <div class="p-selling_info-confirm-btn__inner">
+          <h4 class="u-h-lv4 u-t-center">
+            マイページ情報
+          </h4>
+          <a href="/aruda/mypage/selling_info/" class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
+            売りたい情報登録
+            <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
+          </a>
+          <a href="/aruda/mypage/buying_info/" class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
+            買いたい情報登録
+            <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
+          </a>
+
+          <a href="/aruda/mypage/mail_notification_settings/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
+            メール通知設定
+            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
+          </a>
+          <a href="/aruda/mypage/customer/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
+            会員情報の編集
+            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <%- include('../../../inc/footer') %>
+  <%- include('../../../inc/fixed-menu') %>
+  <%- include('../../../inc/menu-modal') %>
+  <%- include('../../../inc/membership-modal') %>
+</body>
+</html>
