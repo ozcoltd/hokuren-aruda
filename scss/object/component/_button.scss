@@ -30,11 +30,20 @@
         background-color: $c-line;
         border-color: $c-line;
     }
-    &[data-type="solid-icon-left"]{
+    &[data-type="solid-icon-right"]{
         position: relative;
         padding: 0 $m-s;
         color: $c-text-w;
         background-color: $c-bg-primary;
+        .u-ico {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+    }
+    &[data-type="icon-right"]{
+        position: relative;
         .u-ico {
             position: absolute;
             top: 50%;
@@ -47,7 +56,7 @@
         .u-ico {
             position: absolute;
             top: 50%;
-            right: 10px;
+            left: 10px;
             transform: translateY(-50%);
         }
     }

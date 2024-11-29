@@ -317,13 +317,22 @@ select option:disabled {
   background-color: #06C755;
   border-color: #06C755;
 }
-.c-btn[data-type=solid-icon-left] {
+.c-btn[data-type=solid-icon-right] {
   position: relative;
   padding: 0 16px;
   color: #fff;
   background-color: #2C933A;
 }
-.c-btn[data-type=solid-icon-left] .u-ico {
+.c-btn[data-type=solid-icon-right] .u-ico {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.c-btn[data-type=icon-right] {
+  position: relative;
+}
+.c-btn[data-type=icon-right] .u-ico {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -335,7 +344,7 @@ select option:disabled {
 .c-btn[data-type=icon-left] .u-ico {
   position: absolute;
   top: 50%;
-  right: 10px;
+  left: 10px;
   transform: translateY(-50%);
 }
 .c-btn[data-type=delete] {
@@ -1698,7 +1707,7 @@ select option:disabled {
 }
 .p-selling_info-confirm-btn {
   background-color: #F0F0F0;
-  padding: 40px 16px 80px;
+  padding: 0 16px 80px;
 }
 .p-selling_info-confirm-btn__inner {
   padding: 32px 8px;
