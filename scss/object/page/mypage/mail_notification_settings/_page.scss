@@ -1,0 +1,38 @@
+@import '../../../../foundation/variables';
+.p-mail_notification_settings {
+    background-color: $c-bg-main;
+
+    &-section {
+        padding-top: $m-s;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+    }
+    &-contents {
+        padding: $m-ml $m-s;
+        .u-h-lv3 {
+            margin-bottom: $m-sl;
+        }
+        .l-grid {
+            gap: $m-m $m-ss;
+        }
+    }
+    &-btn {
+        background-color: $c-bg-main-sub;
+        padding: $m-ml $m-s $m-xl;
+        &__inner {
+            padding: $m-m $m-ss;
+            background-color: $c-bg-main;
+            border-radius: $b-r-s;
+            .u-h-lv4 {
+                margin-bottom: $m-sl;
+            }
+            .c-btn {
+                & + .c-btn {
+                    margin-top: $m-sl;
+                }
+            }
+        }
+
+    }
+}

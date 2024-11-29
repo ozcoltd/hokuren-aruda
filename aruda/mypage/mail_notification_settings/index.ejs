@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <title>中古農機情報サイトアルーダ | トップページ</title>
+  <meta name="description" content="中古農機情報サイトアルーダは、トラクター、コンバイン、田植機をはじめ、多種多様な優良中古農業機械を多数掲載！みなさまの中古農機探しを応援します!!中古農機の出品も受け付けております。お気軽にお問い合わせください。">
+  <%- include('../../inc/ogp') %>
+  <%- include('../../inc/meta') %>
+</head>
+<body>
+  <%- include('../../inc/header') %>
+  <main class="l-main p-mail_notification_settings">
+    <nav class="c-breadcrumbs">
+        <ul>
+            <li><a href="/aruda/">ホーム</a></li>
+            <li><a href="/aruda/mypage/">ホーム</a></li>
+            <li><span>メール通知設定</span></li>
+        </ul>
+    </nav>
+    <section class="p-mail_notification_settings-section">
+      <h2 class="u-h-lv2 u-t-center">メール通知設定</h2>
+      <div class="c-mypage-block">
+        <div class="c-mypage-block__head">
+          <p class="c-mypage-block__name">ようこそ 或田<span>さん</span></p>
+          <p class="c-mypage-block__edit">
+            <a href="#">マイページ情報の編集<span><img src="/aruda/assets/images/common/ico_down_g.svg" alt=""></span></a>
+          </p>
+        </div>
+        <div class="c-mypage-block__body">
+          <div class="l-grid" data-col="2">
+            <a href="/aruda/mypage/buying_info/">
+              <img src="/aruda/assets/images/common/dummy.svg" alt="" class="u-ico u-m-center" data-size="l">
+              <p>買いたい<span>情報登録</span></p>
+            </a>
+            <a href="/aruda/mypage/selling_info/">
+              <img src="/aruda/assets/images/common/dummy.svg" alt="" class="u-ico u-m-center" data-size="l">
+              <p>売りたい<span>情報登録</span></p>
+            </a>
+          </div>
+          <div class="l-grid" data-col="3">
+            <a href="/aruda/mypage/favorite_machine_list/">
+              <img src="/aruda/assets/images/common/ico_favorite.svg" alt="" class="u-ico u-m-center">
+              <p>お気に入り</p>
+            </a>
+            <a href="/aruda/mypage/search_condition/">
+              <img src="/aruda/assets/images/common/ico_search-cond.svg" alt="" class="u-ico u-m-center">
+              <p>検索条件</p>
+            </a>
+            <a href="/aruda/mypage/notification_list/">
+              <img src="/aruda/assets/images/common/dummy.svg" alt="" class="u-ico u-m-center">
+              <p>お知らせ</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-mail_notification_settings-contents">
+        <h3 class="u-h-lv3 u-t-center">通知設定</h3>
+        <p class="u-fs-14 u-mb-24">お気に入り常設展示場からの新しいお知らせ情報や、買いたい中古農機の登録情報、特定中古農機の掲載状況をメール・LINEで通知します。</p>
+        
+        <div class="c-mail-setting">
+          <h4 class="u-h-lv4">お気に入り常設展示場</h4>
+          <ul class="c-mail-setting__list">
+            <li>
+              <span class="u-fs-14">メール</span>
+              <div class="c-form-switch">
+                <input type="checkbox" id="switch1">
+                <label for="switch1"></label>
+                <div class="c-form-switch__swImg"></div>
+              </div>
+            </li>
+            <li>
+              <span class="u-fs-14">LINE</span>
+              <div class="c-form-switch">
+                <input type="checkbox" id="switch2">
+                <label for="switch2"></label>
+                <div class="c-form-switch__swImg"></div>
+              </div>
+            </li>
+          </ul>
+          <p class="u-fs-14 u-mb-16">お気に入り常設展示場からの新しいお知らせ情報が登録された場合にメール・LINEでお知らせします。</p>
+          <a href="/aruda/mypage/mail_notification_settings/" class="c-btn u-m-center" data-type="icon-right" data-size="s">
+            設定を変更
+            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
+          </a>
+        </div>
+      </div>
+
+      <div class="p-mail_notification_settings-btn">
+        <div class="p-mail_notification_settings-btn__inner">
+          <h4 class="u-h-lv4 u-t-center">
+            マイページ情報
+          </h4>
+          <a href="/aruda/mypage/mail_notification_settings/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
+            メール通知設定
+            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
+          </a>
+          <a href="/aruda/mypage/customer/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
+            会員情報の編集
+            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <%- include('../../inc/footer') %>
+  <%- include('../../inc/fixed-menu') %>
+  <%- include('../../inc/menu-modal') %>
+  <%- include('../../inc/membership-modal') %>
+</body>
+</html>

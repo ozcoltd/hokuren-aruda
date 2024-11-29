@@ -143,4 +143,36 @@
             }
         }
     }
+    &-switch {
+        position       : relative;
+        width          : 44px;
+        border-radius  : 12px;
+        input[type="checkbox"] {
+            display        : none; 
+            &:checked + label {
+                background-color   :$c-bg-primary
+            }
+            &:checked ~ .c-form-switch__swImg {
+                transform      : translateX(20px);
+                background     : $c-bg-main;
+            }
+        }
+        label {
+            display        : block; 
+            box-sizing     : border-box;
+            height         : 24px;
+            background     : #A0A0A0;
+            border-radius  : 12px;
+        }
+        &__swImg {
+            position       : absolute;
+            width          : 16px;
+            height         : 16px;
+            background     : #DDD;
+            top            : 4px;
+            left           : 4px;
+            border-radius  : 8px; 
+            transition     : .2s;
+          }
+      }
 }

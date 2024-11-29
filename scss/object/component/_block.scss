@@ -238,3 +238,23 @@
         border-radius: $b-r-s;
     }
 }
+.c-mail-setting {
+    padding: $m-sl $m-s;
+    background-color: $c-bg-main-sub;
+    border: 1px solid $c-border;
+    border-radius: $b-r-s;
+    .u-h-lv4 {
+        margin-bottom: $m-s;
+    }
+    &__list {
+        margin-bottom: $m-s;
+        border-top: 1px solid $c-border;
+       li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: $m-s 0;
+            border-bottom: 1px solid $c-border;
+        } 
+    }
+}
