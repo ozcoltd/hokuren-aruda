@@ -51,9 +51,19 @@
             transform: translateY(-50%);
         }
     }
+    &[data-type="delete"]{
+        color: $c-text-alert;
+        border-color: $c-border-alert;
+    }
     &[data-size="l"]{
         max-width: 276px;
         height: 56px;
         border-radius: 28px;
+    }
+    &[data-size="s"]{
+        max-width: 151px;
+        height: 37px;
+        font-size: $fs-t-s;
+        border-radius: 20px;
     }
 }
