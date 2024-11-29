@@ -73,4 +73,54 @@
     &__error {
         border-color: $c-border-alert;
     }
+    &__list {
+        display: flex;
+        &[data-col="2"] {
+            li {
+                width: 50%;
+            }
+        }
+    }
+    &__radio {
+        input {
+            display: none;
+            &:checked + span {
+                color: $c-text;
+                &::before {
+                    border-color: $c-border-primary;
+                }
+                &::after {
+                    background-color: $c-bg-primary;
+                }
+            }
+        }
+        span {
+            position: relative;
+            padding-left: $m-sl;
+            color: $c-placehlder;
+            font-size: $fs-t-s;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                border: 1px solid $c-border;
+                border-radius: 8px;
+                transform: translateY(-50%);
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 4px;
+                width: 8px;
+                height: 8px;
+                background-color: $c-bg-main;
+                border-radius: 4px;
+                transform: translateY(-50%);
+            }
+        }
+    }
 }

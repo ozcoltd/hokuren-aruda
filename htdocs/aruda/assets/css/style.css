@@ -832,6 +832,52 @@ select option:disabled {
 .c-form__error {
   border-color: #E80000;
 }
+.c-form__list {
+  display: flex;
+}
+.c-form__list[data-col="2"] li {
+  width: 50%;
+}
+.c-form__radio input {
+  display: none;
+}
+.c-form__radio input:checked + span {
+  color: #4B4B4B;
+}
+.c-form__radio input:checked + span::before {
+  border-color: #2C933A;
+}
+.c-form__radio input:checked + span::after {
+  background-color: #2C933A;
+}
+.c-form__radio span {
+  position: relative;
+  padding-left: 24px;
+  color: #A0A0A0;
+  font-size: 14px;
+}
+.c-form__radio span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  transform: translateY(-50%);
+}
+.c-form__radio span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  transform: translateY(-50%);
+}
 
 .c-menu-modal {
   display: none;
