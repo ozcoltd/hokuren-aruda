@@ -32,6 +32,9 @@
             appearance: none; /* デフォルト矢印を非表示 */
             -webkit-appearance: none;
             -moz-appearance: none;
+            &.c-form__error {
+                border-color: $c-border-alert;
+            }
         }
     }
     label {

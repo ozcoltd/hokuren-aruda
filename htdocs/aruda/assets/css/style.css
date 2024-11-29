@@ -793,6 +793,9 @@ select option:disabled {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+.c-form__select select.c-form__error {
+  border-color: #E80000;
+}
 .c-form label {
   display: block;
   margin-top: 16px;
