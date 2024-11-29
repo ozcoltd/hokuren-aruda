@@ -695,6 +695,16 @@ select option:disabled {
   margin-top: 32px;
 }
 
+.p-confirm-block {
+  padding: 40px 16px;
+  background-color: #F0F0F0;
+}
+.p-confirm-block .c-form {
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}
+
 .c-tag {
   height: 19px;
   padding: 2px 8px;
@@ -880,6 +890,19 @@ select option:disabled {
   background-color: #FFFFFF;
   border-radius: 4px;
   transform: translateY(-50%);
+}
+.c-form__confirm li {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.c-form__item span {
+  color: #4B4B4B;
+  font-size: 14px;
+}
+.c-form__item span.c-form__subttl {
+  margin-right: 4px;
+  color: #8E8E8E;
 }
 
 .c-menu-modal {
@@ -1069,6 +1092,10 @@ select option:disabled {
 
 .u-mt-20 {
   margin-top: 20px;
+}
+
+.u-mt-24 {
+  margin-top: 24px;
 }
 
 .u-mt-32 {
@@ -1657,5 +1684,30 @@ select option:disabled {
   margin-bottom: 24px;
 }
 .p-selling_info-btn__inner .c-btn + .c-btn {
+  margin-top: 24px;
+}
+
+.p-selling_info-confirm {
+  background-color: #FFFFFF;
+}
+.p-selling_info-confirm-section {
+  padding-top: 16px;
+}
+.p-selling_info-confirm-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+.p-selling_info-confirm-btn {
+  background-color: #F0F0F0;
+  padding: 40px 16px 80px;
+}
+.p-selling_info-confirm-btn__inner {
+  padding: 32px 8px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+.p-selling_info-confirm-btn__inner .u-h-lv4 {
+  margin-bottom: 24px;
+}
+.p-selling_info-confirm-btn__inner .c-btn + .c-btn {
   margin-top: 24px;
 }

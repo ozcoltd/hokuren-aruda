@@ -126,4 +126,21 @@
             }
         }
     }
+    &__confirm {
+        li {
+            margin-bottom: $m-s;
+            padding-bottom: $m-s;
+            border-bottom: 1px solid $c-border;
+        }
+    }
+    &__item {
+        span {
+            color: $c-text;
+            font-size: $fs-t-s;
+            &.c-form__subttl {
+                margin-right: $m-sss;
+                color: $c-text-g;
+            }
+        }
+    }
 }
