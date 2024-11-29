@@ -1,0 +1,26 @@
+@import '../../../../foundation/variables';
+.p-customer {
+    background-color: $c-bg-main;
+
+    &-section {
+        padding-top: $m-s;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+    }
+    &-form {
+        padding: $m-ml $m-s;
+        .u-h-lv3 {
+            margin-bottom: $m-sl;
+        }
+        .c-form {
+            padding: $m-sl 0;
+            background-color: $c-bg-main;
+            .u-f-alert {
+                margin-bottom: $m-m;
+                padding-bottom: $m-m;
+                border-bottom: 1px solid $c-border;
+            }
+        }
+    }
+}

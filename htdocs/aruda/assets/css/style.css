@@ -1759,3 +1759,28 @@ select option:disabled {
 .p-mail_notification_settings-contents .c-mail-setting + .c-mail-setting {
   margin-top: 24px;
 }
+
+.p-customer {
+  background-color: #FFFFFF;
+}
+.p-customer-section {
+  padding-top: 16px;
+}
+.p-customer-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+.p-customer-form {
+  padding: 40px 16px;
+}
+.p-customer-form .u-h-lv3 {
+  margin-bottom: 24px;
+}
+.p-customer-form .c-form {
+  padding: 24px 0;
+  background-color: #FFFFFF;
+}
+.p-customer-form .c-form .u-f-alert {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #DDDDDD;
+}
