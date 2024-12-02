@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <title>中古農機情報サイトアルーダ | マイページ | 会員情報の編集</title>
+  <meta name="description" content="中古農機情報サイトアルーダは、トラクター、コンバイン、田植機をはじめ、多種多様な優良中古農業機械を多数掲載！みなさまの中古農機探しを応援します!!中古農機の出品も受け付けております。お気軽にお問い合わせください。">
+  <%- include('../../../inc/ogp') %>
+  <%- include('../../../inc/meta') %>
+</head>
+<body>
+  <%- include('../../../inc/header') %>
+  <main class="l-main p-customer">
+    <nav class="c-breadcrumbs">
+      <ul>
+        <li><a href="/aruda/">ホーム</a></li>
+        <li><a href="/aruda/mypage/">マイページ</a></li>
+        <li><a href="/aruda/mypage/customer/">会員情報の編集</a></li>
+        <li><span>確認画面</span></li>
+    </ul>
+    </nav>
+    <section class="p-customer-section">
+      <h2 class="u-h-lv4 u-t-center">確認画面</h2>
+
+      <div class="p-confirm-block">
+        <form action="/aruda/mypage/selling_info/complete/" method="POST" class="c-form">
+          <ul class="c-form__confirm">
+            <li>
+              <p class="c-form__ttl">お名前<span class="u-f-required">*</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">姓</span><span>テストテスト</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">名</span><span>テストテスト</span></p>
+            </li>
+            <li>
+              <p class="c-form__ttl">お名前（フリガナ）<span class="u-f-required">*</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">セイ</span><span>テストテスト</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">メイ</span><span>テストテスト</span></p>
+            </li>
+            <li>
+              <p class="c-form__ttl">生年月日<span class="u-f-required">*</span></p>
+              <p class="c-form__item"><span>2024年12月24日</span></p>
+            </li>
+            <li>
+              <p class="c-form__ttl">組合員区分<span class="u-f-required">*</span></p>
+              <p class="c-form__item"><span>道内農協組合員です</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">ホクレン支所・農協:</span><span>テストテスト</span></p>
+              <p class="c-form__item"><span>テストテスト</span></p>
+            </li>
+            <li>
+              <p class="c-form__ttl">ご住所<span class="u-f-required">*</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">郵便番号</span><span>000-0000</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">都道府県</span><span>北海道</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">市区町村・番地</span><span>テストテスト</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">アパート・マンション名</span><span>テストテスト</span></p>
+            </li>
+            <li>
+              <p class="c-form__ttl">電話番号（いずれかご入力ください）<span class="u-f-required">*</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">ご自宅</span><span>000-0000-0000</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">携帯電話</span><span>000-0000-0000</span></p>
+            </li>
+            <li>
+              <p class="c-form__ttl">ログインID（メールアドレス）<span class="u-f-required">*</span></p>
+              <p class="c-form__item"><span>aaaaaaaaa@aaaaaa.com</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">確認のためもう一度ご入力ください。</span><span>aaaaaaaaa@aaaaaa.com</span></p>
+            </li>
+            <li>
+              <p class="c-form__ttl">ログインパスワード<span class="u-f-required">*</span></p>
+              <p class="c-form__item"><span>**************</span></p>
+              <p class="c-form__item"><span class="c-form__subttl">確認のためもう一度ご入力ください。</span><span>**************</span></p>
+            </li>
+            <li>
+              <p class="c-form__ttl">エリア</p>
+              <p class="c-form__item"><span>テストテスト</span></p>
+            </li>
+            <li>
+              <p class="c-form__ttl">展示場</p>
+              <p class="c-form__item"><span>テストテスト</span></p>
+            </li>
+          </ul>
+          <div class="u-mt-40">
+            <button class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
+              送信する
+              <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
+            </button>
+          </div>
+          <div class="u-mt-24">
+            <a href="/aruda/mypage/selling_info/" class="c-btn u-m-center" data-type="icon-left" data-size="l">
+              <img src="/aruda/assets/images/common/ico_left_g.svg" alt="" class="u-ico" data-size="s">
+              修正する
+            </a>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="c-mypage-btn-block">
+        <div class="c-mypage-btn-block__inner">
+          <h4 class="u-h-lv4 u-t-center">
+            マイページ情報
+          </h4>
+          <a href="/aruda/mypage/mail_notification_settings/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
+            メール通知設定
+            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
+          </a>
+          <a href="/aruda/mypage/customer/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
+            会員情報の編集
+            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <%- include('../../../inc/footer') %>
+  <%- include('../../../inc/fixed-menu') %>
+  <%- include('../../../inc/menu-modal') %>
+  <%- include('../../../inc/membership-modal') %>
+</body>
+</html>
