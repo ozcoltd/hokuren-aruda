@@ -84,6 +84,16 @@ $(function(){
             $('.js-kubun-item').removeClass('is-active');
             $this.find('.js-kubun-item').eq(index).addClass('is-active');
         });
-
+    });
+    $('.js-interlocking-select').each(function(){
+        const $this = $(this);
+        $this.find('.js-parent-select').on('change',function(){
+            if($(this).val()) {
+                $this.find('.js-child-select').prop('disabled',false)
+            } else {
+                $this.find('.js-child-select').val('');
+                $this.find('.js-child-select').prop('disabled',true)
+            }
+        });
     });
 });

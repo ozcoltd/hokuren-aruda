@@ -173,21 +173,23 @@
                   <input type="radio" name="group1" value="1"><span>道内農協組合員です</span>
                 </label>
                 <p class="c-form__subttl">ホクレン支所・農協:</p>
-                <div class="c-form__select">
-                  <select name="">
-                    <option value="" selected>選択してください</option>
-                    <option value="1">ダミー</option>
-                    <option value="2">ダミー</option>
-                    <option value="3">ダミー</option>
-                  </select>
-                </div>
-                <div class="c-form__select">
-                  <select name="">
-                    <option value="" selected></option>
-                    <option value="1">ダミー</option>
-                    <option value="2">ダミー</option>
-                    <option value="3">ダミー</option>
-                  </select>
+                <div class="js-interlocking-select">
+                  <div class="c-form__select">
+                    <select name="" class="js-parent-select">
+                      <option value="" selected>選択してください</option>
+                      <option value="1">ダミー</option>
+                      <option value="2">ダミー</option>
+                      <option value="3">ダミー</option>
+                    </select>
+                  </div>
+                  <div class="c-form__select">
+                    <select name="" class="js-child-select" disabled>
+                      <option value="" selected></option>
+                      <option value="1">ダミー</option>
+                      <option value="2">ダミー</option>
+                      <option value="3">ダミー</option>
+                    </select>
+                  </div>
                 </div>
               </li>
               <li class="js-kubun-item">
@@ -277,29 +279,30 @@
               <input type="password" name="" value="" class="c-form__text">
             </label>
 
-            <p class="c-form__ttl u-mt-32">お気に入りの常設展示場</p>
-            <label>
+            <div class="js-interlocking-select">
+              <label>
               <p class="c-form__subttl">エリア</p>
               <div class="c-form__select">
-                <select name="">
+                <select name="" class="js-parent-select">
                   <option value="" selected>選択してください</option>
                   <option value="1">ダミー</option>
                   <option value="2">ダミー</option>
                   <option value="3">ダミー</option>
                 </select>
               </div>
-            </label>
-            <label>
+              </label>
+              <label>
               <p class="c-form__subttl">展示場</p>
               <div class="c-form__select">
-                <select name="">
+                <select name="" class="js-child-select" disabled>
                   <option value="" selected></option>
                   <option value="1">ダミー</option>
                   <option value="2">ダミー</option>
                   <option value="3">ダミー</option>
                 </select>
               </div>
-            </label>
+              </label>
+            </div>
 
             <div class="u-mt-40">
               <button class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
