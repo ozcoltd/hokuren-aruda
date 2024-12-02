@@ -1055,6 +1055,17 @@ select option:disabled {
   border-radius: 8px;
   transition: 0.2s;
 }
+.c-form__agree {
+  margin-top: 32px;
+  padding: 24px;
+  background-color: #F0F0F0;
+}
+.c-form__agree label.u-f-14 {
+  text-align: center;
+}
+.c-form__agree label.u-f-14 input {
+  margin-right: 8px;
+}
 
 .c-menu-modal {
   display: none;
@@ -1918,7 +1929,7 @@ select option:disabled {
   margin-bottom: 32px;
 }
 .p-newcustomer-form {
-  padding: 40px 16px 0;
+  padding: 40px 16px 80px;
   background-color: #F0F0F0;
 }
 .p-newcustomer-form .u-h-lv3 {

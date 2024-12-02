@@ -237,4 +237,15 @@
             transition     : .2s;
           }
       }
+    &__agree {
+        margin-top: $m-m;
+        padding: $m-sl;
+        background-color: $c-bg-main-sub;
+        label.u-f-14 {
+            text-align: center;
+            input {
+                margin-right: $m-ss;
+            }
+        }
+    }
 }
