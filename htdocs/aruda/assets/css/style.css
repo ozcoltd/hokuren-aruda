@@ -1890,3 +1890,20 @@ select option:disabled {
 .p-customer-section .c-mypage-btn-block {
   padding-top: 0;
 }
+
+.p-customer {
+  background-color: #FFFFFF;
+}
+.p-customer-section {
+  padding-top: 16px;
+}
+.p-customer-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+.p-customer-section .p-complete-block {
+  padding: 40px 16px;
+  background-color: #F0F0F0;
+}
+.p-customer-section .c-mypage-btn-block {
+  padding-top: 0;
+}
