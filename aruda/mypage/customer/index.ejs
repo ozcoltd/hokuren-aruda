@@ -133,8 +133,8 @@
             </ul>
 
             <p class="c-form__ttl u-mt-32">組合員区分<span class="u-f-required">*</span></p>
-            <ul class="c-form__list" data-type="kubun">
-              <li>
+            <ul class="c-form__list js-kubun" data-type="kubun">
+              <li class="js-kubun-item">
                 <label class="c-form__radio">
                   <input type="radio" name="group1" value="1"><span>道内農協組合員です</span>
                 </label>
@@ -149,14 +149,14 @@
                 </div>
                 <div class="c-form__select">
                   <select name="">
-                    <option value="" selected>選択してください</option>
+                    <option value="" selected></option>
                     <option value="1">ダミー</option>
                     <option value="2">ダミー</option>
                     <option value="3">ダミー</option>
                   </select>
                 </div>
               </li>
-              <li>
+              <li class="js-kubun-item">
                 <label class="c-form__radio">
                   <input type="radio" name="group1" value="2"><span>農協組合員ではありません</span>
                 </label>

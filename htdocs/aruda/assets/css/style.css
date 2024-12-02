@@ -1849,6 +1849,12 @@ select option:disabled {
 .p-customer-form .c-form__list[data-col="2"] {
   gap: 8px;
 }
+.p-customer-form .c-form__list[data-type=kubun] li {
+  padding: 8px;
+}
+.p-customer-form .c-form__list[data-type=kubun] li.is-active {
+  background-color: #ECF6ED;
+}
 .p-customer-form .c-form .u-f-notes {
   margin-top: 4px;
   color: #8E8E8E;

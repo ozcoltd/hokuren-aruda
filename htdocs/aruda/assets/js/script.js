@@ -75,4 +75,15 @@ $(function(){
         select.style.color = "#4B4B4B";
       }
     });
+
+    //区分
+    $('.js-kubun').each(function(){
+        const $this = $(this);
+        $(this).find('input').on('change',function(){
+            var index = $this.find('input').index($(this));
+            $('.js-kubun-item').removeClass('is-active');
+            $this.find('.js-kubun-item').eq(index).addClass('is-active');
+        });
+
+    });
 });

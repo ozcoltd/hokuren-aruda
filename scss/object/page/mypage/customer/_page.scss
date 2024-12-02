@@ -21,6 +21,16 @@
                     gap: $m-ss;
                 }
             }
+            &__list {
+                &[data-type="kubun"] {
+                    li {
+                        padding:$m-ss;
+                        &.is-active {
+                            background-color: $c-bg-tertiary;
+                        }
+                    }
+                }
+            }
             .u-f-notes {
                 margin-top: $m-sss;
                 color: $c-text-g;
