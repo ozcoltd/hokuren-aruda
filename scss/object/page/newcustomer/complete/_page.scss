@@ -1,1 +1,15 @@
 @import '../../../../foundation/variables';
+.p-newcustomer-complete {
+    background-color: $c-bg-main;
+
+    &-section {
+        padding-top: $m-s;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+        .p-complete-block {
+            padding: $m-ml $m-s;
+            background-color: $c-bg-main-sub;
+        }
+    }
+}

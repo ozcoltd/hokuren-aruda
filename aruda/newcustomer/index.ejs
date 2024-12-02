@@ -7,7 +7,7 @@
   <%- include('../inc/meta') %>
 </head>
 <body>
-  <%- include('../inc/header') %>
+  <%- include('../inc/header-login') %>
   <main class="l-main p-newcustomer">
     <nav class="c-breadcrumbs">
       <ul>
@@ -23,7 +23,7 @@
         <p class="u-fs-16 u-mt-16">詳しくは<a href="#" class="u-link">ご利用案内</a>をご覧ください。</p>
 
 
-        <form method="post" action="/aruda/mypage/selling_info/confirm/" class="c-form">
+        <form method="post" action="/aruda/newcustomer/confirm/" class="c-form">
           <p class="u-f-alert">*は必須項目です</p>
             <p class="c-form__ttl">お名前<span class="u-f-required">*</span></p>
             <ul class="c-form__list" data-col="2">
@@ -259,7 +259,6 @@
   </main>
   <%- include('../inc/footer') %>
   <%- include('../inc/fixed-menu') %>
-  <%- include('../inc/menu-modal') %>
-  <%- include('../inc/membership-modal') %>
+  <%- include('../inc/menu-modal-login') %>
 </body>
 </html>

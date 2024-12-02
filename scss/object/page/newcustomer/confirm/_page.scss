@@ -1,1 +1,20 @@
 @import '../../../../foundation/variables';
+.p-newcustomer-confirm {
+    background-color: $c-bg-main;
+
+    &-section {
+        padding-top: $m-s;
+        .u-h-lv4 {
+            margin-bottom: $m-m;
+        }
+        .p-confirm-block {
+            padding: $m-ml $m-s 80px;
+            background-color: $c-bg-main-sub;
+            .c-form {
+                background-color: $c-bg-main;
+                border: 1px solid $c-border;
+                border-radius: $b-r-s;
+            }
+        }
+    }
+}

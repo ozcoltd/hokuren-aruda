@@ -24,34 +24,33 @@
 </head>
 <body>
   <header class="l-header">
-    <h1><a href="/aruda/"><img src="/aruda/assets/images/common/logo.svg" alt="中古農機情報サイト アルーダ"></a></h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#" class="js-membership-trigger">
-                    <img src="/aruda/assets/images/common/dummy.svg" alt="会員証">
-                    <span>会員証</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="/aruda/assets/images/common/dummy.svg" alt="マイページ">
-                    <span>マイページ</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<h1><a href="/aruda/"><img src="/aruda/assets/images/common/logo.svg" alt="中古農機情報サイト アルーダ"></a></h1>
+<nav>
+    <ul>
+        <li>
+            <a href="/aruda/auth/login">
+                <img src="/aruda/assets/images/common/ico_login.svg" alt="ログイン">
+                <span>ログイン</span>
+            </a>
+        </li>
+        <li>
+            <a href="/aruda/newcustomer">
+                <img src="/aruda/assets/images/common/ico_signup.svg" alt="新規登録">
+                <span>新規登録</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 </header>
-  <main class="l-main p-newcustomer">
+  <main class="l-main p-newcustomer-complete">
     <nav class="c-breadcrumbs">
       <ul>
         <li><a href="/aruda/">ホーム</a></li>
-        <li><a href="/aruda/mypage/">マイページ</a></li>
-        <li><a href="/aruda/mypage/customer/">会員情報の編集</a></li>
+        <li><a href="/aruda/newcustomer/">新規利用登録</a></li>
         <li><span>送信完了</span></li>
     </ul>
     </nav>
-    <section class="p-newcustomer-section">
+    <section class="p-newcustomer-complete-section">
       <h2 class="u-h-lv2 u-t-center">送信完了</h2>
 
       <div class="p-complete-block">
@@ -60,30 +59,6 @@
           もうしばらくお待ちください。</p>
       </div>
 
-      <div class="c-mypage-btn-block">
-        <div class="c-mypage-btn-block__inner">
-          <h4 class="u-h-lv4 u-t-center">
-            マイページ情報
-          </h4>
-          <a href="/aruda/mypage/selling_info/" class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
-            売りたい情報登録
-            <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
-          </a>
-          <a href="/aruda/mypage/buying_info/" class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
-            買いたい情報登録
-            <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
-          </a>
-
-          <a href="/aruda/mypage/mail_notification_settings/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
-            メール通知設定
-            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-          </a>
-          <a href="/aruda/mypage/customer/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
-            会員情報の編集
-            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-          </a>
-        </div>
-      </div>
     </section>
 
   </main>
@@ -141,19 +116,19 @@
         </li>
     </ul>
 </div>
-  <!-- TODO:ログイン後メニュー -->
+  <!-- TODO:ログイン前メニュー -->
 <div class="c-menu-modal js-menu-modal">
     <div class="c-menu-modal__contents">
         <div class="c-menu-modal__top">
             <ul class="l-grid" data-col="2">
                 <li>
                     <a href="" class="c-btn">
-                        <img src="/aruda/assets/images/common/ico_logout.svg" alt="" class="u-ico">ログアウト
+                        <img src="/aruda/assets/images/common/ico_login.svg" alt="" class="u-ico">ログイン
                     </a>
                 </li>
                 <li>
                     <a href="" class="c-btn" data-type="solid">
-                        <img src="/aruda/assets/images/common/ico_signup.svg" alt="" class="u-ico">マイページ
+                        <img src="/aruda/assets/images/common/ico_signup.svg" alt="" class="u-ico">新規登録
                     </a>
                 </li>
             </ul>
@@ -162,12 +137,6 @@
             <ul>
                 <li>
                     <a href="">トップページ</a>
-                </li>
-                <li>
-                    <a href="">マイページ</a>
-                </li>
-                <li>
-                    <a href="">会員証</a>
                 </li>
                 <li>
                     <a href="">さがす</a>
@@ -183,12 +152,6 @@
                 </li>
                 <li>
                     <a href="">常設展示場</a>
-                </li>
-                <li>
-                    <a href="">メール通知設定</a>
-                </li>
-                <li>
-                    <a href="">会員情報の編集</a>
                 </li>
             </ul>
         </div>
@@ -232,21 +195,6 @@
         </div>
     </div>
 </div>
-<!-- TODO:ログイン後メニュー -->
-  <div class="c-membership-modal js-membership-modal">
-    <div class="c-membership-modal__contents">
-        <div class="c-membership-modal__head">
-            <p class="u-h-lv3">会員証</p>
-            <a href="#" class="js-membership-close-trigger">
-                <img src="/aruda/assets/images/common/ico_close_g.svg" alt="" class="u-ico">
-            </a>
-        </div>
-        <div class="c-membership-modal__body">
-            <p class="u-fs-14">QRコード</p>
-            <img src="/aruda/assets/images/common/dummy_qr.png" alt="">
-            <p class="u-fs-14">会員No.<span class="u-h-lv4">012345678910</span></p>
-        </div>
-    </div>
-</div>
+<!-- TODO:ログイン前メニュー -->
 </body>
 </html>

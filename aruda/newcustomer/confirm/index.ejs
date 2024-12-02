@@ -7,21 +7,20 @@
   <%- include('../../inc/meta') %>
 </head>
 <body>
-  <%- include('../../inc/header') %>
-  <main class="l-main p-newcustomer">
+  <%- include('../../inc/header-login') %>
+  <main class="l-main p-newcustomer-confirm">
     <nav class="c-breadcrumbs">
       <ul>
         <li><a href="/aruda/">ホーム</a></li>
-        <li><a href="/aruda/mypage/">マイページ</a></li>
-        <li><a href="/aruda/mypage/customer/">会員情報の編集</a></li>
+        <li><a href="/aruda/newcustomer/">新規利用登録</a></li>
         <li><span>確認画面</span></li>
     </ul>
     </nav>
-    <section class="p-newcustomer-section">
+    <section class="p-newcustomer-confirm-section">
       <h2 class="u-h-lv4 u-t-center">確認画面</h2>
 
       <div class="p-confirm-block">
-        <form action="/aruda/mypage/selling_info/complete/" method="POST" class="c-form">
+        <form action="/aruda/newcustomer/complete/" method="POST" class="c-form">
           <ul class="c-form__confirm">
             <li>
               <p class="c-form__ttl">お名前<span class="u-f-required">*</span></p>
@@ -81,36 +80,18 @@
             </button>
           </div>
           <div class="u-mt-24">
-            <a href="/aruda/mypage/selling_info/" class="c-btn u-m-center" data-type="icon-left" data-size="l">
+            <a href="/aruda/newcustomer/" class="c-btn u-m-center" data-type="icon-left" data-size="l">
               <img src="/aruda/assets/images/common/ico_left_g.svg" alt="" class="u-ico" data-size="s">
               修正する
             </a>
           </div>
         </form>
       </div>
-
-
-      <div class="c-mypage-btn-block">
-        <div class="c-mypage-btn-block__inner">
-          <h4 class="u-h-lv4 u-t-center">
-            マイページ情報
-          </h4>
-          <a href="/aruda/mypage/mail_notification_settings/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
-            メール通知設定
-            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-          </a>
-          <a href="/aruda/mypage/customer/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
-            会員情報の編集
-            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-          </a>
-        </div>
-      </div>
     </section>
 
   </main>
   <%- include('../../inc/footer') %>
   <%- include('../../inc/fixed-menu') %>
-  <%- include('../../inc/menu-modal') %>
-  <%- include('../../inc/membership-modal') %>
+  <%- include('../../inc/menu-modal-login') %>
 </body>
 </html>
