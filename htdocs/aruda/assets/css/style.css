@@ -1850,6 +1850,7 @@ select option:disabled {
   gap: 8px;
 }
 .p-customer-form .c-form .u-f-notes {
+  margin-top: 4px;
   color: #8E8E8E;
 }
 .p-customer-form .c-form .u-f-alert {

@@ -54,5 +54,25 @@ $(function(){
         $(window).scrollTop(scrollPosition);
         $('.js-membership-modal').fadeOut();
     });
-    
+
+    //selectの色変更
+    const selects = document.getElementsByTagName("select");
+
+    // 各select要素にイベントリスナーを追加
+    Array.from(selects).forEach((select) => {
+      select.addEventListener("change", () => {
+        if (select.value === "") {
+          select.style.color = "#A0A0A0"; // 値が空の場合の文字色
+        } else {
+          select.style.color = "#4B4B4B"; // 値がある場合の文字色
+        }
+      });
+  
+      // 初期状態の文字色を設定
+      if (select.value === "") {
+        select.style.color = "#A0A0A0";
+      } else {
+        select.style.color = "#4B4B4B";
+      }
+    });
 });
