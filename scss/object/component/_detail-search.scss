@@ -1,0 +1,27 @@
+.c-detail-search {
+    background-color: $c-bg-main-sub;
+    & > .u-h-lv2 {
+        margin-bottom: $m-sl;
+    }
+    .c-form {
+        padding: 0;
+        background-color: $c-bg-main-sub;
+        label {
+           margin-top: 0; 
+        }
+    }
+    &__ttl {
+        height: 50px;
+        padding: 0 $m-s;
+        color: $c-text-w;
+        font-size: $fs-t;
+        line-height: 50px;
+        background-color: $c-bg-primary;
+    }
+    &__block {
+        padding: $m-s $m-s $m-ml;
+        &[data-type="checkBox"] {
+            padding-top: 0;
+        }
+    }
+}

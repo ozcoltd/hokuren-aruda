@@ -188,6 +188,72 @@
             }
         }
     }
+    &__checkBox {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        input {
+            display: none;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: $m-ss;
+            width: 16px;
+            height: 16px;
+            background-color: $c-bg-main;
+            border-radius: $b-r-s;
+            border: 1px solid $c-border;
+            transform: translateY(-50%);
+        }
+        &.is-check {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 11px;
+                width: 10px;
+                height: 2px;
+                background-color: $c-bg-primary;
+                transform: translateY(-50%);
+            }
+        }
+        &.is-all {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 11px;
+                width: 10px;
+                height: 6.5px;
+                background: url(/aruda/assets/images/common/ico_check.svg) center no-repeat;
+                background-size: cover;
+                transform: translateY(-50%);
+            }
+            &::before {
+                border-color: $c-border-primary;
+            }
+        }
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            // align-items: center;
+            background-color: $c-bg-main;
+            .c-form__checkBox {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 50%;
+                font-size: $fs-t-s;
+                background-color: $c-bg-main;
+                border-bottom: 1px solid $c-border;
+                &:nth-child(2n){
+                    border-left: 1px solid $c-border;
+                }
+            }
+        }
+    }
     &__confirm {
         li {
             margin-bottom: $m-s;

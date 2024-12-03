@@ -23,4 +23,17 @@
         padding: $m-s;
         background-color: $c-bg-main-sub;
     }
+    &[data-type="checkBox"] {
+        .c-accordion__btn {
+            padding-left: $m-m;
+        }
+        .c-accordion__cosntents {
+            padding: 0;
+            .c-form__checkBox {
+                padding: $m-ss $m-ss $m-ss $m-m;
+            }
+        }
+    }
 }
+
+

@@ -1,0 +1,25 @@
+@import '../../../../foundation/variables';
+.p-machine-search {
+    background-color: $c-bg-main;
+    &-info {
+        & > .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+        margin-bottom: $m-ss;
+        padding: $m-sl 0;
+    }
+    &-search {
+        padding: $m-ml $m-s;
+        background-color: $c-bg-main-sub;
+        .u-h-lv2 {
+            margin-bottom: $m-sl;
+            .u-ico {
+                margin: 0 auto;
+            }
+        }
+        .c-form {
+            border-radius: $b-r-s;
+            background-color: $c-bg-main;
+        }
+    }
+}

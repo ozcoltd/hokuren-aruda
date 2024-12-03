@@ -99,12 +99,27 @@ $(function(){
     //アコーディオン
     $('.js-accordion').each(function(){
         var $this = $(this);
-        $(this).on('click',function(e){
+        $(this).find('.js-accordion-btn').on('click',function(e){
             e.preventDefault();
+
+            //チェックボックの場合
+            if($(e.target).hasClass('js-accordion-check')) {
+                if($(this).hasClass('is-open') && $this.find('.js-accordion-check').hasClass('is-all')) {
+                    $this.find('.js-accordion-check').removeClass('is-all');
+                } else if(!$(this).hasClass('is-open') && !$this.find('.js-accordion-check').hasClass('is-all')) {
+                    $this.find('.js-accordion-check').addClass('is-all');
+                } else if(!$(this).hasClass('is-open') && $this.find('.js-accordion-check').hasClass('is-all')) {
+                    $this.find('.js-accordion-check').removeClass('is-all');
+                    return;
+                }
+            }
+
             $(this).toggleClass('is-open');
             $this.find('.js-accordion-cosntents').slideToggle();
-
+        });
+        //チェックボックス
+        $(this).find('.js-check').on('change',function(){
+            $(this).toggleClass('is-all');
         });
     });
-
 });

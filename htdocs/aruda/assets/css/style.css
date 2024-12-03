@@ -1049,6 +1049,67 @@ select option:disabled {
   border-radius: 4px;
   transform: translateY(-50%);
 }
+.c-form__checkBox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.c-form__checkBox input {
+  display: none;
+}
+.c-form__checkBox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #DDDDDD;
+  transform: translateY(-50%);
+}
+.c-form__checkBox.is-check::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  width: 10px;
+  height: 2px;
+  background-color: #2C933A;
+  transform: translateY(-50%);
+}
+.c-form__checkBox.is-all::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  width: 10px;
+  height: 6.5px;
+  background: url(/aruda/assets/images/common/ico_check.svg) center no-repeat;
+  background-size: cover;
+  transform: translateY(-50%);
+}
+.c-form__checkBox.is-all::before {
+  border-color: #2C933A;
+}
+.c-form__checkBox-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+}
+.c-form__checkBox-list .c-form__checkBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #DDDDDD;
+}
+.c-form__checkBox-list .c-form__checkBox:nth-child(2n) {
+  border-left: 1px solid #DDDDDD;
+}
 .c-form__confirm li {
   margin-bottom: 16px;
   padding-bottom: 16px;
@@ -1292,6 +1353,43 @@ select option:disabled {
   display: none;
   padding: 16px;
   background-color: #F0F0F0;
+}
+.c-accordion[data-type=checkBox] .c-accordion__btn {
+  padding-left: 32px;
+}
+.c-accordion[data-type=checkBox] .c-accordion__cosntents {
+  padding: 0;
+}
+.c-accordion[data-type=checkBox] .c-accordion__cosntents .c-form__checkBox {
+  padding: 8px 8px 8px 32px;
+}
+
+.c-detail-search {
+  background-color: #F0F0F0;
+}
+.c-detail-search > .u-h-lv2 {
+  margin-bottom: 24px;
+}
+.c-detail-search .c-form {
+  padding: 0;
+  background-color: #F0F0F0;
+}
+.c-detail-search .c-form label {
+  margin-top: 0;
+}
+.c-detail-search__ttl {
+  height: 50px;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 50px;
+  background-color: #2C933A;
+}
+.c-detail-search__block {
+  padding: 16px 16px 40px;
+}
+.c-detail-search__block[data-type=checkBox] {
+  padding-top: 0;
 }
 
 .u-t-center {
@@ -2230,4 +2328,29 @@ select option:disabled {
 .p-show_room-detail-btn {
   padding: 40px 16px 80px;
   background-color: #F0F0F0;
+}
+
+.p-machine-search {
+  background-color: #FFFFFF;
+}
+.p-machine-search-info {
+  margin-bottom: 8px;
+  padding: 24px 0;
+}
+.p-machine-search-info > .u-h-lv2 {
+  margin-bottom: 32px;
+}
+.p-machine-search-search {
+  padding: 40px 16px;
+  background-color: #F0F0F0;
+}
+.p-machine-search-search .u-h-lv2 {
+  margin-bottom: 24px;
+}
+.p-machine-search-search .u-h-lv2 .u-ico {
+  margin: 0 auto;
+}
+.p-machine-search-search .c-form {
+  border-radius: 4px;
+  background-color: #FFFFFF;
 }
