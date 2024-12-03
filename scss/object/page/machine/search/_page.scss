@@ -6,8 +6,8 @@
         & > .u-h-lv2 {
             margin-bottom: $m-m;
         }
-        margin-bottom: $m-ss;
-        padding: $m-sl 0;
+        // margin-bottom: $m-ss;
+        padding: $m-sl 0 0;
     }
     &-search {
         padding: $m-ml $m-s;
@@ -22,5 +22,9 @@
             border-radius: $b-r-s;
             background-color: $c-bg-main;
         }
+    }
+    &-btns {
+        padding: 20px 0 $m-ml;
+        background-color: $c-bg-main-sub;
     }
 }

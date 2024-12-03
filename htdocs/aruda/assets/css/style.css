@@ -1390,7 +1390,7 @@ select option:disabled {
   margin-bottom: 24px;
 }
 .c-detail-search .c-form {
-  padding: 0 0 40px;
+  padding: 0;
   background-color: #F0F0F0;
 }
 .c-detail-search .c-form label {
@@ -2370,8 +2370,7 @@ select option:disabled {
   background-color: #FFFFFF;
 }
 .p-machine-search-info {
-  margin-bottom: 8px;
-  padding: 24px 0;
+  padding: 24px 0 0;
 }
 .p-machine-search-info > .u-h-lv2 {
   margin-bottom: 32px;
@@ -2389,4 +2388,8 @@ select option:disabled {
 .p-machine-search-search .c-form {
   border-radius: 4px;
   background-color: #FFFFFF;
+}
+.p-machine-search-btns {
+  padding: 20px 0 40px;
+  background-color: #F0F0F0;
 }
