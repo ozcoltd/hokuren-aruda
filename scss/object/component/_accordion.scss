@@ -1,0 +1,26 @@
+.c-accordion {
+    &__btn {
+        position: relative;
+        display: block;
+        padding: $m-s;
+        color: $c-text;
+        border-top: 1px solid $c-border;
+        border-bottom: 1px solid $c-border;
+        .u-ico {
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+    &.is-open {
+        .u-ico {
+            transform: translateY(-50%);
+        }
+    }
+    &__cosntents {
+        display: none;
+        padding: $m-s;
+        background-color: $c-bg-main-sub;
+    }
+}

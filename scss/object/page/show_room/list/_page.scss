@@ -1,0 +1,24 @@
+@import '../../../../foundation/variables';
+.p-show_room-list {
+    background-color: $c-bg-main;
+
+    &-section {
+        padding-top: $m-s;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+    }
+    &-block {
+        padding-bottom: 80px;
+        background-color: $c-bg-main-sub;
+        .p-tab-wrap {
+            padding: $m-m $m-s $m-s;
+        }
+        .p-map-block {
+            padding: 0 $m-s $m-s;
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+}

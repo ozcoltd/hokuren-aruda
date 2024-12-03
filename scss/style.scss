@@ -22,6 +22,8 @@
 @import 'object/component/modal';
 @import 'object/component/bnr';
 @import 'object/component/breadcrumbs';
+@import 'object/component/accordion';
+
 
 @import 'object/utility/align';
 @import 'object/utility/text';
@@ -47,3 +49,4 @@
 @import 'object/page/newcustomer/page';
 @import 'object/page/newcustomer/confirm/page';
 @import 'object/page/newcustomer/complete/page';
+@import 'object/page/show_room/list/page';

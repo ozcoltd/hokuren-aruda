@@ -96,4 +96,15 @@ $(function(){
             }
         });
     });
+    //アコーディオン
+    $('.js-accordion').each(function(){
+        var $this = $(this);
+        $(this).on('click',function(e){
+            e.preventDefault();
+            $(this).toggleClass('is-open');
+            $this.find('.js-accordion-cosntents').slideToggle();
+
+        });
+    });
+
 });

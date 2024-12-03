@@ -283,3 +283,29 @@
         }
     }
 }
+.c-exhibition-block {
+    padding: $m-s;
+    background-color: $c-bg-main;
+    border-radius: $b-r-s;
+    border: 1px solid $c-border;
+    & + .c-exhibition-block {
+        margin-top: $m-s;
+    }
+    &__ttl {
+        font-size: $fs-t;
+        font-weight: bold;
+    }
+    &__sub-ttl {
+        margin-bottom: $m-sss;
+        font-size: $fs-t-s;
+        font-weight: bold;
+    }
+    &__txt {
+        font-size: $fs-t-s;
+    }
+    li {
+        margin-bottom: $m-s;
+        padding-bottom: $m-sl;
+        border-bottom: 1px solid $c-border;
+    }
+}
