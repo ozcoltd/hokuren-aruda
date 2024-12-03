@@ -4,10 +4,17 @@
         margin-bottom: $m-sl;
     }
     .c-form {
-        padding: 0;
+        padding: 0 0 $m-ml;
         background-color: $c-bg-main-sub;
         label {
            margin-top: 0; 
+        }
+        &__list {
+            flex-wrap: wrap;
+            gap: $m-s;
+            li {
+                width: calc(50% - 16px);
+            }
         }
     }
     &__ttl {
@@ -22,6 +29,15 @@
         padding: $m-s $m-s $m-ml;
         &[data-type="checkBox"] {
             padding-top: 0;
+        }
+    }
+    &__img-map{
+        padding: 22px;
+        background-color: $c-bg-main;
+        border-radius: $b-r-s;
+        img {
+            width: 300px;
+            margin: 0 auto;
         }
     }
 }

@@ -12,6 +12,11 @@
             right: 16px;
             transform: translateY(-50%) rotate(180deg);
         }
+        &.is-open {
+            .u-ico {
+                transform: translateY(-50%);
+            }
+        }
     }
     &.is-open {
         .u-ico {

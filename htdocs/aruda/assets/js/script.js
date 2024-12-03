@@ -125,7 +125,7 @@ $(function(){
                     $check.each(function(){
                         $(this).addClass('is-all');
                         $(this).find('input').prop('checked',true);
-                    })
+                    });
                 } else if(!$(this).hasClass('is-open') && $this.find('.js-accordion-check').hasClass('is-all')) {
                     //アコーディオンが閉じてて、全選択チェックがついてる場合
                     $this.find('.js-accordion-check').removeClass('is-all');
@@ -163,4 +163,17 @@ $(function(){
             }
         });
     });
+    //map
+    $('.js-map').on('click',function(e){
+        e.preventDefault();
+        var target = $(this).attr('href');        
+        $(target).find('.js-accordion-check').addClass('is-all');
+        $(target).find('.js-accordion-contents').find('.js-check').each(function(){
+            $(this).addClass('is-all');
+            $(this).find('input').prop('checked',true);
+        });
+        $(target).find('.js-accordion-btn').addClass('is-open');
+        $(target).find('.js-accordion-contents').slideDown();
+    });
+
 });

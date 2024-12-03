@@ -251,6 +251,9 @@
                 &:nth-child(2n){
                     border-left: 1px solid $c-border;
                 }
+                &:last-child:nth-child(odd) {
+                    width: 100%;
+                }
                 &.is-all {
                     background-color: $c-bg-tertiary;
                 }

@@ -10,6 +10,12 @@
     background-color: $c-bg-main;
     border: 1px solid $c-border-primary;
     border-radius: 24px;
+    &--reset {
+        @extend .c-btn;
+        color: $c-text-w;
+        background-color: #A0A0A0;
+        border-color: #A0A0A0;
+    }
     .u-ico {
         margin-right: 4px;
     }
