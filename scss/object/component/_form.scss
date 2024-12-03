@@ -251,6 +251,9 @@
                 &:nth-child(2n){
                     border-left: 1px solid $c-border;
                 }
+                &.is-all {
+                    background-color: $c-bg-tertiary;
+                }
             }
         }
     }

@@ -99,27 +99,68 @@ $(function(){
     //アコーディオン
     $('.js-accordion').each(function(){
         var $this = $(this);
+        var $check = $this.find('.js-accordion-contents').find('.js-check');
+
+
         $(this).find('.js-accordion-btn').on('click',function(e){
             e.preventDefault();
 
             //チェックボックの場合
             if($(e.target).hasClass('js-accordion-check')) {
-                if($(this).hasClass('is-open') && $this.find('.js-accordion-check').hasClass('is-all')) {
+                if(
+                    ($(this).hasClass('is-open') && $this.find('.js-accordion-check').hasClass('is-all'))
+                    ||  ($(this).hasClass('is-open') && $this.find('.js-accordion-check').hasClass('is-check'))
+                ) {
+                    //アコーディオンが開いてて、チェックがついてる場合
                     $this.find('.js-accordion-check').removeClass('is-all');
+                    $this.find('.js-accordion-check').removeClass('is-check');
+                    $check.each(function(){
+                        $(this).removeClass('is-all');
+                        $(this).find('input').prop('checked',false);
+                    });
+
                 } else if(!$(this).hasClass('is-open') && !$this.find('.js-accordion-check').hasClass('is-all')) {
+                    //アコーディオンが閉じてて、全選択チェックがついてない場合
                     $this.find('.js-accordion-check').addClass('is-all');
+                    $check.each(function(){
+                        $(this).addClass('is-all');
+                        $(this).find('input').prop('checked',true);
+                    })
                 } else if(!$(this).hasClass('is-open') && $this.find('.js-accordion-check').hasClass('is-all')) {
+                    //アコーディオンが閉じてて、全選択チェックがついてる場合
                     $this.find('.js-accordion-check').removeClass('is-all');
+                    $this.find('.js-accordion-check').removeClass('is-check');
+                    $check.each(function(){
+                        $(this).removeClass('is-all');
+                        $(this).find('input').prop('checked',false);
+                    });
                     return;
                 }
             }
 
             $(this).toggleClass('is-open');
-            $this.find('.js-accordion-cosntents').slideToggle();
+            $this.find('.js-accordion-contents').slideToggle();
         });
         //チェックボックス
         $(this).find('.js-check').on('change',function(){
             $(this).toggleClass('is-all');
+            var allCheckboxes = $this.find('.js-accordion-contents').find('.js-check input');
+            var checkedCheckboxes = $this.find('.js-accordion-contents').find('.js-check input:checked');
+            if(checkedCheckboxes.length > 0) {
+                if (allCheckboxes.length === checkedCheckboxes.length) {
+                    //全てにチェックがついてる場合
+                    $this.find('.js-accordion-check').removeClass('is-check');
+                    $this.find('.js-accordion-check').addClass('is-all');
+                } else {
+                    //1つ以上チェックがついてる場合
+                    $this.find('.js-accordion-check').removeClass('is-all');
+                    $this.find('.js-accordion-check').addClass('is-check');
+                }
+            } else {
+                //チェックがついてない場合
+                $this.find('.js-accordion-check').removeClass('is-all');
+                $this.find('.js-accordion-check').removeClass('is-check');
+            }
         });
     });
 });
