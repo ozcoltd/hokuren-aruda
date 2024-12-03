@@ -10,6 +10,11 @@
     background-color: $c-bg-main;
     border: 1px solid $c-border-primary;
     border-radius: 24px;
+    &-sticky {
+        position: sticky;
+        bottom: 80px;
+        left: 0;
+    }
     &--reset {
         @extend .c-btn;
         color: $c-text-w;

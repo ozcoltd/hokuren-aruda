@@ -297,6 +297,11 @@ select option:disabled {
   border: 1px solid #2C933A;
   border-radius: 24px;
 }
+.c-btn-sticky {
+  position: sticky;
+  bottom: 80px;
+  left: 0;
+}
 .c-btn--reset {
   color: #fff;
   background-color: #A0A0A0;
@@ -2361,6 +2366,7 @@ select option:disabled {
 }
 
 .p-machine-search {
+  position: relative;
   background-color: #FFFFFF;
 }
 .p-machine-search-info {
