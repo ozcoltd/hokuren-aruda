@@ -2674,3 +2674,52 @@ select option:disabled {
 .p-machine-search-result .c-table {
   margin: 0 -16px;
 }
+
+.p-machine-detail {
+  position: relative;
+  background-color: #FFFFFF;
+}
+.p-machine-detail-section {
+  padding-top: 24px;
+}
+.p-machine-detail-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+.p-machine-detail-section .c-more-block {
+  height: 41px;
+  margin-top: 32px;
+  padding: 0;
+}
+.p-machine-detail-section .c-more-block.is-open {
+  overflow: visible;
+}
+.p-machine-detail-section .c-more-block__contents {
+  opacity: 0;
+}
+.p-machine-detail-section .c-more-block__btn {
+  background: transparent;
+}
+.p-machine-detail-section .c-more-block__btn span {
+  margin: 0 8px 0 0;
+}
+.p-machine-detail-contents {
+  padding: 40px 16px;
+  background-color: #F0F0F0;
+}
+.p-machine-detail-block {
+  padding: 32px 16px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+.p-machine-detail-block__ttl {
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.p-machine-detail-block li + li {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #DDDDDD;
+}
+.p-machine-detail .c-table {
+  margin: 0 -16px;
+}
