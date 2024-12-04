@@ -962,6 +962,7 @@ select option:disabled {
   margin-bottom: 16px;
 }
 .c-exhibition-hall-contact {
+  background-color: #FFFFFF;
   border: 1px solid #DDDDDD;
   border-radius: 4px;
 }
@@ -1426,6 +1427,13 @@ select option:disabled {
 .c-form__agree label.u-f-14 input {
   margin-right: 8px;
 }
+.c-form__textarea {
+  padding: 8px;
+  width: 100%;
+  min-height: 247px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}
 
 .c-menu-modal {
   display: none;
@@ -1565,6 +1573,8 @@ select option:disabled {
 }
 
 .c-breadcrumbs {
+  overflow-x: auto;
+  white-space: nowrap;
   padding: 16px 16px 8px;
 }
 .c-breadcrumbs ul {
@@ -1842,7 +1852,7 @@ select option:disabled {
 }
 
 .u-mt-32 {
-  margin-top: 32px;
+  margin-top: 32px !important;
 }
 
 .u-mt-40 {
@@ -2822,4 +2832,42 @@ select option:disabled {
 .p-machine-detail-btn {
   padding: 48px 16px;
   background-color: #F0F0F0;
+}
+
+.p-machine-inquiry {
+  position: relative;
+  background-color: #FFFFFF;
+}
+.p-machine-inquiry-section {
+  padding-top: 24px;
+}
+.p-machine-inquiry-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+.p-machine-inquiry-section .c-form {
+  margin: 48px -16px 0;
+  background-color: #FFFFFF;
+}
+.p-machine-inquiry-section .c-form__list[data-col="2"] {
+  gap: 8px;
+}
+.p-machine-inquiry-section .c-form__list[data-type=kubun] li {
+  padding: 8px;
+}
+.p-machine-inquiry-section .c-form__list[data-type=kubun] li label {
+  margin-top: 0;
+}
+.p-machine-inquiry-section .c-form__list[data-type=kubun] li.is-active {
+  background-color: #ECF6ED;
+}
+.p-machine-inquiry-contents {
+  padding: 20px 16px 0;
+  background-color: #F0F0F0;
+}
+.p-machine-inquiry .c-exhibition-hall,
+.p-machine-inquiry .c-info {
+  background-color: #F0F0F0;
+}
+.p-machine-inquiry .c-info {
+  padding-bottom: 80px;
 }

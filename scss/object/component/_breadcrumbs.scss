@@ -1,4 +1,6 @@
 .c-breadcrumbs {
+    overflow-x: auto;
+    white-space: nowrap;
     padding: $m-s $m-s $m-ss;
 
     ul {

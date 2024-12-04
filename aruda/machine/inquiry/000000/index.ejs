@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <title>中古農機情報サイトアルーダ | 機種お問い合わせ</title>
+  <meta name="description" content="中古農機情報サイトアルーダは、トラクター、コンバイン、田植機をはじめ、多種多様な優良中古農業機械を多数掲載！みなさまの中古農機探しを応援します!!中古農機の出品も受け付けております。お気軽にお問い合わせください。">
+  <%- include('../../../inc/ogp') %>
+  <%- include('../../../inc/meta') %>
+</head>
+<body>
+  <%- include('../../../inc/header') %>
+  <main class="l-main p-machine-inquiry">
+    <nav class="c-breadcrumbs">
+      <ul>
+        <li><a href="/aruda/">ホーム</a></li>
+        <li><a href="/aruda/machine/search/">中古農機をさがす</a></li>
+        <li><a href="aruda/machine/detail/000000/">中古農機情報詳細</a></li>
+        <li><span>機種お問い合わせ</span></li>
+      </ul>
+    </nav>
+    <section class="p-machine-inquiry-section">
+      <h2 class="u-h-lv2 u-t-center">機種お問い合わせ</h2>
+      <div class="p-machine-inquiry-contents">
+
+          <div class="c-detail-block">
+            <ul>
+              <li>
+                <p class="c-detail-block__ttl">問い合わせ先</p>
+                <p class="c-detail-block__txt">〇〇〇〇〇〇〇〇〇〇〇〇</p>
+              </li>
+              <li>
+                <p class="c-detail-block__ttl">照会No.</p>
+                <p class="c-detail-block__txt">0000000</p>
+              </li>
+              <li>
+                <p class="c-detail-block__ttl">機械名</p>
+                <p class="c-detail-block__txt">〇〇〇〇〇〇〇〇〇〇〇〇</p>
+              </li>
+              <li>
+                <p class="c-detail-block__ttl">銘柄名</p>
+                <p class="c-detail-block__txt">〇〇〇〇〇〇〇〇〇〇〇〇</p>
+              </li>
+            </ul>
+          </div>
+
+
+          <form method="post" action="/aruda/mypage/selling_info/confirm/" class="c-form">
+            <p class="u-f-alert">*は必須項目です</p>
+              <p class="c-form__ttl">お名前<span class="u-f-required">*</span></p>
+              <ul class="c-form__list" data-col="2">
+                <li>
+                  <label>
+                    <p class="c-form__subttl">姓</p>
+                    <input type="text" name="" value="" class="c-form__text">
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <p class="c-form__subttl">名</p>
+                    <input type="text" name="" value="" class="c-form__text">
+                  </label>
+                </li>
+              </ul>
+              <p class="c-form__ttl u-mt-32">お名前（フリガナ）<span class="u-f-required">*</span></p>
+              <ul class="c-form__list" data-col="2">
+                <li>
+                  <label>
+                    <p class="c-form__subttl">セイ</p>
+                    <input type="text" name="" value="" class="c-form__text">
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <p class="c-form__subttl">メイ</p>
+                    <input type="text" name="" value="" class="c-form__text">
+                  </label>
+                </li>
+              </ul>
+              <p class="c-form__ttl u-mt-32">生年月日<span class="u-f-required">*</span></p>
+              <ul class="c-form__list" data-type="date">
+                <li>
+                  <label>
+                    <div class="c-form__select">
+                      <select name="">
+                        <option value="" selected></option>
+                        <option value="1">ダミー</option>
+                        <option value="2">ダミー</option>
+                        <option value="3">ダミー</option>
+                      </select>
+                    </div>
+                    <p class="c-form__subttl">年</p>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="c-form__select">
+                      <select name="">
+                        <option value="" selected></option>
+                        <option value="1">ダミー</option>
+                        <option value="2">ダミー</option>
+                        <option value="3">ダミー</option>
+                      </select>
+                    </div>
+                    <p class="c-form__subttl">月</p>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="c-form__select">
+                      <select name="">
+                        <option value="" selected></option>
+                        <option value="1">ダミー</option>
+                        <option value="2">ダミー</option>
+                        <option value="3">ダミー</option>
+                      </select>
+                    </div>
+                    <p class="c-form__subttl">日</p>
+                  </label>
+                </li>
+              </ul>
+  
+              <p class="c-form__ttl u-mt-32">組合員区分<span class="u-f-required">*</span></p>
+              <ul class="c-form__list js-kubun" data-type="kubun">
+                <li class="js-kubun-item">
+                  <label class="c-form__radio">
+                    <input type="radio" name="group1" value="1"><span>道内農協組合員です</span>
+                  </label>
+                  <p class="c-form__subttl">ホクレン支所・農協:</p>
+                  <div class="js-interlocking-select">
+                    <div class="c-form__select">
+                      <select name="" class="js-parent-select">
+                        <option value="" selected>選択してください</option>
+                        <option value="1">ダミー</option>
+                        <option value="2">ダミー</option>
+                        <option value="3">ダミー</option>
+                      </select>
+                    </div>
+                    <div class="c-form__select">
+                      <select name="" class="js-child-select" disabled>
+                        <option value="" selected></option>
+                        <option value="1">ダミー</option>
+                        <option value="2">ダミー</option>
+                        <option value="3">ダミー</option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+                <li class="js-kubun-item">
+                  <label class="c-form__radio">
+                    <input type="radio" name="group1" value="2"><span>農協組合員ではありません</span>
+                  </label>
+                </li>
+              </ul>
+  
+              <p class="c-form__ttl u-mt-32">ご住所<span class="u-f-required">*</span></p>
+              <label>
+                <p class="c-form__subttl">郵便番号</p>
+                <ul class="c-form__list" data-type="zip-code">
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                </ul>
+              </label>
+              <label>
+                <p class="c-form__subttl">都道府県</p>
+                <div class="c-form__select">
+                  <select name="">
+                    <option value="" selected>選択してください</option>
+                    <option value="1">ダミー</option>
+                    <option value="2">ダミー</option>
+                    <option value="3">ダミー</option>
+                  </select>
+                </div>
+              </label>
+              <label>
+                <p class="c-form__subttl">市区町村・番地</p>
+                <input type="text" name="" value="" class="c-form__text">
+              </label>
+              <label>
+                <p class="c-form__subttl">アパート・マンション名</p>
+                <input type="text" name="" value="" class="c-form__text">
+              </label>
+  
+              <p class="c-form__ttl u-mt-32">電話番号（いずれかご入力ください）<span class="u-f-required">*</span></p>
+              <label>
+                <p class="c-form__subttl">ご自宅</p>
+                <ul class="c-form__list" data-type="tel">
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                </ul>
+              </label>
+              <label>
+                <p class="c-form__subttl">携帯電話</p>
+                <ul class="c-form__list" data-type="tel">
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                </ul>
+              </label>
+
+              <label class="u-mt-32">
+                <p class="c-form__subttl">FAX</p>
+                <ul class="c-form__list" data-type="tel">
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                  <li>
+                    <input type="number" name="" value="" class="c-form__text">
+                  </li>
+                </ul>
+              </label>
+              <label>
+                <p class="c-form__ttl u-mt-32">メールアドレス<span class="u-f-required">*</span></p>
+                <input type="email" name="" value="" class="c-form__text">
+              </label>
+              <label>
+                <p class="c-form__subttl">確認のためもう一度ご入力ください。</p>
+                <input type="email" name="" value="" class="c-form__text">
+              </label>
+
+              <p class="c-form__ttl u-mt-32">お問い合わせ内容<span class="u-f-required">*</span></p>
+              <ul class="c-form__list" data-col="2">
+                <li>
+                  <label class="c-form__radio">
+                    <input type="radio" name="group2" value="1"><span>商談希望</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="c-form__radio">
+                    <input type="radio" name="group2" value="2"><span>お問い合わせ</span>
+                  </label>
+                </li>
+              </ul>
+              <textarea name="" class="c-form__textarea u-mt-16"></textarea>
+              <div class="u-mt-40">
+                <button class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
+                  確認
+                  <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
+                </button>
+              </div>
+              <div class="u-mt-24">
+                <a href="/" class="c-btn u-m-center" data-type="icon-left" data-size="l">
+                  <img src="/aruda/assets/images/common/ico_left_g.svg" alt="" class="u-ico" data-size="s">
+                  戻る
+                </a>
+              </div>
+          </form>
+      </div>
+      <div class="c-exhibition-hall">
+        <h4 class="u-h-lv4 u-t-center">エリア・展示場情報</h4>
+          <div class="c-exhibition-hall-contact">
+            <p class="c-exhibition-hall-contact__ttl">展示場名</p>
+            <p class="c-exhibition-hall-contact__info">〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+            <div class="c-exhibition-hall-contact__contact">
+              <p class="u-fs-14">お問い合わせ</p>
+              <ul class="l-grid" data-col="2">
+                <li>
+                  <a href="" class="c-btn" data-type="solid-icon-left" data-size="s">
+                    <img src="/aruda/assets/images/common/ico_phone_w.svg" alt="" class="u-ico" data-size="s">
+                    電話
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="c-btn" data-type="solid-icon-left" data-size="s">
+                    <img src="/aruda/assets/images/common/ico_mail_w.svg" alt="" class="u-ico" data-size="s">
+                    メール
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="c-info">
+        <h4 class="u-h-lv4 u-t-center">登録した展示場からのお知らせ</h4>
+        <div class="c-info__box">
+          <ul class="c-info__list">
+            <li class="c-info__item">
+              <div class="c-info__img">
+                <img src="https://placehold.jp/88x50.png" alt="">
+              </div>
+              <div class="c-info__contents">
+                <p class="c-info__date">2000.00.00</p>
+                <ul class="c-tag-list">
+                  <li class="c-tag">お知らせ</li>
+                  <li class="c-tag">フェア</li>
+                  <li class="c-tag">キャンペーン</li>
+                </ul>
+                <p class="c-info__shop">アルーダ士別</p>
+                <p class="c-info__ttl">冬季格納について冬季格納について冬季格納について</p>
+              </div>
+            </li>
+            <li class="c-info__item">
+              <div class="c-info__img">
+                <img src="https://placehold.jp/88x50.png" alt="">
+              </div>
+              <div class="c-info__contents">
+                <p class="c-info__date">2000.00.00</p>
+                <ul class="c-tag-list">
+                  <li class="c-tag">お知らせ</li>
+                  <li class="c-tag">フェア</li>
+                  <li class="c-tag">キャンペーン</li>
+                </ul>
+                <p class="c-info__shop">アルーダ士別</p>
+                <p class="c-info__ttl">冬季格納について冬季格納について冬季格納について</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('../../../inc/footer') %>
+  <%- include('../../../inc/fixed-menu') %>
+  <%- include('../../../inc/menu-modal') %>
+  <%- include('../../../inc/membership-modal') %>
+</body>
+</html>

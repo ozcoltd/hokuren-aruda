@@ -1,0 +1,42 @@
+@import '../../../../foundation/variables';
+.p-machine-inquiry {
+    position: relative;
+    background-color: $c-bg-main;
+    &-section {
+        padding-top: $m-sl;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+        .c-form {
+            margin: $m-l -16px 0;
+            background-color: $c-bg-main;
+            &__list {
+                &[data-col="2"] {
+                    gap: $m-ss;
+                }
+                &[data-type="kubun"] {
+                    li {
+                        padding: $m-ss;
+                        label {
+                            margin-top: 0;
+                        }
+                        &.is-active {
+                            background-color: $c-bg-tertiary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-contents {
+        padding: 20px $m-s 0;
+        background-color: $c-bg-main-sub;
+    }
+    .c-exhibition-hall,
+    .c-info {
+        background-color: $c-bg-main-sub;
+    }
+    .c-info {
+        padding-bottom: $m-xl;
+    }
+}

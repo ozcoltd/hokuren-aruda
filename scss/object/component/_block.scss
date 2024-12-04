@@ -453,6 +453,7 @@
         margin-bottom: $m-s;
     }
     &-contact {
+        background-color: $c-bg-main;
         border: 1px solid $c-border;
         border-radius: $b-r-s;
         &__ttl {
