@@ -1,0 +1,25 @@
+@import '../../../../foundation/variables';
+.p-account{
+    background-color: $c-bg-main;
+
+    &-section {
+        padding-top: $m-s;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+        .c-form {
+            background-color: $c-bg-main;
+            border-radius: $b-r-s;
+
+            .c-btn + .u-h-lv4 {
+                margin-top: $m-m;
+                padding-top: $m-m;
+                border-top: 1px solid $c-border;
+            }
+        }
+    }
+    &-contents {
+        padding: $m-ml $m-s $m-xl;
+        background-color: $c-bg-main-sub;
+    }
+}
