@@ -309,3 +309,126 @@
         border-bottom: 1px solid $c-border;
     }
 }
+.c-search-result-block {
+    padding-top: $m-l;
+    background-color: $c-bg-main-sub;
+    &__num {
+        margin-bottom: $m-s;
+        text-align: center;
+        font-size: $fs-h-lv2;
+        font-weight: 700;
+    }
+    &__menu {
+        display: flex;
+        align-items: end;
+        gap: 8px;
+        padding: 0 0 $m-sl;
+        li {
+            p {
+                margin-bottom: $m-ss;
+            }
+            &:nth-child(1) {
+                width: 27.4%;
+            }
+            &:nth-child(2) {
+                width: 42.2%;
+            }
+        }
+    }
+    &__grid-btn {
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: $c-bg-main;
+        border-radius: $b-r-s;
+        border: 1px solid $c-border;
+        &::before,
+        &::after,
+        span::before,
+        span::after {
+            content: '';
+            position: absolute;
+            width: 11px;
+            height: 11px;
+            background: #A0A0A0;
+        }
+        &::before {
+            top: 7px;
+            left: 7px;
+        }
+        &::after {
+            top: 7px;
+            right: 7px;
+        }
+        span::before {
+            bottom: 7px;
+            left: 7px;
+        }
+        span::after {
+            bottom: 7px;
+            right: 7px;
+        }
+        &.is-active {
+            background-color: $c-bg-primary;
+            &::before,
+            &::after,
+            span::before,
+            span::after {
+                background: $c-bg-main;
+            }
+        }
+    }
+    &__list-btn {
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: $c-bg-main;
+        border-radius: $b-r-s;
+        border: 1px solid $c-border;
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: 7px;
+            left: 13px;
+            width: 2px;
+            height: 26px;
+            background-color: $c-bg-main;
+        }
+        span {
+            position: absolute;
+            top: 7px;
+            left: 6px;
+            width: 26px;
+            height: 6px;
+            background-color: #A0A0A0;
+            &:nth-child(2) {
+                top: 17px;
+            }
+            &:nth-child(3) {
+                top: 27px;
+            }
+        }
+        &.is-active {
+            background-color: $c-bg-primary;
+            &::before {
+                background-color: $c-bg-primary;
+            }
+            span {
+                background-color: $c-bg-main;
+            }
+        }
+    }
+    &__display {
+        display: none;
+        &.is-active {
+            display: block;
+        }
+    }
+
+    .l-grid {
+        gap: $m-m $m-s;
+    }
+}

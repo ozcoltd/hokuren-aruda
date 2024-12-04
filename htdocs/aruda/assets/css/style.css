@@ -813,6 +813,125 @@ select option:disabled {
   border-bottom: 1px solid #DDDDDD;
 }
 
+.c-search-result-block {
+  padding-top: 48px;
+  background-color: #F0F0F0;
+}
+.c-search-result-block__num {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+.c-search-result-block__menu {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+  padding: 0 0 24px;
+}
+.c-search-result-block__menu li p {
+  margin-bottom: 8px;
+}
+.c-search-result-block__menu li:nth-child(1) {
+  width: 27.4%;
+}
+.c-search-result-block__menu li:nth-child(2) {
+  width: 42.2%;
+}
+.c-search-result-block__grid-btn {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #DDDDDD;
+}
+.c-search-result-block__grid-btn::before, .c-search-result-block__grid-btn::after,
+.c-search-result-block__grid-btn span::before,
+.c-search-result-block__grid-btn span::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background: #A0A0A0;
+}
+.c-search-result-block__grid-btn::before {
+  top: 7px;
+  left: 7px;
+}
+.c-search-result-block__grid-btn::after {
+  top: 7px;
+  right: 7px;
+}
+.c-search-result-block__grid-btn span::before {
+  bottom: 7px;
+  left: 7px;
+}
+.c-search-result-block__grid-btn span::after {
+  bottom: 7px;
+  right: 7px;
+}
+.c-search-result-block__grid-btn.is-active {
+  background-color: #2C933A;
+}
+.c-search-result-block__grid-btn.is-active::before, .c-search-result-block__grid-btn.is-active::after,
+.c-search-result-block__grid-btn.is-active span::before,
+.c-search-result-block__grid-btn.is-active span::after {
+  background: #FFFFFF;
+}
+.c-search-result-block__list-btn {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #DDDDDD;
+}
+.c-search-result-block__list-btn::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 7px;
+  left: 13px;
+  width: 2px;
+  height: 26px;
+  background-color: #FFFFFF;
+}
+.c-search-result-block__list-btn span {
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 26px;
+  height: 6px;
+  background-color: #A0A0A0;
+}
+.c-search-result-block__list-btn span:nth-child(2) {
+  top: 17px;
+}
+.c-search-result-block__list-btn span:nth-child(3) {
+  top: 27px;
+}
+.c-search-result-block__list-btn.is-active {
+  background-color: #2C933A;
+}
+.c-search-result-block__list-btn.is-active::before {
+  background-color: #2C933A;
+}
+.c-search-result-block__list-btn.is-active span {
+  background-color: #FFFFFF;
+}
+.c-search-result-block__display {
+  display: none;
+}
+.c-search-result-block__display.is-active {
+  display: block;
+}
+.c-search-result-block .l-grid {
+  gap: 32px 16px;
+}
+
 .c-tag {
   height: 19px;
   padding: 2px 8px;
@@ -1428,6 +1547,59 @@ select option:disabled {
   margin: 0 auto;
 }
 
+.c-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.c-table thead th {
+  position: sticky;
+  top: 57px;
+  z-index: 1;
+  color: #fff;
+  font-size: 12px;
+  background-color: #2C933A;
+  border: 1px solid #DDDDDD;
+  padding: 16px 14px;
+}
+.c-table thead th:nth-child(1) {
+  width: 37%;
+  border-left: none;
+}
+.c-table thead th:nth-child(2) {
+  width: 22.4%;
+}
+.c-table thead th:nth-child(3) {
+  width: 17%;
+  padding: 16px 5px;
+}
+.c-table thead th:nth-child(4) {
+  width: 23.4%;
+  border-right: none;
+}
+.c-table tbody tr {
+  cursor: pointer;
+}
+.c-table tbody td {
+  font-size: 13px;
+  text-align: left;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+}
+.c-table tbody td:nth-child(1) {
+  padding: 12px 8px;
+  border-left: none;
+}
+.c-table tbody td:nth-child(2) {
+  padding: 12px 6px;
+}
+.c-table tbody td:nth-child(3) {
+  padding: 10px;
+}
+.c-table tbody td:nth-child(4) {
+  padding: 12px 4px;
+  border-right: none;
+}
+
 .u-t-center {
   text-align: center;
 }
@@ -1568,6 +1740,21 @@ select option:disabled {
 }
 .c-alert-txt .u-ico {
   margin-right: 4px;
+}
+
+.u-manufacturer,
+.u-model-number {
+  color: #8E8E8E;
+  font-size: 12px;
+}
+
+.u-price {
+  font-size: 13px;
+  font-weight: bold;
+}
+.u-price span {
+  font-size: 10px;
+  color: #8E8E8E;
 }
 
 .u-ico {
@@ -2439,4 +2626,7 @@ select option:disabled {
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px solid #DDDDDD;
+}
+.p-machine-search-result .c-table {
+  margin: 0 -16px;
 }

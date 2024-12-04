@@ -175,5 +175,13 @@ $(function(){
         $(target).find('.js-accordion-btn').addClass('is-open');
         $(target).find('.js-accordion-contents').slideDown();
     });
-
+    //検索結果表示切替
+    $('.js-display-toggle').on('click',function(e){
+        e.preventDefault();
+        if($(this).hasClass('is-active')) { return; }
+        $('.js-display-toggle').removeClass('is-active');
+        $(this).addClass('is-active');
+        $('.js-display-contents').find('> div').removeClass('is-active');
+        $($(this).attr('href')).addClass('is-active');
+    });
 });

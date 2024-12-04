@@ -81,3 +81,16 @@
         margin-right: $m-sss;
     }
 }
+.u-manufacturer,
+.u-model-number {
+    color: $c-text-g;
+    font-size: $fs-t-ss;
+}
+.u-price {
+    font-size: 13px;
+    font-weight: bold;
+    span {
+       font-size: 10px;
+       color: $c-text-g; 
+    }
+}
