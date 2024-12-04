@@ -1600,6 +1600,50 @@ select option:disabled {
   border-right: none;
 }
 
+.c-pagenation {
+  margin-top: 16px;
+  position: relative;
+}
+.c-pagenation__prev, .c-pagenation__next, .c-pagenation__num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #4B4B4B;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #DDDDDD;
+}
+.c-pagenation__prev.is-current, .c-pagenation__next.is-current, .c-pagenation__num.is-current {
+  color: #fff;
+  background-color: #2C933A;
+}
+.c-pagenation__prev.is-disabled, .c-pagenation__next.is-disabled, .c-pagenation__num.is-disabled {
+  background-color: #A0A0A0;
+}
+.c-pagenation__prev.is-disabled .u-ico, .c-pagenation__next.is-disabled .u-ico, .c-pagenation__num.is-disabled .u-ico {
+  opacity: 0.5;
+}
+.c-pagenation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.c-pagenation__prev, .c-pagenation__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.c-pagenation__prev {
+  left: 0;
+}
+.c-pagenation__next {
+  right: 0;
+}
+
 .u-t-center {
   text-align: center;
 }

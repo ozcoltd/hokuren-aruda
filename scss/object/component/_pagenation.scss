@@ -1,0 +1,48 @@
+.c-pagenation {
+    margin-top: $m-s;
+    position: relative;
+    &__prev,
+    &__next,
+    &__num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        color: $c-text;
+        font-size: $fs-t-s;
+        background-color: $c-bg-main;
+        border-radius: 20px;
+        border: 1px solid $c-border;
+        &.is-current {
+            color: $c-text-w;
+           background-color: $c-bg-primary; 
+        }
+        &.is-disabled {
+            background-color: #A0A0A0;
+            .u-ico {
+                opacity: 0.5;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__prev {
+        left: 0;
+    }
+    &__next {
+        right: 0;
+    }
+}
+
+
