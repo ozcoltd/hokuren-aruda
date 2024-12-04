@@ -1,0 +1,15 @@
+@import '../../../../foundation/variables';
+.p-machine-complete {
+    position: relative;
+    background-color: $c-bg-main;
+    &-section {
+        padding-top: $m-sl;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+    }
+    &-block {
+        padding: 20px $m-s $m-xl;
+        background-color: $c-bg-main-sub;
+    }
+}

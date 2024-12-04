@@ -2880,3 +2880,33 @@ select option:disabled {
 .p-machine-inquiry .c-info {
   padding-bottom: 80px;
 }
+
+.p-machine-comfirm {
+  position: relative;
+  background-color: #FFFFFF;
+}
+.p-machine-comfirm-section {
+  padding-top: 24px;
+}
+.p-machine-comfirm-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+.p-machine-comfirm-contents {
+  padding: 20px 16px 80px;
+  background-color: #F0F0F0;
+}
+
+.p-machine-complete {
+  position: relative;
+  background-color: #FFFFFF;
+}
+.p-machine-complete-section {
+  padding-top: 24px;
+}
+.p-machine-complete-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+.p-machine-complete-block {
+  padding: 20px 16px 80px;
+  background-color: #F0F0F0;
+}
