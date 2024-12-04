@@ -1,0 +1,47 @@
+@import '../../../../../foundation/variables';
+.p-machine-search-result {
+    position: relative;
+    background-color: $c-bg-main;
+    &-section {
+        padding-top: $m-sl;
+        .u-h-lv2 {
+            margin-bottom: $m-m;
+        }
+        .c-more-block {
+            height: 41px;
+            margin-top: $m-m;
+            padding: 0;
+            &.is-open {
+                overflow: visible;
+            }
+            &__contents {
+                opacity: 0;
+            }
+            &__btn {
+                span {
+                    margin: 0 $m-ss 0 0;
+                }
+                background: transparent;
+            }
+        }
+    }
+    &-contents {
+        padding: $m-ml $m-s;
+        background-color: $c-bg-main-sub;
+    }
+    &-block {
+        padding: $m-m $m-s;
+        background-color: $c-bg-main;
+        border-radius: $b-r-s;
+        &__ttl {
+            margin-bottom: $m-sss;
+            font-weight: 700;
+        }
+        li + li {
+            margin-top: $m-s;
+            padding-top: $m-s;
+            border-top: 1px solid $c-border;
+        }
+    }
+
+}

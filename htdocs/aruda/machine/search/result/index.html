@@ -42,335 +42,318 @@
         </ul>
     </nav>
 </header>
-  <main class="l-main p-machine-search">
+  <main class="l-main p-machine-search-result">
     <nav class="c-breadcrumbs">
       <ul>
         <li><a href="/aruda/">ホーム</a></li>
         <li><span>中古農機を絞り込む</span></li>
       </ul>
     </nav>
-    <section class="p-machine-search-info">
+    <section class="p-machine-search-result-section">
       <h2 class="u-h-lv2 u-t-center">中古農機をさがす</h2>
-      <div class="p-machine-search-search">
-        <h3 class="u-h-lv2 u-t-center">
-          <img src="/aruda/assets/images/common/ico_search.svg" alt="かんたん検索" class="u-ico">かんたん検索
-        </h3>
-        <form action="/aruda/" method="get" class="c-form">
-          <input type="text" value="" name="" class="c-form__text" placeholder="フリーワードで検索">
-          <label>
-            <div class="c-form__ttl">
-              <img src="/aruda/assets/images/common/ico_machinery.svg" alt="農機" class="u-ico">機種
-            </div>
-            <div class="c-form__select">
-              <select name="">
-                <option value="" disabled selected>選択してください</option>
-                <option value="1">ダミー</option>
-                <option value="2">ダミー</option>
-                <option value="3">ダミー</option>
-              </select>
-            </div>
-          </label>
-          <label>
-            <div class="c-form__ttl">
-              <img src="/aruda/assets/images/common/ico_region.svg" alt="地域" class="u-ico">地域
-            </div>
-            <div class="c-form__select">
-              <select name="">
-                <option value="" disabled selected>選択してください</option>
-                <option value="1">ダミー</option>
-                <option value="2">ダミー</option>
-                <option value="3">ダミー</option>
-              </select>
-            </div>
-          </label>
-          <label>
-            <div class="c-form__ttl">
-              <img src="/aruda/assets/images/common/ico_budget.svg" alt="予算" class="u-ico">予算
-            </div>
-            <div class="c-form__budget">
-              <div>
-                <input type="number" value="" name="" class="c-form__text">
-              </div>
-              <span>円</span>
-              <span>〜</span>
-              <div>
-                <input type="number" value="" name="" class="c-form__text">
-              </div>
-              <span>円</span>
-            </div>
-          </label>
-          <div class="c-form__submit">
-            <button class="c-btn" data-type="solid-icon" data-size="l">
-              <img src="/aruda/assets/images/common/ico_search_w.svg" alt="" class="u-ico" data-size="s">
-              かんたん検索
-              <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
-            </button>
-          </div>
-        </form>
-      </div>
-
-      <div class="c-detail-search">
-        <h3 class="u-h-lv2 u-t-center">
-          詳細検索 
-        </h3>
-        <form action="/aruda/machine/search/" method="post" class="c-form">
-          <p class="c-detail-search__ttl">キーワード</p>
-          <div class="c-detail-search__block">
-            <input type="text" name="" value="" class="c-form__text" placeholder="フリーワードで検索">
-          </div>
-          <p class="c-detail-search__ttl">機種</p>
-          <div class="c-detail-search__block" data-type="checkBox">
-            <div class="c-accordion js-accordion" data-type="checkBox">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>トラクター・耕うん機</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
-                </div>
-              </div>
-            </div>
-            <div class="c-accordion js-accordion" data-type="checkBox">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>トラクター・耕うん機</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
-                </div>
-              </div>
-            </div>
-            <div class="c-accordion js-accordion" data-type="checkBox">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>トラクター・耕うん機</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="c-detail-search__ttl">機械</p>
-          <div class="c-detail-search__block">
-            <div class="c-form__select">
-              <select name="">
-                <option value="" disabled selected>選択してください</option>
-                <option value="1">ダミー</option>
-                <option value="2">ダミー</option>
-                <option value="3">ダミー</option>
-              </select>
-            </div>
-          </div>
-          <p class="c-detail-search__ttl">銘柄</p>
-          <div class="c-detail-search__block" data-type="checkBox">
-            <div class="c-accordion js-accordion" data-type="checkBox">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>あ行</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
-                </div>
-              </div>
-            </div>
-            <div class="c-accordion js-accordion" data-type="checkBox">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>か行</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
-                </div>
-              </div>
-            </div>
-            <div class="c-accordion js-accordion" data-type="checkBox">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>さ行</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="c-detail-search__ttl">エリア・展示場</p>
-          <div class="c-detail-search__block">
-            <div class="c-detail-search__img-map">
-              <img src="/aruda/assets/images/machine/search/map.png" usemap="#ImageMap" alt="" />
-              <map name="ImageMap">
-                <area shape="poly" coords="0,198,1,199,5,200,14,207,17,200,28,203,20,220,35,236,42,234,65,252,56,260,41,253,20,280,8,273,14,239,0,228,0,199,0,199,0,199,47,252" href="#map01" alt="" class="js-map" />
-                <area shape="poly" coords="0,199,13,205,17,201,31,202,44,202,56,219,91,200,168,246,172,232,142,193,145,175,141,174,127,181,120,176,127,145,114,106,106,106,103,115,83,125,76,122,79,148,68,165,57,158,47,160,30,148,24,161,34,174,22,190,0,198" href="#map2" alt="" class="js-map" />
-                <area shape="poly" coords="172,228,172,228,143,192,144,175,140,173,142,146,165,132,179,137,193,129,207,139,192,169,205,187,177,211,172,228,172,228" href="#map03" alt="" class="js-map" />
-                <area shape="poly" coords="206,187,195,173,208,141,219,138,219,129,230,125,234,131,245,126,277,85,281,87,263,124,270,147,297,146,299,152,244,181,221,174,206,187,227,187" href="#map04" alt="" class="js-map" />
-                <area shape="poly" coords="154,56,139,71,150,78,168,130,182,137,194,129,207,139,218,137,218,128,231,124,234,130,244,126,277,83,275,81,249,109,228,110,177,83,154,56,206,54" href="#map05" alt="" class="js-map" />
-                <area shape="poly" coords="104,0,104,1,153,56,137,71,148,77,166,130,142,145,140,171,127,178,121,174,126,144,115,104,106,103,103,112,84,124,77,120,92,110,91,82,98,57,86,15,103,0,103,1" href="#map06" alt="" class="js-map" />
-              </map>
-            </div>
-            <div class="c-accordion js-accordion" data-type="checkBox" id="map06">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>道北エリア</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                </div>
-              </div>
-            </div>
-            <div class="c-accordion js-accordion" data-type="checkBox" id="map02">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>道央エリア</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                </div>
-              </div>
-            </div>
-            <div class="c-accordion js-accordion" data-type="checkBox" id="map01">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>道南エリア</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
-                </div>
-              </div>
-            </div>
-            <div class="c-accordion js-accordion" data-type="checkBox" id="map05">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>オホーツクエリア</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                </div>
-              </div>
-            </div>
-            <div class="c-accordion js-accordion" data-type="checkBox" id="map03">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>十勝エリア</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                </div>
-              </div>
-            </div>
-            <div class="c-accordion js-accordion" data-type="checkBox" id="map04">
-              <div class="c-accordion__btn js-accordion-btn">
-                <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>釧路・根室エリア</span>
-                <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
-              </div>
-              <div class="c-accordion__cosntents js-accordion-contents">
-                <div class="c-form__checkBox-list">
-                  <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
-                  <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <p class="c-detail-search__ttl">価格帯</p>
-          <div class="c-detail-search__block">
-            <label>
-              <div class="c-form__budget">
-                <div>
-                  <input type="number" value="" name="" class="c-form__text">
-                </div>
-                <span>円</span>
-                <span>〜</span>
-                <div>
-                  <input type="number" value="" name="" class="c-form__text">
-                </div>
-                <span>円</span>
-              </div>
-            </label>
-          </div>
-          <p class="c-detail-search__ttl">状態</p>
-          <div class="c-detail-search__block">
-            <ul class="c-form__list" data-col="2">
-              <li><label class="c-form__radio"><input type="radio" name="group1" value="1"><span>公開中を除く</span></label></li>
-              <li><label class="c-form__radio"><input type="radio" name="group1" value="2"><span>商談中を除く</span></label></li>
-              <li><label class="c-form__radio"><input type="radio" name="group1" value="3"><span>展示会中を除く</span></label></li>
-              <li><label class="c-form__radio"><input type="radio" name="group1" value="4"><span>展示会準備中を除く</span></label></li>
+      <div class="p-machine-search-result-contents">
+          <div class="p-machine-search-result-block">
+            <ul>
+              <li>
+                <p class="p-machine-search-result-block__ttl">機種</p>
+                <p class="p-machine-search-result-block__txt">機種名</p>
+              </li>
+              <li>
+                <p class="p-machine-search-result-block__ttl">機械</p>
+                <p class="p-machine-search-result-block__txt">機械名</p>
+              </li>
+              <li>
+                <p class="p-machine-search-result-block__ttl">銘柄</p>
+                <p class="p-machine-search-result-block__txt">銘柄名</p>
+              </li>
+              <li>
+                <p class="p-machine-search-result-block__ttl">エリア・展示場</p>
+                <p class="p-machine-search-result-block__txt">エリア・展示場名</p>
+              </li>
+              <li>
+                <p class="p-machine-search-result-block__ttl">キーワード</p>
+                <p class="p-machine-search-result-block__txt">指定なし</p>
+              </li>
+              <li>
+                <p class="p-machine-search-result-block__ttl">価格帯</p>
+                <p class="p-machine-search-result-block__txt">000,000円～上限なし</p>
+              </li>
+              <li>
+                <p class="p-machine-search-result-block__ttl">その他条件</p>
+                <p class="p-machine-search-result-block__txt">指定なし</p>
+              </li>
             </ul>
           </div>
-          <button class="c-btn u-m-center c-btn-sticky" data-size="l" data-type="solid-icon">
-            <img src="/aruda/assets/images/common/ico_search_w.svg" alt="" data-size="s" class="u-ico">
-            詳細検索
-            <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" data-size="s" class="u-ico">
-          </button>
-        </form>
+
+          <div class="c-more-block js-more-block">
+            <div class="c-more-block__contents">
+              <div class="c-detail-search">
+    <h3 class="u-h-lv2 u-t-center">
+      詳細検索 
+    </h3>
+    <form action="/aruda/machine/search/" method="post" class="c-form">
+      <p class="c-detail-search__ttl">キーワード</p>
+      <div class="c-detail-search__block">
+        <input type="text" name="" value="" class="c-form__text" placeholder="フリーワードで検索">
       </div>
-      <div class="u-mt-20">
-        <button class="c-btn u-m-center" data-size="l">
-          検索条件の保存
-        </button>
+      <p class="c-detail-search__ttl">機種</p>
+      <div class="c-detail-search__block" data-type="checkBox">
+        <div class="c-accordion js-accordion" data-type="checkBox">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>トラクター・耕うん機</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-accordion js-accordion" data-type="checkBox">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>トラクター・耕うん機</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-accordion js-accordion" data-type="checkBox">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>トラクター・耕うん機</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="u-mt-20">
-        <a href="/aruda/machine/search/" class="c-btn--reset u-m-center" data-size="l">
-          検索条件をリセット 
-        </a>
+      <p class="c-detail-search__ttl">機械</p>
+      <div class="c-detail-search__block">
+        <div class="c-form__select">
+          <select name="">
+            <option value="" disabled selected>選択してください</option>
+            <option value="1">ダミー</option>
+            <option value="2">ダミー</option>
+            <option value="3">ダミー</option>
+          </select>
+        </div>
+      </div>
+      <p class="c-detail-search__ttl">銘柄</p>
+      <div class="c-detail-search__block" data-type="checkBox">
+        <div class="c-accordion js-accordion" data-type="checkBox">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>あ行</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-accordion js-accordion" data-type="checkBox">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>か行</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-accordion js-accordion" data-type="checkBox">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>さ行</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機付属品その他</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">キャタピラ</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラー</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">クローラトラクター<br>100ps以上</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="c-detail-search__ttl">エリア・展示場</p>
+      <div class="c-detail-search__block">
+        <div class="c-detail-search__img-map">
+          <img src="/aruda/assets/images/machine/search/map.png" usemap="#ImageMap" alt="" />
+          <map name="ImageMap">
+            <area shape="poly" coords="0,198,1,199,5,200,14,207,17,200,28,203,20,220,35,236,42,234,65,252,56,260,41,253,20,280,8,273,14,239,0,228,0,199,0,199,0,199,47,252" href="#map01" alt="" class="js-map" />
+            <area shape="poly" coords="0,199,13,205,17,201,31,202,44,202,56,219,91,200,168,246,172,232,142,193,145,175,141,174,127,181,120,176,127,145,114,106,106,106,103,115,83,125,76,122,79,148,68,165,57,158,47,160,30,148,24,161,34,174,22,190,0,198" href="#map2" alt="" class="js-map" />
+            <area shape="poly" coords="172,228,172,228,143,192,144,175,140,173,142,146,165,132,179,137,193,129,207,139,192,169,205,187,177,211,172,228,172,228" href="#map03" alt="" class="js-map" />
+            <area shape="poly" coords="206,187,195,173,208,141,219,138,219,129,230,125,234,131,245,126,277,85,281,87,263,124,270,147,297,146,299,152,244,181,221,174,206,187,227,187" href="#map04" alt="" class="js-map" />
+            <area shape="poly" coords="154,56,139,71,150,78,168,130,182,137,194,129,207,139,218,137,218,128,231,124,234,130,244,126,277,83,275,81,249,109,228,110,177,83,154,56,206,54" href="#map05" alt="" class="js-map" />
+            <area shape="poly" coords="104,0,104,1,153,56,137,71,148,77,166,130,142,145,140,171,127,178,121,174,126,144,115,104,106,103,103,112,84,124,77,120,92,110,91,82,98,57,86,15,103,0,103,1" href="#map06" alt="" class="js-map" />
+          </map>
+        </div>
+        <div class="c-accordion js-accordion" data-type="checkBox" id="map06">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>道北エリア</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-accordion js-accordion" data-type="checkBox" id="map02">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>道央エリア</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-accordion js-accordion" data-type="checkBox" id="map01">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>道南エリア</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">管理機</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-accordion js-accordion" data-type="checkBox" id="map05">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>オホーツクエリア</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-accordion js-accordion" data-type="checkBox" id="map03">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>十勝エリア</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-accordion js-accordion" data-type="checkBox" id="map04">
+          <div class="c-accordion__btn js-accordion-btn">
+            <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>釧路・根室エリア</span>
+            <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
+          </div>
+          <div class="c-accordion__cosntents js-accordion-contents">
+            <div class="c-form__checkBox-list">
+              <label class="c-form__checkBox js-check"><input type="checkbox">暗渠バケット</label>
+              <label class="c-form__checkBox js-check"><input type="checkbox">カルチ（管理機用）</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="c-detail-search__ttl">価格帯</p>
+      <div class="c-detail-search__block">
+        <label>
+          <div class="c-form__budget">
+            <div>
+              <input type="number" value="" name="" class="c-form__text">
+            </div>
+            <span>円</span>
+            <span>〜</span>
+            <div>
+              <input type="number" value="" name="" class="c-form__text">
+            </div>
+            <span>円</span>
+          </div>
+        </label>
+      </div>
+      <p class="c-detail-search__ttl">状態</p>
+      <div class="c-detail-search__block">
+        <ul class="c-form__list" data-col="2">
+          <li><label class="c-form__radio"><input type="radio" name="group1" value="1"><span>公開中を除く</span></label></li>
+          <li><label class="c-form__radio"><input type="radio" name="group1" value="2"><span>商談中を除く</span></label></li>
+          <li><label class="c-form__radio"><input type="radio" name="group1" value="3"><span>展示会中を除く</span></label></li>
+          <li><label class="c-form__radio"><input type="radio" name="group1" value="4"><span>展示会準備中を除く</span></label></li>
+        </ul>
+      </div>
+      <button class="c-btn u-m-center c-btn-sticky" data-size="l" data-type="solid-icon">
+        <img src="/aruda/assets/images/common/ico_search_w.svg" alt="" data-size="s" class="u-ico">
+        詳細検索
+        <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" data-size="s" class="u-ico">
+      </button>
+    </form>
+  </div>
+            </div>
+            <a href="#" class="c-more-block__btn js-more-btn"><span><img src="/aruda/assets/images/common/ico_add_g.svg" alt=""></span>絞り込みの検索条件を表示する</a>
+          </div>
+
+          <div class="u-mt-20">
+            <button class="c-btn u-m-center" data-size="l">
+              検索条件の保存
+            </button>
+          </div>
+          <div class="u-mt-20">
+            <a href="/aruda/machine/search/" class="c-btn--reset u-m-center" data-size="l">
+              検索条件をリセット 
+            </a>
+          </div>
       </div>
     </section>
     <aside class="p-top-bnr">
