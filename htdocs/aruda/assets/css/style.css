@@ -489,7 +489,7 @@ select option:disabled {
   left: 0;
   z-index: 1;
   height: 32px;
-  background-color: #2C933A;
+  background-color: #35633A;
   border-radius: 16px;
   transition: all 0.5s;
 }
@@ -500,7 +500,7 @@ select option:disabled {
   left: 0;
   width: 16px;
   height: 16px;
-  background-color: #2C933A;
+  background-color: #35633A;
   border-radius: 2px;
   transform: rotate(45deg) skew(10deg, 10deg);
   transition: all 0.5s;
@@ -654,11 +654,12 @@ select option:disabled {
   gap: 8px;
 }
 .c-mypage-block__body .l-grid[data-col="2"] a {
-  padding: 17px 10px 11px;
+  display: flex;
+  gap: 8px;
+  padding: 17px 16px 11px;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
-  text-align: center;
   background-color: #2C933A;
   border-radius: 4px;
 }
@@ -673,15 +674,16 @@ select option:disabled {
   margin-top: 8px;
 }
 .c-mypage-block__body .l-grid[data-col="3"] a {
-  padding: 13px 8px 8px;
-  font-size: 14px;
+  padding: 8px 0;
+  font-size: 12px;
   font-weight: 700;
   text-align: center;
   background-color: #FFFFFF;
   border-radius: 4px;
   border: 1px solid #2C933A;
 }
-.c-mypage-block__body .l-grid[data-col="3"] a img {
+.c-mypage-block__body .l-grid[data-col="3"] a .u-ico {
+  width: 24px;
   margin-bottom: 4px;
 }
 .c-mypage-block__body .c-tab-list {

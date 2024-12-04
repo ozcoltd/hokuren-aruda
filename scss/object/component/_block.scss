@@ -139,11 +139,12 @@
             gap : $m-ss;
             &[data-col="2"] {
                a {
-                    padding: 17px 10px 11px;
+                    display: flex;
+                    gap: $m-ss;
+                    padding: 17px 16px 11px;
                     color: $c-text-w;
                     font-size: $fs-h-lv4;
                     font-weight: 700;
-                    text-align: center;
                     background-color: $c-bg-primary;
                     border-radius: $b-r-s;
                     span {
@@ -158,14 +159,15 @@
             &[data-col="3"] {
                 margin-top: $m-ss;
                 a {
-                    padding: 13px 8px 8px;
-                    font-size: $fs-t-s;
+                    padding: $m-ss 0;
+                    font-size: $fs-t-ss;
                     font-weight: 700;
                     text-align: center;
                     background-color: $c-bg-main;
                     border-radius: $b-r-s;
                     border: 1px solid $c-border-primary;
-                    img {
+                    .u-ico {
+                        width: 24px;
                         margin-bottom: $m-sss;
                     }
                 }

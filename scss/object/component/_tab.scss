@@ -70,7 +70,7 @@
         left: 0;
         z-index: 1;
         height: 32px;
-        background-color: $c-bg-primary;
+        background-color: $c-bg-secondary;
         border-radius: 16px;
         transition: all 0.5s;
     }
@@ -81,7 +81,7 @@
         left: 0;
         width: 16px;
         height: 16px;
-        background-color: $c-bg-primary;
+        background-color: $c-bg-secondary;
         border-radius: 2px;
         transform: rotate(45deg) skew(10deg, 10deg);
         transition: all 0.5s;
