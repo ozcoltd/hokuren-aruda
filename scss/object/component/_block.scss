@@ -225,8 +225,41 @@
             }
         }
     }
+    .c-form {
+        padding-bottom: $m-ml !important;
+        &__list {
+            gap: 8px !important;
+            li {
+                width: calc(50% - 10px) !important;
+            }
+        }
+        .c-detail-search__block {
+            padding-left: $m-ss;
+            padding-right: $m-ss;
+        }
+        .c-btn {
+            margin-top: 0;
+        }
+    }
     .c-btn {
         margin-top: $m-m;
+    }
+    .c-more-block {
+        height: 41px;
+        margin-top: $m-m;
+        padding: 0;
+        &.is-open {
+            overflow: visible;
+        }
+        &__contents {
+            opacity: 0;
+        }
+        &__btn {
+            span {
+                margin: 0 $m-ss 0 0;
+            }
+            background: transparent;
+        }
     }
 }
 

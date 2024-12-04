@@ -186,14 +186,17 @@ $(function(){
     });
 
     //中古詳細カルーセル
-    $('.js-carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: true,
-        dots: true,
-        infinite: true,
-        swipe: true
-    });
+    if($('.js-carousel').length > 0){
+        $('.js-carousel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: true,
+            dots: true,
+            infinite: true,
+            swipe: true
+        });
+    }
+
 });

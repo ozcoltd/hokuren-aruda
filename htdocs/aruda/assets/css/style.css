@@ -736,8 +736,41 @@ select option:disabled {
   width: 16px;
   height: 16px;
 }
+.c-keep-block .c-form {
+  padding-bottom: 40px !important;
+}
+.c-keep-block .c-form__list {
+  gap: 8px !important;
+}
+.c-keep-block .c-form__list li {
+  width: calc(50% - 10px) !important;
+}
+.c-keep-block .c-form .c-detail-search__block {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.c-keep-block .c-form .c-btn, .c-keep-block .c-form .c-btn--reset {
+  margin-top: 0;
+}
 .c-keep-block .c-btn, .c-keep-block .c-btn--reset {
   margin-top: 32px;
+}
+.c-keep-block .c-more-block {
+  height: 41px;
+  margin-top: 32px;
+  padding: 0;
+}
+.c-keep-block .c-more-block.is-open {
+  overflow: visible;
+}
+.c-keep-block .c-more-block__contents {
+  opacity: 0;
+}
+.c-keep-block .c-more-block__btn {
+  background: transparent;
+}
+.c-keep-block .c-more-block__btn span {
+  margin: 0 8px 0 0;
 }
 
 .c-mail-setting {
@@ -2357,7 +2390,7 @@ select option:disabled {
 }
 .p-buying_info-btn {
   background-color: #F0F0F0;
-  padding: 0 16px 80px;
+  padding: 32px 16px 80px;
 }
 .p-buying_info-btn__inner {
   padding: 32px 8px;
