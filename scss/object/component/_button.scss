@@ -106,3 +106,9 @@
         border-radius: 20px;
     }
 }
+.c-fixed-btn {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    bottom: 92px;
+}

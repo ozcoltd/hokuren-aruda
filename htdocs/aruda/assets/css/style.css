@@ -392,6 +392,13 @@ select option:disabled {
   border-radius: 20px;
 }
 
+.c-fixed-btn {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  bottom: 92px;
+}
+
 .c-card img {
   margin-bottom: 8px;
   border-radius: 4px;
@@ -930,6 +937,21 @@ select option:disabled {
 }
 .c-search-result-block .l-grid {
   gap: 32px 16px;
+}
+
+.c-detail-block {
+  padding: 32px 16px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+.c-detail-block__ttl {
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.c-detail-block li + li {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #DDDDDD;
 }
 
 .c-exhibition-hall {
@@ -2012,7 +2034,7 @@ select option:disabled {
 .p-top-history .c-more-block__btn {
   background: transparent;
 }
-.c-hokuren-bnr {
+.p-top-bnr {
   padding: 56px 60px 80px;
   background-color: #FFFFFF;
 }
@@ -2710,20 +2732,6 @@ select option:disabled {
 .p-machine-search-result-contents {
   padding: 40px 16px;
   background-color: #F0F0F0;
-}
-.p-machine-search-result-block {
-  padding: 32px 16px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-}
-.p-machine-search-result-block__ttl {
-  margin-bottom: 4px;
-  font-weight: 700;
-}
-.p-machine-search-result-block li + li {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid #DDDDDD;
 }
 .p-machine-search-result .c-table {
   margin: 0 -16px;

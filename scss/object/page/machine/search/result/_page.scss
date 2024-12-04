@@ -29,20 +29,20 @@
         padding: $m-ml $m-s;
         background-color: $c-bg-main-sub;
     }
-    &-block {
-        padding: $m-m $m-s;
-        background-color: $c-bg-main;
-        border-radius: $b-r-s;
-        &__ttl {
-            margin-bottom: $m-sss;
-            font-weight: 700;
-        }
-        li + li {
-            margin-top: $m-s;
-            padding-top: $m-s;
-            border-top: 1px solid $c-border;
-        }
-    }
+    // &-block {
+    //     padding: $m-m $m-s;
+    //     background-color: $c-bg-main;
+    //     border-radius: $b-r-s;
+    //     &__ttl {
+    //         margin-bottom: $m-sss;
+    //         font-weight: 700;
+    //     }
+    //     li + li {
+    //         margin-top: $m-s;
+    //         padding-top: $m-s;
+    //         border-top: 1px solid $c-border;
+    //     }
+    // }
     .c-table {
         margin: 0 -16px;
     }
