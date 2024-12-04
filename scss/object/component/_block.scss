@@ -445,7 +445,14 @@
         padding-top: $m-s;
         border-top: 1px solid $c-border;
     }
-}
+    &[data-type="border"]{
+        ul {
+            margin-bottom: $m-s;
+            padding-bottom: $m-s;
+            border-bottom: 1px solid $c-border;
+        }
+    }
+ }
 .c-exhibition-hall {
     padding: $m-l $m-s;
     background-color: $c-bg-main;
