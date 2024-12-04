@@ -115,9 +115,11 @@
         }
     }
     &__edit {
+        margin-top: $m-s;
         a {
             display: flex;
             align-items: center;
+            justify-content: flex-end;
             color: $c-text;
             font-size: $fs-t-ss;
             font-weight: bold;
@@ -132,6 +134,9 @@
             background-color: $c-bg-main;
             border-radius: 12px;
             border: 1px solid $c-border;
+            img {
+                width: 12px;
+            }
         }
     }
     &__body {

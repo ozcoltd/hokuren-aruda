@@ -632,9 +632,13 @@ select option:disabled {
 .c-mypage-block__name span {
   font-size: 12px;
 }
+.c-mypage-block__edit {
+  margin-top: 16px;
+}
 .c-mypage-block__edit a {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   color: #4B4B4B;
   font-size: 12px;
   font-weight: bold;
@@ -649,6 +653,9 @@ select option:disabled {
   background-color: #FFFFFF;
   border-radius: 12px;
   border: 1px solid #DDDDDD;
+}
+.c-mypage-block__edit span img {
+  width: 12px;
 }
 .c-mypage-block__body .l-grid {
   gap: 8px;
