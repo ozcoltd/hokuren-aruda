@@ -12,9 +12,10 @@
         }
         &__list {
             flex-wrap: wrap;
-            gap: $m-s;
+            gap: $m-ss;
+            margin: 0 -5px;
             li {
-                width: calc(50% - 16px);
+                width: calc(50% - 10px);
             }
         }
     }

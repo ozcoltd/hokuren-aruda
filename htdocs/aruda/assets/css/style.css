@@ -1696,10 +1696,11 @@ select option:disabled {
 }
 .c-detail-search .c-form__list {
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 8px;
+  margin: 0 -5px;
 }
 .c-detail-search .c-form__list li {
-  width: calc(50% - 16px);
+  width: calc(50% - 10px);
 }
 .c-detail-search__ttl {
   height: 50px;
