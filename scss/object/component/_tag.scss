@@ -5,6 +5,14 @@
     font-size: $fs-t-ss;
     border-radius: 10px;
     background-color: $c-bg-tertiary;
+    &[data-type="state"] {
+        height: 34px;
+        color: $c-text-w;
+        text-align: center;
+        line-height: 34px;
+        border-radius: $b-r-s;
+        background-color: $c-bg-secondary;
+    }
 }
 .c-tag-list {
     display: flex;

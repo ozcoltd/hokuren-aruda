@@ -26,8 +26,60 @@
         }
     }
     &-contents {
-        padding: $m-ml $m-s;
+        padding: 20px $m-s ;
         background-color: $c-bg-main-sub;
+    }
+    &-kv {
+        .l-grid {
+            margin-bottom: $m-s;
+            gap: $m-ss;
+        }
+    }
+    &__state {
+        margin-bottom: $m-s;
+        font-size: $fs-t;
+        font-weight: 700;
+    }
+    &__manufacturer {
+        font-size: $fs-t;
+        font-weight: 700;
+    }
+    &__name {
+        margin-bottom: 12px;
+        font-size: $fs-h-lv4;
+        font-weight: 700;
+    }
+    &__inquiry-no {
+        height: 40px;
+        text-align: center;
+        color: $c-text-w;
+        font-size: $fs-t-s;
+        line-height: 40px;
+        background-color: $c-bg-primary;
+        border-radius: $b-r-s;
+        span {
+            font-size: $fs-h-lv4;
+            font-weight: 700; 
+        }
+    }
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 12px;
+        span {
+            &:nth-child(1) {
+                font-size: 18px;
+            }
+            &:nth-child(2) {
+                font-size: 38px;
+                font-weight: 700;
+                span {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
     }
     &-block {
         padding: $m-m $m-s;

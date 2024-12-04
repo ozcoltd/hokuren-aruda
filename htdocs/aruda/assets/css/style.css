@@ -940,6 +940,14 @@ select option:disabled {
   border-radius: 10px;
   background-color: #ECF6ED;
 }
+.c-tag[data-type=state] {
+  height: 34px;
+  color: #fff;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 4px;
+  background-color: #35633A;
+}
 
 .c-tag-list {
   display: flex;
@@ -1642,6 +1650,45 @@ select option:disabled {
 }
 .c-pagenation__next {
   right: 0;
+}
+
+.c-carousel .slick-dots li button:before {
+  content: none;
+}
+.c-carousel .slick-dots li {
+  width: auto;
+}
+.c-carousel .slick-dots li button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #A0A0A0;
+}
+.c-carousel .slick-dots li.slick-active button {
+  background: #2C933A;
+}
+.c-carousel .slick-arrow {
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #DDDDDD;
+  border-radius: 50%;
+}
+.c-carousel .slick-arrow:hover {
+  background-color: #FFFFFF;
+}
+.c-carousel .slick-arrow::before {
+  content: none;
+}
+.c-carousel .slick-arrow.slick-prev {
+  left: -11px;
+  background: url(/aruda/assets/images/common/ico_left_g.svg) center no-repeat #FFFFFF;
+  background-size: 24px auto;
+}
+.c-carousel .slick-arrow.slick-next {
+  right: -11px;
+  background: url(/aruda/assets/images/common/ico_right_g.svg) center no-repeat #FFFFFF;
+  background-size: 24px auto;
 }
 
 .u-t-center {
@@ -2703,8 +2750,56 @@ select option:disabled {
   margin: 0 8px 0 0;
 }
 .p-machine-detail-contents {
-  padding: 40px 16px;
+  padding: 20px 16px;
   background-color: #F0F0F0;
+}
+.p-machine-detail-kv .l-grid {
+  margin-bottom: 16px;
+  gap: 8px;
+}
+.p-machine-detail__state {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.p-machine-detail__manufacturer {
+  font-size: 16px;
+  font-weight: 700;
+}
+.p-machine-detail__name {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.p-machine-detail__inquiry-no {
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  background-color: #2C933A;
+  border-radius: 4px;
+}
+.p-machine-detail__inquiry-no span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.p-machine-detail__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+.p-machine-detail__price span:nth-child(1) {
+  font-size: 18px;
+}
+.p-machine-detail__price span:nth-child(2) {
+  font-size: 38px;
+  font-weight: 700;
+}
+.p-machine-detail__price span:nth-child(2) span {
+  font-size: 18px;
+  font-weight: 500;
 }
 .p-machine-detail-block {
   padding: 32px 16px;

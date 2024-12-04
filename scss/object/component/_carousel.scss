@@ -1,0 +1,47 @@
+.c-carousel {
+    .slick-dots li button:before {
+        content: none;
+    }
+    .slick-dots {
+        li {
+            width: auto;
+            button {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #A0A0A0;
+            }
+            &.slick-active {
+                button {
+                    background: $c-bg-primary;
+                }
+            }
+        }
+    }
+    .slick-arrow {
+        z-index: 2;
+        width: 34px;
+        height: 34px;
+        border: 1px solid $c-border;
+        border-radius: 50%;
+        &:hover {
+            background-color: $c-bg-main;
+        }
+        &::before {
+            content: none;
+        }
+        &.slick-prev {
+            left: -11px;
+            background: url(/aruda/assets/images/common/ico_left_g.svg) center no-repeat $c-bg-main;
+            background-size: 24px auto;
+        }
+        &.slick-next {
+            right: -11px;
+            background: url(/aruda/assets/images/common/ico_right_g.svg) center no-repeat $c-bg-main;
+            background-size: 24px auto;
+        }
+    }
+}
+
+
+
