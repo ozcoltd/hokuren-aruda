@@ -50,359 +50,161 @@
           <div class="p-machine-detail-block">
             <ul>
               <li>
-                <p class="p-machine-detail-block__ttl">機種</p>
-                <p class="p-machine-detail-block__txt">機種名</p>
+                <p class="p-machine-detail-block__ttl">型式</p>
+                <p class="p-machine-detail-block__txt">S450</p>
               </li>
               <li>
-                <p class="p-machine-detail-block__ttl">機械</p>
-                <p class="p-machine-detail-block__txt">機械名</p>
+                <p class="p-machine-detail-block__ttl">規格</p>
+                <p class="p-machine-detail-block__txt">なし</p>
               </li>
               <li>
-                <p class="p-machine-detail-block__ttl">銘柄</p>
-                <p class="p-machine-detail-block__txt">銘柄名</p>
+                <p class="p-machine-detail-block__ttl">年式</p>
+                <p class="p-machine-detail-block__txt">2019年式</p>
               </li>
               <li>
-                <p class="p-machine-detail-block__ttl">エリア・展示場</p>
-                <p class="p-machine-detail-block__txt">エリア・展示場名</p>
+                <p class="p-machine-detail-block__ttl">アワメーター</p>
+                <p class="p-machine-detail-block__txt">617h時間</p>
               </li>
               <li>
-                <p class="p-machine-detail-block__ttl">キーワード</p>
+                <p class="p-machine-detail-block__ttl">機械番号・製造番号</p>
+                <p class="p-machine-detail-block__txt">AUVB 14685</p>
+              </li>
+              <li>
+                <p class="p-machine-detail-block__ttl">取扱説明書</p>
+                <p class="p-machine-detail-block__txt">有り</p>
+              </li>
+              <li>
+                <p class="p-machine-detail-block__ttl">備考</p>
                 <p class="p-machine-detail-block__txt">指定なし</p>
               </li>
               <li>
-                <p class="p-machine-detail-block__ttl">価格帯</p>
-                <p class="p-machine-detail-block__txt">000,000円～上限なし</p>
-              </li>
-              <li>
-                <p class="p-machine-detail-block__ttl">その他条件</p>
-                <p class="p-machine-detail-block__txt">指定なし</p>
+                <p class="p-machine-detail-block__ttl">最終更新日</p>
+                <p class="p-machine-detail-block__txt">2024.11.20</p>
               </li>
             </ul>
           </div>
 
-          <div class="c-more-block js-more-block">
-            <div class="c-more-block__contents">
-              <%- include('../../../inc/detail-search') %>
-            </div>
-            <a href="#" class="c-more-block__btn js-more-btn"><span><img src="/aruda/assets/images/common/ico_add_g.svg" alt=""></span>絞り込みの検索条件を表示する</a>
-          </div>
-
-          <div class="u-mt-20">
-            <button class="c-btn u-m-center" data-size="l">
-              検索条件の保存
+          <div class="u-mt-40">
+            <button class="c-btn u-m-center" data-size="l" data-type="solid-icon-left">
+              <img src="/aruda/assets/images/common/ico_favorite_w.svg" alt="" class="u-ico" data-size="s">
+              お気に入りに登録
             </button>
           </div>
           <div class="u-mt-20">
-            <a href="/aruda/machine/search/" class="c-btn--reset u-m-center" data-size="l">
-              検索条件をリセット 
+            <a href="/aruda/machine/search/" class="c-btn u-m-center" data-size="l" data-type="icon-right">
+              メール通知に登録
+              <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
             </a>
           </div>
+      </div>
 
-          <div class="c-search-result-block">
-              <p class="c-search-result-block__num">検索結果：0000件</p>
-              <ul class="c-search-result-block__menu">
+      <div class="c-exhibition-hall">
+        <h4 class="u-h-lv4 u-t-center">エリア・展示場情報</h4>
+          <div class="c-exhibition-hall-contact">
+            <p class="c-exhibition-hall-contact__ttl">展示場名</p>
+            <p class="c-exhibition-hall-contact__info">〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+            <div class="c-exhibition-hall-contact__contact">
+              <p class="u-fs-14">お問い合わせ</p>
+              <ul class="l-grid" data-col="2">
                 <li>
-                  <p>表示件数</p>
-                  <div class="c-form__select">
-                    <select name="">
-                      <option value="" disabled selected>00件</option>
-                      <option value="1">ダミー</option>
-                      <option value="2">ダミー</option>
-                      <option value="3">ダミー</option>
-                    </select>
-                  </div>
-                </li>
-                <li>
-                  <p>並び替え</p>
-                  <div class="c-form__select">
-                    <select name="">
-                      <option value="" disabled selected>更新日順</option>
-                      <option value="1">ダミー</option>
-                      <option value="2">ダミー</option>
-                      <option value="3">ダミー</option>
-                    </select>
-                  </div>
-                </li>
-                <li>
-                  <a href="#grid" class="c-search-result-block__grid-btn js-display-toggle">
-                    <span></span>
+                  <a href="" class="c-btn" data-type="solid-icon-left" data-size="s">
+                    <img src="/aruda/assets/images/common/ico_phone_w.svg" alt="" class="u-ico" data-size="s">
+                    電話
                   </a>
                 </li>
                 <li>
-                  <a href="#list" class="c-search-result-block__list-btn js-display-toggle is-active">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                  <a href="" class="c-btn" data-type="solid-icon-left" data-size="s">
+                    <img src="/aruda/assets/images/common/ico_mail_w.svg" alt="" class="u-ico" data-size="s">
+                    メール
                   </a>
                 </li>
               </ul>
-              <div class="c-search-result-block__contents js-display-contents">
-                <div class="c-search-result-block__display" id="grid">
-                  <div class="l-grid" data-col="2">
-                    <a href="/" class="c-card">
-                      <img src="https://placehold.jp/167x125.png" alt="">
-                      <p class="c-card__name">ブルーヒーター</p>
-                      <p class="c-card__id">KBR-173</p>
-                      <p class="c-card__manufacturer">サンポット</p>
-                      <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                      <p class="c-card__shop">アルーダ岩見沢</p>
-                    </a>
-                    <a href="/" class="c-card">
-                      <img src="https://placehold.jp/167x125.png" alt="">
-                      <p class="c-card__name">ツインレーキ</p>
-                      <p class="c-card__id">TGR7310</p>
-                      <p class="c-card__manufacturer">スター</p>
-                      <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                      <p class="c-card__shop">アルーダ日高中部</p>
-                    </a>
-                    <a href="/" class="c-card">
-                      <img src="https://placehold.jp/167x125.png" alt="">
-                      <p class="c-card__name">ツインレーキ</p>
-                      <p class="c-card__id">TGR7310</p>
-                      <p class="c-card__manufacturer">スター</p>
-                      <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                      <p class="c-card__shop">アルーダ日高中部</p>
-                    </a>
-                    <a href="/" class="c-card">
-                      <img src="https://placehold.jp/167x125.png" alt="">
-                      <p class="c-card__name">ブルーヒーター</p>
-                      <p class="c-card__id">KBR-173</p>
-                      <p class="c-card__manufacturer">サンポット</p>
-                      <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                      <p class="c-card__shop">アルーダ岩見沢</p>
-                    </a>
-                    <a href="/" class="c-card">
-                      <img src="https://placehold.jp/167x125.png" alt="">
-                      <p class="c-card__name">ブルーヒーター</p>
-                      <p class="c-card__id">KBR-173</p>
-                      <p class="c-card__manufacturer">サンポット</p>
-                      <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                      <p class="c-card__shop">アルーダ岩見沢</p>
-                    </a>
-                    <a href="/" class="c-card">
-                      <img src="https://placehold.jp/167x125.png" alt="">
-                      <p class="c-card__name">ツインレーキ</p>
-                      <p class="c-card__id">TGR7310</p>
-                      <p class="c-card__manufacturer">スター</p>
-                      <p class="c-card__price">30,000,000<span>円(税込)</span></p>
-                      <p class="c-card__shop">アルーダ日高中部</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="c-search-result-block__display is-active" id="list">
-                  <div class="c-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>銘柄・機械名・型式</th>
-                                <th>税込価格</th>
-                                <th>掲載状況</th>
-                                <th>展示場</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-href="/aruda/machine/detail/000000/" class="js-table-link">
-                                <td>
-                                  <p class="u-manufacturer">サンポット</p>
-                                  <p>ブルーヒーター</p>
-                                  <p class="u-model-number">KBR-173</p>
-                                </td>
-                                <td><p class="u-price">99,999,999<span>円</span></p></td>
-                                <td>展示会<br>準備中</td>
-                                <td>アルーダ<br>オロロン羽幌</td>
-                            </tr>
-                            <tr data-href="/aruda/machine/detail/000000/" class="js-table-link">
-                              <td>
-                                <p class="u-manufacturer">ホンダ</p>
-                                <p>除雪機</p>
-                                <p class="u-model-number">HS980</p>
-                              </td>
-                              <td><p class="u-price">253,000<span>円</span></p></td>
-                              <td>公開中</td>
-                              <td>アルーダ<br>旭川</td>
-                          </tr>
-                          <tr data-href="/aruda/machine/detail/000000/" class="js-table-link">
-                            <td>
-                              <p class="u-manufacturer">ニプロ</p>
-                              <p>深耕アッパーロータリー</p>
-                              <p class="u-model-number">HS980</p>
-                            </td>
-                            <td><p class="u-price">1,540,000<span>円</span></p></td>
-                            <td>展示会中</td>
-                            <td>アルーダ<br>函館</td>
-                        </tr>
-                        <tr data-href="/aruda/machine/detail/000000/" class="js-table-link">
-                          <td>
-                            <p class="u-manufacturer">ニプロ</p>
-                            <p>深耕アッパーロータリー</p>
-                            <p class="u-model-number">HS980</p>
-                          </td>
-                          <td><p class="u-price">1,540,000<span>円</span></p></td>
-                          <td>展示会中</td>
-                          <td>アルーダ<br>函館</td>
-                      </tr>
-                      <tr data-href="/aruda/machine/detail/000000/" class="js-table-link">
-                        <td>
-                          <p class="u-manufacturer">ニプロ</p>
-                          <p>深耕アッパーロータリー</p>
-                          <p class="u-model-number">HS980</p>
-                        </td>
-                        <td><p class="u-price">1,540,000<span>円</span></p></td>
-                        <td>展示会中</td>
-                        <td>アルーダ<br>函館</td>
-                    </tr>
-                    <tr data-href="/aruda/machine/detail/000000/" class="js-table-link">
-                      <td>
-                        <p class="u-manufacturer">ニプロ</p>
-                        <p>深耕アッパーロータリー</p>
-                        <p class="u-model-number">HS980</p>
-                      </td>
-                      <td><p class="u-price">1,540,000<span>円</span></p></td>
-                      <td>展示会中</td>
-                      <td>アルーダ<br>函館</td>
-                  </tr>
-                        </tbody>
-                    </table>
-                </div>
-                </div>
-              </div>
-
-              <div class="c-pagenation">
-                <a href="#" class="c-pagenation__prev">
-                  <img src="/aruda/assets/images/common/ico_left_g.svg" alt="" class="u-ico" data-size="s">
-                </a>
-                <ul>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>1</span>
-                    </a>
-                  </li>
-                  <li>
-                    <span>...</span>
-                  </li>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>5</span>
-                    </a>
-                  </li>
-                  <li>
-                    <span class="c-pagenation__num is-current">
-                      <span>6</span>
-                    </span>
-                  </li>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>7</span>
-                    </a>
-                  </li>
-                  <li>
-                    <span>...</span>
-                  </li>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>8</span>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="c-pagenation__next">
-                  <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-                </a>
-              </div>
-
-              <div class="c-pagenation">
-                <a href="#" class="c-pagenation__prev">
-                  <img src="/aruda/assets/images/common/ico_left_g.svg" alt="" class="u-ico" data-size="s">
-                </a>
-                <ul>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>1</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>2</span>
-                    </a>
-                  </li>
-                  <li>
-                    <span class="c-pagenation__num is-current">
-                      <span>3</span>
-                    </span>
-                  </li>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>4</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>5</span>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="c-pagenation__next">
-                  <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-                </a>
-              </div>
-
-              <div class="c-pagenation">
-                <span class="c-pagenation__prev is-disabled">
-                  <img src="/aruda/assets/images/common/ico_left_w.svg" alt="" class="u-ico" data-size="s">
-                </span>
-                <ul>
-                  <li>
-                    <span class="c-pagenation__num is-current">
-                      <span>1</span>
-                    </span>
-                  </li>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>2</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>3</span>
-                    </a>
-                  </li>
-                  <li>
-                    <span>...</span>
-                  </li>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>8</span>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="c-pagenation__next">
-                  <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-                </a>
-              </div>
-
-              <div class="c-pagenation">
-                <ul>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>1</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="c-pagenation__num">
-                      <span>2</span>
-                    </a>
-                  </li>
-                  <li>
-                    <span class="c-pagenation__num is-current">
-                      <span>3</span>
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
+            </div>
           </div>
       </div>
+
+      <div class="c-info">
+        <h4 class="u-h-lv4 u-t-center">アルーダからのお知らせ</h4>
+        <div class="c-info__box">
+          <ul class="c-info__list">
+            <li class="c-info__item">
+              <div class="c-info__img">
+                <img src="https://placehold.jp/88x50.png" alt="">
+              </div>
+              <div class="c-info__contents">
+                <p class="c-info__date">2000.00.00</p>
+                <ul class="c-tag-list">
+                  <li class="c-tag">お知らせ</li>
+                  <li class="c-tag">フェア</li>
+                  <li class="c-tag">キャンペーン</li>
+                </ul>
+                <p class="c-info__shop">アルーダ士別</p>
+                <p class="c-info__ttl">冬季格納について冬季格納について冬季格納について</p>
+              </div>
+            </li>
+            <li class="c-info__item">
+              <div class="c-info__img">
+                <img src="https://placehold.jp/88x50.png" alt="">
+              </div>
+              <div class="c-info__contents">
+                <p class="c-info__date">2000.00.00</p>
+                <ul class="c-tag-list">
+                  <li class="c-tag">お知らせ</li>
+                  <li class="c-tag">フェア</li>
+                  <li class="c-tag">キャンペーン</li>
+                </ul>
+                <p class="c-info__shop">アルーダ士別</p>
+                <p class="c-info__ttl">冬季格納について冬季格納について冬季格納について</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-info">
+        <h4 class="u-h-lv4 u-t-center">展示場からのお知らせ</h4>
+        <div class="c-info__box">
+          <ul class="c-info__list">
+            <li class="c-info__item">
+              <div class="c-info__img">
+                <img src="https://placehold.jp/88x50.png" alt="">
+              </div>
+              <div class="c-info__contents">
+                <p class="c-info__date">2000.00.00</p>
+                <ul class="c-tag-list">
+                  <li class="c-tag">お知らせ</li>
+                  <li class="c-tag">フェア</li>
+                  <li class="c-tag">キャンペーン</li>
+                </ul>
+                <p class="c-info__shop">アルーダ士別</p>
+                <p class="c-info__ttl">冬季格納について冬季格納について冬季格納について</p>
+              </div>
+            </li>
+            <li class="c-info__item">
+              <div class="c-info__img">
+                <img src="https://placehold.jp/88x50.png" alt="">
+              </div>
+              <div class="c-info__contents">
+                <p class="c-info__date">2000.00.00</p>
+                <ul class="c-tag-list">
+                  <li class="c-tag">お知らせ</li>
+                  <li class="c-tag">フェア</li>
+                  <li class="c-tag">キャンペーン</li>
+                </ul>
+                <p class="c-info__shop">アルーダ士別</p>
+                <p class="c-info__ttl">冬季格納について冬季格納について冬季格納について</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="p-machine-detail-btn">
+        <a href="" class="c-btn u-m-center" data-type="icon-left" data-size="l">
+          <img src="/aruda/assets/images/common/ico_left_g.svg" alt="" class="u-ico" data-size="s">
+          検索結果に戻る
+        </a>
+      </div>
     </section>
-    <aside class="p-top-bnr">
+    <aside class="c-hokuren-bnr">
       <a href="https://www.hokuren.or.jp/" class="c-bnr"><img src="/aruda/assets/images/top/bnr_01.png" alt=""></a>
       <a href="http://www.hokuren-ss.jp/" class="c-bnr"><img src="/aruda/assets/images/top/bnr_02.png" alt=""></a>
       <a href="https://www.hokuren.or.jp/kouho/ap/" class="c-bnr"><img src="/aruda/assets/images/top/bnr_03.png" alt=""></a>

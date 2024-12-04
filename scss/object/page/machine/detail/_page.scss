@@ -26,7 +26,7 @@
         }
     }
     &-contents {
-        padding: 20px $m-s ;
+        padding: 20px $m-s $m-ml;
         background-color: $c-bg-main-sub;
     }
     &-kv {
@@ -81,21 +81,11 @@
             }
         }
     }
-    &-block {
-        padding: $m-m $m-s;
+    .c-info {
         background-color: $c-bg-main;
-        border-radius: $b-r-s;
-        &__ttl {
-            margin-bottom: $m-sss;
-            font-weight: 700;
-        }
-        li + li {
-            margin-top: $m-s;
-            padding-top: $m-s;
-            border-top: 1px solid $c-border;
-        }
     }
-    .c-table {
-        margin: 0 -16px;
+    &-btn {
+        padding: $m-l $m-s;
+        background-color: $c-bg-main-sub;
     }
 }
