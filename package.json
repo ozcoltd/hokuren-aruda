@@ -12,7 +12,7 @@
     "build:all": "npm-run-all build:style build:pages",
     "watch:style": "node-sass --watch scss/style.scss --output htdocs/aruda/assets/css/",
     "watch:pages": "node scripts/watch-pages.js",
-    "watch": "npm-run-all --parallel watch:style watch:pages"
+    "watch": "npm-run-all --parallel watch:ejs watch:style watch:pages"
   },
   "keywords": [],
   "author": "",
