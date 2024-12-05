@@ -1,0 +1,17 @@
+.p-notification-aruda-detail-block {
+  padding: 32px 16px 80px;
+  background-color: #F0F0F0;
+}
+
+.p-notification-aruda-detail-block .c-tab-list {
+  margin-bottom: 18px;
+}
+
+.p-notification-aruda-detail-block .c-form__select {
+  margin-bottom: 24px;
+}
+
+.p-notification-aruda-detail-block .c-info {
+  padding-left: 0;
+  padding-right: 0;
+}

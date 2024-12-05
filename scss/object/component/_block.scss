@@ -588,4 +588,32 @@
         font-size: $fs-t-s;
         font-weight: bold; 
     }
+    &[data-type="detail"]{
+        .c-info {
+            &__head {
+                display: flex;
+                gap: $m-sss;
+                margin-bottom: $m-ss;
+            }
+            &__ttl {
+                margin-bottom: $m-ss;
+            }
+            &__contents {
+                padding: $m-s;
+                background-color: $c-bg-main;
+                border: 1px solid $c-border;
+                border-radius: $b-r-s;
+            }
+            &__txt {
+                margin-top: $m-s;
+                p {
+                    margin-top: $m-ss;
+                    font-size: $fs-t-s;
+                    .u-f-bold {
+                        margin-top: $m-s;
+                    }
+                }
+            }
+        }
+    }
 }

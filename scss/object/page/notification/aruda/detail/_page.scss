@@ -1,0 +1,17 @@
+@import '../../../../../foundation/variables';
+.p-notification-aruda-detail{
+    &-block {
+        padding: $m-m $m-s $m-xl;
+        background-color: $c-bg-main-sub;
+        .c-tab-list{
+            margin-bottom: 18px;
+        }
+        .c-form__select {
+            margin-bottom: $m-sl;
+        }
+        .c-info {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

@@ -908,6 +908,24 @@ select option:disabled {
     overflow: hidden;
     font-size: 14px;
     font-weight: bold; }
+  .c-info[data-type="detail"] .c-info__head {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 8px; }
+  .c-info[data-type="detail"] .c-info__ttl {
+    margin-bottom: 8px; }
+  .c-info[data-type="detail"] .c-info__contents {
+    padding: 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px; }
+  .c-info[data-type="detail"] .c-info__txt {
+    margin-top: 16px; }
+    .c-info[data-type="detail"] .c-info__txt p {
+      margin-top: 8px;
+      font-size: 14px; }
+      .c-info[data-type="detail"] .c-info__txt p .u-f-bold {
+        margin-top: 16px; }
 
 .c-tag {
   height: 19px;
