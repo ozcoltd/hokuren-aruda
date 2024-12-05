@@ -59,6 +59,41 @@
             }
         }
     }
+    &[data-col="4"] {
+        li,
+        &::before {
+            width: 25%;
+        }
+        &[data-current="0"] {
+            &::after {
+                left: 10.4%;
+            }
+        }
+        &[data-current="1"] {
+            &::before {
+                left: 25%;
+            }
+            &::after {
+                left: 35.5%;
+            }
+        }
+        &[data-current="2"] {
+            &::before {
+                left: 50%;
+            }
+            &::after {
+                left: 60.5%;
+            }
+        }
+        &[data-current="3"] {
+            &::before {
+                left: 75%;
+            }
+            &::after {
+                left: 85%;
+            }
+        }
+    }
     li {
         position: relative;
         z-index: 2;

@@ -478,6 +478,30 @@ select option:disabled {
 .c-tab-list[data-col="3"][data-current="2"]::after {
   left: 81%;
 }
+.c-tab-list[data-col="4"] li, .c-tab-list[data-col="4"]::before {
+  width: 25%;
+}
+.c-tab-list[data-col="4"][data-current="0"]::after {
+  left: 10.4%;
+}
+.c-tab-list[data-col="4"][data-current="1"]::before {
+  left: 25%;
+}
+.c-tab-list[data-col="4"][data-current="1"]::after {
+  left: 35.5%;
+}
+.c-tab-list[data-col="4"][data-current="2"]::before {
+  left: 50%;
+}
+.c-tab-list[data-col="4"][data-current="2"]::after {
+  left: 60.5%;
+}
+.c-tab-list[data-col="4"][data-current="3"]::before {
+  left: 75%;
+}
+.c-tab-list[data-col="4"][data-current="3"]::after {
+  left: 85%;
+}
 .c-tab-list li {
   position: relative;
   z-index: 2;
@@ -2979,4 +3003,28 @@ select option:disabled {
 .p-account-contents {
   padding: 40px 16px 80px;
   background-color: #F0F0F0;
+}
+
+.p-notification-aruda {
+  background-color: #FFFFFF;
+}
+.p-notification-aruda-section {
+  padding-top: 16px;
+}
+.p-notification-aruda-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+.p-notification-aruda-block {
+  padding: 32px 16px;
+  background-color: #F0F0F0;
+}
+.p-notification-aruda-block .c-tab-list {
+  margin-bottom: 18px;
+}
+.p-notification-aruda-block .c-form__select {
+  margin-bottom: 24px;
+}
+.p-notification-aruda-block .c-info {
+  padding-left: 0;
+  padding-right: 0;
 }
