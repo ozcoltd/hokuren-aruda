@@ -1,3 +1,4 @@
+const fs = require('fs');
 const chokidar = require('chokidar');
 const { exec } = require('child_process');
 const path = require('path');

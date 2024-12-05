@@ -1,0 +1,35 @@
+.p-machine-search {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.p-machine-search-info {
+  padding: 24px 0 0;
+}
+
+.p-machine-search-info > .u-h-lv2 {
+  margin-bottom: 32px;
+}
+
+.p-machine-search-search {
+  padding: 40px 16px;
+  background-color: #F0F0F0;
+}
+
+.p-machine-search-search .u-h-lv2 {
+  margin-bottom: 24px;
+}
+
+.p-machine-search-search .u-h-lv2 .u-ico {
+  margin: 0 auto;
+}
+
+.p-machine-search-search .c-form {
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.p-machine-search-btns {
+  padding: 20px 0 40px;
+  background-color: #F0F0F0;
+}

@@ -1,0 +1,106 @@
+.p-machine-detail {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.p-machine-detail-section {
+  padding-top: 24px;
+}
+
+.p-machine-detail-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+
+.p-machine-detail-section .c-more-block {
+  height: 41px;
+  margin-top: 32px;
+  padding: 0;
+}
+
+.p-machine-detail-section .c-more-block.is-open {
+  overflow: visible;
+}
+
+.p-machine-detail-section .c-more-block__contents {
+  opacity: 0;
+}
+
+.p-machine-detail-section .c-more-block__btn {
+  background: transparent;
+}
+
+.p-machine-detail-section .c-more-block__btn span {
+  margin: 0 8px 0 0;
+}
+
+.p-machine-detail-contents {
+  padding: 20px 16px 40px;
+  background-color: #F0F0F0;
+}
+
+.p-machine-detail-kv .l-grid {
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.p-machine-detail__state {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.p-machine-detail__manufacturer {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.p-machine-detail__name {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.p-machine-detail__inquiry-no {
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  background-color: #2C933A;
+  border-radius: 4px;
+}
+
+.p-machine-detail__inquiry-no span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.p-machine-detail__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.p-machine-detail__price span:nth-child(1) {
+  font-size: 18px;
+}
+
+.p-machine-detail__price span:nth-child(2) {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.p-machine-detail__price span:nth-child(2) span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.p-machine-detail .c-info {
+  background-color: #FFFFFF;
+}
+
+.p-machine-detail-btn {
+  padding: 48px 16px;
+  background-color: #F0F0F0;
+}

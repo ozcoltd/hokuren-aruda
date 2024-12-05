@@ -1,0 +1,26 @@
+.p-selling_info-confirm {
+  background-color: #FFFFFF;
+}
+
+.p-selling_info-confirm-section {
+  padding-top: 16px;
+}
+
+.p-selling_info-confirm-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+
+.p-selling_info-confirm-section .p-confirm-block {
+  padding: 40px 16px;
+  background-color: #F0F0F0;
+}
+
+.p-selling_info-confirm-section .p-confirm-block .c-form {
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}
+
+.p-selling_info-confirm-section .c-mypage-btn-block {
+  padding-top: 0;
+}

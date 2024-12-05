@@ -1,0 +1,47 @@
+.p-machine-inquiry {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.p-machine-inquiry-section {
+  padding-top: 24px;
+}
+
+.p-machine-inquiry-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+
+.p-machine-inquiry-section .c-form {
+  margin: 48px -16px 0;
+  background-color: #FFFFFF;
+}
+
+.p-machine-inquiry-section .c-form__list[data-col="2"] {
+  gap: 8px;
+}
+
+.p-machine-inquiry-section .c-form__list[data-type="kubun"] li {
+  padding: 8px;
+}
+
+.p-machine-inquiry-section .c-form__list[data-type="kubun"] li label {
+  margin-top: 0;
+}
+
+.p-machine-inquiry-section .c-form__list[data-type="kubun"] li.is-active {
+  background-color: #ECF6ED;
+}
+
+.p-machine-inquiry-contents {
+  padding: 20px 16px 0;
+  background-color: #F0F0F0;
+}
+
+.p-machine-inquiry .c-exhibition-hall,
+.p-machine-inquiry .c-info {
+  background-color: #F0F0F0;
+}
+
+.p-machine-inquiry .c-info {
+  padding-bottom: 80px;
+}

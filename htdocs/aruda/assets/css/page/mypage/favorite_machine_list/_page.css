@@ -1,0 +1,27 @@
+.p-favorite_machine_list {
+  background-color: #FFFFFF;
+}
+
+.p-favorite_machine_list-section {
+  padding-top: 16px;
+}
+
+.p-favorite_machine_list-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+
+.p-favorite_machine_list-section .c-mypage-block {
+  padding-bottom: 16px;
+}
+
+.p-favorite_machine_list-recommendation {
+  padding: 40px 16px;
+}
+
+.p-favorite_machine_list-recommendation .u-h-lv3 {
+  margin-bottom: 24px;
+}
+
+.p-favorite_machine_list-recommendation .l-grid {
+  gap: 32px 8px;
+}

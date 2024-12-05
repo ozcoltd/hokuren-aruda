@@ -1,0 +1,36 @@
+.p-notification_list {
+  background-color: #FFFFFF;
+}
+
+.p-notification_list-section {
+  padding-top: 16px;
+}
+
+.p-notification_list-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+
+.p-notification_list-section .c-mypage-block {
+  padding-bottom: 16px;
+}
+
+.p-notification_list-info {
+  padding: 40px 16px;
+}
+
+.p-notification_list-info .u-h-lv3 {
+  margin-bottom: 24px;
+}
+
+.p-notification_list-info__box {
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}
+
+.p-notification_list-info__no-message {
+  color: #8E8E8E;
+}

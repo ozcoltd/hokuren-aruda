@@ -6,7 +6,7 @@
   "scripts": {
     "ejs": "ejs-cli --base-dir ./aruda './**/*.ejs' --out ./htdocs/",
     "watch:ejs": "nodemon --watch aruda/ --ext ejs --exec \"npm run ejs\"",
-    "start": "npm-run-all watch:ejs",
+    "start": "npm-run-all watch:ejs watch:style watch:pages",
     "build:style": "node-sass --output-style expanded scss/style.scss htdocs/aruda/assets/css/style.css",
     "build:pages": "node scripts/build-pages.js",
     "build:all": "npm-run-all build:style build:pages",

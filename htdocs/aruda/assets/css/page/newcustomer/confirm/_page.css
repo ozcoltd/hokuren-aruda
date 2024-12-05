@@ -1,0 +1,22 @@
+.p-newcustomer-confirm {
+  background-color: #FFFFFF;
+}
+
+.p-newcustomer-confirm-section {
+  padding-top: 16px;
+}
+
+.p-newcustomer-confirm-section .u-h-lv4 {
+  margin-bottom: 32px;
+}
+
+.p-newcustomer-confirm-section .p-confirm-block {
+  padding: 40px 16px 80px;
+  background-color: #F0F0F0;
+}
+
+.p-newcustomer-confirm-section .p-confirm-block .c-form {
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}

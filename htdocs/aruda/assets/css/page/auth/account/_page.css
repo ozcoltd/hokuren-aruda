@@ -1,0 +1,27 @@
+.p-account {
+  background-color: #FFFFFF;
+}
+
+.p-account-section {
+  padding-top: 16px;
+}
+
+.p-account-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+
+.p-account-section .c-form {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.p-account-section .c-form .c-btn + .u-h-lv4 {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #DDDDDD;
+}
+
+.p-account-contents {
+  padding: 40px 16px 80px;
+  background-color: #F0F0F0;
+}

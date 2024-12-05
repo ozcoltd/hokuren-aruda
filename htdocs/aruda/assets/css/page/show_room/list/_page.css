@@ -1,0 +1,28 @@
+.p-show_room-list {
+  background-color: #FFFFFF;
+}
+
+.p-show_room-list-section {
+  padding-top: 16px;
+}
+
+.p-show_room-list-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+
+.p-show_room-list-block {
+  padding-bottom: 80px;
+  background-color: #F0F0F0;
+}
+
+.p-show_room-list-block .p-tab-wrap {
+  padding: 32px 16px 16px;
+}
+
+.p-show_room-list-block .p-map-block {
+  padding: 0 16px 16px;
+}
+
+.p-show_room-list-block .p-map-block iframe {
+  width: 100%;
+}

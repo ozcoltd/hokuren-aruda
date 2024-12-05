@@ -1,0 +1,27 @@
+.p-mail_notification_settings {
+  background-color: #FFFFFF;
+}
+
+.p-mail_notification_settings-section {
+  padding-top: 16px;
+}
+
+.p-mail_notification_settings-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+
+.p-mail_notification_settings-contents {
+  padding: 40px 16px;
+}
+
+.p-mail_notification_settings-contents .u-h-lv3 {
+  margin-bottom: 24px;
+}
+
+.p-mail_notification_settings-contents .l-grid {
+  gap: 32px 8px;
+}
+
+.p-mail_notification_settings-contents .c-mail-setting + .c-mail-setting {
+  margin-top: 24px;
+}

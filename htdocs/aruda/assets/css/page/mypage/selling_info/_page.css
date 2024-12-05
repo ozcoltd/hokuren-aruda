@@ -1,0 +1,30 @@
+.p-selling_info {
+  background-color: #FFFFFF;
+}
+
+.p-selling_info-section {
+  padding-top: 16px;
+}
+
+.p-selling_info-section .u-h-lv2 {
+  margin-bottom: 32px;
+}
+
+.p-selling_info-form {
+  padding: 40px 16px;
+}
+
+.p-selling_info-form .u-h-lv3 {
+  margin-bottom: 24px;
+}
+
+.p-selling_info-form .c-form {
+  padding: 24px 0;
+  background-color: #FFFFFF;
+}
+
+.p-selling_info-form .c-form .u-f-alert {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #DDDDDD;
+}
