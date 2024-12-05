@@ -4,15 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ejs": "ejs-cli --base-dir ./aruda './**/*.ejs' --out ./htdocs/", 
+    "ejs": "ejs-cli --base-dir ./aruda './**/*.ejs' --out ./htdocs/",
     "watch:ejs": "nodemon --watch aruda/ --ext ejs --exec \"npm run ejs\"",
-    "start": "npm-run-all watch:ejs"
+    "start": "npm-run-all watch:ejs",
+    "build:style": "node-sass --output-style expanded scss/style.scss htdocs/aruda/assets/css/style.css",
+    "build:pages": "node scripts/build-pages.js",
+    "build:all": "npm-run-all build:style build:pages",
+    "watch:style": "node-sass --watch scss/style.scss --output htdocs/aruda/assets/css/",
+    "watch:pages": "node scripts/watch-pages.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chokidar-cli": "^3.0.0",
     "ejs-cli": "^2.2.3",
+    "node-sass": "^9.0.0",
     "nodemon": "^3.1.7",
     "npm-run-all": "^4.1.5"
   }
