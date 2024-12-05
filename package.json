@@ -6,12 +6,13 @@
   "scripts": {
     "ejs": "ejs-cli --base-dir ./aruda './**/*.ejs' --out ./htdocs/",
     "watch:ejs": "nodemon --watch aruda/ --ext ejs --exec \"npm run ejs\"",
-    "start": "npm-run-all watch:ejs watch:style watch:pages",
+    "start": "npm-run-all watch:ejs",
     "build:style": "node-sass --output-style expanded scss/style.scss htdocs/aruda/assets/css/style.css",
     "build:pages": "node scripts/build-pages.js",
     "build:all": "npm-run-all build:style build:pages",
     "watch:style": "node-sass --watch scss/style.scss --output htdocs/aruda/assets/css/",
-    "watch:pages": "node scripts/watch-pages.js"
+    "watch:pages": "node scripts/watch-pages.js",
+    "watch": "npm-run-all --parallel watch:style watch:pages"
   },
   "keywords": [],
   "author": "",
