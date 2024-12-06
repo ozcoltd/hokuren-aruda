@@ -1,11 +1,19 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-customer {
     background-color: $c-bg-main;
 
     &-section {
-        padding-top: $m-s;
         .u-h-lv4 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            @include for-desktop {
+                background-color: $c-bg-main;
+            }
+        }
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
         }
     }
     &-form {
@@ -41,9 +49,25 @@
                 border-bottom: 1px solid $c-border;
             }
         }
+        @include for-desktop {
+            margin-top: $m-ll;
+            background-color: $c-bg-main;
+            border-radius: $b-r-s;
+        }
     }
     &-btn {
         padding-top: $m-ml;
         background-color: $c-bg-main-sub;
+    }
+    .c-mypage-btn-block {
+        @include for-desktop {
+            padding-left: 0;
+            padding-right: 0;;
+        }
+    }
+    & + .l-footer {
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
+        }
     }
 }

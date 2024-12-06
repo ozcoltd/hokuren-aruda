@@ -21,6 +21,24 @@
   border-radius: 4px;
 }
 
+@media (min-width: 769px) {
+  .p-customer-section .p-confirm-block .c-form {
+    max-width: 890px;
+    margin: 0 auto;
+  }
+}
+
 .p-customer-section .c-mypage-btn-block {
   padding-top: 0;
+}
+
+@media (min-width: 769px) {
+  .p-customer-section .c-mypage-btn-block__inner {
+    max-width: 890px;
+    margin: 0 auto;
+  }
+}
+
+.p-customer + .l-footer {
+  background-color: #F0F0F0;
 }

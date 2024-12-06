@@ -2,12 +2,21 @@
   background-color: #FFFFFF;
 }
 
-.p-customer-section {
+.p-customer-section .u-h-lv4 {
   padding-top: 16px;
+  padding-bottom: 32px;
 }
 
-.p-customer-section .u-h-lv4 {
-  margin-bottom: 32px;
+@media (min-width: 769px) {
+  .p-customer-section .u-h-lv4 {
+    background-color: #FFFFFF;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-customer-section {
+    background-color: #F0F0F0;
+  }
 }
 
 .p-customer-form {
@@ -46,7 +55,28 @@
   border-bottom: 1px solid #DDDDDD;
 }
 
+@media (min-width: 769px) {
+  .p-customer-form {
+    margin-top: 56px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+  }
+}
+
 .p-customer-btn {
   padding-top: 40px;
   background-color: #F0F0F0;
+}
+
+@media (min-width: 769px) {
+  .p-customer .c-mypage-btn-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-customer + .l-footer {
+    background-color: #F0F0F0;
+  }
 }
