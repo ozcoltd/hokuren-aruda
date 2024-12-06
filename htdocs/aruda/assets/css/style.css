@@ -229,7 +229,6 @@ select option:disabled {
     justify-content: center;
     align-items: center;
     height: 80px;
-    margin: 0 -16px;
     background-image: url(/aruda/assets/images/common/bg_footer.png), url(/aruda/assets/images/common/bg_copyright.png);
     background-blend-mode: multiply;
     background-size: 1920px auto, cover;
@@ -1066,6 +1065,7 @@ select option:disabled {
           margin: 0 auto; }
         .c-fixed-menu ul li a span {
           display: block;
+          color: #4B4B4B;
           font-size: 10px;
           font-weight: 700; }
 

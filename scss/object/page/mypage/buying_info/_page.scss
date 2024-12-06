@@ -1,11 +1,19 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-buying_info {
     background-color: $c-bg-main;
 
     &-section {
-        padding-top: $m-s;
         .u-h-lv2 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            @include for-desktop {
+                background-color: $c-bg-main;
+            }
+        }
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
         }
     }
     &-recommendation {

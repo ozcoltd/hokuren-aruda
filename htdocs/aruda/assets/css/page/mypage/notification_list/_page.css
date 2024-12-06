@@ -2,12 +2,21 @@
   background-color: #FFFFFF;
 }
 
-.p-notification_list-section {
+.p-notification_list-section .u-h-lv2 {
   padding-top: 16px;
+  padding-bottom: 32px;
 }
 
-.p-notification_list-section .u-h-lv2 {
-  margin-bottom: 32px;
+@media (min-width: 769px) {
+  .p-notification_list-section .u-h-lv2 {
+    background-color: #FFFFFF;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-notification_list-section {
+    background-color: #F0F0F0;
+  }
 }
 
 .p-notification_list-section .c-mypage-block {
@@ -33,4 +42,11 @@
 
 .p-notification_list-info__no-message {
   color: #8E8E8E;
+}
+
+@media (min-width: 769px) {
+  .p-notification_list .c-mypage-btn-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

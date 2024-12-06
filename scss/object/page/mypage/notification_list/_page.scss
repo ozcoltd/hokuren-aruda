@@ -1,11 +1,19 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-notification_list {
     background-color: $c-bg-main;
 
     &-section {
-        padding-top: $m-s;
         .u-h-lv2 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            @include for-desktop {
+                background-color: $c-bg-main;
+            }
+        }
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
         }
         .c-mypage-block {
             padding-bottom: $m-s;
@@ -26,6 +34,12 @@
         }
         &__no-message {
             color: $c-text-g;
+        }
+    }
+    .c-mypage-btn-block {
+        @include for-desktop {
+            padding-left: 0;
+            padding-right: 0;;
         }
     }
 }

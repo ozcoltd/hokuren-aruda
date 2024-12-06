@@ -63,7 +63,9 @@
     </nav>
     <section class="p-selling_info-section">
       <h2 class="u-h-lv2 u-t-center">売りたい情報登録</h2>
-      <div class="c-mypage-block">
+      <div class="c-contents" data-type="mypage">
+        <div class="c-contents__item">
+          <div class="c-mypage-block">
   <div class="c-mypage-block__head">
     <p class="c-mypage-block__name">ようこそ 或田<span>さん</span></p>
   </div>
@@ -97,115 +99,117 @@
     </p>
   </div>
 </div>
-      
-      <div class="p-selling_info-form">
-        <h3 class="u-h-lv3 u-t-center">売りたい情報登録</h3>
-        <p class="u-fs-14">「アルーダ」にお手持ちの農業機械を売りたい方、このページに情報登録してみませんか。<br>
-          情報を確認後、所属JA担当者またはご指定の展示場担当者が機械の評価やご要望を伺います。<br>
-          機械の購入手順やお支払いの方法など、ご利用案内は<a href="#" class="u-link">こちら</a>。</p>
-        <form method="post" action="/aruda/mypage/selling_info/confirm/" class="c-form">
-          <p class="u-f-alert">*は必須項目です</p>
-            <p class="c-form__ttl">送信先<span class="u-f-required">*</span></p>
-            <label>
-              <p class="c-form__subttl">エリア</p>
-              <div class="c-form__select">
-                <select name="">
-                  <option value="" disabled selected>選択してください</option>
-                  <option value="1">ダミー</option>
-                  <option value="2">ダミー</option>
-                  <option value="3">ダミー</option>
-                </select>
-              </div>
-            </label>
-            <label>
-              <p class="c-form__subttl">展示場</p>
-              <div class="c-form__select">
-                <select name="">
-                  <option value="" disabled selected>選択してください</option>
-                  <option value="1">ダミー</option>
-                  <option value="2">ダミー</option>
-                  <option value="3">ダミー</option>
-                </select>
-              </div>
-            </label>
-            <label>
-              <p class="c-form__ttl u-mt-32">機種名<span class="u-f-required">*</span></p>
-              <input type="text" name="" value="" class="c-form__text" placeholder="機種名を記入してください">
-            </label>
-            <label>
-              <p class="c-form__ttl u-mt-32">銘柄名<span class="u-f-required">*</span></p>
-              <input type="text" name="" value="" class="c-form__text" placeholder="銘柄名を記入してください">
-            </label>
-            <p class="c-form__ttl u-mt-32">型式・規格</p>
-            <label>
-              <p class="c-form__subttl">型式</p>
-              <div class="c-form__select">
-                <select name="">
-                  <option value="" disabled selected>選択してください</option>
-                  <option value="1">ダミー</option>
-                  <option value="2">ダミー</option>
-                  <option value="3">ダミー</option>
-                </select>
-              </div>
-            </label>
-            <label>
-              <p class="c-form__subttl">規格</p>
-              <div class="c-form__select">
-                <select name="">
-                  <option value="" disabled selected>選択してください</option>
-                  <option value="1">ダミー</option>
-                  <option value="2">ダミー</option>
-                  <option value="3">ダミー</option>
-                </select>
-              </div>
-            </label>
-            <label>
-              <p class="c-form__ttl u-mt-32">年式</p>
-              <input type="text" name="" value="" class="c-form__text" placeholder="年式を記入してください">
-            </label>
-
-            <p class="c-form__ttl u-mt-32">整備</p>
-            <ul class="c-form__list" data-col="2">
-              <li><label class="c-form__radio"><input type="radio" name="group1" value="1"><span>無し</span></label></li>
-              <li><label class="c-form__radio"><input type="radio" name="group1" value="2"><span>有り</span></label></li>
-            </ul>
-
-            <label>
-              <p class="c-form__ttl u-mt-32">備考</p>
-              <input type="text" name="" value="" class="c-form__text" placeholder="備考を記入してください">
-            </label>
-            <label>
-              <p class="c-form__ttl u-mt-32">希望価格</p>
-              <div class="c-form__budget">
-                <div>
-                  <input type="number" value="" name="" class="c-form__text">
-                </div>
-                <span>円</span>
-                <span>〜</span>
-                <div>
-                  <input type="number" value="" name="" class="c-form__text">
-                </div>
-                <span>円</span>
-              </div>
-            </label>
-        </form>
-      </div>
-
-      <div class="c-mypage-btn-block">
-        <div class="c-mypage-btn-block__inner">
-          <h4 class="u-h-lv4 u-t-center">
-            マイページ情報
-          </h4>
-          <a href="/aruda/mypage/mail_notification_settings/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
-            メール通知設定
-            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-          </a>
-          <a href="/aruda/mypage/customer/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
-            会員情報の編集
-            <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-          </a>
         </div>
-      </div>
+        <div class="c-contents__item">
+          <div class="p-selling_info-form">
+            <h3 class="u-h-lv3 u-t-center">売りたい情報登録</h3>
+            <p class="u-fs-14">「アルーダ」にお手持ちの農業機械を売りたい方、このページに情報登録してみませんか。<br>
+              情報を確認後、所属JA担当者またはご指定の展示場担当者が機械の評価やご要望を伺います。<br>
+              機械の購入手順やお支払いの方法など、ご利用案内は<a href="#" class="u-link">こちら</a>。</p>
+            <form method="post" action="/aruda/mypage/selling_info/confirm/" class="c-form">
+              <p class="u-f-alert">*は必須項目です</p>
+                <p class="c-form__ttl">送信先<span class="u-f-required">*</span></p>
+                <label>
+                  <p class="c-form__subttl">エリア</p>
+                  <div class="c-form__select">
+                    <select name="">
+                      <option value="" disabled selected>選択してください</option>
+                      <option value="1">ダミー</option>
+                      <option value="2">ダミー</option>
+                      <option value="3">ダミー</option>
+                    </select>
+                  </div>
+                </label>
+                <label>
+                  <p class="c-form__subttl">展示場</p>
+                  <div class="c-form__select">
+                    <select name="">
+                      <option value="" disabled selected>選択してください</option>
+                      <option value="1">ダミー</option>
+                      <option value="2">ダミー</option>
+                      <option value="3">ダミー</option>
+                    </select>
+                  </div>
+                </label>
+                <label>
+                  <p class="c-form__ttl u-mt-32">機種名<span class="u-f-required">*</span></p>
+                  <input type="text" name="" value="" class="c-form__text" placeholder="機種名を記入してください">
+                </label>
+                <label>
+                  <p class="c-form__ttl u-mt-32">銘柄名<span class="u-f-required">*</span></p>
+                  <input type="text" name="" value="" class="c-form__text" placeholder="銘柄名を記入してください">
+                </label>
+                <p class="c-form__ttl u-mt-32">型式・規格</p>
+                <label>
+                  <p class="c-form__subttl">型式</p>
+                  <div class="c-form__select">
+                    <select name="">
+                      <option value="" disabled selected>選択してください</option>
+                      <option value="1">ダミー</option>
+                      <option value="2">ダミー</option>
+                      <option value="3">ダミー</option>
+                    </select>
+                  </div>
+                </label>
+                <label>
+                  <p class="c-form__subttl">規格</p>
+                  <div class="c-form__select">
+                    <select name="">
+                      <option value="" disabled selected>選択してください</option>
+                      <option value="1">ダミー</option>
+                      <option value="2">ダミー</option>
+                      <option value="3">ダミー</option>
+                    </select>
+                  </div>
+                </label>
+                <label>
+                  <p class="c-form__ttl u-mt-32">年式</p>
+                  <input type="text" name="" value="" class="c-form__text" placeholder="年式を記入してください">
+                </label>
+
+                <p class="c-form__ttl u-mt-32">整備</p>
+                <ul class="c-form__list" data-col="2">
+                  <li><label class="c-form__radio"><input type="radio" name="group1" value="1"><span>無し</span></label></li>
+                  <li><label class="c-form__radio"><input type="radio" name="group1" value="2"><span>有り</span></label></li>
+                </ul>
+
+                <label>
+                  <p class="c-form__ttl u-mt-32">備考</p>
+                  <input type="text" name="" value="" class="c-form__text" placeholder="備考を記入してください">
+                </label>
+                <label>
+                  <p class="c-form__ttl u-mt-32">希望価格</p>
+                  <div class="c-form__budget">
+                    <div>
+                      <input type="number" value="" name="" class="c-form__text">
+                    </div>
+                    <span>円</span>
+                    <span>〜</span>
+                    <div>
+                      <input type="number" value="" name="" class="c-form__text">
+                    </div>
+                    <span>円</span>
+                  </div>
+                </label>
+            </form>
+          </div>
+
+          <div class="c-mypage-btn-block">
+            <div class="c-mypage-btn-block__inner">
+              <h4 class="u-h-lv4 u-t-center">
+                マイページ情報
+              </h4>
+              <a href="/aruda/mypage/mail_notification_settings/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
+                メール通知設定
+                <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
+              </a>
+              <a href="/aruda/mypage/customer/" class="c-btn u-m-center" data-type="icon-right" data-size="l">
+                会員情報の編集
+                <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
+              </a>
+            </div>
+          </div>
+        </div>
     </section>
 
   </main>

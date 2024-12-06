@@ -2,12 +2,21 @@
   background-color: #FFFFFF;
 }
 
-.p-buying_info-section {
+.p-buying_info-section .u-h-lv2 {
   padding-top: 16px;
+  padding-bottom: 32px;
 }
 
-.p-buying_info-section .u-h-lv2 {
-  margin-bottom: 32px;
+@media (min-width: 769px) {
+  .p-buying_info-section .u-h-lv2 {
+    background-color: #FFFFFF;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-buying_info-section {
+    background-color: #F0F0F0;
+  }
 }
 
 .p-buying_info-recommendation {

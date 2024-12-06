@@ -2,12 +2,21 @@
   background-color: #FFFFFF;
 }
 
-.p-selling_info-section {
+.p-selling_info-section .u-h-lv2 {
   padding-top: 16px;
+  padding-bottom: 32px;
 }
 
-.p-selling_info-section .u-h-lv2 {
-  margin-bottom: 32px;
+@media (min-width: 769px) {
+  .p-selling_info-section .u-h-lv2 {
+    background-color: #FFFFFF;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-selling_info-section {
+    background-color: #F0F0F0;
+  }
 }
 
 .p-selling_info-form {
@@ -27,4 +36,19 @@
   margin-bottom: 32px;
   padding-bottom: 32px;
   border-bottom: 1px solid #DDDDDD;
+}
+
+@media (min-width: 769px) {
+  .p-selling_info-form {
+    margin-top: 56px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-selling_info .c-mypage-btn-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

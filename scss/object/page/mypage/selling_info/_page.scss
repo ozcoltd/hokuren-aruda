@@ -1,11 +1,19 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-selling_info {
     background-color: $c-bg-main;
 
     &-section {
-        padding-top: $m-s;
         .u-h-lv2 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            @include for-desktop {
+                background-color: $c-bg-main;
+            }
+        }
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
         }
     }
     &-form {
@@ -21,6 +29,17 @@
                 padding-bottom: $m-m;
                 border-bottom: 1px solid $c-border;
             }
+        }
+        @include for-desktop {
+            margin-top: $m-ll;
+            background-color: $c-bg-main;
+            border-radius: $b-r-s;
+        }
+    }
+    .c-mypage-btn-block {
+        @include for-desktop {
+            padding-left: 0;
+            padding-right: 0;;
         }
     }
 }
