@@ -1459,6 +1459,10 @@ select option:disabled {
   overflow-x: auto;
   white-space: nowrap;
   padding: 16px 16px 8px; }
+  @media (min-width: 769px) {
+    .c-breadcrumbs {
+      max-width: 980px;
+      margin: 0 auto; } }
   .c-breadcrumbs ul {
     display: flex;
     gap: 16px; }

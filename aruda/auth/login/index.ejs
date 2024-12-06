@@ -19,39 +19,43 @@
     <section class="p-login-section">
       <h2 class="u-h-lv2 u-t-center">ログイン</h2>
         <div class="p-login-contents">  
-            <form action="/aruda/auth/login" method="POST" class="c-form">
-                <a href="/" class="c-btn u-m-center" data-type="line" data-size="l">
-                    <img src="/aruda/assets/images/common/ico_line.svg" alt="" class="u-ico" data-size="l">
-                    LINEでログイン
-                    <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
-                </a>
-                <p class="c-txt-hr">または</p>
-                <h3 class="u-h-lv4 u-t-center u-mb-16">メールアドレスでログイン</h3>
-                <p class="u-fs-14 u-mb-24">登録時に入力されたメールアドレスとパスワードでログインしてください。</p>
-
-                <label>
-                    <p class="c-form__ttl u-mb-8">メールアドレス</p>
-                    <input type="email" name="cu_mail_address" class="c-form__text" placeholder="メールアドレスを記入してください">
-                </label>
-                <label>
-                    <p class="c-form__ttl u-mb-8">パスワード</p>
-                    <input type="password" name="password" class="c-form__text" placeholder="パスワードを記入してください">
-                </label>
-                <p class="u-f-notes u-mt-16">※パスワードを忘れた方は<a href="/aruda/password/email" class="u-link">こちら</a>からパスワードの再発行を行ってください。</p>
-
-                <div class="u-mt-32">
-                    <button class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
-                        メールアドレスで<br>ログイン
+            <div class="c-contents">
+                <form action="/aruda/auth/login" method="POST" class="c-form">
+                    <a href="/" class="c-btn u-m-center" data-type="line" data-size="l">
+                        <img src="/aruda/assets/images/common/ico_line.svg" alt="" class="u-ico" data-size="l">
+                        LINEでログイン
                         <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
-                    </button>
-                </div>
-            </form>
+                    </a>
+                    <p class="c-txt-hr">または</p>
+                    <h3 class="u-h-lv4 u-t-center u-mb-16">メールアドレスでログイン</h3>
+                    <p class="u-fs-14 u-mb-24">登録時に入力されたメールアドレスとパスワードでログインしてください。</p>
+
+                    <label>
+                        <p class="c-form__ttl u-mb-8">メールアドレス</p>
+                        <input type="email" name="cu_mail_address" class="c-form__text" placeholder="メールアドレスを記入してください">
+                    </label>
+                    <label>
+                        <p class="c-form__ttl u-mb-8">パスワード</p>
+                        <input type="password" name="password" class="c-form__text" placeholder="パスワードを記入してください">
+                    </label>
+                    <p class="u-f-notes u-mt-16">※パスワードを忘れた方は<a href="/aruda/password/email" class="u-link">こちら</a>からパスワードの再発行を行ってください。</p>
+
+                    <div class="u-mt-32">
+                        <button class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
+                            メールアドレスで<br>ログイン
+                            <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
+                        </button>
+                    </div>
+                </form>
+            </div>
             <div class="p-login-signup">
-                <p class="u-fs-16">利用登録が済んでいない方はこちらから新規利用登録してください。</p>
-                <a href="/aruda/newcustomer" class="c-btn u-mt-32 u-m-center" data-type="icon-right" data-size="l">
-                    新規登録
-                    <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-                </a>
+                <div class="c-contents">
+                    <p class="u-fs-16">利用登録が済んでいない方はこちらから新規利用登録してください。</p>
+                    <a href="/aruda/newcustomer" class="c-btn u-mt-32 u-m-center" data-type="icon-right" data-size="l">
+                        新規登録
+                        <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
+                    </a>
+                </div>
             </div>
         </div>
     </section>

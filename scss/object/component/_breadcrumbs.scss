@@ -2,6 +2,10 @@
     overflow-x: auto;
     white-space: nowrap;
     padding: $m-s $m-s $m-ss;
+    @include for-desktop {
+        max-width: 980px;
+        margin: 0 auto;
+    }
 
     ul {
         display: flex;
