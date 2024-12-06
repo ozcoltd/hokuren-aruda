@@ -1,16 +1,23 @@
 .l-footer {
     position: relative;
     margin-bottom: 56px;
-    padding: 56px 16px 0;
+    padding: 56px 0 0;
     text-align: center;
     background: url(/aruda/assets/images/common/bg_footer.png) center top no-repeat $c-bg-main;
     background-size: 1920px auto;
+    @include for-desktop {
+        padding-top: 108px;
+        margin-bottom: 0;
+    }
     .logo {
         margin-bottom: 48px;
         a {
             display: block;
             width: 141px;
             margin: 0 auto;
+            @include for-desktop {
+                width: 203px;
+            }
         }
     }
     ul {
@@ -40,10 +47,20 @@
             color: $c-text-w;
             font-size: $fs-t-ss;
         }
+        @include for-desktop {
+            max-width: 1920px;
+            margin: 0 auto;
+        }
     }
     .pagetop {
         position: absolute;
-        top: -62px;
+        top: -58px;
         right: 8px;
+
+        @include for-desktop {
+            width: 67px;
+            right: auto;
+            left: calc(50% + 380px);
+        }
     }
 }

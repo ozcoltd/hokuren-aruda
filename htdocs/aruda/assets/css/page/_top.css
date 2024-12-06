@@ -7,6 +7,12 @@
   margin-bottom: 16px;
 }
 
+@media (min-width: 769px) {
+  .p-top-info {
+    padding: 48px 16px 56px;
+  }
+}
+
 .p-top-search {
   padding: 40px 16px;
   background-color: #FFFFFF;
@@ -18,6 +24,51 @@
 
 .p-top-search .u-h-lv2 .u-ico {
   margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .p-top-search {
+    padding: 56px 16px;
+  }
+  .p-top-search .u-h-lv2 {
+    display: flex;
+    align-items: start;
+    white-space: nowrap;
+  }
+  .p-top-search .u-h-lv2 .u-ico {
+    width: 40px;
+    margin: 10px 20px 0 0;
+  }
+  .p-top-search .c-contents {
+    position: relative;
+    display: flex;
+    gap: 6.1%;
+  }
+  .p-top-search .c-contents .c-form {
+    width: 65.3%;
+  }
+  .p-top-search .c-form {
+    padding: 40px;
+  }
+  .p-top-search .c-form label {
+    display: flex;
+  }
+  .p-top-search .c-form__ttl {
+    margin-right: 24px;
+    white-space: nowrap;
+  }
+  .p-top-search .c-form__budget, .p-top-search .c-form__select {
+    width: 85%;
+  }
+  .p-top-search .c-form__budget {
+    justify-content: space-between;
+  }
+  .p-top-search .c-form__submit {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 276px;
+  }
 }
 
 .p-top-machinery {
@@ -39,6 +90,15 @@
 
 .p-top-machinery .l-grid {
   gap: 32px 8px;
+}
+
+@media (min-width: 769px) {
+  .p-top-machinery .l-grid {
+    gap: 32px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 890px;
+    margin: 0 auto;
+  }
 }
 
 .p-top-history {
@@ -68,7 +128,11 @@
   background: transparent;
 }
 
-.p-top-bnr {
-  padding: 56px 60px 80px;
-  background-color: #FFFFFF;
+@media (min-width: 769px) {
+  .p-top-history .l-grid {
+    gap: 32px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 890px;
+    margin: 0 auto;
+  }
 }

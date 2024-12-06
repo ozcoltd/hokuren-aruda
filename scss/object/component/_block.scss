@@ -96,6 +96,22 @@
 .c-card-block {
     padding: $m-m $m-s $m-ml;
     background-color: $c-bg-main;
+    &__btn {
+        @include for-desktop {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            width: 622px;
+            margin: 70px auto 0;
+            .c-btn {
+                width: 279px;
+            }
+            .u-mt-20,
+            .u-mt-40 {
+                margin-top: 0;
+            }
+        }
+    }
 }
 .c-mypage-block {
     padding: $m-ml $m-s;

@@ -1,4 +1,6 @@
 @import '../../foundation/variables';
+@import '../../foundation/mixins';
+
 .p-top {
     &-info {
         .u-h-lv4 {
@@ -6,6 +8,9 @@
         }
         margin-bottom: $m-ss;
         padding: $m-sl $m-s;
+        @include for-desktop {
+            padding: $m-l $m-s $m-ll;
+        }
     }
     &-search {
         padding: $m-ml $m-s;
@@ -14,6 +19,49 @@
             margin-bottom: $m-sl;
             .u-ico {
                 margin: 0 auto;
+            }
+        }
+        @include for-desktop {
+            padding: $m-ll $m-s;
+            .u-h-lv2 {
+               display: flex;
+               align-items: start;
+               white-space: nowrap;
+               .u-ico {
+                    width: 40px;
+                    margin: 10px 20px 0 0;
+                }
+            }
+            .c-contents {
+                position: relative;
+                display: flex;
+                gap: 6.1%;
+                .c-form {
+                    width: 65.3%;
+                }
+            }
+            .c-form {
+                padding: $m-ml;
+                label {
+                    display: flex;
+                }
+                &__ttl {
+                    margin-right: $m-sl;
+                    white-space: nowrap;
+                }
+                &__budget,
+                &__select {
+                    width: 85%;
+                }
+                &__budget {
+                    justify-content: space-between;
+                }
+                &__submit {
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    width: 276px;
+                }   
             }
         }
     }
@@ -31,6 +79,14 @@
         }
         .l-grid {
             gap: $m-m $m-ss;
+        }
+        @include for-desktop {
+            .l-grid {
+                gap: $m-m $m-ml;
+                grid-template-columns: repeat(4,1fr);
+                max-width: 890px;
+                margin: 0 auto;
+            }
         }
     }
     &-history {
@@ -53,9 +109,13 @@
                 background: transparent;
             }
         }
-    }
-    &-bnr {
-        padding: $m-ll 60px 80px;
-        background-color: $c-bg-main;
+        @include for-desktop {
+            .l-grid {
+                gap: $m-m $m-ml;
+                grid-template-columns: repeat(4,1fr);
+                max-width: 890px;
+                margin: 0 auto;
+            }
+        }
     }
 }

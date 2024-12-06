@@ -6,6 +6,9 @@
     width: 100%;
     padding: 11px 6px 6px;
     background-color: $c-bg-main;
+    @include for-desktop {
+        display: none;
+    }
     ul {
         display: flex;
         li {
@@ -15,7 +18,7 @@
                 width: 19.2%;
                 a {
                     position: absolute;
-                    left: 0;
+                    left: 50%;
                     bottom: 0;
                     display: flex;
                     flex-direction: column;
@@ -26,6 +29,7 @@
                     color: $c-text-w;
                     background-color: $c-bg-primary;
                     border-radius: 50%;
+                    transform: translateX(-50%);
                 }
             }
             a {

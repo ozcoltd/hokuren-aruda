@@ -2,6 +2,10 @@
     font-size: $fs-h-lv2;
     line-height: 42px;
     font-weight: 700;
+    @include for-desktop {
+        font-size: 36px;
+        line-height: 54px;
+    }
 }
 .u-h-lv3 {
     font-size: $fs-h-lv3;
@@ -12,6 +16,10 @@
     font-size: $fs-h-lv4;
     line-height: 30px;
     font-weight: 700;
+    @include for-desktop {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
 
 .u-fs-16 {

@@ -9,4 +9,24 @@
 .c-hokuren-bnr {
     padding: $m-ll 60px $m-xl;
     background-color: $c-bg-main;
+    .c-bnr {
+        max-width: 254px;
+        margin: 0 auto;
+        &+ .c-bnr {
+            margin-top: $m-s;
+        }
+    }
+    @include for-desktop {
+        .c-contents {
+            display: flex;
+            justify-content: center;
+            gap: $m-s;
+            .c-bnr {
+                margin: 0;
+                & + .c-bnr {
+                    margin: 0;
+                }
+            }
+        }
+    }
 }

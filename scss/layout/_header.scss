@@ -3,11 +3,15 @@
     top: 0;
     left: 0;
     z-index: 5;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     border-bottom: 1px solid $c-border;
     background-color: $c-bg-main;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 0 auto;
+    }
     h1 {
         a {
             display: block;

@@ -5,11 +5,13 @@
             display: block;
         }
     }
+
 }
 .c-tab-list {
     position: relative;
     display: flex;
-    margin-bottom: 12px;
+    max-width: 343px;
+    margin: 0 auto 12px;
     border: 1px solid $c-border;
     border-radius: 16px;
     background-color: $c-bg-main;
