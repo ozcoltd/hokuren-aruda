@@ -63,6 +63,17 @@ body {
     left: 0;
     right: 0;
     bottom: 0; }
+    @media (min-width: 769px) {
+      body.is-fixed::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(6px); } }
 
 li {
   list-style-type: none; }
@@ -1287,13 +1298,26 @@ select option:disabled {
   height: 100dvh;
   overflow-y: auto;
   background-color: #F0F0F0; }
+  @media (min-width: 769px) {
+    .c-menu-modal {
+      height: auto; } }
   .c-menu-modal__contents {
     padding: 24px 32px 127px; }
+    @media (min-width: 769px) {
+      .c-menu-modal__contents {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 100px 0 127px; } }
   .c-menu-modal .l-grid {
     gap: 15px; }
   .c-menu-modal__top {
     padding-bottom: 24px;
     border-bottom: 1px solid #DDDDDD; }
+    @media (min-width: 769px) {
+      .c-menu-modal__top .l-grid {
+        max-width: 598px;
+        gap: 48px;
+        margin: 0 auto; } }
   .c-menu-modal__middle {
     padding-top: 24px; }
     .c-menu-modal__middle li {
@@ -1306,6 +1330,11 @@ select option:disabled {
       font-weight: 700;
       background: url(/aruda/assets/images/common/ico_right_g.svg) right center no-repeat;
       background-size: 32px auto; }
+    @media (min-width: 769px) {
+      .c-menu-modal__middle ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px 48px; } }
   .c-menu-modal__bottom li {
     margin-bottom: 16px; }
   .c-menu-modal__bottom a {
@@ -1313,6 +1342,12 @@ select option:disabled {
     color: #4B4B4B;
     font-size: 14px;
     font-weight: 700; }
+  @media (min-width: 769px) {
+    .c-menu-modal__bottom {
+      margin-top: 32px; }
+      .c-menu-modal__bottom ul {
+        display: flex;
+        gap: 32px; } }
   .c-menu-modal__link {
     display: flex;
     gap: 24px; }
@@ -1339,6 +1374,14 @@ select option:disabled {
       display: block;
       color: #4B4B4B;
       font-size: 10px; }
+    @media (min-width: 769px) {
+      .c-menu-modal__close {
+        top: 0;
+        bottom: auto;
+        left: 50%;
+        max-width: 980px;
+        transform: translateX(-50%);
+        border-bottom: 1px solid #DDDDDD; } }
 
 .c-membership-modal {
   display: none;
