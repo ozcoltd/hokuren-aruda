@@ -1,18 +1,32 @@
 @import '../../../../../foundation/variables';
+@import '../../../../../foundation/mixins';
+
 .p-selling_info-complete {
     background-color: $c-bg-main;
 
     &-section {
-        padding-top: $m-s;
         .u-h-lv2 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
         }
         .p-complete-block {
             padding: $m-ml $m-s;
             background-color: $c-bg-main-sub;
+            @include for-desktop {
+                p {
+                    max-width: 890px;
+                    margin: 0 auto;
+                }
+            }
         }
         .c-mypage-btn-block {
             padding-top: 0;
+            &__inner {
+                @include for-desktop {
+                    max-width: 890px;
+                    margin: 0 auto;
+                }
+            }
         }
     }
 }

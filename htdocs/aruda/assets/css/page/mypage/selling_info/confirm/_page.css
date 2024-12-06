@@ -2,12 +2,9 @@
   background-color: #FFFFFF;
 }
 
-.p-selling_info-confirm-section {
-  padding-top: 16px;
-}
-
 .p-selling_info-confirm-section .u-h-lv2 {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
 }
 
 .p-selling_info-confirm-section .p-confirm-block {
@@ -21,6 +18,20 @@
   border-radius: 4px;
 }
 
+@media (min-width: 769px) {
+  .p-selling_info-confirm-section .p-confirm-block .c-form {
+    max-width: 890px;
+    margin: 0 auto;
+  }
+}
+
 .p-selling_info-confirm-section .c-mypage-btn-block {
   padding-top: 0;
+}
+
+@media (min-width: 769px) {
+  .p-selling_info-confirm-section .c-mypage-btn-block__inner {
+    max-width: 890px;
+    margin: 0 auto;
+  }
 }
