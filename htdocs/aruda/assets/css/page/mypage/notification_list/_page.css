@@ -45,8 +45,22 @@
 }
 
 @media (min-width: 769px) {
+  .p-notification_list-info {
+    margin-top: 56px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 769px) {
   .p-notification_list .c-mypage-btn-block {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-notification_list + .l-footer {
+    background-color: #F0F0F0;
   }
 }

@@ -24,6 +24,11 @@
         .l-grid {
             gap: $m-m $m-ss;
         }
+        @include for-desktop {
+            margin-top: $m-ll;
+            background-color: $c-bg-main;
+            border-radius: $b-r-s;
+        }
     }
     &-favorite {
         padding: $m-ml $m-s;
@@ -96,22 +101,15 @@
             }
         }
     }
-    &-btn {
-        background-color: $c-bg-main-sub;
-        padding: $m-m $m-s $m-xl;
-        &__inner {
-            padding: $m-m $m-ss;
-            background-color: $c-bg-main;
-            border-radius: $b-r-s;
-            .u-h-lv4 {
-                margin-bottom: $m-sl;
-            }
-            .c-btn {
-                & + .c-btn {
-                    margin-top: $m-sl;
-                }
-            }
+    .c-mypage-btn-block {
+        @include for-desktop {
+            padding-left: 0;
+            padding-right: 0;
         }
-
+    }
+    & + .l-footer {
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
+        }
     }
 }

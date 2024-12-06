@@ -35,11 +35,21 @@
         &__no-message {
             color: $c-text-g;
         }
+        @include for-desktop {
+            margin-top: $m-ll;
+            background-color: $c-bg-main;
+            border-radius: $b-r-s;
+        }
     }
     .c-mypage-btn-block {
         @include for-desktop {
             padding-left: 0;
             padding-right: 0;;
+        }
+    }
+    & + .l-footer {
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
         }
     }
 }

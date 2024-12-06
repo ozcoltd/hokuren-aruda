@@ -14,3 +14,9 @@
   padding: 40px 16px 120px;
   background-color: #F0F0F0;
 }
+
+@media (min-width: 769px) {
+  .p-logout + .l-footer {
+    background-color: #F0F0F0;
+  }
+}

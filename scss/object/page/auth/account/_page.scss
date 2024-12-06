@@ -1,4 +1,6 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-account{
     background-color: $c-bg-main;
 
@@ -21,5 +23,10 @@
     &-contents {
         padding: $m-ml $m-s $m-xl;
         background-color: $c-bg-main-sub;
+    }
+    & + .l-footer {
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
+        }
     }
 }

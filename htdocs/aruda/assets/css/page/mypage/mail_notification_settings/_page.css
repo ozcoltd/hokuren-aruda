@@ -2,12 +2,21 @@
   background-color: #FFFFFF;
 }
 
-.p-mail_notification_settings-section {
+.p-mail_notification_settings-section .u-h-lv2 {
   padding-top: 16px;
+  padding-bottom: 32px;
 }
 
-.p-mail_notification_settings-section .u-h-lv2 {
-  margin-bottom: 32px;
+@media (min-width: 769px) {
+  .p-mail_notification_settings-section .u-h-lv2 {
+    background-color: #FFFFFF;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-mail_notification_settings-section {
+    background-color: #F0F0F0;
+  }
 }
 
 .p-mail_notification_settings-contents {
@@ -24,4 +33,25 @@
 
 .p-mail_notification_settings-contents .c-mail-setting + .c-mail-setting {
   margin-top: 24px;
+}
+
+@media (min-width: 769px) {
+  .p-mail_notification_settings-contents {
+    margin-top: 56px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-mail_notification_settings .c-mypage-btn-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-mail_notification_settings + .l-footer {
+    background-color: #F0F0F0;
+  }
 }

@@ -133,4 +133,9 @@
             padding-right: 0;;
         }
     }
+    & + .l-footer {
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
+        }
+    }
 }

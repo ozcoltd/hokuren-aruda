@@ -52,3 +52,9 @@
     padding-right: 0;
   }
 }
+
+@media (min-width: 769px) {
+  .p-selling_info + .l-footer {
+    background-color: #F0F0F0;
+  }
+}

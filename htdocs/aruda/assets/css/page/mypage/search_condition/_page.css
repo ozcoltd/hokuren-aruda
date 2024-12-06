@@ -49,3 +49,9 @@
     padding-right: 0;
   }
 }
+
+@media (min-width: 769px) {
+  .p-search_condition + .l-footer {
+    background-color: #F0F0F0;
+  }
+}

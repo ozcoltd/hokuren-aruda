@@ -29,3 +29,9 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: 769px) {
+  .p-selling_info-complete + .l-footer {
+    background-color: #F0F0F0;
+  }
+}
