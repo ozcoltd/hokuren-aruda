@@ -63,4 +63,14 @@
             left: calc(50% + 380px);
         }
     }
+    .btn-search {
+        display: none;
+        @include for-desktop {
+            display: block;
+            width: 90px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+    }
 }

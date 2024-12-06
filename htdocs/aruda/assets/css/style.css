@@ -251,6 +251,15 @@ select option:disabled {
         width: 67px;
         right: auto;
         left: calc(50% + 380px); } }
+  .l-footer .btn-search {
+    display: none; }
+    @media (min-width: 769px) {
+      .l-footer .btn-search {
+        display: block;
+        width: 90px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px; } }
 
 .l-main {
   padding-top: 57px; }
