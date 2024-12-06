@@ -1,11 +1,19 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-favorite_machine_list {
     background-color: $c-bg-main;
 
     &-section {
-        padding-top: $m-s;
         .u-h-lv2 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            @include for-desktop {
+                background-color: $c-bg-main;
+            }
+        }
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
         }
         .c-mypage-block {
             padding-bottom: $m-s;
@@ -18,6 +26,22 @@
         }
         .l-grid {
             gap: $m-m $m-ss;
+        }
+        @include for-desktop {
+            margin-top: $m-ll;
+            padding: $m-ll $m-ml;
+
+            background-color: $c-bg-main;
+            .l-grid {
+                grid-template-columns: repeat(3,1fr);
+                gap: $m-m 30px;
+            }
+        }
+    }
+    .c-mypage-btn-block {
+        @include for-desktop {
+            padding-left: 0;
+            padding-right: 0;;
         }
     }
 }

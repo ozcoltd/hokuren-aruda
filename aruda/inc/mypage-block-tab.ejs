@@ -1,3 +1,11 @@
+<% var current = typeof current !== 'undefined' ? current : null; %>
+<% 
+var num = 
+  current === 'favorite' ? 0 : 
+  current === 'search' ? 1 : 
+  current === 'notification' ? 2 : '';
+%>
+
 <div class="c-mypage-block">
   <div class="c-mypage-block__head">
     <p class="c-mypage-block__name">ようこそ 或田<span>さん</span></p>
@@ -16,10 +24,10 @@
     <p class="c-mypage-block__edit">
       <a href="/aruda/mypage/customer/">マイページ情報の編集<span><img src="/aruda/assets/images/common/ico_down_g.svg" alt=""></span></a>
     </p>
-    <ul class="c-tab-list" data-col="3" data-current="0">
-      <li><a href="/aruda/mypage/favorite_machine_list/" class="is-current">お気に入り</a></li>
-      <li><a href="/aruda/mypage/search_condition/">検索条件</a></li>
-      <li><a href="/aruda/mypage/notification_list/">お知らせ</a></li>
+    <ul class="c-tab-list" data-col="3" data-current="<%= num %>">
+      <li><a href="/aruda/mypage/favorite_machine_list/" class="<%= current === 'favorite' ? 'is-current' : '' %>">お気に入り</a></li>
+      <li><a href="/aruda/mypage/search_condition/" class="<%= current === 'search' ? 'is-current' : '' %>">検索条件</a></li>
+      <li><a href="/aruda/mypage/notification_list/" class="<%= current === 'notification' ? 'is-current' : '' %>">お知らせ</a></li>
     </ul>
   </div>
 </div>
