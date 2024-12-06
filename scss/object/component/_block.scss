@@ -175,6 +175,13 @@
                     img {
                         margin-bottom: $m-sss;
                     }
+                    @include for-desktop {
+                        display: block;
+                        text-align: center;
+                        img {
+                            margin: 0 auto
+                        };
+                    }
                 }
             }
             &[data-col="3"] {
@@ -190,6 +197,17 @@
                     .u-ico {
                         width: 24px;
                         margin-bottom: $m-sss;
+                    }
+                }
+                p {
+                    br {
+                        display: none;
+                        @include for-desktop {
+                            display: block;
+                        }
+                    }
+                    @include for-desktop {
+                        text-align: center;
                     }
                 }
             }

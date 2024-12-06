@@ -24,6 +24,16 @@
         .l-grid {
             gap: $m-m $m-ss;
         }
+        @include for-desktop {
+            margin-top: $m-ll;
+            padding: $m-ll $m-ml;
+
+            background-color: $c-bg-main;
+            .l-grid {
+                grid-template-columns: repeat(3,1fr);
+                gap: $m-m 30px;
+            }
+        }
     }
     &-favorite {
         padding: $m-ml $m-s;
@@ -43,6 +53,16 @@
             }
             &__btn {
                 background: transparent;
+            }
+        }
+        @include for-desktop {
+            padding: $m-ll $m-ml;
+            .u-h-lv3 {
+                margin-bottom: $m-m;
+            }
+            .l-grid {
+                grid-template-columns: repeat(3,1fr);
+                gap: $m-m 30px;
             }
         }
     }
@@ -74,6 +94,9 @@
             background-color: $c-border;
             transform: translateX(-50%);
         }
+        @include for-desktop {
+            padding: $m-ll $m-ml;
+        }
     }
     &-history {
         padding: $m-ml $m-s;
@@ -95,8 +118,19 @@
                 background: transparent;
             }
         }
+        @include for-desktop {
+            padding: $m-ll $m-ml;
+            .l-grid {
+                grid-template-columns: repeat(3,1fr);
+                gap: $m-m 30px;
+            }
+        }
     }
     .c-mypage-btn-block {
         padding-top: 0;
+        @include for-desktop {
+            padding-left: 0;
+            padding-right: 0;;
+        }
     }
 }
