@@ -2,12 +2,21 @@
   background-color: #FFFFFF;
 }
 
-.p-mypage-section {
+.p-mypage-section .u-h-lv2 {
   padding-top: 16px;
+  padding-bottom: 32px;
 }
 
-.p-mypage-section .u-h-lv2 {
-  margin-bottom: 32px;
+@media (min-width: 769px) {
+  .p-mypage-section .u-h-lv2 {
+    background-color: #FFFFFF;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-mypage-section {
+    background-color: #F0F0F0;
+  }
 }
 
 .p-mypage-recommendation {

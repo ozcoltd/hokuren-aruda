@@ -1,4 +1,17 @@
 .c-contents {
     max-width: 980px;
     margin: 0 auto;
+    @include for-desktop {
+        &[data-type="mypage"]{
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            .c-mypage-block {
+                position: sticky;
+                top: 57px;
+                left: 0;
+            }
+        }
+    }
+
 }

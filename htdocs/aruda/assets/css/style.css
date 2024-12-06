@@ -267,6 +267,15 @@ select option:disabled {
 .c-contents {
   max-width: 980px;
   margin: 0 auto; }
+  @media (min-width: 769px) {
+    .c-contents[data-type="mypage"] {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 40px; }
+      .c-contents[data-type="mypage"] .c-mypage-block {
+        position: sticky;
+        top: 57px;
+        left: 0; } }
 
 .l-grid {
   display: grid; }
