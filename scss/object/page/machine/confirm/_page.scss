@@ -12,4 +12,7 @@
         padding: 20px $m-s $m-xl;
         background-color: $c-bg-main-sub;
     }
+    & + .l-footer {
+        background-color: $c-bg-main-sub;
+    }
 }
