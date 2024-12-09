@@ -17,7 +17,7 @@
         }
     }
     &-form {
-        padding: $m-ml $m-s;
+        padding: $m-ml $m-s $m-s;
         .u-h-lv3 {
             margin-bottom: $m-sl;
         }
@@ -43,8 +43,6 @@
         }
     }
     & + .l-footer {
-        @include for-desktop {
-            background-color: $c-bg-main-sub;
-        }
+        background-color: $c-bg-main-sub;
     }
 }

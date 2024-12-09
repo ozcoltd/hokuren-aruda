@@ -20,7 +20,7 @@
 }
 
 .p-selling_info-form {
-  padding: 40px 16px;
+  padding: 40px 16px 16px;
 }
 
 .p-selling_info-form .u-h-lv3 {
@@ -53,8 +53,6 @@
   }
 }
 
-@media (min-width: 769px) {
-  .p-selling_info + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-selling_info + .l-footer {
+  background-color: #F0F0F0;
 }
