@@ -1,4 +1,6 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-show_room-list {
     background-color: $c-bg-main;
 
@@ -20,5 +22,8 @@
                 width: 100%;
             }
         }
+    }
+    & + .l-footer {
+        background-color: $c-bg-main-sub;
     }
 }

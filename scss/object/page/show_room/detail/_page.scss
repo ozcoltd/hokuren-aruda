@@ -1,4 +1,6 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-show_room-detail {
     background-color: $c-bg-main;
 
@@ -29,6 +31,14 @@
         .l-grid {
             gap: $m-l $m-ss ;
         }
+        @include for-desktop {
+            .l-grid {
+                gap: $m-m $m-ml;
+                grid-template-columns: repeat(4,1fr);
+                max-width: 890px;
+                margin: 0 auto;
+            }
+        }
         & + .p-show_room-detail-block {
             position: relative;
             &::before {
@@ -40,6 +50,9 @@
                 height: 1px;
                 background-color: $c-border;
                 transform: translateX(-50%);
+                @include for-desktop {
+                    width: 980px;
+                }
             }
         }
     }
@@ -55,5 +68,27 @@
     &-btn {
         padding: $m-ml $m-s 80px;
         background-color: $c-bg-main-sub;
+    }
+    & + .l-footer {
+        background-color: $c-bg-main-sub;
+    }
+    @include for-desktop {
+        .c-info {
+            &__box {
+                max-width: 980px;
+                margin: 0 auto;
+            }
+        }
+        .c-exhibition-hall-contact {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .p-show_room-detail-map {
+            iframe {
+                display: block;
+                max-width: 980px;
+                margin: 0 auto;
+            }
+        }
     }
 }

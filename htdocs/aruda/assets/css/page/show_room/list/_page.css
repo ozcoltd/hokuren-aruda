@@ -26,3 +26,7 @@
 .p-show_room-list-block .p-map-block iframe {
   width: 100%;
 }
+
+.p-show_room-list + .l-footer {
+  background-color: #F0F0F0;
+}
