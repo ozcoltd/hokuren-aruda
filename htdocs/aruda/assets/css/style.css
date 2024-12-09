@@ -176,7 +176,7 @@ select option:disabled {
     display: block;
     padding: 8px 16px; }
   .l-header h1 img {
-    width: 108px; }
+    width: 156px; }
   .l-header nav ul {
     display: flex; }
     .l-header nav ul li a {
@@ -199,12 +199,14 @@ select option:disabled {
   margin-bottom: 56px;
   padding: 56px 0 0;
   text-align: center;
-  background: url(/aruda/assets/images/common/bg_footer.png) center top no-repeat #FFFFFF;
-  background-size: 1920px auto; }
+  background: url(/aruda/assets/images/common/bg_footer_sp.png) center top no-repeat #FFFFFF;
+  background-size: 100% auto; }
   @media (min-width: 769px) {
     .l-footer {
       padding-top: 108px;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      background: url(/aruda/assets/images/common/bg_footer.png) center top no-repeat #FFFFFF;
+      background-size: 1920px auto; } }
   .l-footer .logo {
     margin-bottom: 48px; }
     .l-footer .logo a {
@@ -229,9 +231,9 @@ select option:disabled {
     justify-content: center;
     align-items: center;
     height: 80px;
-    background-image: url(/aruda/assets/images/common/bg_footer.png), url(/aruda/assets/images/common/bg_copyright.png);
+    background-image: url(/aruda/assets/images/common/bg_footer_sp.png), url(/aruda/assets/images/common/bg_copyright.png);
     background-blend-mode: multiply;
-    background-size: 1920px auto, cover;
+    background-size: 100% auto, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center bottom; }
     .l-footer .copyright p {
@@ -240,7 +242,10 @@ select option:disabled {
     @media (min-width: 769px) {
       .l-footer .copyright {
         max-width: 1920px;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        background-image: url(/aruda/assets/images/common/bg_footer.png), url(/aruda/assets/images/common/bg_copyright.png);
+        background-blend-mode: multiply;
+        background-size: 1920px auto, cover; } }
   .l-footer .pagetop {
     position: absolute;
     top: -58px;
@@ -1147,6 +1152,8 @@ select option:disabled {
           background-color: #2C933A;
           border-radius: 50%;
           transform: translateX(-50%); }
+          .c-fixed-menu ul li:nth-child(3) a span {
+            color: #fff; }
       .c-fixed-menu ul li a {
         display: block;
         text-align: center; }
@@ -1530,7 +1537,7 @@ select option:disabled {
 .c-membership-modal {
   display: none;
   position: fixed;
-  z-index: 10;
+  z-index: 4;
   top: 0;
   left: 0;
   width: 100%;
@@ -1539,6 +1546,7 @@ select option:disabled {
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 2;
     width: calc(100% - 32px);
     border-radius: 4px;
     background-color: #FFFFFF;
@@ -1564,6 +1572,14 @@ select option:disabled {
       .c-membership-modal__body img + .u-fs-14 span {
         margin-left: 16px;
         color: #2C933A; }
+  .c-membership-modal__bg {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: rgba(240, 240, 240, 0.95); }
 
 .c-bnr {
   display: block;

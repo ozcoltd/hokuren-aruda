@@ -3,11 +3,13 @@
     margin-bottom: 56px;
     padding: 56px 0 0;
     text-align: center;
-    background: url(/aruda/assets/images/common/bg_footer.png) center top no-repeat $c-bg-main;
-    background-size: 1920px auto;
+    background: url(/aruda/assets/images/common/bg_footer_sp.png) center top no-repeat $c-bg-main;
+    background-size: 100% auto;
     @include for-desktop {
         padding-top: 108px;
         margin-bottom: 0;
+        background: url(/aruda/assets/images/common/bg_footer.png) center top no-repeat $c-bg-main;
+        background-size: 1920px auto;
     }
     .logo {
         margin-bottom: 48px;
@@ -38,9 +40,9 @@
         align-items: center;
         height: 80px;
         // margin: 0 -16px;
-        background-image: url(/aruda/assets/images/common/bg_footer.png), url(/aruda/assets/images/common/bg_copyright.png);
+        background-image: url(/aruda/assets/images/common/bg_footer_sp.png), url(/aruda/assets/images/common/bg_copyright.png);
         background-blend-mode: multiply;
-        background-size: 1920px auto, cover;
+        background-size: 100% auto, cover;
         background-repeat: no-repeat, no-repeat;
         background-position: center bottom;
         p {
@@ -50,6 +52,9 @@
         @include for-desktop {
             max-width: 1920px;
             margin: 0 auto;
+            background-image: url(/aruda/assets/images/common/bg_footer.png), url(/aruda/assets/images/common/bg_copyright.png);
+            background-blend-mode: multiply;
+            background-size: 1920px auto, cover;
         }
     }
     .pagetop {

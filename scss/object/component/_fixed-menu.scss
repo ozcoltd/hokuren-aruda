@@ -30,6 +30,9 @@
                     background-color: $c-bg-primary;
                     border-radius: 50%;
                     transform: translateX(-50%);
+                    span {
+                        color: $c-text-w;
+                    }
                 }
             }
             a {
