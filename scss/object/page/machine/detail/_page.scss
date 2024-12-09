@@ -1,4 +1,6 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-machine-detail {
     position: relative;
     background-color: $c-bg-main;
@@ -83,6 +85,17 @@
     }
     .c-info {
         background-color: $c-bg-main;
+    }
+    &-btns {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        & > div {
+            margin: 40px 0 0;
+            .c-btn{
+                width: 279px;
+            }
+        }
     }
     &-btn {
         padding: $m-l $m-s;

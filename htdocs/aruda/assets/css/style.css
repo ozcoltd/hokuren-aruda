@@ -935,11 +935,24 @@ select option:disabled {
     .c-exhibition-hall-contact__contact {
       padding: 16px 16px 24px;
       background-color: #ECF6ED; }
+      @media (min-width: 769px) {
+        .c-exhibition-hall-contact__contact {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; } }
       .c-exhibition-hall-contact__contact p {
         margin-bottom: 8px;
         font-weight: 700; }
+        @media (min-width: 769px) {
+          .c-exhibition-hall-contact__contact p {
+            margin-bottom: 0; } }
       .c-exhibition-hall-contact__contact .l-grid {
         gap: 9px; }
+        @media (min-width: 769px) {
+          .c-exhibition-hall-contact__contact .l-grid {
+            display: flex; }
+            .c-exhibition-hall-contact__contact .l-grid .c-btn, .c-exhibition-hall-contact__contact .l-grid .c-btn--reset {
+              width: 151px; } }
 
 .c-info {
   position: relative;
@@ -1008,6 +1021,11 @@ select option:disabled {
       font-size: 14px; }
       .c-info[data-type="detail"] .c-info__txt p .u-f-bold {
         margin-top: 16px; }
+  @media (min-width: 769px) {
+    .c-info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px; } }
 
 .c-ez-search {
   padding: 40px 16px;
@@ -1625,6 +1643,9 @@ select option:disabled {
       margin: 0 -5px; }
       .c-detail-search .c-form__list li {
         width: calc(50% - 10px); }
+        @media (min-width: 769px) {
+          .c-detail-search .c-form__list li {
+            width: calc(25% - 10px); } }
   .c-detail-search__ttl {
     height: 50px;
     padding: 0 16px;

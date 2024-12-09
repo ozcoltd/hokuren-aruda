@@ -548,12 +548,26 @@
             font-size: $fs-t-s;
         }
         &__contact {
+            @include for-desktop {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
             p {
                 margin-bottom: $m-ss;
                 font-weight: 700;
+                @include for-desktop {
+                    margin-bottom: 0;
+                }
             }
             .l-grid {
                 gap: 9px;
+                @include for-desktop {
+                    display: flex;
+                    .c-btn {
+                        width: 151px;
+                    }
+                }
             }
             padding: $m-s $m-s $m-sl;
             background-color: $c-bg-tertiary;
@@ -648,6 +662,13 @@
                     }
                 }
             }
+        }
+    }
+    &-grid {
+        @include for-desktop {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 40px;
         }
     }
 }

@@ -100,6 +100,20 @@
   background-color: #FFFFFF;
 }
 
+.p-machine-detail-btns {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.p-machine-detail-btns > div {
+  margin: 40px 0 0;
+}
+
+.p-machine-detail-btns > div .c-btn {
+  width: 279px;
+}
+
 .p-machine-detail-btn {
   padding: 48px 16px;
   background-color: #F0F0F0;

@@ -16,6 +16,9 @@
             margin: 0 -5px;
             li {
                 width: calc(50% - 10px);
+                @include for-desktop {
+                    width: calc(25% - 10px);
+                }
             }
         }
     }
