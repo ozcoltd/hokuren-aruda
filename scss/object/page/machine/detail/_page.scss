@@ -87,13 +87,15 @@
         background-color: $c-bg-main;
     }
     &-btns {
-        display: flex;
-        gap: 40px;
-        justify-content: center;
-        & > div {
-            margin: 40px 0 0;
-            .c-btn{
-                width: 279px;
+        @include for-desktop {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            & > div {
+                margin: 40px 0 0;
+                .c-btn,.c-btn--reset {
+                    width: 279px;
+                }
             }
         }
     }

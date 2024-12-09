@@ -343,10 +343,10 @@
         border-radius: $b-r-s;
     }
     &__map {
+        @include for-desktop {
         display: grid;
         grid-template-columns: 410px 1fr;
         gap: 40px;
-        &__contents {
             
         }
     }

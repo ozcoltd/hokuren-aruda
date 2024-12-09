@@ -14,6 +14,13 @@
 .p-machine-inquiry-section .c-form {
   margin: 48px -16px 0;
   background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+@media (min-width: 769px) {
+  .p-machine-inquiry-section .c-form {
+    margin: 48px 0 0;
+  }
 }
 
 .p-machine-inquiry-section .c-form__list[data-col="2"] {
@@ -44,4 +51,8 @@
 
 .p-machine-inquiry .c-info {
   padding-bottom: 80px;
+}
+
+.p-machine-inquiry + .l-footer {
+  background-color: #F0F0F0;
 }

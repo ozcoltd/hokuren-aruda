@@ -63,7 +63,7 @@
     <section class="p-machine-search-result-section">
       <h2 class="u-h-lv2 u-t-center">中古農機をさがす</h2>
       <div class="p-machine-search-result-contents">
-
+          <div class="c-contents">
           <div class="c-detail-block">
             <ul>
               <li>
@@ -96,10 +96,12 @@
               </li>
             </ul>
           </div>
+          </div>
 
           <div class="c-more-block js-more-block">
             <div class="c-more-block__contents">
-              <div class="c-detail-search">
+              <div class="c-form-detail">
+                <div class="c-detail-search">
     <h3 class="u-h-lv2 u-t-center">
       詳細検索 
     </h3>
@@ -358,10 +360,12 @@
       </button>
     </form>
   </div>
+                </div>
             </div>
             <a href="#" class="c-more-block__btn js-more-btn"><span><img src="/aruda/assets/images/common/ico_add_g.svg" alt=""></span>絞り込みの検索条件を表示する</a>
           </div>
 
+          <div class="p-machine-search-result-btns">
           <div class="u-mt-20">
             <button class="c-btn u-m-center" data-size="l">
               検索条件の保存
@@ -372,11 +376,13 @@
               検索条件をリセット 
             </a>
           </div>
+          </div>
 
           <div class="c-search-result-block">
               <p class="c-search-result-block__num">検索結果：0000件</p>
-              <ul class="c-search-result-block__menu">
-                <li>
+              <div class="c-search-result-block__menu">
+                <div class="c-search-result-block__menu-select">
+                <div class="c-search-result-block__menu-num">
                   <p>表示件数</p>
                   <div class="c-form__select">
                     <select name="">
@@ -386,8 +392,8 @@
                       <option value="3">ダミー</option>
                     </select>
                   </div>
-                </li>
-                <li>
+                </div>
+                <div class="c-search-result-block__menu-sort">
                   <p>並び替え</p>
                   <div class="c-form__select">
                     <select name="">
@@ -397,20 +403,23 @@
                       <option value="3">ダミー</option>
                     </select>
                   </div>
-                </li>
-                <li>
+                </div>
+                </div>
+                <div class="c-search-result-block__menu-btn">
+                <div class="c-search-result-block__menu-btn-grid">
                   <a href="#grid" class="c-search-result-block__grid-btn js-display-toggle">
                     <span></span>
                   </a>
-                </li>
-                <li>
+                </div>
+                <div class="c-search-result-block__menu-btn-list">
                   <a href="#list" class="c-search-result-block__list-btn js-display-toggle is-active">
                     <span></span>
                     <span></span>
                     <span></span>
                   </a>
-                </li>
-              </ul>
+                </div>
+                </div>
+              </div>
               <div class="c-search-result-block__contents js-display-contents">
                 <div class="c-search-result-block__display" id="grid">
                   <div class="l-grid" data-col="2">

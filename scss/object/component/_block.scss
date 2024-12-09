@@ -386,6 +386,7 @@
 .c-search-result-block {
     padding-top: $m-l;
     background-color: $c-bg-main-sub;
+    
     &__num {
         margin-bottom: $m-s;
         text-align: center;
@@ -395,17 +396,39 @@
     &__menu {
         display: flex;
         align-items: end;
+        justify-content: space-between;
         gap: 8px;
         padding: 0 0 $m-sl;
-        li {
+        @include for-desktop {
+            padding: 0 $m-ml $m-sl;
+        }
+        &-select {
+            display: flex;
+            width: 274px;
+            gap: $m-ss;
+            @include for-desktop {
+                width: 430px;
+            }
+        }
+        &-btn {
+            display: flex;
+            gap: $m-ss;
+        }
+        &-num {
+            width: 94px;
+            @include for-desktop {
+                width: 211px;
+            }
+        }
+        &-sort {
+            width: 145px;
+            @include for-desktop {
+                width: 211px;
+            }
+        }
+        div {
             p {
                 margin-bottom: $m-ss;
-            }
-            &:nth-child(1) {
-                width: 27.4%;
-            }
-            &:nth-child(2) {
-                width: 42.2%;
             }
         }
     }
@@ -504,6 +527,13 @@
 
     .l-grid {
         gap: $m-m $m-s;
+    }
+    @include for-desktop {
+        max-width: 980px;
+        margin: 0 auto;
+        .c-table {
+            margin: 0;
+        }
     }
 }
 .c-detail-block {

@@ -100,18 +100,18 @@
   background-color: #FFFFFF;
 }
 
-.p-machine-detail-btns {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-}
-
-.p-machine-detail-btns > div {
-  margin: 40px 0 0;
-}
-
-.p-machine-detail-btns > div .c-btn {
-  width: 279px;
+@media (min-width: 769px) {
+  .p-machine-detail-btns {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .p-machine-detail-btns > div {
+    margin: 40px 0 0;
+  }
+  .p-machine-detail-btns > div .c-btn, .p-machine-detail-btns > div .c-btn--reset {
+    width: 279px;
+  }
 }
 
 .p-machine-detail-btn {

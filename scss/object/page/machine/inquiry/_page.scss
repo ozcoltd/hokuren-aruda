@@ -1,4 +1,6 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-machine-inquiry {
     position: relative;
     background-color: $c-bg-main;
@@ -10,6 +12,11 @@
         .c-form {
             margin: $m-l -16px 0;
             background-color: $c-bg-main;
+            border-radius: $b-r-s;
+            @include for-desktop {
+                margin: $m-l 0 0;
+            }
+
             &__list {
                 &[data-col="2"] {
                     gap: $m-ss;
@@ -38,5 +45,8 @@
     }
     .c-info {
         padding-bottom: $m-xl;
+    }
+    & + .l-footer {
+        background-color: $c-bg-main-sub;
     }
 }

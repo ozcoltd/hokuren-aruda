@@ -41,3 +41,23 @@
 .p-machine-search-result .c-table {
   margin: 0 -16px;
 }
+
+@media (min-width: 769px) {
+  .p-machine-search-result .c-table {
+    margin: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-machine-search-result-btns {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .p-machine-search-result-btns > div {
+    margin: 40px 0 0;
+  }
+  .p-machine-search-result-btns > div .c-btn, .p-machine-search-result-btns > div .c-btn--reset {
+    width: 279px;
+  }
+}

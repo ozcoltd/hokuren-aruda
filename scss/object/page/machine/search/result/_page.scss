@@ -1,4 +1,6 @@
 @import '../../../../../foundation/variables';
+@import '../../../../../foundation/mixins';
+
 .p-machine-search-result {
     position: relative;
     background-color: $c-bg-main;
@@ -45,5 +47,21 @@
     // }
     .c-table {
         margin: 0 -16px;
+        @include for-desktop {
+            margin: 0;
+        }
+    }
+    &-btns {
+        @include for-desktop {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            & > div {
+                margin: 40px 0 0;
+                .c-btn,.c-btn--reset {
+                    width: 279px;
+                }
+            }
+        }
     }
 }

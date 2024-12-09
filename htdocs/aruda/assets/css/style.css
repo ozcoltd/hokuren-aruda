@@ -816,14 +816,34 @@ select option:disabled {
   .c-search-result-block__menu {
     display: flex;
     align-items: end;
+    justify-content: space-between;
     gap: 8px;
     padding: 0 0 24px; }
-    .c-search-result-block__menu li p {
+    @media (min-width: 769px) {
+      .c-search-result-block__menu {
+        padding: 0 40px 24px; } }
+    .c-search-result-block__menu-select {
+      display: flex;
+      width: 274px;
+      gap: 8px; }
+      @media (min-width: 769px) {
+        .c-search-result-block__menu-select {
+          width: 430px; } }
+    .c-search-result-block__menu-btn {
+      display: flex;
+      gap: 8px; }
+    .c-search-result-block__menu-num {
+      width: 94px; }
+      @media (min-width: 769px) {
+        .c-search-result-block__menu-num {
+          width: 211px; } }
+    .c-search-result-block__menu-sort {
+      width: 145px; }
+      @media (min-width: 769px) {
+        .c-search-result-block__menu-sort {
+          width: 211px; } }
+    .c-search-result-block__menu div p {
       margin-bottom: 8px; }
-    .c-search-result-block__menu li:nth-child(1) {
-      width: 27.4%; }
-    .c-search-result-block__menu li:nth-child(2) {
-      width: 42.2%; }
   .c-search-result-block__grid-btn {
     position: relative;
     display: block;
@@ -898,6 +918,12 @@ select option:disabled {
       display: block; }
   .c-search-result-block .l-grid {
     gap: 32px 16px; }
+  @media (min-width: 769px) {
+    .c-search-result-block {
+      max-width: 980px;
+      margin: 0 auto; }
+      .c-search-result-block .c-table {
+        margin: 0; } }
 
 .c-detail-block {
   padding: 32px 16px;
@@ -1394,10 +1420,11 @@ select option:disabled {
     min-height: 247px;
     border: 1px solid #DDDDDD;
     border-radius: 4px; }
-  .c-form__map {
-    display: grid;
-    grid-template-columns: 410px 1fr;
-    gap: 40px; }
+  @media (min-width: 769px) {
+    .c-form__map {
+      display: grid;
+      grid-template-columns: 410px 1fr;
+      gap: 40px; } }
   @media (min-width: 769px) {
     .c-form .c-contents .c-form__checkBox-list .c-form__checkBox {
       width: 25%;
@@ -1712,6 +1739,11 @@ select option:disabled {
 .c-pagenation {
   margin-top: 16px;
   position: relative; }
+  @media (min-width: 769px) {
+    .c-pagenation {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
   .c-pagenation__prev, .c-pagenation__next, .c-pagenation__num {
     display: flex;
     justify-content: center;
@@ -1739,10 +1771,20 @@ select option:disabled {
     position: absolute;
     top: 50%;
     transform: translateY(-50%); }
+    @media (min-width: 769px) {
+      .c-pagenation__prev, .c-pagenation__next {
+        position: static;
+        transform: translateY(0); } }
   .c-pagenation__prev {
     left: 0; }
+    @media (min-width: 769px) {
+      .c-pagenation__prev {
+        margin-right: 4px; } }
   .c-pagenation__next {
     right: 0; }
+    @media (min-width: 769px) {
+      .c-pagenation__next {
+        margin-left: 4px; } }
 
 .c-carousel .slick-dots li button:before {
   content: none; }

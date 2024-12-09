@@ -1,6 +1,12 @@
 .c-pagenation {
     margin-top: $m-s;
     position: relative;
+    @include for-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__prev,
     &__next,
     &__num {
@@ -36,12 +42,22 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        @include for-desktop {
+            position: static;
+            transform: translateY(0);
+        }
     }
     &__prev {
         left: 0;
+        @include for-desktop {
+            margin-right: $m-sss;
+        }
     }
     &__next {
         right: 0;
+        @include for-desktop {
+            margin-left: $m-sss;
+        }
     }
 }
 
