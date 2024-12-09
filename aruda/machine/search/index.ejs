@@ -16,66 +16,72 @@
         <li><span>中古農機を絞り込む</span></li>
       </ul>
     </nav>
+
     <section class="p-machine-search-info">
       <h2 class="u-h-lv2 u-t-center">中古農機をさがす</h2>
-      <div class="p-machine-search-search">
-        <h3 class="u-h-lv2 u-t-center">
-          <img src="/aruda/assets/images/common/ico_search.svg" alt="かんたん検索" class="u-ico">かんたん検索
-        </h3>
-        <form action="/aruda/" method="get" class="c-form">
-          <input type="text" value="" name="" class="c-form__text" placeholder="フリーワードで検索">
-          <label>
-            <div class="c-form__ttl">
-              <img src="/aruda/assets/images/common/ico_machinery.svg" alt="農機" class="u-ico">機種
-            </div>
-            <div class="c-form__select">
-              <select name="">
-                <option value="" disabled selected>選択してください</option>
-                <option value="1">ダミー</option>
-                <option value="2">ダミー</option>
-                <option value="3">ダミー</option>
-              </select>
-            </div>
-          </label>
-          <label>
-            <div class="c-form__ttl">
-              <img src="/aruda/assets/images/common/ico_region.svg" alt="地域" class="u-ico">地域
-            </div>
-            <div class="c-form__select">
-              <select name="">
-                <option value="" disabled selected>選択してください</option>
-                <option value="1">ダミー</option>
-                <option value="2">ダミー</option>
-                <option value="3">ダミー</option>
-              </select>
-            </div>
-          </label>
-          <label>
-            <div class="c-form__ttl">
-              <img src="/aruda/assets/images/common/ico_budget.svg" alt="予算" class="u-ico">予算
-            </div>
-            <div class="c-form__budget">
-              <div>
-                <input type="number" value="" name="" class="c-form__text">
+
+      <section class="c-ez-search">
+        <div class="c-contents">
+          <h2 class="u-h-lv2 u-t-center">
+            <img src="/aruda/assets/images/common/ico_search.svg" alt="かんたん検索" class="u-ico">かんたん検索
+          </h2>
+          <form action="/aruda/" method="get" class="c-form">
+            <input type="text" value="" name="" class="c-form__text" placeholder="フリーワードで検索">
+            <label>
+              <div class="c-form__ttl">
+                <img src="/aruda/assets/images/common/ico_machinery.svg" alt="農機" class="u-ico">機種
               </div>
-              <span>円</span>
-              <span>〜</span>
-              <div>
-                <input type="number" value="" name="" class="c-form__text">
+              <div class="c-form__select">
+                <select name="">
+                  <option value="" disabled selected>選択してください</option>
+                  <option value="1">ダミー</option>
+                  <option value="2">ダミー</option>
+                  <option value="3">ダミー</option>
+                </select>
               </div>
-              <span>円</span>
+            </label>
+            <label>
+              <div class="c-form__ttl">
+                <img src="/aruda/assets/images/common/ico_region.svg" alt="地域" class="u-ico">地域
+              </div>
+              <div class="c-form__select">
+                <select name="">
+                  <option value="" disabled selected>選択してください</option>
+                  <option value="1">ダミー</option>
+                  <option value="2">ダミー</option>
+                  <option value="3">ダミー</option>
+                </select>
+              </div>
+            </label>
+            <label>
+              <div class="c-form__ttl">
+                <img src="/aruda/assets/images/common/ico_budget.svg" alt="予算" class="u-ico">予算
+              </div>
+              <div class="c-form__budget">
+                <div>
+                  <input type="number" value="" name="" class="c-form__text">
+                </div>
+                <span>円</span>
+                <span>〜</span>
+                <div>
+                  <input type="number" value="" name="" class="c-form__text">
+                </div>
+                <span>円</span>
+              </div>
+            </label>
+            <div class="c-form__submit">
+              <button class="c-btn" data-type="solid-icon" data-size="l">
+                <img src="/aruda/assets/images/common/ico_search_w.svg" alt="" class="u-ico" data-size="s">
+                かんたん検索
+                <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
+              </button>
             </div>
-          </label>
-          <div class="c-form__submit">
-            <button class="c-btn" data-type="solid-icon" data-size="l">
-              <img src="/aruda/assets/images/common/ico_search_w.svg" alt="" class="u-ico" data-size="s">
-              かんたん検索
-              <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
-            </button>
-          </div>
-        </form>
-      </div>
+          </form>
+        </div>
+      </section>
+      <div class="c-form-detail">
       <%- include('../../inc/detail-search') %>
+      </div>
       <div class="p-machine-search-btns">
         <div>
           <button class="c-btn u-m-center" data-size="l">

@@ -1,3 +1,11 @@
+.c-form-detail {
+    @include for-desktop {
+        .c-form {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+    }
+}
 .c-form {
     padding: $m-ml $m-s;
     background-color: $c-bg-tertiary;
@@ -65,6 +73,13 @@
             & + div {
                 margin-left: $m-sss;
             }
+        }
+        @include for-desktop {
+            width: 100%;
+            max-width: 476px;
+            margin: 0 auto;
+            justify-content: space-between;
+
         }
     }
     &__submit {
@@ -326,5 +341,26 @@
         min-height: 247px;
         border: 1px solid $c-border;
         border-radius: $b-r-s;
+    }
+    &__map {
+        display: grid;
+        grid-template-columns: 410px 1fr;
+        gap: 40px;
+        &__contents {
+            
+        }
+    }
+    .c-contents {
+        @include for-desktop {
+            .c-form__checkBox-list {
+                .c-form__checkBox {
+                    width: 25%;
+                    border-left: 1px solid $c-border;
+                    &:nth-child(4n + 1){
+                        border-left: 1px solid $c-border;
+                    }
+                } 
+            }
+        }
     }
 }

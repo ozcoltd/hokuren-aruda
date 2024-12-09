@@ -1,4 +1,6 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-newcustomer-confirm {
     background-color: $c-bg-main;
 
@@ -15,6 +17,11 @@
                 border: 1px solid $c-border;
                 border-radius: $b-r-s;
             }
+        }
+    }
+    & + .l-footer {
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
         }
     }
 }

@@ -1,3 +1,9 @@
 .l-main{
     padding-top: 57px;
+
+    min-height: calc(100dvh - 397px);
+
+    @include for-desktop {
+        min-height: calc(100dvh - 374px);
+    }
 }

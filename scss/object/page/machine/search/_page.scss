@@ -1,4 +1,6 @@
 @import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
 .p-machine-search {
     position: relative;
     background-color: $c-bg-main;
@@ -9,22 +11,21 @@
         // margin-bottom: $m-ss;
         padding: $m-sl 0 0;
     }
-    &-search {
-        padding: $m-ml $m-s;
+    .c-ez-search {
         background-color: $c-bg-main-sub;
-        .u-h-lv2 {
-            margin-bottom: $m-sl;
-            .u-ico {
-                margin: 0 auto;
-            }
-        }
-        .c-form {
-            border-radius: $b-r-s;
-            background-color: $c-bg-main;
-        }
     }
     &-btns {
         padding: 20px 0 $m-ml;
         background-color: $c-bg-main-sub;
+        @include for-desktop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:40px;
+            & > div {
+                width: 279px;
+                margin: 0 !important;
+            }
+        }
     }
 }

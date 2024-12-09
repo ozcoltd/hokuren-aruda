@@ -20,3 +20,9 @@
   border: 1px solid #DDDDDD;
   border-radius: 4px;
 }
+
+@media (min-width: 769px) {
+  .p-newcustomer-confirm + .l-footer {
+    background-color: #F0F0F0;
+  }
+}

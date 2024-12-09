@@ -13,6 +13,7 @@
 .p-newcustomer-form {
   padding: 40px 16px 80px;
   background-color: #F0F0F0;
+  border-radius: 4px;
 }
 
 .p-newcustomer-form .u-h-lv3 {
@@ -51,4 +52,10 @@
 .p-newcustomer-btn {
   padding-top: 40px;
   background-color: #F0F0F0;
+}
+
+@media (min-width: 769px) {
+  .p-newcustomer + .l-footer {
+    background-color: #F0F0F0;
+  }
 }

@@ -14,3 +14,9 @@
   padding: 40px 16px;
   background-color: #F0F0F0;
 }
+
+@media (min-width: 769px) {
+  .p-newcustomer-complete + .l-footer {
+    background-color: #F0F0F0;
+  }
+}

@@ -261,7 +261,11 @@ select option:disabled {
         bottom: 20px; } }
 
 .l-main {
-  padding-top: 57px; }
+  padding-top: 57px;
+  min-height: calc(100dvh - 397px); }
+  @media (min-width: 769px) {
+    .l-main {
+      min-height: calc(100dvh - 374px); } }
 
 .c-contents {
   max-width: 980px;
@@ -1005,6 +1009,48 @@ select option:disabled {
       .c-info[data-type="detail"] .c-info__txt p .u-f-bold {
         margin-top: 16px; }
 
+.c-ez-search {
+  padding: 40px 16px;
+  background-color: #FFFFFF; }
+  .c-ez-search .u-h-lv2 {
+    margin-bottom: 24px; }
+    .c-ez-search .u-h-lv2 .u-ico {
+      margin: 0 auto; }
+  .c-ez-search .c-form {
+    background-color: #FFFFFF; }
+  @media (min-width: 769px) {
+    .c-ez-search {
+      padding: 56px 16px; }
+      .c-ez-search .u-h-lv2 {
+        display: flex;
+        align-items: start;
+        white-space: nowrap; }
+        .c-ez-search .u-h-lv2 .u-ico {
+          width: 40px;
+          margin: 10px 20px 0 0; }
+      .c-ez-search .c-contents {
+        position: relative;
+        display: flex;
+        gap: 6.1%; }
+        .c-ez-search .c-contents .c-form {
+          width: 65.3%; }
+      .c-ez-search .c-form {
+        padding: 40px; }
+        .c-ez-search .c-form label {
+          display: flex; }
+        .c-ez-search .c-form__ttl {
+          margin-right: 24px;
+          white-space: nowrap; }
+        .c-ez-search .c-form__budget, .c-ez-search .c-form__select {
+          width: 85%; }
+        .c-ez-search .c-form__budget {
+          justify-content: space-between; }
+        .c-ez-search .c-form__submit {
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 276px; } }
+
 .c-tag {
   height: 19px;
   padding: 2px 8px;
@@ -1069,6 +1115,11 @@ select option:disabled {
           font-size: 10px;
           font-weight: 700; }
 
+@media (min-width: 769px) {
+  .c-form-detail .c-form {
+    max-width: 980px;
+    margin: 0 auto; } }
+
 .c-form {
   padding: 40px 16px;
   background-color: #ECF6ED; }
@@ -1126,6 +1177,12 @@ select option:disabled {
       font-size: 12px; }
       .c-form__budget span + div {
         margin-left: 4px; }
+    @media (min-width: 769px) {
+      .c-form__budget {
+        width: 100%;
+        max-width: 476px;
+        margin: 0 auto;
+        justify-content: space-between; } }
   .c-form__submit {
     margin-top: 32px; }
     .c-form__submit .c-btn, .c-form__submit .c-btn--reset {
@@ -1319,6 +1376,16 @@ select option:disabled {
     min-height: 247px;
     border: 1px solid #DDDDDD;
     border-radius: 4px; }
+  .c-form__map {
+    display: grid;
+    grid-template-columns: 410px 1fr;
+    gap: 40px; }
+  @media (min-width: 769px) {
+    .c-form .c-contents .c-form__checkBox-list .c-form__checkBox {
+      width: 25%;
+      border-left: 1px solid #DDDDDD; }
+      .c-form .c-contents .c-form__checkBox-list .c-form__checkBox:nth-child(4n + 1) {
+        border-left: 1px solid #DDDDDD; } }
 
 .c-menu-modal {
   display: none;

@@ -1,4 +1,6 @@
 @import '../../../foundation/variables';
+@import '../../../foundation/mixins';
+
 .p-newcustomer {
     background-color: $c-bg-main;
 
@@ -11,6 +13,7 @@
     &-form {
         padding: $m-ml $m-s 80px ;
         background-color: $c-bg-main-sub;
+        border-radius: $b-r-s;
         .u-h-lv3 {
             margin-bottom: $m-sl;
         }
@@ -47,5 +50,10 @@
     &-btn {
         padding-top: $m-ml;
         background-color: $c-bg-main-sub;
+    }
+    & + .l-footer {
+        @include for-desktop {
+            background-color: $c-bg-main-sub;
+        }
     }
 }
