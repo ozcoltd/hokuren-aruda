@@ -1,18 +1,29 @@
 .p-newcustomer-complete {
+  background-color: #F0F0F0;
+}
+
+.p-newcustomer-complete .c-breadcrumbs {
   background-color: #FFFFFF;
 }
 
-.p-newcustomer-complete-section {
-  padding-top: 16px;
+@media (min-width: 769px) {
+  .p-newcustomer-complete .c-breadcrumbs {
+    max-width: 100%;
+  }
+  .p-newcustomer-complete .c-breadcrumbs ul {
+    max-width: 980px;
+    margin: 0 auto;
+  }
 }
 
 .p-newcustomer-complete-section .u-h-lv2 {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
 }
 
 .p-newcustomer-complete-section .p-complete-block {
   padding: 40px 16px;
-  background-color: #F0F0F0;
 }
 
 @media (min-width: 769px) {
