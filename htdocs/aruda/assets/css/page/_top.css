@@ -13,6 +13,11 @@
   }
 }
 
+.p-top .c-ez-search .c-form {
+  border-radius: 4px;
+  background-color: #ECF6ED;
+}
+
 .p-top-machinery {
   padding-top: 40px;
 }

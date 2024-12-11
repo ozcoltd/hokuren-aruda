@@ -56,13 +56,14 @@
     }
 }
 .c-info-block {
-    background-color: $c-bg-main;
-    border: 1px solid $c-border;
-    border-radius: 4px;
+
     //TOP
     .c-more-block {
+        background-color: $c-bg-main;
+        border: 1px solid $c-border;
+        border-radius: 4px;
         height: 112px;
-        padding-bottom: 0;
+        // padding-bottom: 0;
     }
     &__head {
         display: flex;
@@ -92,6 +93,8 @@
             border-top: 1px solid $c-border;
         }
     }
+
+
 }
 .c-card-block {
     padding: $m-m $m-s $m-ml;

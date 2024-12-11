@@ -12,7 +12,12 @@
             padding: $m-l $m-s $m-ll;
         }
     }
-
+    .c-ez-search {
+        .c-form {
+            border-radius: $b-r-s;
+            background-color: $c-bg-tertiary;
+        }
+    }
     &-machinery {
         padding-top: $m-ml;
         .u-h-lv2 {
