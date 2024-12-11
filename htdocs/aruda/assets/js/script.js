@@ -3,8 +3,8 @@ $(function(){
     var $jsMoreBtn = $('.js-more-btn');
     $jsMoreBtn.on('click',function(e){
         e.preventDefault();
-        $(this).parent('.js-more-block').height('100%').addClass('is-open');
         $(this).hide();
+        $(this).parent('.js-more-block').addClass('is-open').height($(this).parent('.js-more-block').find('.c-more-block__contents').height());
     });
 
     //tab

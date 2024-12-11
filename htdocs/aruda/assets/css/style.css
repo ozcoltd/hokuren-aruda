@@ -535,7 +535,7 @@ select option:disabled {
         height: 16px; }
 
 .c-alert-block {
-  background-color: #FFFFFF;
+  background-color: #FFF6F6;
   border: 1px solid #E80000;
   border-radius: 4px; }
   .c-alert-block__ttl {
