@@ -344,9 +344,9 @@
     }
     &__map {
         @include for-desktop {
-        display: grid;
-        grid-template-columns: 410px 1fr;
-        gap: 40px;
+        // display: grid;
+        // grid-template-columns: 410px 1fr;
+        // gap: 40px;
             
         }
     }

@@ -1429,11 +1429,6 @@ select option:disabled {
     border: 1px solid #DDDDDD;
     border-radius: 4px; }
   @media (min-width: 769px) {
-    .c-form__map {
-      display: grid;
-      grid-template-columns: 410px 1fr;
-      gap: 40px; } }
-  @media (min-width: 769px) {
     .c-form .c-contents .c-form__checkBox-list .c-form__checkBox {
       width: 25%;
       border-left: 1px solid #DDDDDD; }
