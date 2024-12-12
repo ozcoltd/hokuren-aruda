@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <title>中古農機情報サイトアルーダ | 全体のお問い合わせ - 確認画面</title>
+  <meta name="description" content="中古農機情報サイトアルーダは、トラクター、コンバイン、田植機をはじめ、多種多様な優良中古農業機械を多数掲載！みなさまの中古農機探しを応援します!!中古農機の出品も受け付けております。お気軽にお問い合わせください。">
+  <%- include('../../inc/ogp') %>
+  <%- include('../../inc/meta') %>
+  <link rel="stylesheet" href="/aruda/assets/css/page/inquiry/confirm/_page.css">
+</head>
+<body>
+  <%- include('../../inc/header-login') %>
+  <main class="l-main p-confirm">
+    <nav class="c-breadcrumbs">
+      <div class="c-breadcrumbs__contents">
+            <ul>
+              <li><a href="/aruda/">ホーム</a></li>
+              <li><a href="/aruda/inquiry/">お問い合わせ</a></li>
+              <li><span>確認画面</span></li>
+          </ul>
+        </div>
+      </nav>
+
+    <section class="p-confirm-section">
+        <h2 class="u-h-lv2 u-t-center">確認画面</h2>
+        <div class="p-confirm-block">
+          <form action="/aruda/inquiry/complete/" method="POST" class="c-form">
+            <ul class="c-form__confirm">
+              <li>
+                <p class="c-form__ttl">お名前<span class="u-f-required">*</span></p>
+                <p class="c-form__item"><span>〇〇〇〇〇〇〇〇</span></p>
+              </li>
+              <li>
+                <p class="c-form__ttl">組合員区分<span class="u-f-required">*</span></p>
+                <p class="c-form__item"><span>〇〇〇〇〇〇〇〇</span></p>
+              </li>
+              <li>
+                <p class="c-form__ttl">電話番号（いずれかご入力ください）<span class="u-f-required">*</span></p>
+                <p class="c-form__item"><span>〇〇〇〇〇〇〇〇</span></p>
+              </li>
+              <li>
+                <p class="c-form__ttl">メールアドレス<span class="u-f-required">*</span></p>
+                <p class="c-form__item"><span>〇〇〇〇〇〇〇〇</span></p>
+              </li>
+              <li>
+                <p class="c-form__ttl">お問い合わせ内容<span class="u-f-required">*</span></p>
+                <p class="c-form__item"><span>〇〇〇〇〇〇〇〇</span></p>
+              </li>
+            </ul>
+            <div class="u-mt-40">
+              <button class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
+                送信する
+                <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
+              </button>
+            </div>
+            <div class="u-mt-24">
+              <a href="/aruda/inquiry/" class="c-btn u-m-center" data-type="icon-left" data-size="l">
+                <img src="/aruda/assets/images/common/ico_left_g.svg" alt="" class="u-ico" data-size="s">
+                修正する
+              </a>
+            </div>
+          </form>
+        </div>
+    </section>
+
+
+  </main>
+  <%- include('../../inc/footer') %>
+  <%- include('../../inc/fixed-menu') %>
+  <%- include('../../inc/menu-modal-login') %>
+</body>
+</html>

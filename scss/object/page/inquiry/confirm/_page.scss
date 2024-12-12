@@ -1,0 +1,43 @@
+@import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
+.p-confirm {
+    background-color: $c-bg-main-sub;
+
+    .c-breadcrumbs {
+        background-color: $c-bg-main;
+    }
+    &-section {
+        padding-bottom: $m-ml;
+        .u-h-lv2 {
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            background-color: $c-bg-main;
+        }
+        .p-confirm-block {
+            padding: $m-ml $m-s;
+            background-color: $c-bg-main-sub;
+            .c-form {
+                background-color: $c-bg-main;
+                border: 1px solid $c-border;
+                border-radius: $b-r-s;
+                @include for-desktop {
+                    max-width: 890px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .c-mypage-btn-block {
+            padding-top: 0;
+            &__inner {
+                @include for-desktop {
+                    max-width: 890px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    & + .l-footer {
+        background-color: $c-bg-main-sub;
+    }
+}
