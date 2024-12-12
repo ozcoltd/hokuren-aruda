@@ -199,6 +199,11 @@ a, button {
       color: #4B4B4B;
       font-size: 10px;
       font-weight: 700; }
+  .l-header .c-menu-sp {
+    display: none; }
+    @media (min-width: 769px) {
+      .l-header .c-menu-sp {
+        display: block; } }
 
 .l-footer {
   position: relative;
@@ -1456,9 +1461,9 @@ a, button {
     padding: 24px 32px 127px; }
     @media (min-width: 769px) {
       .c-menu-modal__contents {
-        max-width: 980px;
+        max-width: 1020px;
         margin: 0 auto;
-        padding: 100px 0 127px; } }
+        padding: 100px 20px 127px; } }
   .c-menu-modal .l-grid {
     gap: 15px; }
   .c-menu-modal__top {

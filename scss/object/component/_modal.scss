@@ -14,9 +14,9 @@
     &__contents {
         padding: 24px 32px 127px;
         @include for-desktop {
-            max-width: 980px;
+            max-width: 1020px;
             margin: 0 auto;
-            padding: 100px 0 127px;
+            padding: 100px 20px 127px;
         }
     }
     .l-grid {

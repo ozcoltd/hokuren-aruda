@@ -45,4 +45,11 @@
             }
         }
     }
+    .c-menu-sp {
+        display: none;
+        @include for-desktop {
+            display: block;
+        }
+    }
+
 }
