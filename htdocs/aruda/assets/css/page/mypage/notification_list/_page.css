@@ -69,8 +69,6 @@
   }
 }
 
-@media (min-width: 769px) {
-  .p-notification_list + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-notification_list + .l-footer {
+  background-color: #F0F0F0;
 }

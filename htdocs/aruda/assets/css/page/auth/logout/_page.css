@@ -28,8 +28,6 @@
   background-color: #F0F0F0;
 }
 
-@media (min-width: 769px) {
-  .p-logout + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-logout + .l-footer {
+  background-color: #F0F0F0;
 }

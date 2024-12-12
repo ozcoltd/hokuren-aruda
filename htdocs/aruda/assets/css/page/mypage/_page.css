@@ -181,8 +181,6 @@
   }
 }
 
-@media (min-width: 769px) {
-  .p-mypage + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-mypage + .l-footer {
+  background-color: #F0F0F0;
 }

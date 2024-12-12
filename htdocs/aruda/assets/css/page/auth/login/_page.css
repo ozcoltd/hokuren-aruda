@@ -43,8 +43,6 @@
   padding: 40px 24px;
 }
 
-@media (min-width: 769px) {
-  .p-login + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-login + .l-footer {
+  background-color: #F0F0F0;
 }
