@@ -2,12 +2,16 @@
 @import '../../../../../foundation/mixins';
 
 .p-customer {
-    background-color: $c-bg-main;
+    background-color: $c-bg-main-sub;
+    .c-breadcrumbs {
+        background-color: $c-bg-main;
+    }
 
     &-section {
-        padding-top: $m-s;
         .u-h-lv2 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            background-color: $c-bg-main;
         }
         .p-complete-block {
             padding: $m-ml $m-s;

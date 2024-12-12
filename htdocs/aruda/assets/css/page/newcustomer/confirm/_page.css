@@ -1,13 +1,15 @@
 .p-newcustomer-confirm {
+  background-color: #F0F0F0;
+}
+
+.p-newcustomer-confirm .c-breadcrumbs {
   background-color: #FFFFFF;
 }
 
-.p-newcustomer-confirm-section {
-  padding-top: 16px;
-}
-
 .p-newcustomer-confirm-section .u-h-lv4 {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
 }
 
 .p-newcustomer-confirm-section .p-confirm-block {
@@ -21,8 +23,6 @@
   border-radius: 4px;
 }
 
-@media (min-width: 769px) {
-  .p-newcustomer-confirm + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-newcustomer-confirm + .l-footer {
+  background-color: #F0F0F0;
 }

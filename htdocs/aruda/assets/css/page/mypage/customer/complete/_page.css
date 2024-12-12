@@ -1,13 +1,15 @@
 .p-customer {
+  background-color: #F0F0F0;
+}
+
+.p-customer .c-breadcrumbs {
   background-color: #FFFFFF;
 }
 
-.p-customer-section {
-  padding-top: 16px;
-}
-
 .p-customer-section .u-h-lv2 {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
 }
 
 .p-customer-section .p-complete-block {

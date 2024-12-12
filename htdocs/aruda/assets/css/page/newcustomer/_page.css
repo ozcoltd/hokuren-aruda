@@ -1,13 +1,15 @@
 .p-newcustomer {
+  background-color: #F0F0F0;
+}
+
+.p-newcustomer .c-breadcrumbs {
   background-color: #FFFFFF;
 }
 
-.p-newcustomer-section {
-  padding-top: 16px;
-}
-
 .p-newcustomer-section .u-h-lv2 {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
 }
 
 .p-newcustomer-form {
@@ -54,8 +56,6 @@
   background-color: #F0F0F0;
 }
 
-@media (min-width: 769px) {
-  .p-newcustomer + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-newcustomer + .l-footer {
+  background-color: #F0F0F0;
 }

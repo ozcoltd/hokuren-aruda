@@ -6,6 +6,10 @@
   background-color: #FFFFFF;
 }
 
+.p-newcustomer-complete .c-breadcrumbs {
+  background-color: #FFFFFF;
+}
+
 @media (min-width: 769px) {
   .p-newcustomer-complete .c-breadcrumbs {
     max-width: 100%;
@@ -26,8 +30,6 @@
   padding: 40px 16px;
 }
 
-@media (min-width: 769px) {
-  .p-newcustomer-complete + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-newcustomer-complete + .l-footer {
+  background-color: #F0F0F0;
 }
