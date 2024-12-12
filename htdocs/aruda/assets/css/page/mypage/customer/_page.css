@@ -1,22 +1,15 @@
 .p-customer {
+  background-color: #F0F0F0;
+}
+
+.p-customer .c-breadcrumbs {
   background-color: #FFFFFF;
 }
 
 .p-customer-section .u-h-lv4 {
   padding-top: 16px;
   padding-bottom: 32px;
-}
-
-@media (min-width: 769px) {
-  .p-customer-section .u-h-lv4 {
-    background-color: #FFFFFF;
-  }
-}
-
-@media (min-width: 769px) {
-  .p-customer-section {
-    background-color: #F0F0F0;
-  }
+  background-color: #FFFFFF;
 }
 
 .p-customer-form {
@@ -75,8 +68,6 @@
   }
 }
 
-@media (min-width: 769px) {
-  .p-customer + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-customer + .l-footer {
+  background-color: #F0F0F0;
 }

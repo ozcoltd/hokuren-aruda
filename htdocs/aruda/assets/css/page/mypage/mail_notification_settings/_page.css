@@ -43,8 +43,6 @@
   }
 }
 
-@media (min-width: 769px) {
-  .p-mail_notification_settings + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-mail_notification_settings + .l-footer {
+  background-color: #F0F0F0;
 }
