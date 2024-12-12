@@ -17,6 +17,9 @@
   .p-search_condition-section {
     background-color: #F0F0F0;
   }
+  .p-search_condition-section .c-detail-search {
+    padding-top: 0;
+  }
 }
 
 .p-search_condition-section .c-mypage-block {
