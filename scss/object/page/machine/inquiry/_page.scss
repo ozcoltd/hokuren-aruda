@@ -3,11 +3,15 @@
 
 .p-machine-inquiry {
     position: relative;
-    background-color: $c-bg-main;
+    background-color: $c-bg-main-sub;
+    .c-breadcrumbs {
+        background-color: $c-bg-main;
+    }
     &-section {
-        padding-top: $m-sl;
         .u-h-lv2 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            background-color: $c-bg-main;
         }
         .c-form {
             margin: $m-l -16px 0;

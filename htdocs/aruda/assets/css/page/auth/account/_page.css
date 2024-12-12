@@ -1,13 +1,15 @@
 .p-account {
+  background-color: #F0F0F0;
+}
+
+.p-account .c-breadcrumbs {
   background-color: #FFFFFF;
 }
 
-.p-account-section {
-  padding-top: 16px;
-}
-
 .p-account-section .u-h-lv2 {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
 }
 
 .p-account-section .c-form {
@@ -26,8 +28,6 @@
   background-color: #F0F0F0;
 }
 
-@media (min-width: 769px) {
-  .p-account + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-account + .l-footer {
+  background-color: #F0F0F0;
 }

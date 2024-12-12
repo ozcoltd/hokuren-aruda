@@ -1,14 +1,16 @@
 .p-machine-inquiry {
   position: relative;
+  background-color: #F0F0F0;
+}
+
+.p-machine-inquiry .c-breadcrumbs {
   background-color: #FFFFFF;
 }
 
-.p-machine-inquiry-section {
-  padding-top: 24px;
-}
-
 .p-machine-inquiry-section .u-h-lv2 {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
 }
 
 .p-machine-inquiry-section .c-form {

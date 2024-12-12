@@ -1,14 +1,16 @@
 .p-machine-complete {
   position: relative;
+  background-color: #F0F0F0;
+}
+
+.p-machine-complete .c-breadcrumbs {
   background-color: #FFFFFF;
 }
 
-.p-machine-complete-section {
-  padding-top: 24px;
-}
-
 .p-machine-complete-section .u-h-lv2 {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
 }
 
 .p-machine-complete-block {

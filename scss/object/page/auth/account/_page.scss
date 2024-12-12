@@ -2,12 +2,16 @@
 @import '../../../../foundation/mixins';
 
 .p-account{
-    background-color: $c-bg-main;
+    background-color: $c-bg-main-sub;
+    .c-breadcrumbs {
+        background-color: $c-bg-main;
+    }
 
     &-section {
-        padding-top: $m-s;
         .u-h-lv2 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            background-color: $c-bg-main;
         }
         .c-form {
             background-color: $c-bg-main;
@@ -25,8 +29,6 @@
         background-color: $c-bg-main-sub;
     }
     & + .l-footer {
-        @include for-desktop {
-            background-color: $c-bg-main-sub;
-        }
+        background-color: $c-bg-main-sub;
     }
 }

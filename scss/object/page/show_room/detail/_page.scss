@@ -2,12 +2,16 @@
 @import '../../../../foundation/mixins';
 
 .p-show_room-detail {
-    background-color: $c-bg-main;
+    background-color: $c-bg-main-sub;
+    .c-breadcrumbs {
+        background-color: $c-bg-main;
+    }
 
     &-section {
-        padding-top: $m-s;
         .u-h-lv2 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            background-color: $c-bg-main;
         }
     }
     &-block {
@@ -58,6 +62,7 @@
     }
     &-map {
         padding: 0 $m-s $m-ml;
+        background-color: $c-bg-main;
         .u-h-lv4 {
             margin-bottom: $m-s;
         }
