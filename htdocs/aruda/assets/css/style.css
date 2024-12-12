@@ -160,6 +160,11 @@ input::placeholder {
 select option:disabled {
   color: #A0A0A0; }
 
+a, button {
+  transition: opacity 0.3s; }
+  a:hover, button:hover {
+    opacity: 0.5; }
+
 .l-header {
   position: fixed;
   top: 0;

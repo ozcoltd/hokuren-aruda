@@ -139,3 +139,10 @@ input::placeholder { /* Firefox */
 select option:disabled{
 	color: $c-placehlder;
 }
+
+a,button {
+	transition: opacity 0.3s;
+	&:hover {
+		opacity: 0.5;
+	}
+}
