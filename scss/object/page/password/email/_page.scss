@@ -1,0 +1,60 @@
+@import '../../../../foundation/variables';
+@import '../../../../foundation/mixins';
+
+.p-email {
+    background-color: $c-bg-main-sub;
+    .c-breadcrumbs {
+        background-color: $c-bg-main;
+    }
+    &-section {
+        .u-h-lv2 {
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            background-color: $c-bg-main;
+        }
+        .c-form {
+            padding-top: 0;
+            background-color: $c-bg-main-sub;
+            @include for-desktop {
+                max-width: 1012px;
+                margin: 0 auto;
+            }
+            .l-grid {
+                gap: $m-ss;
+                label {
+                    margin-top: 0;
+                }
+            }
+            label {
+                margin-top: $m-ss;
+            }
+        }
+        .c-info {
+            padding-bottom: 0;
+            background-color: $c-bg-main;
+            .c-info__item:first-child {
+                padding-top: $m-s;
+            }
+            .c-info__item:last-child {
+                padding-bottom: $m-s;
+            }
+        }
+        .c-contents {
+            padding: 0 $m-s;
+            @include for-desktop {
+                max-width: 1012px;
+                margin: 0 auto;
+            }
+        }
+    }
+    &-block {
+        padding-bottom: 80px;
+        background-color: $c-bg-main-sub;
+        .p-tab-wrap {
+            padding: $m-m $m-s $m-s;
+        }
+    }
+    & + .l-footer {
+        background-color: $c-bg-main-sub;
+    }
+}

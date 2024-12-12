@@ -1,0 +1,74 @@
+.p-e-yuki {
+  background-color: #F0F0F0;
+}
+
+.p-e-yuki .c-breadcrumbs {
+  background-color: #FFFFFF;
+}
+
+.p-e-yuki-section .u-h-lv2 {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
+}
+
+.p-e-yuki-section .c-form {
+  padding-top: 0;
+  background-color: #F0F0F0;
+}
+
+@media (min-width: 769px) {
+  .p-e-yuki-section .c-form {
+    max-width: 1012px;
+    margin: 0 auto;
+  }
+}
+
+.p-e-yuki-section .c-form .l-grid {
+  gap: 8px;
+}
+
+.p-e-yuki-section .c-form .l-grid label {
+  margin-top: 0;
+}
+
+.p-e-yuki-section .c-form label {
+  margin-top: 8px;
+}
+
+.p-e-yuki-section .c-info {
+  padding-bottom: 0;
+  background-color: #FFFFFF;
+}
+
+.p-e-yuki-section .c-info .c-info__item:first-child {
+  padding-top: 16px;
+}
+
+.p-e-yuki-section .c-info .c-info__item:last-child {
+  padding-bottom: 16px;
+}
+
+.p-e-yuki-section .c-contents {
+  padding: 0 16px;
+}
+
+@media (min-width: 769px) {
+  .p-e-yuki-section .c-contents {
+    max-width: 1012px;
+    margin: 0 auto;
+  }
+}
+
+.p-e-yuki-block {
+  padding-bottom: 80px;
+  background-color: #F0F0F0;
+}
+
+.p-e-yuki-block .p-tab-wrap {
+  padding: 32px 16px 16px;
+}
+
+.p-e-yuki + .l-footer {
+  background-color: #F0F0F0;
+}
