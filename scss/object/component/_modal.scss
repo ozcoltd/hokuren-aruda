@@ -131,6 +131,7 @@
         left: 50%;
         z-index: 2;
         width: calc(100% - 32px);
+        max-width: 343px;
         border-radius: 4px;
         background-color: $c-bg-main;
         transform: translate(-50%,-50%);
