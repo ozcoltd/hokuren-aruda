@@ -2,12 +2,25 @@
   background-color: #FFFFFF;
 }
 
-.p-logout-section {
-  padding-top: 16px;
+@media (min-width: 769px) {
+  .p-logout {
+    background-color: #F0F0F0;
+  }
+}
+
+.p-logout .c-breadcrumbs {
+  background-color: #FFFFFF;
 }
 
 .p-logout-section .u-h-lv2 {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+@media (min-width: 769px) {
+  .p-logout-section .u-h-lv2 {
+    background-color: #FFFFFF;
+  }
 }
 
 .p-logout-contents {
