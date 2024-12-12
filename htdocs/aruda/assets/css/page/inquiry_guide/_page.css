@@ -1,0 +1,36 @@
+.p-inquiry_guide {
+  background-color: #F0F0F0;
+}
+
+.p-inquiry_guide .c-breadcrumbs {
+  background-color: #FFFFFF;
+}
+
+.p-inquiry_guide-section {
+  padding-bottom: 80px;
+}
+
+.p-inquiry_guide-section .u-h-lv2 {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
+}
+
+.p-inquiry_guide-block {
+  padding: 40px 32px 0;
+}
+
+.p-inquiry_guide-block p + p {
+  margin-top: 16px;
+}
+
+@media (min-width: 769px) {
+  .p-inquiry_guide-block {
+    max-width: 1044px;
+    margin: 0 auto;
+  }
+}
+
+.p-inquiry_guide + .l-footer {
+  background-color: #F0F0F0;
+}
