@@ -1522,8 +1522,18 @@ a, button {
     padding: 8px 27px 8px 32px;
     border-top: 1px solid #DDDDDD;
     background-color: #F0F0F0; }
-    .c-menu-modal__close .logo {
-      width: 86px; }
+    @media (min-width: 769px) {
+      .c-menu-modal__close {
+        padding: 0 8px; } }
+    .c-menu-modal__close .logo a {
+      display: block; }
+      .c-menu-modal__close .logo a img {
+        width: 86px; }
+    @media (min-width: 769px) {
+      .c-menu-modal__close .logo a {
+        padding: 8px; }
+        .c-menu-modal__close .logo a img {
+          width: 156px; } }
     .c-menu-modal__close .close .u-ico {
       margin: 0 auto; }
     .c-menu-modal__close .close span {

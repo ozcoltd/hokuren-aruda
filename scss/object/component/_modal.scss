@@ -93,8 +93,24 @@
         padding: 8px 27px 8px 32px;
         border-top: 1px solid $c-border;
         background-color: $c-bg-main-sub;
+        @include for-desktop {
+            padding: 0 8px;
+        }
         .logo {
-            width: 86px;
+            a {
+                display: block;
+                img {
+                    width: 86px;
+                }
+            }
+            @include for-desktop {
+                a {
+                    padding: $m-ss;
+                    img {
+                        width: 156px;
+                    }
+                }
+            }
         }
         .close {
             .u-ico {
