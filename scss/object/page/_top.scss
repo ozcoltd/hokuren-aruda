@@ -2,6 +2,9 @@
 @import '../../foundation/mixins';
 
 .p-top {
+    @include for-desktop {
+        background-color: $c-bg-main;
+    }
     &-info {
         .u-h-lv4 {
             margin-bottom: $m-s;
@@ -10,6 +13,7 @@
         padding: $m-sl $m-s;
         @include for-desktop {
             padding: $m-l $m-s $m-ll;
+            background-color: $c-bg-main-sub;
         }
     }
     .c-ez-search {
@@ -40,6 +44,11 @@
                 max-width: 890px;
                 margin: 0 auto;
             }
+            .c-tab-list {
+                margin-bottom: 22px;
+            }
+            background-color: $c-bg-main-sub;
+
         }
     }
     &-history {

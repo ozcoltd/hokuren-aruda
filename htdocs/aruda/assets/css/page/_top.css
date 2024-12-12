@@ -1,3 +1,9 @@
+@media (min-width: 769px) {
+  .p-top {
+    background-color: #FFFFFF;
+  }
+}
+
 .p-top-info {
   margin-bottom: 8px;
   padding: 24px 16px;
@@ -10,6 +16,7 @@
 @media (min-width: 769px) {
   .p-top-info {
     padding: 48px 16px 56px;
+    background-color: #F0F0F0;
   }
 }
 
@@ -40,11 +47,17 @@
 }
 
 @media (min-width: 769px) {
+  .p-top-machinery {
+    background-color: #F0F0F0;
+  }
   .p-top-machinery .l-grid {
     gap: 32px 40px;
     grid-template-columns: repeat(4, 1fr);
     max-width: 890px;
     margin: 0 auto;
+  }
+  .p-top-machinery .c-tab-list {
+    margin-bottom: 22px;
   }
 }
 

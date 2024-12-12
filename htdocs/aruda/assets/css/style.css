@@ -1614,8 +1614,11 @@ a, button {
   padding: 16px 16px 8px; }
   @media (min-width: 769px) {
     .c-breadcrumbs {
-      max-width: 980px;
-      margin: 0 auto; } }
+      padding: 0; }
+      .c-breadcrumbs__contents {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 16px 16px 8px; } }
   .c-breadcrumbs ul {
     display: flex;
     gap: 16px; }
