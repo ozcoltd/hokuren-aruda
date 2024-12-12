@@ -2,6 +2,16 @@
   background-color: #FFFFFF;
 }
 
+@media (min-width: 769px) {
+  .p-mypage {
+    background-color: #F0F0F0;
+  }
+}
+
+.p-mypage .c-breadcrumbs {
+  background-color: #FFFFFF;
+}
+
 .p-mypage-section .u-h-lv2 {
   padding-top: 16px;
   padding-bottom: 32px;

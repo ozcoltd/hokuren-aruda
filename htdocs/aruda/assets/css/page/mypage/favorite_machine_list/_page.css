@@ -2,6 +2,16 @@
   background-color: #FFFFFF;
 }
 
+@media (min-width: 769px) {
+  .p-favorite_machine_list {
+    background-color: #F0F0F0;
+  }
+}
+
+.p-favorite_machine_list .c-breadcrumbs {
+  background-color: #FFFFFF;
+}
+
 .p-favorite_machine_list-section .u-h-lv2 {
   padding-top: 16px;
   padding-bottom: 32px;
