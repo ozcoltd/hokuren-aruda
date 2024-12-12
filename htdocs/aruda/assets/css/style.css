@@ -1033,6 +1033,7 @@ select option:disabled {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    color: #4B4B4B;
     font-size: 14px;
     font-weight: bold; }
   .c-info[data-type="detail"] .c-info__head {

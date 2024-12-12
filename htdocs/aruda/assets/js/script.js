@@ -204,4 +204,18 @@ $(function(){
         $('html, body').animate({ scrollTop: 0 }, 500);
     });
 
+    //sort
+    $('.js-sort').each(function(){
+        var $this = $(this);
+        $this.find('.js-sort-trigger').on('click',function(e){
+            e.preventDefault();
+            if($(this).hasClass('is-current')) { return; }
+            $this.find('.js-sort-trigger').removeClass('is-current');
+            $(this).addClass('is-current');
+            var index = $this.find('.js-sort-trigger').index($(this));
+            //カレント表示の変更
+            $this.find('.js-sort-list').attr("data-current", index);
+        });
+    });
+
 });
