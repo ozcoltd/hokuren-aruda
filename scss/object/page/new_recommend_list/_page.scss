@@ -1,0 +1,94 @@
+@import '../../../foundation/variables';
+@import '../../../foundation/mixins';
+
+.p-new_recommend_list {
+    background-color: $c-bg-main-sub;
+
+    .c-breadcrumbs {
+        background-color: $c-bg-main;
+    }
+    &-section {
+        .u-h-lv2 {
+            padding-top: $m-m;
+            padding-bottom: $m-s;
+            background-color: $c-bg-main;
+        }
+    }
+    &-machinery {
+        background-color: $c-bg-main-sub;
+        .u-h-lv2 {
+            background-color: $c-bg-main-sub;
+            .u-ico {
+                margin: 0 auto;
+            }
+        }
+        .c-tab-list {
+            width: calc(100% - 32px);
+            margin: 0 auto 22px;
+        }
+        .l-grid {
+            gap: $m-m $m-ss;
+            padding-bottom: $m-ml;
+        }
+        .c-card-block {
+            padding-bottom: 0;
+        }
+        .c-pagenation {
+            margin: 0 -16px;
+            padding: $m-s;
+            background-color: $c-bg-main-sub;
+            &__prev {
+                left: 16px;
+            }
+            &__next {
+                right: 16px;
+            }
+        }
+        @include for-desktop {
+            .l-grid {
+                gap: $m-m $m-ml;
+                grid-template-columns: repeat(4,1fr);
+                max-width: 890px;
+                margin: 0 auto;
+            }
+            .c-tab-list {
+                margin-bottom: 22px;
+            }
+            background-color: $c-bg-main-sub;
+
+        }
+    }
+    &-history {
+        padding: $m-ml $m-s;
+        background-color: $c-bg-main-sub;
+        .u-h-lv2 {
+            padding-top: 0;
+            background-color: $c-bg-main-sub;
+        }
+        .l-grid {
+            gap: $m-m $m-ss;
+        }
+        .c-more-block {
+            height: 41px;
+            margin-top: $m-m;
+            padding: 0;
+            &__contents {
+                opacity: 0;
+            }
+            &__btn {
+                background: transparent;
+            }
+        }
+        @include for-desktop {
+            .l-grid {
+                gap: $m-m $m-ml;
+                grid-template-columns: repeat(4,1fr);
+                max-width: 890px;
+                margin: 0 auto;
+            }
+        }
+    }
+    & + .l-footer {
+        background-color: $c-bg-main-sub;
+    }
+}

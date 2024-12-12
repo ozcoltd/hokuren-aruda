@@ -1,0 +1,109 @@
+.p-new_recommend_list {
+  background-color: #F0F0F0;
+}
+
+.p-new_recommend_list .c-breadcrumbs {
+  background-color: #FFFFFF;
+}
+
+.p-new_recommend_list-section .u-h-lv2 {
+  padding-top: 32px;
+  padding-bottom: 16px;
+  background-color: #FFFFFF;
+}
+
+.p-new_recommend_list-machinery {
+  background-color: #F0F0F0;
+}
+
+.p-new_recommend_list-machinery .u-h-lv2 {
+  background-color: #F0F0F0;
+}
+
+.p-new_recommend_list-machinery .u-h-lv2 .u-ico {
+  margin: 0 auto;
+}
+
+.p-new_recommend_list-machinery .c-tab-list {
+  width: calc(100% - 32px);
+  margin: 0 auto 22px;
+}
+
+.p-new_recommend_list-machinery .l-grid {
+  gap: 32px 8px;
+  padding-bottom: 40px;
+}
+
+.p-new_recommend_list-machinery .c-card-block {
+  padding-bottom: 0;
+}
+
+.p-new_recommend_list-machinery .c-pagenation {
+  margin: 0 -16px;
+  padding: 16px;
+  background-color: #F0F0F0;
+}
+
+.p-new_recommend_list-machinery .c-pagenation__prev {
+  left: 16px;
+}
+
+.p-new_recommend_list-machinery .c-pagenation__next {
+  right: 16px;
+}
+
+@media (min-width: 769px) {
+  .p-new_recommend_list-machinery {
+    background-color: #F0F0F0;
+  }
+  .p-new_recommend_list-machinery .l-grid {
+    gap: 32px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 890px;
+    margin: 0 auto;
+  }
+  .p-new_recommend_list-machinery .c-tab-list {
+    margin-bottom: 22px;
+  }
+}
+
+.p-new_recommend_list-history {
+  padding: 40px 16px;
+  background-color: #F0F0F0;
+}
+
+.p-new_recommend_list-history .u-h-lv2 {
+  padding-top: 0;
+  background-color: #F0F0F0;
+}
+
+.p-new_recommend_list-history .l-grid {
+  gap: 32px 8px;
+}
+
+.p-new_recommend_list-history .c-more-block {
+  height: 41px;
+  margin-top: 32px;
+  padding: 0;
+}
+
+.p-new_recommend_list-history .c-more-block__contents {
+  opacity: 0;
+}
+
+.p-new_recommend_list-history .c-more-block__btn {
+  background: transparent;
+}
+
+@media (min-width: 769px) {
+  .p-new_recommend_list-history .l-grid {
+    gap: 32px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 890px;
+    margin: 0 auto;
+  }
+}
+
+.p-new_recommend_list + .l-footer {
+  background-color: #F0F0F0;
+}
