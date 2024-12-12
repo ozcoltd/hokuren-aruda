@@ -23,6 +23,10 @@
             &__list {
                 &[data-col="2"] {
                     gap: $m-ss;
+                    flex-wrap: wrap;
+                    li {
+                        width: calc(50% - 4px);
+                    }
                 }
                 &[data-type="kubun"] {
                     li {

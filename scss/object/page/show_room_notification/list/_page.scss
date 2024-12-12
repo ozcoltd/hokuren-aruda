@@ -15,6 +15,10 @@
         .c-form {
             padding-top: 0;
             background-color: $c-bg-main-sub;
+            @include for-desktop {
+                max-width: 1012px;
+                margin: 0 auto;
+            }
             .l-grid {
                 gap: $m-ss;
                 label {
@@ -37,6 +41,10 @@
         }
         .c-contents {
             padding: 0 $m-s;
+            @include for-desktop {
+                max-width: 1012px;
+                margin: 0 auto;
+            }
         }
     }
     &-block {

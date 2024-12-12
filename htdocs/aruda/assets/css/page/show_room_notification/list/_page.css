@@ -17,6 +17,13 @@
   background-color: #F0F0F0;
 }
 
+@media (min-width: 769px) {
+  .p-show_room-list-section .c-form {
+    max-width: 1012px;
+    margin: 0 auto;
+  }
+}
+
 .p-show_room-list-section .c-form .l-grid {
   gap: 8px;
 }
@@ -44,6 +51,13 @@
 
 .p-show_room-list-section .c-contents {
   padding: 0 16px;
+}
+
+@media (min-width: 769px) {
+  .p-show_room-list-section .c-contents {
+    max-width: 1012px;
+    margin: 0 auto;
+  }
 }
 
 .p-show_room-list-block {

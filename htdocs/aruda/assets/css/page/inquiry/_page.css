@@ -24,6 +24,11 @@
 
 .p-inquiry-section .c-form__list[data-col="2"] {
   gap: 8px;
+  flex-wrap: wrap;
+}
+
+.p-inquiry-section .c-form__list[data-col="2"] li {
+  width: calc(50% - 4px);
 }
 
 .p-inquiry-section .c-form__list[data-type="kubun"] li {
