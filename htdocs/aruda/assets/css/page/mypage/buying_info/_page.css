@@ -1,16 +1,15 @@
 .p-buying_info {
+  background-color: #F0F0F0;
+}
+
+.p-buying_info .c-breadcrumbs {
   background-color: #FFFFFF;
 }
 
 .p-buying_info-section .u-h-lv2 {
   padding-top: 16px;
   padding-bottom: 32px;
-}
-
-@media (min-width: 769px) {
-  .p-buying_info-section .u-h-lv2 {
-    background-color: #FFFFFF;
-  }
+  background-color: #FFFFFF;
 }
 
 @media (min-width: 769px) {
@@ -21,6 +20,7 @@
 
 .p-buying_info-recommendation {
   padding: 40px 16px;
+  background-color: #FFFFFF;
 }
 
 .p-buying_info-recommendation .u-h-lv3 {
@@ -31,10 +31,13 @@
   gap: 32px 8px;
 }
 
+.p-buying_info-recommendation .c-detail-search .u-h-lv2 {
+  background-color: #F0F0F0;
+}
+
 @media (min-width: 769px) {
   .p-buying_info-recommendation {
     margin-top: 56px;
-    background-color: #FFFFFF;
     border-radius: 4px;
   }
 }
@@ -134,8 +137,6 @@
   }
 }
 
-@media (min-width: 769px) {
-  .p-buying_info + .l-footer {
-    background-color: #F0F0F0;
-  }
+.p-buying_info + .l-footer {
+  background-color: #F0F0F0;
 }

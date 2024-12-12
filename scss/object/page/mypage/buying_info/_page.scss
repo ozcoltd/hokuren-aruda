@@ -2,15 +2,16 @@
 @import '../../../../foundation/mixins';
 
 .p-buying_info {
-    background-color: $c-bg-main;
+    background-color: $c-bg-main-sub;
+    .c-breadcrumbs {
+        background-color: $c-bg-main;
+    }
 
     &-section {
         .u-h-lv2 {
             padding-top: $m-s;
             padding-bottom: $m-m;
-            @include for-desktop {
-                background-color: $c-bg-main;
-            }
+            background-color: $c-bg-main;
         }
         @include for-desktop {
             background-color: $c-bg-main-sub;
@@ -18,15 +19,21 @@
     }
     &-recommendation {
         padding: $m-ml $m-s;
+        background-color: $c-bg-main;
+
         .u-h-lv3 {
             margin-bottom: $m-sl;
         }
         .l-grid {
             gap: $m-m $m-ss;
         }
+        .c-detail-search {
+            .u-h-lv2 {
+                background-color: $c-bg-main-sub;
+            }
+        }
         @include for-desktop {
             margin-top: $m-ll;
-            background-color: $c-bg-main;
             border-radius: $b-r-s;
         }
     }
@@ -108,8 +115,6 @@
         }
     }
     & + .l-footer {
-        @include for-desktop {
-            background-color: $c-bg-main-sub;
-        }
+        background-color: $c-bg-main-sub;
     }
 }
