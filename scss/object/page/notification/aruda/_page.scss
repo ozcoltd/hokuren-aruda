@@ -1,11 +1,15 @@
 @import '../../../../foundation/variables';
 .p-notification-aruda {
-    background-color: $c-bg-main;
+    background-color: $c-bg-main-sub;
+    .c-breadcrumbs {
+        background-color: $c-bg-main;
+    }
 
     &-section {
-        padding-top: $m-s;
         .u-h-lv2 {
-            margin-bottom: $m-m;
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            background-color: $c-bg-main;
         }
     }
     &-block {
@@ -21,5 +25,8 @@
             padding-left: 0;
             padding-right: 0;
         }
+    }
+    & + .l-footer {
+        background-color: $c-bg-main-sub;
     }
 }

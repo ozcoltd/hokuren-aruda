@@ -1,13 +1,15 @@
 .p-notification-aruda {
+  background-color: #F0F0F0;
+}
+
+.p-notification-aruda .c-breadcrumbs {
   background-color: #FFFFFF;
 }
 
-.p-notification-aruda-section {
-  padding-top: 16px;
-}
-
 .p-notification-aruda-section .u-h-lv2 {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
 }
 
 .p-notification-aruda-block {
@@ -26,4 +28,8 @@
 .p-notification-aruda-block .c-info {
   padding-left: 0;
   padding-right: 0;
+}
+
+.p-notification-aruda + .l-footer {
+  background-color: #F0F0F0;
 }

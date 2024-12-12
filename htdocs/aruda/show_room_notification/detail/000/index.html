@@ -23,7 +23,7 @@
 
 <script src="/aruda/assets/js/script.js"></script>
 
-  <link rel="stylesheet" href="/aruda/assets/css/page/show_room_notification/list/_page.css">
+  <link rel="stylesheet" href="/aruda/assets/css/page/show_room_notification/detail/_page.css">
 </head>
 <body>
   <header class="l-header">
@@ -53,161 +53,74 @@
         </nav>
     </div>
 </header>
-  <main class="l-main p-show_room-list">
+  <main class="l-main p-show_room_notification-detail">
     <nav class="c-breadcrumbs">
 <div class="c-breadcrumbs__contents">
       <ul>
         <li><a href="/aruda/">ホーム</a></li>
-        <li><span>展示場からのお知らせ一覧</span></li>
+        <li><a href="/aruda/show_room_notification/list/">展示場からのお知らせ一覧</a></li>
+        <li><span>○○○○○○○○</span></li>
     </ul>
     </div>
     </nav>
-    <section class="p-show_room-list-section">
-      <h2 class="u-h-lv2 u-t-center">展示場からの<br>お知らせ一覧</h2>
-      <div class="p-show_room-list-block">
-        <div class="c-tab js-sort">
-          <div class="p-tab-wrap">
-            <ul class="c-tab-list js-sort-list" data-col="3" data-current="0">
-              <li><a href="#" class="js-sort-trigger is-current">すべて</a></li>
-              <li><a href="#" class="js-sort-trigger">お知らせ</a></li>
-              <li><a href="#" class="js-sort-trigger">フェア</a></li>
-            </ul>
-          </div>
-          <div class="c-form">
-            <div class="l-grid" data-col="2">
-              <label>
-                <div class="c-form__ttl">
-                  エリア
-                </div>
-                <div class="c-form__select">
-                  <select name="">
-                    <option value="" disabled selected>指定しない</option>
-                    <option value="1">ダミー</option>
-                    <option value="2">ダミー</option>
-                    <option value="3">ダミー</option>
-                  </select>
-                </div>
-              </label>
-              <label>
-                <div class="c-form__ttl">
-                  展示場
-                </div>
-                <div class="c-form__select">
-                  <select name="">
-                    <option value="" disabled selected>指定しない</option>
-                    <option value="1">ダミー</option>
-                    <option value="2">ダミー</option>
-                    <option value="3">ダミー</option>
-                  </select>
-                </div>
-              </label>
+    <section class="p-show_room_notification-detail-section">
+      <div class="p-show_room_notification-detail-block">
+        <div class="c-info" data-type="detail">
+          <div class="c-info__contents">
+            <div class="c-info__head">
+              <p class="c-info__date">2000.00.00</p>
+              <ul class="c-tag-list">
+                <li class="c-tag">お知らせ</li>
+                <li class="c-tag">フェア</li>
+                <li class="c-tag">キャンペーン</li>
+              </ul>
             </div>
-            <label>
-              <div class="c-form__select">
-                <select name="">
-                  <option value="" disabled selected>過去の記事を探す</option>
-                  <option value="1">ダミー</option>
-                  <option value="2">ダミー</option>
-                  <option value="3">ダミー</option>
-                </select>
-              </div>
-            </label>
+            <h2 class="c-info__ttl">アルーダ士別</h2>
+            <div class="c-info__img">
+              <img src="https://placehold.jp/311x176.png" alt="">
+            </div>
+            <div class="c-info__txt">
+              <p class="u-f-bold">冬季格納について</p>
+              <p>いつもアルーダ士別をご利用いただきありがとうございます。<br>
+                当展示場は豪雪地帯のため、現在掲載されている中古機械は冬季格納いたしますので<br>
+                ４月初旬までお持ち帰りできない機械がございますのでご了承ください。<br>
+                お問い合わせにつきましては電話またはメールにて承ります。<br>
+                アルーダ士別担当　　吉野、前川まで</p>
+            </div>
           </div>
-          <div class="c-contents">
-          <div class="c-info">
-            <a href="" class="c-info__item">
-              <div class="c-info__img">
-                <img src="https://placehold.jp/88x50.png" alt="">
-              </div>
-              <div class="c-info__contents">
-                <p class="c-info__date">2000.00.00</p>
-                <ul class="c-tag-list">
-                  <li class="c-tag">お知らせ</li>
-                  <li class="c-tag">フェア</li>
-                  <li class="c-tag">キャンペーン</li>
-                </ul>
-                <p class="c-info__shop">アルーダ士別</p>
-                <p class="c-info__ttl">冬季格納について冬季格納について冬季格納について</p>
-              </div>
-            </a>
-            <a href="" class="c-info__item">
-              <div class="c-info__img">
-                <img src="https://placehold.jp/88x50.png" alt="">
-              </div>
-              <div class="c-info__contents">
-                <p class="c-info__date">2000.00.00</p>
-                <ul class="c-tag-list">
-                  <li class="c-tag">お知らせ</li>
-                  <li class="c-tag">フェア</li>
-                  <li class="c-tag">キャンペーン</li>
-                </ul>
-                <p class="c-info__shop">アルーダ士別</p>
-                <p class="c-info__ttl">冬季格納について冬季格納について冬季格納について</p>
-              </div>
-            </a>
-            <a href="" class="c-info__item">
-              <div class="c-info__img">
-                <img src="https://placehold.jp/88x50.png" alt="">
-              </div>
-              <div class="c-info__contents">
-                <p class="c-info__date">2000.00.00</p>
-                <ul class="c-tag-list">
-                  <li class="c-tag">お知らせ</li>
-                  <li class="c-tag">フェア</li>
-                  <li class="c-tag">キャンペーン</li>
-                </ul>
-                <p class="c-info__shop">アルーダ士別</p>
-                <p class="c-info__ttl">冬季格納について冬季格納について冬季格納について</p>
-              </div>
-            </a>
-          </div>
-          <div class="c-pagenation">
-            <a href="#" class="c-pagenation__prev">
-              <img src="/aruda/assets/images/common/ico_left_g.svg" alt="" class="u-ico" data-size="s">
-            </a>
-            <ul>
-              <li>
-                <a href="#" class="c-pagenation__num">
-                  <span>1</span>
-                </a>
-              </li>
-              <li>
-                <span>...</span>
-              </li>
-              <li>
-                <a href="#" class="c-pagenation__num">
-                  <span>5</span>
-                </a>
-              </li>
-              <li>
-                <span class="c-pagenation__num is-current">
-                  <span>6</span>
-                </span>
-              </li>
-              <li>
-                <a href="#" class="c-pagenation__num">
-                  <span>7</span>
-                </a>
-              </li>
-              <li>
-                <span>...</span>
-              </li>
-              <li>
-                <a href="#" class="c-pagenation__num">
-                  <span>8</span>
-                </a>
-              </li>
-            </ul>
-            <a href="#" class="c-pagenation__next">
-              <img src="/aruda/assets/images/common/ico_right_g.svg" alt="" class="u-ico" data-size="s">
-            </a>
-          </div>
-          </div>
-
-
         </div>
+        <div class="c-exhibition-hall">
+          <p class="u-h-lv4 u-t-center">お問い合わせ</p>
+            <div class="c-exhibition-hall-contact">
+              <p class="c-exhibition-hall-contact__ttl">展示場名</p>
+              <p class="c-exhibition-hall-contact__info">〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+              <div class="c-exhibition-hall-contact__contact">
+                <ul class="l-grid" data-col="2">
+                  <li>
+                    <a href="" class="c-btn" data-type="solid-icon-left" data-size="s">
+                      <img src="/aruda/assets/images/common/ico_phone_w.svg" alt="" class="u-ico" data-size="s">
+                      電話
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="c-btn" data-type="solid-icon-left" data-size="s">
+                      <img src="/aruda/assets/images/common/ico_mail_w.svg" alt="" class="u-ico" data-size="s">
+                      メール
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+          <a href="/" class="c-btn u-m-center" data-type="icon-left" data-size="l">
+            <img src="/aruda/assets/images/common/ico_left_g.svg" alt="" class="u-ico" data-size="s">
+            一覧に戻る
+          </a>
+
+
       </div>
-    </section>
+
+  </section>
 
   </main>
   <footer class="l-footer">

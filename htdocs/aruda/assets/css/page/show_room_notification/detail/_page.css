@@ -1,0 +1,68 @@
+.p-show_room_notification-detail {
+  background-color: #F0F0F0;
+}
+
+.p-show_room_notification-detail-section {
+  padding-top: 32px;
+}
+
+.p-show_room_notification-detail-section .c-form {
+  padding-top: 0;
+  background-color: #F0F0F0;
+}
+
+.p-show_room_notification-detail-section .c-form .l-grid {
+  gap: 8px;
+}
+
+.p-show_room_notification-detail-section .c-form .l-grid label {
+  margin-top: 0;
+}
+
+.p-show_room_notification-detail-section .c-form label {
+  margin-top: 8px;
+}
+
+.p-show_room_notification-detail-section .c-info {
+  padding-bottom: 0;
+}
+
+@media (min-width: 769px) {
+  .p-show_room_notification-detail-section .c-info {
+    max-width: 1012px;
+    margin: 0 auto;
+  }
+}
+
+.p-show_room_notification-detail-section .c-exhibition-hall {
+  padding: 40px 16px;
+  background-color: transparent;
+}
+
+@media (min-width: 769px) {
+  .p-show_room_notification-detail-section .c-exhibition-hall {
+    max-width: 1012px;
+    margin: 0 auto;
+  }
+}
+
+.p-show_room_notification-detail-section .c-exhibition-hall-contact__contact {
+  justify-content: center;
+}
+
+.p-show_room_notification-detail-section .c-contents {
+  padding: 0 16px;
+}
+
+.p-show_room_notification-detail-block {
+  padding-bottom: 80px;
+  background-color: #F0F0F0;
+}
+
+.p-show_room_notification-detail-block .p-tab-wrap {
+  padding: 32px 16px 16px;
+}
+
+.p-show_room_notification-detail + .l-footer {
+  background-color: #F0F0F0;
+}

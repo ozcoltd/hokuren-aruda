@@ -1,17 +1,11 @@
 @import '../../../../foundation/variables';
 @import '../../../../foundation/mixins';
 
-.p-show_room-list {
+.p-show_room_notification-detail {
     background-color: $c-bg-main-sub;
-    .c-breadcrumbs {
-        background-color: $c-bg-main;
-    }
+    
     &-section {
-        .u-h-lv2 {
-            padding-top: $m-s;
-            padding-bottom: $m-m;
-            background-color: $c-bg-main;
-        }
+        padding-top: $m-m;
         .c-form {
             padding-top: 0;
             background-color: $c-bg-main-sub;
@@ -27,12 +21,20 @@
         }
         .c-info {
             padding-bottom: 0;
-            background-color: $c-bg-main;
-            .c-info__item:first-child {
-                padding-top: $m-s;
+            @include for-desktop {
+                max-width: 1012px;
+                margin: 0 auto;
             }
-            .c-info__item:last-child {
-                padding-bottom: $m-s;
+        }
+        .c-exhibition-hall {
+            padding: $m-ml $m-s;
+            background-color: transparent;
+            @include for-desktop {
+                max-width: 1012px;
+                margin: 0 auto;
+            }
+            &-contact__contact {
+                justify-content: center;
             }
         }
         .c-contents {
