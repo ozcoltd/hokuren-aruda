@@ -20,6 +20,7 @@ body {
 	font-size: 1.6rem;
 	background-color: $c-bg-main-sub;
 	&.is-fixed {
+		overflow: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
