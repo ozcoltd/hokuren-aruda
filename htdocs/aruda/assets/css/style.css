@@ -1880,6 +1880,25 @@ a, button {
     font-weight: bold;
     white-space: nowrap; }
 
+.c-anc-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px; }
+  .c-anc-list li {
+    width: calc(33.3% - 6px); }
+  .c-anc-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 58px;
+    background-color: #FFFFFF;
+    border: 1px solid #2C933A;
+    border-radius: 29px; }
+    .c-anc-list a span {
+      font-size: 12px; }
+
 .u-t-center {
   text-align: center; }
 

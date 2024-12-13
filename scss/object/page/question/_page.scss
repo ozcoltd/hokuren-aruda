@@ -13,40 +13,67 @@
             padding-bottom: $m-m;
             background-color: $c-bg-main;
         }
-        .c-form {
-            margin-top: $m-ml;
-            background-color: $c-bg-main;
-            border-radius: $b-r-s;
-            @include for-desktop {
-            }
-
-            &__list {
-                &[data-col="2"] {
-                    gap: $m-ss;
-                    flex-wrap: wrap;
-                    li {
-                        width: calc(50% - 4px);
-                    }
-                }
-                &[data-type="kubun"] {
-                    li {
-                        padding: $m-ss;
-                        label {
-                            margin-top: 0;
-                        }
-                        &.is-active {
-                            background-color: $c-bg-tertiary;
-                        }
-                    }
-                }
-            }
-        }
     }
     &-block {
-        padding: $m-ml $m-s;
+        background-color: $c-bg-main-sub;
+        .c-contents {
+            padding: $m-ml $m-s;
+        }
+    }
+    .p-accordion-block {
+        padding-bottom: $m-ml;
+        background-color: $c-bg-main;
+        .u-h-lv2 {
+            padding-top: $m-ml;
+            padding-bottom: $m-s;
+        }
+
+        .c-contents {
+            padding: $m-ml $m-s $m-s;
+        }
+    }
+    .c-accordion {
+        padding: 0 $m-s;
         @include for-desktop {
-            max-width: 1044px;
+            max-width: 1012px;
             margin: 0 auto;
+        }
+        &__btn {
+            cursor: pointer;
+            padding-right: $m-ml;
+            background-color: $c-bg-main-sub;
+            span {
+                display: block;
+                padding-left: 1em;
+                text-indent: -1em;
+                font-size: $fs-t-s;
+            }
+        }
+        &__cosntents {
+            background-color: $c-bg-main;
+            & > * {
+                margin-bottom: $m-ss;
+            }
+            & > *:last-child{
+                margin-bottom: 0 !important;
+            }
+        }
+        &__img {
+            margin-bottom: 12px;
+        }
+        .c-ul-list,
+        .c-ol-list {
+            font-size: $fs-t-s;
+        }
+    }
+    .c-mypage-btn-block {
+        padding-bottom: 0;
+        @include for-desktop {
+            max-width: 1012px;
+            margin: 0 auto;
+        }
+        &__inner {
+            padding: $m-ml $m-s;
         }
     }
     & + .l-footer {

@@ -29,5 +29,27 @@
         white-space: nowrap;
     }
 }
+.c-anc-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $m-ss;
+    li {
+        width: calc(33.3% - 6px);
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 58px;
+        background-color: $c-bg-main;
+        border: 1px solid $c-border-primary;
+        border-radius: 29px;
+        span {
+            font-size: $fs-t-ss;
+        }
+    }
+}
 
 

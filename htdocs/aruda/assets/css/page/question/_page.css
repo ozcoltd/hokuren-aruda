@@ -16,42 +16,86 @@
   background-color: #FFFFFF;
 }
 
-.p-question-section .c-form {
-  margin-top: 40px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-}
-
-.p-question-section .c-form__list[data-col="2"] {
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.p-question-section .c-form__list[data-col="2"] li {
-  width: calc(50% - 4px);
-}
-
-.p-question-section .c-form__list[data-type="kubun"] li {
-  padding: 8px;
-}
-
-.p-question-section .c-form__list[data-type="kubun"] li label {
-  margin-top: 0;
-}
-
-.p-question-section .c-form__list[data-type="kubun"] li.is-active {
-  background-color: #ECF6ED;
-}
-
 .p-question-block {
+  background-color: #F0F0F0;
+}
+
+.p-question-block .c-contents {
   padding: 40px 16px;
 }
 
+.p-question .p-accordion-block {
+  padding-bottom: 40px;
+  background-color: #FFFFFF;
+}
+
+.p-question .p-accordion-block .u-h-lv2 {
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+
+.p-question .p-accordion-block .c-contents {
+  padding: 40px 16px 16px;
+}
+
+.p-question .c-accordion {
+  padding: 0 16px;
+}
+
 @media (min-width: 769px) {
-  .p-question-block {
-    max-width: 1044px;
+  .p-question .c-accordion {
+    max-width: 1012px;
     margin: 0 auto;
   }
+}
+
+.p-question .c-accordion__btn {
+  cursor: pointer;
+  padding-right: 40px;
+  background-color: #F0F0F0;
+}
+
+.p-question .c-accordion__btn span {
+  display: block;
+  padding-left: 1em;
+  text-indent: -1em;
+  font-size: 14px;
+}
+
+.p-question .c-accordion__cosntents {
+  background-color: #FFFFFF;
+}
+
+.p-question .c-accordion__cosntents > * {
+  margin-bottom: 8px;
+}
+
+.p-question .c-accordion__cosntents > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.p-question .c-accordion__img {
+  margin-bottom: 12px;
+}
+
+.p-question .c-accordion .c-ul-list,
+.p-question .c-accordion .c-ol-list {
+  font-size: 14px;
+}
+
+.p-question .c-mypage-btn-block {
+  padding-bottom: 0;
+}
+
+@media (min-width: 769px) {
+  .p-question .c-mypage-btn-block {
+    max-width: 1012px;
+    margin: 0 auto;
+  }
+}
+
+.p-question .c-mypage-btn-block__inner {
+  padding: 40px 16px;
 }
 
 .p-question + .l-footer {
