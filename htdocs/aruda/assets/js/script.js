@@ -204,6 +204,20 @@ $(function(){
         $('html, body').animate({ scrollTop: 0 }, 500);
     });
 
+    //アンカー
+    $('.js-anc').on('click', function (e) {
+        e.preventDefault(); // デフォルトの動作を無効化
+        const target = $($(this).attr('href')); // スクロール先のターゲット要素
+        if (target.length) {
+          $('html, body').animate(
+            {
+              scrollTop: target.offset().top - 20, // ターゲット要素の位置までスクロール
+            },
+            500, // アニメーションの速度 (ミリ秒)
+            'swing' // イージング
+          );
+        }
+      });
     //sort
     $('.js-sort').each(function(){
         var $this = $(this);
