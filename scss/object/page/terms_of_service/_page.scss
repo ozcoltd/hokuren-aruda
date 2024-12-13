@@ -13,40 +13,44 @@
             padding-bottom: $m-m;
             background-color: $c-bg-main;
         }
-        .c-form {
-            margin-top: $m-ml;
-            background-color: $c-bg-main;
-            border-radius: $b-r-s;
-            @include for-desktop {
-            }
-
-            &__list {
-                &[data-col="2"] {
-                    gap: $m-ss;
-                    flex-wrap: wrap;
-                    li {
-                        width: calc(50% - 4px);
-                    }
-                }
-                &[data-type="kubun"] {
-                    li {
-                        padding: $m-ss;
-                        label {
-                            margin-top: 0;
-                        }
-                        &.is-active {
-                            background-color: $c-bg-tertiary;
-                        }
-                    }
+    }
+    &-block {
+        background-color: $c-bg-main-sub;
+        .c-contents {
+            padding: $m-ml $m-s;
+        }
+    }
+    .p-terms_of_service-list {
+        padding: $m-ml $m-s;
+        background-color: $c-bg-main;
+        .c-contents {
+            margin-bottom: 16px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $c-border;
+            & > * {
+                margin-bottom: $m-ss;
+                &:last-child {
+                    margin-bottom: 0 !important;
                 }
             }
         }
-    }
-    &-block {
-        padding: $m-ml $m-s;
-        @include for-desktop {
-            max-width: 1044px;
-            margin: 0 auto;
+        .c-ul-list,
+        .c-ol-list,
+        .c-dl-list {
+            font-size: $fs-t-s;
+        }
+        .c-dl-list dd {
+            font-size: $fs-t-ss;
+        }
+        .c-ol-list-block {
+            text-indent: 0;
+        }
+        .c-ol-list-box {
+            margin-top: $m-sss;
+            margin-bottom: $m-ss;
+            padding: $m-ss;
+            border-radius: $b-r-s;
+            background-color: $c-bg-main-sub;
         }
     }
     & + .l-footer {

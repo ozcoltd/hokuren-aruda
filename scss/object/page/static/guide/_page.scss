@@ -50,6 +50,10 @@
         &__img {
             margin-bottom: 12px;
         }
+        .c-ul-list,
+        .c-ol-list {
+            font-size: $fs-t-s;
+        }
     }
     & + .l-footer {
         background-color: $c-bg-main-sub;

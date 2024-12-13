@@ -66,6 +66,11 @@
   margin-bottom: 12px;
 }
 
+.p-guide .c-accordion .c-ul-list,
+.p-guide .c-accordion .c-ol-list {
+  font-size: 14px;
+}
+
 .p-guide + .l-footer {
   background-color: #F0F0F0;
 }

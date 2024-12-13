@@ -58,251 +58,100 @@
 <div class="c-breadcrumbs__contents">
       <ul>
         <li><a href="/aruda/">ホーム</a></li>
-        <li><span>新規利用登録</span></li>
+        <li><span>ご利用規約</span></li>
     </ul>
     </div>
     </nav>
     <section class="p-terms_of_service-section">
-      <h2 class="u-h-lv2 u-t-center">新規利用登録</h2>
-      <div class="p-terms_of_service-form">
+      <h2 class="u-h-lv2 u-t-center">ご利用規約</h2>
+      <div class="p-terms_of_service-block">
         <div class="c-contents">
-          <p class="u-fs-16">利用登録すると、お気に入りの中古農機や検索条件を保存したり、売りたい・買いたい情報の登録、様々な通知メールの受信など、便利な機能をご利用いただきます。</p>
-          <p class="u-f-notes">※登録は無料です。</p>
-          <p class="u-fs-16 u-mt-16">詳しくは<a href="#" class="u-link">ご利用案内</a>をご覧ください。</p>
+          <p class="u-fs-16">ホクレン農業協同組合連合会（以下本会と言う。）の、ウェブサイト（以下本サイトと言う。）をご利用される場合には、以下の利用条件をお読みいただき、同意された場合のみご利用下さい。</p>
+        </div>
+      </div>
+      <div class="p-terms_of_service-list">
+        <div class="c-contents">
+          <p class="u-fs-16 u-f-bold">1. 免責事項について</p>
+          <p class="u-fs-14">本会は、本サイトに掲載されている全ての情報を管理しておりますが、その正確性および完全性などに関して、いかなる保証をするものではありません。</p>
+          <ol class="c-ol-list">
+            <li>&#9312;本会は、本サイトの運営を断りなく停止または中止し、掲載している情報の全部または一部を適宜変更・廃止できるものといたします。</li>
+            <li>&#9313;本会は、本サイトをご利用され、または何らかの原因によって本サイトをご利用できなかったことによりお客様に生じる損害について一切の責任を負いません。</li>
+            <li>&#9314;本会は、本サイトからリンクが張られている第三者のサイト、または本サイトへのリンクから取得された各種情報のご利用によって生じたいかなる損害について一切の責任を負いません。</li>
+          </ol>
         </div>
         <div class="c-contents">
-            <form method="post" action="/aruda/terms_of_service/confirm/" class="c-form">
-            <p class="u-f-alert">*は必須項目です</p>
-              <p class="c-form__ttl">お名前<span class="u-f-required">*</span></p>
-              <ul class="c-form__list" data-col="2">
-                <li>
-                  <label>
-                    <p class="c-form__subttl">姓</p>
-                    <input type="text" name="" value="" class="c-form__text">
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <p class="c-form__subttl">名</p>
-                    <input type="text" name="" value="" class="c-form__text">
-                  </label>
-                </li>
-              </ul>
-              <p class="c-form__ttl u-mt-32">お名前（フリガナ）<span class="u-f-required">*</span></p>
-              <ul class="c-form__list" data-col="2">
-                <li>
-                  <label>
-                    <p class="c-form__subttl">セイ</p>
-                    <input type="text" name="" value="" class="c-form__text">
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <p class="c-form__subttl">メイ</p>
-                    <input type="text" name="" value="" class="c-form__text">
-                  </label>
-                </li>
-              </ul>
-              <p class="c-form__ttl u-mt-32">生年月日<span class="u-f-required">*</span></p>
-              <ul class="c-form__list" data-type="date">
-                <li>
-                  <label>
-                    <div class="c-form__select">
-                      <select name="">
-                        <option value="" selected></option>
-                        <option value="1">ダミー</option>
-                        <option value="2">ダミー</option>
-                        <option value="3">ダミー</option>
-                      </select>
-                    </div>
-                    <p class="c-form__subttl">年</p>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <div class="c-form__select">
-                      <select name="">
-                        <option value="" selected></option>
-                        <option value="1">ダミー</option>
-                        <option value="2">ダミー</option>
-                        <option value="3">ダミー</option>
-                      </select>
-                    </div>
-                    <p class="c-form__subttl">月</p>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <div class="c-form__select">
-                      <select name="">
-                        <option value="" selected></option>
-                        <option value="1">ダミー</option>
-                        <option value="2">ダミー</option>
-                        <option value="3">ダミー</option>
-                      </select>
-                    </div>
-                    <p class="c-form__subttl">日</p>
-                  </label>
-                </li>
-              </ul>
-
-              <p class="c-form__ttl u-mt-32">組合員区分<span class="u-f-required">*</span></p>
-              <ul class="c-form__list js-kubun" data-type="kubun">
-                <li class="js-kubun-item">
-                  <label class="c-form__radio">
-                    <input type="radio" name="group1" value="1"><span>道内農協組合員です</span>
-                  </label>
-                  <p class="c-form__subttl">ホクレン支所・農協:</p>
-                  <div class="js-interlocking-select">
-                    <div class="c-form__select">
-                      <select name="" class="js-parent-select">
-                        <option value="" selected>選択してください</option>
-                        <option value="1">ダミー</option>
-                        <option value="2">ダミー</option>
-                        <option value="3">ダミー</option>
-                      </select>
-                    </div>
-                    <div class="c-form__select">
-                      <select name="" class="js-child-select" disabled>
-                        <option value="" selected></option>
-                        <option value="1">ダミー</option>
-                        <option value="2">ダミー</option>
-                        <option value="3">ダミー</option>
-                      </select>
-                    </div>
-                  </div>
-                </li>
-                <li class="js-kubun-item">
-                  <label class="c-form__radio">
-                    <input type="radio" name="group1" value="2"><span>農協組合員ではありません</span>
-                  </label>
-                </li>
-              </ul>
-
-              <p class="c-form__ttl u-mt-32">ご住所<span class="u-f-required">*</span></p>
-              <label>
-                <p class="c-form__subttl">郵便番号</p>
-                <ul class="c-form__list" data-type="zip-code">
-                  <li>
-                    <input type="number" name="" value="" class="c-form__text">
-                  </li>
-                  <li>
-                    <input type="number" name="" value="" class="c-form__text">
-                  </li>
-                </ul>
-              </label>
-              <label>
-                <p class="c-form__subttl">都道府県</p>
-                <div class="c-form__select">
-                  <select name="">
-                    <option value="" selected>選択してください</option>
-                    <option value="1">ダミー</option>
-                    <option value="2">ダミー</option>
-                    <option value="3">ダミー</option>
-                  </select>
-                </div>
-              </label>
-              <label>
-                <p class="c-form__subttl">市区町村・番地</p>
-                <input type="text" name="" value="" class="c-form__text">
-              </label>
-              <label>
-                <p class="c-form__subttl">アパート・マンション名</p>
-                <input type="text" name="" value="" class="c-form__text">
-              </label>
-
-              <p class="c-form__ttl u-mt-32">電話番号（いずれかご入力ください）<span class="u-f-required">*</span></p>
-              <label>
-                <p class="c-form__subttl">ご自宅</p>
-                <ul class="c-form__list" data-type="tel">
-                  <li>
-                    <input type="number" name="" value="" class="c-form__text">
-                  </li>
-                  <li>
-                    <input type="number" name="" value="" class="c-form__text">
-                  </li>
-                  <li>
-                    <input type="number" name="" value="" class="c-form__text">
-                  </li>
-                </ul>
-              </label>
-              <label>
-                <p class="c-form__subttl">携帯電話</p>
-                <ul class="c-form__list" data-type="tel">
-                  <li>
-                    <input type="number" name="" value="" class="c-form__text">
-                  </li>
-                  <li>
-                    <input type="number" name="" value="" class="c-form__text">
-                  </li>
-                  <li>
-                    <input type="number" name="" value="" class="c-form__text">
-                  </li>
-                </ul>
-              </label>
-
-              <label>
-                <p class="c-form__ttl u-mt-32">ログインID（メールアドレス）<span class="u-f-required">*</span></p>
-                <input type="email" name="" value="" class="c-form__text">
-              </label>
-              <label>
-                <p class="c-form__subttl">確認のためもう一度ご入力ください。</p>
-                <input type="email" name="" value="" class="c-form__text">
-              </label>
-              <label>
-                <p class="c-form__ttl u-mt-32">ログインパスワード<span class="u-f-required">*</span></p>
-                <input type="password" name="" value="" class="c-form__text">
-                <p class="u-f-notes">※8桁以上、英・数字両方含む</p>
-              </label>
-              <label>
-                <p class="c-form__subttl">確認のためもう一度ご入力ください。</p>
-                <input type="password" name="" value="" class="c-form__text">
-              </label>
-
-              <div class="js-interlocking-select">
-                <p class="c-form__ttl u-mt-32">お気に入りの常設展示場</p>
-                <p class="u-f-14">お気に入りの常設展示場を設定すると、マイページで、その展示場の新着農機情報を閲覧したり、お知らせが掲載されたことを通知するメールを受信することができます。</p>
-                <p class="u-f-notes">※設定は「会員情報の編集」でいつでも変更できます。</p>
-                <label>
-                <p class="c-form__subttl">エリア</p>
-                <div class="c-form__select">
-                  <select name="" class="js-parent-select">
-                    <option value="" selected>選択してください</option>
-                    <option value="1">ダミー</option>
-                    <option value="2">ダミー</option>
-                    <option value="3">ダミー</option>
-                  </select>
-                </div>
-                </label>
-                <label>
-                <p class="c-form__subttl">展示場</p>
-                <div class="c-form__select">
-                  <select name="" class="js-child-select" disabled>
-                    <option value="" selected></option>
-                    <option value="1">ダミー</option>
-                    <option value="2">ダミー</option>
-                    <option value="3">ダミー</option>
-                  </select>
-                </div>
-                </label>
-              </div>
-
-              <div class="c-form__agree">
-                  <p class="u-f-14"><a href="/aruda/terms_of_service/" class="u-link">利用規約</a>、<a href="/security" class="u-link">プライバシーポリシー</a>に同意のうえ、
-                    新規利用登録する</p>
-                    <label class="u-f-14"><input type="checkbox" name="" value="">上記に同意する</label>
-              </div>
-
-              <div class="u-mt-40">
-                <button class="c-btn u-m-center" data-type="solid-icon-right" data-size="l">
-                  確認
-                  <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" class="u-ico" data-size="s">
-                </button>
-              </div>
-            </form>
-          </div>
+          <p class="u-fs-16 u-f-bold">2. 著作権について</p>
+          <p class="u-fs-14">本サイト上に掲載される著作物（文章・資料・画像・音声等）の著作権は、本会または第三者が保有しており、著作権法その他の法律により保護されています。私的使用目的の複製、引用など著作権法上認められている範囲を除き著作権者の許諾なしに、これらの著作物を複製、翻案、公衆送信等の二次的利用をすることはできません。</p>
       </div>
-
+      <div class="c-contents">
+        <p class="u-fs-16 u-f-bold">3. 個人情報について</p>
+        <p class="u-fs-14">本サイト（マイページ登録等）で使用する個人情報につきましては、JAグループ（農協／農協関連会社／ホクレン／ホクレン子会社等）では次の目的でご利用させていただきます。</p>
+        <ol class="c-ol-list">
+          <li>&#9312;お気に入り展示場からのお知らせ通知</li>
+          <li>&#9313;特定中古農機の掲載状況変更通知</li>
+          <li>&#9314;買いたい情報更新通知</li>
+          <li>&#9315;お問い合わせ内容への対応</li>
+        </ol>
+        <dl class="c-dl-list">
+          <dt>参考：</dt>
+          <dd>ホクレンプライバシーポリシー（<a href="https://www.hokuren.or.jp/security/privacy/" class="u-link">https://www.hokuren.or.jp/security/privacy/</a>）</dd>
+        </dl>
+      </div>
+      <div class="c-contents">
+        <p class="u-fs-16 u-f-bold">4. 準拠法について</p>
+        <p class="u-fs-14">本サイトは、本会の管理下にあり、利用条件の解釈及び適用は、日本の国内法に準拠します。また、本サイトに関わる全ての紛争については、札幌地方裁判所を第一審の専属的合意管轄裁判所とするものとします。</p>
+      </div>
+      <div class="c-contents">
+        <p class="u-fs-16 u-f-bold">5. 禁止事項について</p>
+        <p class="u-fs-14">本サイトのご利用にあたって以下の行為を禁止いたします。</p>
+        <ol class="c-ol-list">
+          <li>&#9312;本サイトに掲載している情報を使って第三者に誤解・損害を与える行為または、そのおそれのある行為</li>
+          <li>&#9313;本会および、関連団体を誹謗中傷、毀損する行為または、そのおそれがある行為</li>
+          <li>&#9314;著作権、知的財産権、肖像権その他の権利を侵害する行為、またはそのおそれのある行為</li>
+          <li>&#9315;法律、条例、規則を含む法令又は公序良俗に違反する行為または、そのおそれがある行為</li>
+          <li>&#9316;本サイトへの不正アクセス、情報の不正取得、改ざん、削除または、それに類する行為および、本サイトの運営の障害、妨害となるような、通信プログラムによるアクセス行為</li>
+        </ol>
+      </div>
+      <div class="c-contents">
+        <p class="u-fs-16 u-f-bold">6. ホームページの機械掲載内容等について</p>
+        <p class="u-fs-14">本ホームページ上の機械掲載内容（写真、価格、機械情報等）について本会は適正な掲載内容となるよう努力しておりますが、掲載内容のみでは機械の現況を十分に把握することはできなないため、実際に展示場にて確認するようお願いいたします。万一トラブルが発生した際は、お客様と、出品展示場との間で解決していただくこととします。</p>
+      </div>
+      <div class="c-contents">
+        <p class="u-fs-16 u-f-bold">7.  推奨環境について</p>
+        <p class="u-fs-14">本サイトをご利用いただくには、以下の環境でご覧いただくことを推奨いたします。推奨環境以外でご利用の場合に正しく表示されない場合がありますのでご了承ください。</p>
+        <ol class="c-ol-list">
+          <li>&#9312;OS環境について
+            <div class="c-ol-list-block">
+              <p class="u-fs-14">Windowsをお使いの場合</p>
+              <div class="c-ol-list-box">
+                <p>推奨OS：Windows 10</p>
+                <p>対象ブラウザ：Firefox最新版、Chrome最新版、Microsoft Edge最新版</p>
+              </div>
+            </div>
+            <div class="c-ol-list-block">
+              <p class="u-fs-14">Macをお使いの場合</p>
+              <div class="c-ol-list-box">
+                <p>推奨OS：Mac OS X 10.6以上</p>
+                <p>対象ブラウザ：Safari最新版</p>
+              </div>
+            </div>
+            <div class="c-ol-list-block">
+              <p class="u-fs-14">スマートフォン、タブレットパソコンをお使いの場合</p>
+              <div class="c-ol-list-box">
+                <p>推奨OS：iOS 13/14、Android 7.0 ～ 11.0</p>
+                <p>対象ブラウザ：Safari、標準ブラウザ</p>
+              </div>
+            </div>
+          </li>
+          <li>&#9313;プラグインソフトウェアについて<br>
+            PDFファイルをご覧いただくには、Adobe社のAdobe Readerが必要になります。
+          </li>
+        </ol>
+      </div>
+      <div class="c-contents">
+        <p class="u-fs-16 u-f-bold">8. その他</p>
+        <p class="u-fs-14">利用規約の内容について変更となることがありますので、あらかじめご了承ください。</p>
+      </div>
     </section>
 
   </main>

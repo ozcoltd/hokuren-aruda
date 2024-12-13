@@ -22,5 +22,12 @@
         text-indent: -1em;
     }
 }
+.c-dl-list {
+    display: flex;
+    dt {
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
 
 

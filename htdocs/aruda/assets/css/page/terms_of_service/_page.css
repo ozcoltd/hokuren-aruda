@@ -16,42 +16,53 @@
   background-color: #FFFFFF;
 }
 
-.p-terms_of_service-section .c-form {
-  margin-top: 40px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-}
-
-.p-terms_of_service-section .c-form__list[data-col="2"] {
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.p-terms_of_service-section .c-form__list[data-col="2"] li {
-  width: calc(50% - 4px);
-}
-
-.p-terms_of_service-section .c-form__list[data-type="kubun"] li {
-  padding: 8px;
-}
-
-.p-terms_of_service-section .c-form__list[data-type="kubun"] li label {
-  margin-top: 0;
-}
-
-.p-terms_of_service-section .c-form__list[data-type="kubun"] li.is-active {
-  background-color: #ECF6ED;
-}
-
 .p-terms_of_service-block {
+  background-color: #F0F0F0;
+}
+
+.p-terms_of_service-block .c-contents {
   padding: 40px 16px;
 }
 
-@media (min-width: 769px) {
-  .p-terms_of_service-block {
-    max-width: 1044px;
-    margin: 0 auto;
-  }
+.p-terms_of_service .p-terms_of_service-list {
+  padding: 40px 16px;
+  background-color: #FFFFFF;
+}
+
+.p-terms_of_service .p-terms_of_service-list .c-contents {
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.p-terms_of_service .p-terms_of_service-list .c-contents > * {
+  margin-bottom: 8px;
+}
+
+.p-terms_of_service .p-terms_of_service-list .c-contents > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.p-terms_of_service .p-terms_of_service-list .c-ul-list,
+.p-terms_of_service .p-terms_of_service-list .c-ol-list,
+.p-terms_of_service .p-terms_of_service-list .c-dl-list {
+  font-size: 14px;
+}
+
+.p-terms_of_service .p-terms_of_service-list .c-dl-list dd {
+  font-size: 12px;
+}
+
+.p-terms_of_service .p-terms_of_service-list .c-ol-list-block {
+  text-indent: 0;
+}
+
+.p-terms_of_service .p-terms_of_service-list .c-ol-list-box {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #F0F0F0;
 }
 
 .p-terms_of_service + .l-footer {
