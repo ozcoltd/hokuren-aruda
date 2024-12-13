@@ -1854,6 +1854,26 @@ a, button {
     background: url(/aruda/assets/images/common/ico_right_g.svg) center no-repeat #FFFFFF;
     background-size: 24px auto; }
 
+.c-ol-list {
+  list-style: none; }
+  .c-ol-list li {
+    margin-bottom: 8px;
+    padding-left: 1em;
+    text-indent: -1em; }
+
+.c-ul-list li {
+  margin-bottom: 8px;
+  padding-left: 1em;
+  text-indent: -1em; }
+  .c-ul-list li::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    background-color: #2C933A;
+    border-radius: 50%; }
+
 .u-t-center {
   text-align: center; }
 

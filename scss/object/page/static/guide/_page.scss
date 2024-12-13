@@ -7,6 +7,7 @@
         background-color: $c-bg-main;
     }
     &-section {
+        padding-bottom: $m-xl;
         .u-h-lv2 {
             padding-top: $m-s;
             padding-bottom: $m-m;
@@ -14,10 +15,40 @@
         }
     }
     &-block {
-        padding-bottom: 80px;
+        padding-bottom: $m-xl;
         background-color: $c-bg-main-sub;
         .c-contents {
             padding: $m-ml $m-s $m-s;
+        }
+    }
+    .p-accordion-block {
+        padding-bottom: $m-ml;
+        background-color: $c-bg-main;
+        .c-contents {
+            padding: $m-ml $m-s $m-s;
+        }
+    }
+    .c-accordion {
+        padding: 0 $m-s;
+        @include for-desktop {
+            max-width: 1012px;
+            margin: 0 auto;
+        }
+        &__btn {
+            cursor: pointer;
+            background-color: $c-bg-main-sub;   
+        }
+        &__cosntents {
+            background-color: $c-bg-main;
+            & > * {
+                margin-bottom: $m-ss;
+            }
+            & > *:last-child{
+                margin-bottom: 0 !important;
+            }
+        }
+        &__img {
+            margin-bottom: 12px;
         }
     }
     & + .l-footer {

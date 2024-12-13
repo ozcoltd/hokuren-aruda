@@ -1,0 +1,26 @@
+.c-ol-list {
+   list-style: none;
+   li {
+    margin-bottom: $m-ss;
+    padding-left: 1em;
+    text-indent: -1em;;
+}
+}
+.c-ul-list {
+    li {
+        &::before {
+            content:'';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            margin-right: 10px;
+            background-color: $c-bg-primary;
+            border-radius: 50%;
+        }
+        margin-bottom: $m-ss;
+        padding-left: 1em;
+        text-indent: -1em;
+    }
+}
+
+
