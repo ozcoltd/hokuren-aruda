@@ -13,7 +13,7 @@
 }
 
 .p-customer-form {
-  padding: 40px 16px 0;
+  padding: 40px 0 0;
 }
 
 .p-customer-form .u-h-lv3 {
@@ -21,7 +21,7 @@
 }
 
 .p-customer-form .c-form {
-  padding: 24px 0;
+  padding: 24px 16px 40px;
   background-color: #FFFFFF;
 }
 

@@ -14,12 +14,12 @@
         }
     }
     &-form {
-        padding: $m-ml $m-s 0;
+        padding: $m-ml 0 0;
         .u-h-lv3 {
             margin-bottom: $m-sl;
         }
         .c-form {
-            padding: $m-sl 0;
+            padding: $m-sl $m-s $m-ml;
             background-color: $c-bg-main;
             &__list {
                 &[data-col="2"] {
