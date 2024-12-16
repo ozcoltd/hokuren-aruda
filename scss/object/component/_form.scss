@@ -250,6 +250,45 @@
                 border-color: $c-border-primary;
             }
         }
+        &[data-type="normal"] {
+            position: relative;
+            padding-left: 20px;
+            margin-top: 0;
+            cursor: pointer;
+            &::before {
+                content: none;
+            }
+            input + span {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 16px;
+                    height: 16px;
+                    background-color: $c-bg-main;
+                    border-radius: $b-r-s;
+                    border: 1px solid $c-border;
+                    transform: translateY(-50%);
+                }
+            }
+            input:checked + span {
+                &::before {
+                    border-color: $c-border-primary;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 3px;
+                    width: 10px;
+                    height: 6.5px;
+                    background: url(/aruda/assets/images/common/ico_check.svg) center no-repeat;
+                    background-size: cover;
+                    transform: translateY(-50%);
+                }
+            }
+        }
         &-list {
             display: flex;
             flex-wrap: wrap;

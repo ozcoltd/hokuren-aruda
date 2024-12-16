@@ -1372,6 +1372,36 @@ a, button {
       transform: translateY(-50%); }
     .c-form__checkBox.is-all::before {
       border-color: #2C933A; }
+    .c-form__checkBox[data-type="normal"] {
+      position: relative;
+      padding-left: 20px;
+      margin-top: 0;
+      cursor: pointer; }
+      .c-form__checkBox[data-type="normal"]::before {
+        content: none; }
+      .c-form__checkBox[data-type="normal"] input + span::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        border: 1px solid #DDDDDD;
+        transform: translateY(-50%); }
+      .c-form__checkBox[data-type="normal"] input:checked + span::before {
+        border-color: #2C933A; }
+      .c-form__checkBox[data-type="normal"] input:checked + span::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 3px;
+        width: 10px;
+        height: 6.5px;
+        background: url(/aruda/assets/images/common/ico_check.svg) center no-repeat;
+        background-size: cover;
+        transform: translateY(-50%); }
     .c-form__checkBox-list {
       display: flex;
       flex-wrap: wrap;
@@ -1519,7 +1549,7 @@ a, button {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 8px 27px 8px 32px;
+    padding: 8px 27px;
     border-top: 1px solid #DDDDDD;
     background-color: #F0F0F0; }
     @media (min-width: 769px) {
@@ -1528,7 +1558,7 @@ a, button {
     .c-menu-modal__close .logo a {
       display: block; }
       .c-menu-modal__close .logo a img {
-        width: 86px; }
+        width: 156px; }
     @media (min-width: 769px) {
       .c-menu-modal__close .logo a {
         padding: 8px; }
