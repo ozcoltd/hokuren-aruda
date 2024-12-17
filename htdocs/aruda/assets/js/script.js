@@ -118,6 +118,8 @@ $(function(){
                         $(this).removeClass('is-all');
                         $(this).find('input').prop('checked',false);
                     });
+                    $('.js-active-map[data-map="#' + $this.attr('id') + '"]').removeClass('is-active');
+                    //console.log('全部外す');
 
                 } else if(!$(this).hasClass('is-open') && !$this.find('.js-accordion-check').hasClass('is-all')) {
                     //アコーディオンが閉じてて、全選択チェックがついてない場合
@@ -126,6 +128,8 @@ $(function(){
                         $(this).addClass('is-all');
                         $(this).find('input').prop('checked',true);
                     });
+                    $('.js-active-map[data-map="#' + $this.attr('id') + '"]').addClass('is-active');
+                    //console.log('全部チェック');
                 } else if(!$(this).hasClass('is-open') && $this.find('.js-accordion-check').hasClass('is-all')) {
                     //アコーディオンが閉じてて、全選択チェックがついてる場合
                     $this.find('.js-accordion-check').removeClass('is-all');
@@ -134,6 +138,8 @@ $(function(){
                         $(this).removeClass('is-all');
                         $(this).find('input').prop('checked',false);
                     });
+                    $('.js-active-map[data-map="#' + $this.attr('id') + '"]').removeClass('is-active');
+                    //console.log('全部外す');
                     return;
                 }
             }
@@ -160,13 +166,16 @@ $(function(){
                 //チェックがついてない場合
                 $this.find('.js-accordion-check').removeClass('is-all');
                 $this.find('.js-accordion-check').removeClass('is-check');
+                //console.log('外れた');
+                $('.js-active-map[data-map="#' + $this.attr('id') + '"]').removeClass('is-active');
             }
         });
     });
     //map
     $('.js-map').on('click',function(e){
         e.preventDefault();
-        var target = $(this).attr('href');        
+        var target = $(this).attr('href');
+        $('.js-active-map[data-map="' + target + '"]').addClass('is-active');
         $(target).find('.js-accordion-check').addClass('is-all');
         $(target).find('.js-accordion-contents').find('.js-check').each(function(){
             $(this).addClass('is-all');
@@ -175,6 +184,17 @@ $(function(){
         $(target).find('.js-accordion-btn').addClass('is-open');
         $(target).find('.js-accordion-contents').slideDown();
     });
+    $('.js-map').hover(
+        function () {
+            $('.js-active-map').removeClass('is-hover');
+            var target = $(this).attr('href'); 
+            var activeMap = $('.js-active-map[data-map="' + target + '"]').addClass('is-hover');
+        },
+        function () {
+          $('.js-active-map').removeClass('is-hover');
+        }
+      );
+
     //検索結果表示切替
     $('.js-display-toggle').on('click',function(e){
         e.preventDefault();

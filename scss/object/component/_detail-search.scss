@@ -37,12 +37,52 @@
         }
     }
     &__img-map{
+        position: relative;
+        z-index: 3;
         padding: 22px;
         background-color: $c-bg-main;
         border-radius: $b-r-s;
-        img {
+        .c-map {
+            position: relative;
             width: 300px;
             margin: 0 auto;
+        }
+        .c-clickable-map {
+            position: relative;
+            z-index: 3;
+        }
+        .c-active-map {
+            position: absolute;
+            z-index: 2;
+            width: 300px;
+            top: 0;
+            left: 0;
+            &__area {
+                position: absolute;
+                z-index: 2;
+                width: 300px;
+                top: 0;
+                left: 0;
+                img {
+                    position: absolute;
+                    z-index: 1;
+                    width: 300px;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    &.is-hover,
+                    &.is-active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .c-active-map__bg {
+            position: absolute;
+            z-index: 1;
+            width: 300px;
+            top: 0;
+            left: 0;
         }
     }
 
