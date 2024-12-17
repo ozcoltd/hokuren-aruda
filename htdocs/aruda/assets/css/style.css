@@ -318,7 +318,8 @@ a, button {
   .c-btn-sticky {
     position: sticky;
     bottom: 80px;
-    left: 0; }
+    left: 0;
+    z-index: 10; }
   .c-btn--reset {
     color: #fff;
     background-color: #A0A0A0;
@@ -1753,12 +1754,11 @@ a, button {
   .c-detail-search__img-map {
     position: relative;
     z-index: 3;
-    padding: 22px;
     background-color: #FFFFFF;
     border-radius: 4px; }
     .c-detail-search__img-map .c-map {
       position: relative;
-      width: 300px;
+      width: 343px;
       margin: 0 auto; }
     .c-detail-search__img-map .c-clickable-map {
       position: relative;
@@ -1766,19 +1766,19 @@ a, button {
     .c-detail-search__img-map .c-active-map {
       position: absolute;
       z-index: 2;
-      width: 300px;
+      width: 343px;
       top: 0;
       left: 0; }
       .c-detail-search__img-map .c-active-map__area {
         position: absolute;
         z-index: 2;
-        width: 300px;
+        width: 343px;
         top: 0;
         left: 0; }
         .c-detail-search__img-map .c-active-map__area img {
           position: absolute;
           z-index: 1;
-          width: 300px;
+          width: 343px;
           top: 0;
           left: 0;
           opacity: 0; }
@@ -1787,7 +1787,7 @@ a, button {
     .c-detail-search__img-map .c-active-map__bg {
       position: absolute;
       z-index: 1;
-      width: 300px;
+      width: 343px;
       top: 0;
       left: 0; }
 
