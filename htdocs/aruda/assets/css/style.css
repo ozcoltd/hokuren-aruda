@@ -1757,6 +1757,7 @@ a, button {
     background-color: #FFFFFF;
     border-radius: 4px; }
     .c-detail-search__img-map .c-map {
+      overflow: hidden;
       position: relative;
       width: 343px;
       margin: 0 auto; }

@@ -43,6 +43,7 @@
         background-color: $c-bg-main;
         border-radius: $b-r-s;
         .c-map {
+            overflow: hidden;
             position: relative;
             width: 343px;
             margin: 0 auto;
