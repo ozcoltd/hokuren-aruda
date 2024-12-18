@@ -195,6 +195,23 @@ $(function(){
         }
       );
 
+    //全部外す
+    $('.js-form-map').each(function(){
+        var $this = $(this);
+        $this.find('.js-all-remove').on('click',function(e){
+            e.preventDefault();
+            $this.find('.js-active-map').removeClass('is-active');
+            $this.find('.js-accordio').find('input').prop('checked',false);
+            $this.find('.js-accordion-btn').removeClass('is-open');
+            $this.find('.js-accordion-check').removeClass('is-all');
+            $this.find('.js-accordion-check').removeClass('is-check');
+            $this.find('.js-accordion-contents').hide();
+            $this.find('.js-check').removeClass('is-all');
+            
+
+        });
+
+    });
     //検索結果表示切替
     $('.js-display-toggle').on('click',function(e){
         e.preventDefault();
