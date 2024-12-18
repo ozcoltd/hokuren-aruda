@@ -172,32 +172,34 @@ $(function(){
         });
     });
     //map
-    $('.js-map').on('click',function(e){
-        e.preventDefault();
-        var target = $(this).attr('href');
-        $('.js-active-map[data-map="' + target + '"]').addClass('is-active');
-        $(target).find('.js-accordion-check').addClass('is-all');
-        $(target).find('.js-accordion-contents').find('.js-check').each(function(){
-            $(this).addClass('is-all');
-            $(this).find('input').prop('checked',true);
-        });
-        $(target).find('.js-accordion-btn').addClass('is-open');
-        $(target).find('.js-accordion-contents').slideDown();
-    });
-    $('.js-map').hover(
-        function () {
-            $('.js-active-map').removeClass('is-hover');
-            var target = $(this).attr('href'); 
-            var activeMap = $('.js-active-map[data-map="' + target + '"]').addClass('is-hover');
-        },
-        function () {
-          $('.js-active-map').removeClass('is-hover');
-        }
-      );
-
     //全部外す
     $('.js-form-map').each(function(){
         var $this = $(this);
+
+        $this.find('.js-map').on('click',function(e){
+            e.preventDefault();
+            var target = $(this).attr('href');
+            $('.js-active-map[data-map="' + target + '"]').addClass('is-active');
+            $(target).find('.js-accordion-check').addClass('is-all');
+            $(target).find('.js-accordion-contents').find('.js-check').each(function(){
+                $(this).addClass('is-all');
+                $(this).find('input').prop('checked',true);
+            });
+            $(target).find('.js-accordion-btn').addClass('is-open');
+            $(target).find('.js-accordion-contents').slideDown();
+        });
+        $this.find('.js-map').hover(
+            function () {
+                $('.js-active-map').removeClass('is-hover');
+                var target = $(this).attr('href'); 
+                var activeMap = $('.js-active-map[data-map="' + target + '"]').addClass('is-hover');
+            },
+            function () {
+              $('.js-active-map').removeClass('is-hover');
+            }
+          );
+
+
         $this.find('.js-all-remove').on('click',function(e){
             e.preventDefault();
             $this.find('.js-active-map').removeClass('is-active');
