@@ -1,3 +1,5 @@
+<% var map = typeof map !== 'undefined' ? map : null; %>
+
 <div class="c-detail-search">
     <h3 class="u-h-lv2 u-t-center">
       詳細検索 
@@ -139,24 +141,24 @@
         <div class="c-detail-search__img-map">
           <div class="c-map">
             <div class="c-clickable-map">
-            <img src="/aruda/assets/images/machine/search/map.png" usemap="#ImageMap" alt="" />
-            <map name="ImageMap">
-              <area shape="poly" coords="21,221,34,229,37,222,51,225,41,242,56,260,63,256,86,276,79,285,61,278,41,306,28,298,35,266,20,250,21,222,20,223" href="#map01" alt="" class="js-map" />
-              <area shape="poly" coords="49,226,36,223,33,229,20,222,41,213,56,197,44,184,51,171,67,183,77,180,87,188,103,172,96,143,105,146,124,136,128,126,136,127,148,167,142,197,147,204,163,197,167,199,164,213,195,254,191,270,112,222,78,244,63,226,49,225,34,220" href="#map02" alt="" class="js-map" />
-              <area shape="poly" coords="195,253,165,214,168,198,162,196,165,168,188,153,204,161,216,153,231,162,215,193,228,210,200,237,195,252,195,252" href="#map03" alt="" class="js-map" />
-              <area shape="poly" coords="228,209,243,197,265,205,323,174,321,167,293,170,285,146,305,109,301,106,269,148,257,153,253,145,242,150,242,160,231,162,214,195,228,210,321,156" href="#map04" alt="" class="js-map" />
-              <area shape="poly" coords="176,78,160,93,171,98,189,153,204,161,218,153,231,162,242,160,242,150,254,146,259,152,268,148,302,105,300,102,273,132,251,132,201,105,176,78,342,28" href="#map05" alt="" class="js-map" />
-              <area shape="poly" coords="175,76,158,92,169,96,189,152,165,167,162,195,148,202,143,196,148,166,137,126,127,124,125,134,105,144,97,141,112,131,112,102,119,77,106,34,125,19,175,75,330,56" href="#map06" alt="" class="js-map" />
+            <img src="/aruda/assets/images/machine/search/map.png" usemap="#ImageMap<%= map %>" alt="" />
+            <map name="ImageMap<%= map %>">
+              <area shape="poly" coords="21,221,34,229,37,222,51,225,41,242,56,260,63,256,86,276,79,285,61,278,41,306,28,298,35,266,20,250,21,222,20,223" href="#map<%= map %>1" alt="" class="js-map" />
+              <area shape="poly" coords="49,226,36,223,33,229,20,222,41,213,56,197,44,184,51,171,67,183,77,180,87,188,103,172,96,143,105,146,124,136,128,126,136,127,148,167,142,197,147,204,163,197,167,199,164,213,195,254,191,270,112,222,78,244,63,226,49,225,34,220" href="#map<%= map %>2" alt="" class="js-map" />
+              <area shape="poly" coords="195,253,165,214,168,198,162,196,165,168,188,153,204,161,216,153,231,162,215,193,228,210,200,237,195,252,195,252" href="#map<%= map %>3" alt="" class="js-map" />
+              <area shape="poly" coords="228,209,243,197,265,205,323,174,321,167,293,170,285,146,305,109,301,106,269,148,257,153,253,145,242,150,242,160,231,162,214,195,228,210,321,156" href="#map<%= map %>4" alt="" class="js-map" />
+              <area shape="poly" coords="176,78,160,93,171,98,189,153,204,161,218,153,231,162,242,160,242,150,254,146,259,152,268,148,302,105,300,102,273,132,251,132,201,105,176,78,342,28" href="#map<%= map %>5" alt="" class="js-map" />
+              <area shape="poly" coords="175,76,158,92,169,96,189,152,165,167,162,195,148,202,143,196,148,166,137,126,127,124,125,134,105,144,97,141,112,131,112,102,119,77,106,34,125,19,175,75,330,56" href="#map<%= map %>6" alt="" class="js-map" />
             </map>
             </div>
             <div class="c-active-map">
               <div class="c-active-map__area">
-                <img src="/aruda/assets/images/machine/search/map_01.png" class="js-active-map" data-map="#map01" alt="" />
-                <img src="/aruda/assets/images/machine/search/map_02.png" class="js-active-map" data-map="#map02" alt="" />
-                <img src="/aruda/assets/images/machine/search/map_03.png" class="js-active-map" data-map="#map03" alt="" />
-                <img src="/aruda/assets/images/machine/search/map_04.png" class="js-active-map" data-map="#map04" alt="" />
-                <img src="/aruda/assets/images/machine/search/map_05.png" class="js-active-map" data-map="#map05" alt="" />
-                <img src="/aruda/assets/images/machine/search/map_06.png" class="js-active-map" data-map="#map06" alt="" />
+                <img src="/aruda/assets/images/machine/search/map_01.png" class="js-active-map" data-map="#map<%= map %>1" alt="" />
+                <img src="/aruda/assets/images/machine/search/map_02.png" class="js-active-map" data-map="#map<%= map %>2" alt="" />
+                <img src="/aruda/assets/images/machine/search/map_03.png" class="js-active-map" data-map="#map<%= map %>3" alt="" />
+                <img src="/aruda/assets/images/machine/search/map_04.png" class="js-active-map" data-map="#map<%= map %>4" alt="" />
+                <img src="/aruda/assets/images/machine/search/map_05.png" class="js-active-map" data-map="#map<%= map %>5" alt="" />
+                <img src="/aruda/assets/images/machine/search/map_06.png" class="js-active-map" data-map="#map<%= map %>6" alt="" />
               </div>
               <div class="c-active-map__bg">
               <img src="/aruda/assets/images/machine/search/map_bg.png" alt="" />
@@ -166,7 +168,7 @@
         </div>
         <div class="c-detail-search__inner c-form__map-contents">
           
-          <div class="c-accordion js-accordion" data-type="checkBox" id="map06">
+          <div class="c-accordion js-accordion" data-type="checkBox" id="map<%= map %>6">
             <div class="c-accordion__btn js-accordion-btn">
               <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>道北エリア</span>
               <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
@@ -183,7 +185,7 @@
               </div>
             </div>
           </div>
-          <div class="c-accordion js-accordion" data-type="checkBox" id="map02">
+          <div class="c-accordion js-accordion" data-type="checkBox" id="map<%= map %>2">
             <div class="c-accordion__btn js-accordion-btn">
               <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>道央エリア</span>
               <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
@@ -203,7 +205,7 @@
               </div>
             </div>
           </div>
-          <div class="c-accordion js-accordion" data-type="checkBox" id="map01">
+          <div class="c-accordion js-accordion" data-type="checkBox" id="map<%= map %>1">
             <div class="c-accordion__btn js-accordion-btn">
               <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>道南エリア</span>
               <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
@@ -214,7 +216,7 @@
               </div>
             </div>
           </div>
-          <div class="c-accordion js-accordion" data-type="checkBox" id="map05">
+          <div class="c-accordion js-accordion" data-type="checkBox" id="map<%= map %>5">
             <div class="c-accordion__btn js-accordion-btn">
               <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>オホーツクエリア</span>
               <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
@@ -225,7 +227,7 @@
               </div>
             </div>
           </div>
-          <div class="c-accordion js-accordion" data-type="checkBox" id="map03">
+          <div class="c-accordion js-accordion" data-type="checkBox" id="map<%= map %>3">
             <div class="c-accordion__btn js-accordion-btn">
               <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>十勝エリア</span>
               <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
@@ -236,7 +238,7 @@
               </div>
             </div>
           </div>
-          <div class="c-accordion js-accordion" data-type="checkBox" id="map04">
+          <div class="c-accordion js-accordion" data-type="checkBox" id="map<%= map %>4">
             <div class="c-accordion__btn js-accordion-btn">
               <label class="c-form__checkBox js-accordion-check"><input type="checkbox"></label><span>釧路・根室エリア</span>
               <img src="/aruda/assets/images/common/ico_arrow_b.svg" alt="" class="u-ico" data-size="s">
