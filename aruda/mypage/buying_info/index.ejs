@@ -28,6 +28,9 @@
         <div class="c-contents__item">
           <div class="p-buying_info-recommendation">
             <div class="c-keep-block">
+              <h3 class="u-h-lv2 u-t-center">
+                買いたい情報の登録
+              </h3>
               <p class="u-fs-14 u-mb-8">「アルーダ」にご希望の機械のなかった方、このページに情報登録してみませんか。<br>
                 ご希望の条件に合った農機情報が登録された場合、メールまたはLINEでご連絡を差し上げます。</p>
               <div class="c-keep-block__contents">
@@ -49,13 +52,21 @@
                 </dl>
                 <a href="#" class="c-btn u-m-center" data-type="delete" data-size="s">削除</a>
               </div>
-              <%- include('../../inc/detail-search') %>
-              <div class="c-more-block js-more-block">
-                <div class="c-more-block__contents">
-                  <%- include('../../inc/add-detail-search') %>
+              <%- include('../../inc/add-detail-search') %>
+
+              <div class="p-buying_info-btns">
+                <div>
+                  <button class="c-btn u-m-center" data-size="l" data-type="solid">
+                    検索条件の保存
+                  </button>
                 </div>
-                <a href="#" class="c-more-block__btn js-more-btn"><span><img src="/aruda/assets/images/common/ico_add_g.svg" alt=""></span>絞り込みの検索条件を表示する</a>
+                <div>
+                  <a href="/aruda/machine/search/" class="c-btn--reset u-m-center" data-size="l">
+                    検索条件をリセット 
+                  </a>
+                </div>
               </div>
+
             </div>
           </div>
 

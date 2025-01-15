@@ -140,3 +140,11 @@
 .p-buying_info + .l-footer {
   background-color: #F0F0F0;
 }
+
+@media (min-width: 769px) {
+  .p-buying_info-btns {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
