@@ -520,6 +520,17 @@ a, button {
   padding: 16px; }
   .c-more-block.is-open .c-more-block__contents {
     opacity: 1; }
+  .c-more-block.is-open .c-more-block__btn span {
+    position: relative; }
+    .c-more-block.is-open .c-more-block__btn span:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 1px;
+      background-color: #2C933A;
+      transform: translate(-50%, -50%); }
   .c-more-block__btn {
     position: absolute;
     bottom: 0;

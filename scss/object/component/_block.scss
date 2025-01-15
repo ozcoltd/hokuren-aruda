@@ -6,6 +6,21 @@
         .c-more-block__contents {
             opacity: 1;
         }
+        .c-more-block__btn{
+            span {
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 10px;
+                    height: 1px;
+                    background-color: #2C933A;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
     }
     &__btn {
         position: absolute;

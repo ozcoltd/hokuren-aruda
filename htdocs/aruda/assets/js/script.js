@@ -1,11 +1,22 @@
 $(function(){
     //more ブロック
-    var $jsMoreBtn = $('.js-more-btn');
-    $jsMoreBtn.on('click',function(e){
-        e.preventDefault();
-        $(this).hide();
-        $(this).parent('.js-more-block').addClass('is-open').height($(this).parent('.js-more-block').find('.c-more-block__contents').height());
+    $('.js-more-block').each(function(){
+        var $jsMoreBtn = $(this).find('.js-more-btn');
+        var h = $(this).height();
+        $jsMoreBtn.on('click',function(e){
+            e.preventDefault();
+            // $(this).hide();
+            if($(this).parent('.js-more-block').hasClass('is-open')){
+                $(this).html('詳細を見る<span><img src="/aruda/assets/images/common/ico_add_g.svg" alt=""></span>');
+                $(this).parent('.js-more-block').removeClass('is-open').height(h);
+            } else {
+                h = $(this).parent('.js-more-block').height();
+                $(this).html('詳細を閉じる<span></span>');
+                $(this).parent('.js-more-block').addClass('is-open').height($(this).parent('.js-more-block').find('.c-more-block__contents').height() +$(this).height());
+            }
+        });
     });
+
 
     //tab
     $('.js-tab').each(function(){
