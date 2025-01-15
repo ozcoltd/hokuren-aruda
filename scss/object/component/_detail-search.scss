@@ -5,7 +5,7 @@
         margin-bottom: $m-sl;
     }
     .c-form {
-        padding: 0;
+        padding: 0 0 20px;
         background-color: $c-bg-main-sub;
         label {
            margin-top: 0; 
@@ -87,5 +87,29 @@
         }
     }
 
+    &-btns {
+        padding-top: 30px;
+        background-color: #fff;
+        & > div {
+            margin-top: 0;
+            &:nth-child(1) {
+                .c-btn {
+                    margin-top: 0;
+                }
+            }
+        }
 
+        @include for-desktop {
+            display: grid;
+            gap: 10px;
+            margin-top: 0;
+            grid-template-columns: repeat(2,1fr);
+            & > div {
+                margin-top: 0;
+                .c-btn {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }

@@ -1738,7 +1738,7 @@ a, button {
   .c-detail-search > .u-h-lv2 {
     margin-bottom: 24px; }
   .c-detail-search .c-form {
-    padding: 0;
+    padding: 0 0 20px;
     background-color: #F0F0F0; }
     .c-detail-search .c-form label {
       margin-top: 0; }
@@ -1802,6 +1802,23 @@ a, button {
       width: 343px;
       top: 0;
       left: 0; }
+  .c-detail-search-btns {
+    padding-top: 30px;
+    background-color: #fff; }
+    .c-detail-search-btns > div {
+      margin-top: 0; }
+      .c-detail-search-btns > div:nth-child(1) .c-btn, .c-detail-search-btns > div:nth-child(1) .c-btn--reset {
+        margin-top: 0; }
+    @media (min-width: 769px) {
+      .c-detail-search-btns {
+        display: grid;
+        gap: 10px;
+        margin-top: 0;
+        grid-template-columns: repeat(2, 1fr); }
+        .c-detail-search-btns > div {
+          margin-top: 0; }
+          .c-detail-search-btns > div .c-btn, .c-detail-search-btns > div .c-btn--reset {
+            margin-top: 0; } }
 
 .c-table table {
   border-collapse: collapse;

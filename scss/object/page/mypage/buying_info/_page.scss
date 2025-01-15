@@ -117,11 +117,7 @@
     & + .l-footer {
         background-color: $c-bg-main-sub;
     }
-    &-btns {
-        @include for-desktop {
-            display: grid;
-            gap: 10px;
-            grid-template-columns: repeat(2,1fr);
-        }
+    .c-detail-search-btns {
+        gap: 0;
     }
 }
