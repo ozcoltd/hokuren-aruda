@@ -46,6 +46,14 @@
                 margin: 0 auto;
             }
         }
+        .c-alert-block {
+            padding: 20px;
+            &__txt {
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
     }
     &-block {
         padding-bottom: 80px;

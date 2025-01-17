@@ -60,6 +60,14 @@
   }
 }
 
+.p-e-yuki-section .c-alert-block {
+  padding: 20px;
+}
+
+.p-e-yuki-section .c-alert-block__txt a {
+  text-decoration: underline;
+}
+
 .p-e-yuki-block {
   padding-bottom: 80px;
   background-color: #F0F0F0;
