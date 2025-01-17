@@ -13,43 +13,35 @@
             background-color: $c-bg-main;
         }
         .c-form {
-            padding-top: 0;
-            background-color: $c-bg-main-sub;
+            padding: 0;
+            background-color: transparent;
             @include for-desktop {
                 max-width: 1012px;
                 margin: 0 auto;
-            }
-            .l-grid {
-                gap: $m-ss;
-                label {
-                    margin-top: 0;
-                }
             }
             label {
                 margin-top: $m-ss;
             }
         }
-        .c-info {
-            padding-bottom: 0;
-            background-color: $c-bg-main;
-            .c-info__item:first-child {
-                padding-top: $m-s;
-            }
-            .c-info__item:last-child {
-                padding-bottom: $m-s;
-            }
-        }
         .c-contents {
-            padding: 0 $m-s;
+            margin-top: $m-m;
+            padding: $m-s;
+            background-color: #fff;
+            border-radius: $b-r-s;
             @include for-desktop {
                 max-width: 1012px;
-                margin: 0 auto;
+                margin: $m-ml auto;
+                padding: $m-ml;
+                border-radius: 12px;
             }
         }
     }
     &-block {
         padding-bottom: 80px;
         background-color: $c-bg-main-sub;
+        .u-fs-16 {
+            margin-bottom: $m-s;
+        }
         .p-tab-wrap {
             padding: $m-m $m-s $m-s;
         }

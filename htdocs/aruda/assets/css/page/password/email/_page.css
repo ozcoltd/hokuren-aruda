@@ -13,8 +13,8 @@
 }
 
 .p-email-section .c-form {
-  padding-top: 0;
-  background-color: #F0F0F0;
+  padding: 0;
+  background-color: transparent;
 }
 
 @media (min-width: 769px) {
@@ -24,45 +24,33 @@
   }
 }
 
-.p-email-section .c-form .l-grid {
-  gap: 8px;
-}
-
-.p-email-section .c-form .l-grid label {
-  margin-top: 0;
-}
-
 .p-email-section .c-form label {
   margin-top: 8px;
 }
 
-.p-email-section .c-info {
-  padding-bottom: 0;
-  background-color: #FFFFFF;
-}
-
-.p-email-section .c-info .c-info__item:first-child {
-  padding-top: 16px;
-}
-
-.p-email-section .c-info .c-info__item:last-child {
-  padding-bottom: 16px;
-}
-
 .p-email-section .c-contents {
-  padding: 0 16px;
+  margin-top: 32px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 @media (min-width: 769px) {
   .p-email-section .c-contents {
     max-width: 1012px;
-    margin: 0 auto;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 12px;
   }
 }
 
 .p-email-block {
   padding-bottom: 80px;
   background-color: #F0F0F0;
+}
+
+.p-email-block .u-fs-16 {
+  margin-bottom: 16px;
 }
 
 .p-email-block .p-tab-wrap {
