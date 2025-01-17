@@ -104,7 +104,7 @@
         }
     }
     &-history {
-        padding: $m-ml $m-s;
+        padding: $m-ml $m-s $m-xl;
         background-color: $c-bg-main-sub;
         .u-h-lv4 {
             margin-bottom: $m-s;
@@ -124,7 +124,7 @@
             }
         }
         @include for-desktop {
-            padding: $m-ll $m-ml;
+            padding: $m-ll $m-ml $m-xl;
             .l-grid {
                 grid-template-columns: repeat(3,1fr);
                 gap: $m-m 30px;

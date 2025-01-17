@@ -6,6 +6,10 @@
   background-color: #FFFFFF;
 }
 
+.p-mail_notification_settings-section {
+  padding-bottom: 80px;
+}
+
 .p-mail_notification_settings-section .u-h-lv2 {
   padding-top: 16px;
   padding-bottom: 32px;

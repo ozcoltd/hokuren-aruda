@@ -134,7 +134,7 @@
 }
 
 .p-mypage-history {
-  padding: 40px 16px;
+  padding: 40px 16px 80px;
   background-color: #F0F0F0;
 }
 
@@ -162,7 +162,7 @@
 
 @media (min-width: 769px) {
   .p-mypage-history {
-    padding: 56px 40px;
+    padding: 56px 40px 80px;
   }
   .p-mypage-history .l-grid {
     grid-template-columns: repeat(3, 1fr);

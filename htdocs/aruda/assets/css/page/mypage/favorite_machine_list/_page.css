@@ -12,6 +12,10 @@
   background-color: #FFFFFF;
 }
 
+.p-favorite_machine_list-section {
+  padding-bottom: 80px;
+}
+
 .p-favorite_machine_list-section .u-h-lv2 {
   padding-top: 16px;
   padding-bottom: 32px;

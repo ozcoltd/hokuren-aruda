@@ -12,6 +12,10 @@
   background-color: #FFFFFF;
 }
 
+.p-search_condition-section {
+  padding-bottom: 80px;
+}
+
 .p-search_condition-section .u-h-lv2 {
   padding-top: 16px;
   padding-bottom: 32px;

@@ -6,6 +6,10 @@
   background-color: #FFFFFF;
 }
 
+.p-buying_info-section {
+  padding-bottom: 80px;
+}
+
 .p-buying_info-section .u-h-lv2 {
   padding-top: 16px;
   padding-bottom: 32px;
