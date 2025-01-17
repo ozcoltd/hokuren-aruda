@@ -1,4 +1,5 @@
 <% var map = typeof map !== 'undefined' ? map : null; %>
+<% var btn = typeof btn !== 'undefined' ? btn : null; %>
 
 <div class="c-detail-search">
     <h3 class="u-h-lv2 u-t-center">
@@ -291,6 +292,7 @@
         <img src="/aruda/assets/images/common/ico_right_w.svg" alt="" data-size="s" class="u-ico">
       </button>
     </form>
+    <% if (btn) { %>
     <div class="c-detail-search-btns">
       <div>
         <button class="c-btn u-m-center" data-size="l" data-type="solid">
@@ -303,4 +305,5 @@
         </a>
       </div>
     </div>
+    <% } %>
   </div>
