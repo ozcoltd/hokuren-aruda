@@ -201,6 +201,20 @@
                         };
                     }
                 }
+                &[data-type="s"] {
+                    margin-top: 8px;
+                    a {
+                        justify-content: center;
+                        padding: 6px 0;
+                        color: $c-text;
+                        font-size: $fs-t-ss;
+                        font-weight: 700;
+                        text-align: center;
+                        background-color: $c-bg-main;
+                        border-radius: $b-r-s;
+                        border: 1px solid $c-border-primary;
+                    }
+                }
             }
             &[data-col="3"] {
                 margin-top: $m-ss;
