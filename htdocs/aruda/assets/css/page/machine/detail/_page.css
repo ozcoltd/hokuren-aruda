@@ -38,6 +38,18 @@
   background-color: #F0F0F0;
 }
 
+.p-machine-detail-contents .c-alert-block {
+  margin-bottom: 16px;
+  padding: 4px;
+  text-align: center;
+}
+
+.p-machine-detail-contents .c-alert-block__ttl {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
 .p-machine-detail-kv .l-grid {
   margin-bottom: 16px;
   gap: 8px;

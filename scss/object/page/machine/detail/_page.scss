@@ -30,6 +30,17 @@
     &-contents {
         padding: 20px $m-s $m-ml;
         background-color: $c-bg-main-sub;
+
+        .c-alert-block {
+            margin-bottom: $m-s;
+            padding: $m-sss;
+            text-align: center;
+            &__ttl {
+                margin-bottom: 0;
+                font-size: $fs-t-s;
+                font-weight: normal;
+            }
+        }
     }
     &-kv {
         .l-grid {
