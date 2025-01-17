@@ -2,6 +2,24 @@
 @import '../../../../foundation/mixins';
 
 .p-machine-detail {
+    @include for-desktop {
+        .c-contents {
+            position: relative;
+            .p-machine-detail-grid {
+                display: grid;
+                gap: 5%;
+                grid-template-columns: 65% 30%;
+            }
+            .p-machine-detail-block {
+                position: sticky;
+                top: 65px;
+                left: 0;
+                max-width: 640px;
+                padding-bottom: 100px;
+            }
+
+        }
+    }
     position: relative;
     background-color: $c-bg-main;
     &-section {
@@ -39,6 +57,20 @@
                 margin-bottom: 0;
                 font-size: $fs-t-s;
                 font-weight: normal;
+            }
+        }
+        .c-tag-list {
+            margin-bottom: $m-s;
+        }
+        .is-pc {
+            display: none;
+        }
+        @include for-desktop {
+            .is-pc {
+                display: block;
+            }
+            .is-sp {
+                display: none;
             }
         }
     }

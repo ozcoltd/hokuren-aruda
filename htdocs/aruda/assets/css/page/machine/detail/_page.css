@@ -3,6 +3,24 @@
   background-color: #FFFFFF;
 }
 
+@media (min-width: 769px) {
+  .p-machine-detail .c-contents {
+    position: relative;
+  }
+  .p-machine-detail .c-contents .p-machine-detail-grid {
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 65% 30%;
+  }
+  .p-machine-detail .c-contents .p-machine-detail-block {
+    position: sticky;
+    top: 65px;
+    left: 0;
+    max-width: 640px;
+    padding-bottom: 100px;
+  }
+}
+
 .p-machine-detail-section {
   padding-top: 24px;
 }
@@ -48,6 +66,23 @@
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
+}
+
+.p-machine-detail-contents .c-tag-list {
+  margin-bottom: 16px;
+}
+
+.p-machine-detail-contents .is-pc {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .p-machine-detail-contents .is-pc {
+    display: block;
+  }
+  .p-machine-detail-contents .is-sp {
+    display: none;
+  }
 }
 
 .p-machine-detail-kv .l-grid {
