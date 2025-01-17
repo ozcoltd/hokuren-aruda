@@ -111,12 +111,10 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        margin-bottom: 12px;
+        margin-bottom: $m-s;
+        line-height: 1;
         span {
             &:nth-child(1) {
-                font-size: 18px;
-            }
-            &:nth-child(2) {
                 font-size: 38px;
                 font-weight: 700;
                 span {
@@ -124,6 +122,10 @@
                     font-weight: 500;
                 }
             }
+        }
+        &-ttl {
+            margin-top: $m-ss;
+            font-size: 18px;
         }
     }
     .c-info {

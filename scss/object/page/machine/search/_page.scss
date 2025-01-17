@@ -13,6 +13,10 @@
     }
     .c-ez-search {
         background-color: $c-bg-main-sub;
+        .c-form {
+            border-radius: $b-r-s;
+            background: $c-bg-tertiary;
+        }
     }
     &-btns {
         padding: 20px 0 $m-ml;

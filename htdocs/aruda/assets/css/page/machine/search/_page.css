@@ -15,6 +15,11 @@
   background-color: #F0F0F0;
 }
 
+.p-machine-search .c-ez-search .c-form {
+  border-radius: 4px;
+  background: #F9F7EE;
+}
+
 .p-machine-search-btns {
   padding: 20px 0 40px;
   background-color: #F0F0F0;

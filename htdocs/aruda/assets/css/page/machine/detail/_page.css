@@ -126,21 +126,23 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  line-height: 1;
 }
 
 .p-machine-detail__price span:nth-child(1) {
-  font-size: 18px;
-}
-
-.p-machine-detail__price span:nth-child(2) {
   font-size: 38px;
   font-weight: 700;
 }
 
-.p-machine-detail__price span:nth-child(2) span {
+.p-machine-detail__price span:nth-child(1) span {
   font-size: 18px;
   font-weight: 500;
+}
+
+.p-machine-detail__price-ttl {
+  margin-top: 8px;
+  font-size: 18px;
 }
 
 .p-machine-detail .c-info {
