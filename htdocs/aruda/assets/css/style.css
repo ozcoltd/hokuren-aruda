@@ -1038,15 +1038,16 @@ a, button {
   .c-info__no-message {
     color: #8E8E8E; }
   .c-info__item {
-    display: grid;
-    grid-template-columns: 80px 1fr;
+    display: flex;
     gap: 16px; }
     .c-info__item + .c-info__item {
       margin-top: 16px;
       padding-top: 16px;
       border-top: 1px solid #DDDDDD; }
-  .c-info__img img {
-    border: 1px solid #DDDDDD; }
+  .c-info__img {
+    min-width: 88px; }
+    .c-info__img img {
+      border: 1px solid #DDDDDD; }
   .c-info__date {
     margin-bottom: 8px;
     color: #8E8E8E;

@@ -655,8 +655,8 @@
         color: $c-text-g;
     }
     &__item {
-        display: grid;
-        grid-template-columns: 80px 1fr;
+        display: flex;
+        // grid-template-columns: 80px 1fr;
         gap: $m-s;
         & + .c-info__item {
             margin-top: $m-s;
@@ -665,6 +665,7 @@
         }
     }
     &__img {
+        min-width: 88px;
         img {
             // border-radius: $b-r-s;
             border: 1px solid $c-border;
