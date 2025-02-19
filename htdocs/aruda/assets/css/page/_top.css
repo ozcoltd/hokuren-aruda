@@ -4,6 +4,10 @@
   }
 }
 
+.p-top .c-tab .c-tag-list {
+  margin-bottom: 8px;
+}
+
 .p-top-info {
   margin-bottom: 8px;
   padding: 24px 16px;

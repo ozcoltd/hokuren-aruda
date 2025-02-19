@@ -5,6 +5,11 @@
     @include for-desktop {
         background-color: $c-bg-main;
     }
+    .c-tab {
+        .c-tag-list {
+            margin-bottom: 8px;
+        }
+    }
     &-info {
         .u-h-lv2 {
             margin-bottom: $m-s;
