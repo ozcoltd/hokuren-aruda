@@ -200,6 +200,11 @@
     width: 100%;
     padding: 32px 20px;
     background-color: $c-bg-tertiary;
+    .is-sp {
+        @include for-desktop {
+            display: none;
+        }
+    }
     p {
         margin-bottom: 13px;
     }
