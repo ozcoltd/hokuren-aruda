@@ -147,8 +147,6 @@
 
     .c-exhibition-hall-contact {
         .l-grid {
-            display: block;
-            align-items: center;
             .c-btn {
                 margin: 0 auto;
             }
@@ -159,15 +157,25 @@
                 }
             }
         }
+        .is-pc {
+            display: none;
+        }
+        @include for-desktop {
+            .is-sp {
+                display: none;
+            }
+        }
+
     }
     .u-tel {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         margin-bottom: 10px;
         color: $c-text;
         font-size: 24px;
         @include for-desktop {
+            display: flex !important;
             margin-bottom: 0;
             margin-right: 10px;
         }
