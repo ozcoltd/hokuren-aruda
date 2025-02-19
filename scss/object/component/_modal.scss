@@ -191,3 +191,16 @@
         background-color: rgba(#F0F0F0F2,0.95);
     }
 }
+.c-cookie-modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px 20px;
+    background-color: $c-bg-tertiary;
+    p {
+        margin-bottom: 13px;
+    }
+}
