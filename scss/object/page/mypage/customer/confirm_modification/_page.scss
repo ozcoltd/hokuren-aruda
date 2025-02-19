@@ -36,6 +36,20 @@
                 }
             }
         }
+        .interlocking-list {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 16px;
+            margin-top: 18px;
+            @include for-desktop {
+                display: flex;
+            }
+            .tag {
+                padding: 9px;
+                font-size: 12px;
+                background-color: $c-bg-tertiary;
+            }
+        }
     }
     & + .l-footer {
         background-color: $c-bg-main-sub;

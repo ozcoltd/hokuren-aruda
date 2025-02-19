@@ -75,3 +75,41 @@
 .p-customer + .l-footer {
   background-color: #F0F0F0;
 }
+
+.p-customer .u-interlocking-select-btn {
+  margin-top: 15px;
+}
+
+.p-customer .interlocking-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+@media (min-width: 769px) {
+  .p-customer .interlocking-list {
+    display: flex;
+  }
+}
+
+.p-customer .interlocking-list .tag {
+  position: relative;
+  padding: 9px 22px 9px 9px;
+  font-size: 12px;
+  background-color: #F9F7EE;
+}
+
+@media (min-width: 769px) {
+  .p-customer .interlocking-list .tag {
+    padding-right: 32px;
+  }
+}
+
+.p-customer .interlocking-list .tag .u-ico {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 15px;
+  transform: translateY(-50%);
+}

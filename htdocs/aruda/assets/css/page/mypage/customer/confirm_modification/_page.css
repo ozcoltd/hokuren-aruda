@@ -41,6 +41,25 @@
   }
 }
 
+.p-customer-section .interlocking-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+@media (min-width: 769px) {
+  .p-customer-section .interlocking-list {
+    display: flex;
+  }
+}
+
+.p-customer-section .interlocking-list .tag {
+  padding: 9px;
+  font-size: 12px;
+  background-color: #F9F7EE;
+}
+
 .p-customer + .l-footer {
   background-color: #F0F0F0;
 }
