@@ -133,6 +133,10 @@
   }
 }
 
+.p-mypage-info .c-tag-list {
+  margin-bottom: 8px;
+}
+
 .p-mypage-info .c-more-block {
   height: 41px;
   margin-top: 32px;

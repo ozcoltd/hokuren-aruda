@@ -102,7 +102,9 @@
         @include for-desktop {
             padding: $m-ll $m-ml;
         }
-
+        .c-tag-list {
+            margin-bottom: 8px;
+        }
         .c-more-block {
             height: 41px;
             margin-top: 32px;

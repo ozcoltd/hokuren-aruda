@@ -66,6 +66,10 @@
   }
 }
 
+.p-notification_list-info .c-tag-list {
+  margin-bottom: 8px;
+}
+
 .p-notification_list-info .c-more-block {
   height: 41px;
   margin-top: 32px;
