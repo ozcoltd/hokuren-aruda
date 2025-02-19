@@ -79,9 +79,9 @@
     }
     &-other {
         &-wrap {
+            padding: 0 16px 40px;
             background-color: #fff;
         }
-        padding: 0 16px 40px;
         @include for-desktop {
             display: grid;
             grid-template-columns: repeat(2,1fr);

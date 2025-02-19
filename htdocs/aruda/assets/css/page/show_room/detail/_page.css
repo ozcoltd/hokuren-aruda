@@ -92,11 +92,8 @@
   background-color: #F0F0F0;
 }
 
-.p-show_room-detail-other {
-  padding: 0 16px 40px;
-}
-
 .p-show_room-detail-other-wrap {
+  padding: 0 16px 40px;
   background-color: #fff;
 }
 
