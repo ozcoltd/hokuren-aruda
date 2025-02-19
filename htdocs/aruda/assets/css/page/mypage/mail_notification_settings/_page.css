@@ -33,6 +33,28 @@
   margin-top: 24px;
 }
 
+.p-mail_notification_settings-contents .u-tag-block {
+  margin-bottom: 25px;
+}
+
+.p-mail_notification_settings-contents .u-tag-block ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 769px) {
+  .p-mail_notification_settings-contents .u-tag-block ul {
+    display: flex;
+  }
+}
+
+.p-mail_notification_settings-contents .u-tag-block li {
+  padding: 9px;
+  font-size: 12px;
+  background-color: #F9F7EE;
+}
+
 @media (min-width: 769px) {
   .p-mail_notification_settings-contents {
     margin-top: 56px;
