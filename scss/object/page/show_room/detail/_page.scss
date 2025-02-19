@@ -77,6 +77,33 @@
     & + .l-footer {
         background-color: $c-bg-main-sub;
     }
+    &-other {
+        &-wrap {
+            background-color: #fff;
+        }
+        padding: 0 16px 40px;
+        @include for-desktop {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 40px;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        &__item {
+            max-width: 980px;
+            margin: 0 auto;
+
+            & + .p-show_room-detail-other__item {
+                margin-top: 40px;
+                @include for-desktop {
+                    margin-top: 0;
+                }
+            }
+        }
+        &__img {
+            margin-bottom: 10px;
+        }
+    }
     @include for-desktop {
         .c-info {
             &__box {
