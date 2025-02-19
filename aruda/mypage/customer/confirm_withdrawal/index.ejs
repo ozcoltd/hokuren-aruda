@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <title>【マイページ】 利用登録の削除 | 中古農機情報サイト アルーダ</title>
+  <meta name="description" content="中古農機情報サイトアルーダは、トラクター、コンバイン、田植機をはじめ、多種多様な優良中古農業機械を多数掲載！みなさまの中古農機探しを応援します!!中古農機の出品も受け付けております。お気軽にお問い合わせください。">
+  <%- include('../../../inc/ogp') %>
+  <%- include('../../../inc/meta') %>
+  <link rel="stylesheet" href="/aruda/assets/css/page/mypage/customer/confirm_withdrawal/_page.css">
+</head>
+<body>
+  <%- include('../../../inc/header') %>
+  <main class="l-main p-email">
+    <nav class="c-breadcrumbs">
+      <div class="c-breadcrumbs__contents">
+        <ul>
+          <li><a href="/aruda/">ホーム</a></li>
+          <li><a href="/aruda/mypage/">Myページ</a></li>
+          <li><span>利用登録の削除</span></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="p-email-section">
+      <h2 class="u-h-lv2 u-t-center">利用登録の削除</h2>
+      <div class="p-email-block">
+        <div class="c-contents">
+          <p class="u-fs-16">利用登録の削除を行うと、MYページ内のサービスがご利用できなくなります。<br>再度ご利用いただくためには、改めて利用登録が必要となります。<br>本当に削除してよろしいですか？</p>
+          <form class="c-form" action="" method="post">
+            <input type="hidden" name="" value="">
+            <div class="l-grid" data-col="2">
+              <div class="u-mt-20">
+                <a href="/aruda/mypage/customer" class="c-btn--reset u-m-center" data-size="l">
+                  キャンセル 
+                </a>
+              </div>
+                <div class="u-mt-20">
+                  <button class="c-btn u-m-center" data-type="delete" data-size="l">
+                    削除する
+                    <img src="/aruda/assets/images/common/ico_right_r.svg" alt="" class="u-ico" data-size="s">
+                  </button>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('../../../inc/footer') %>
+  <%- include('../../../inc/fixed-menu') %>
+  <%- include('../../../inc/menu-modal') %>
+  <%- include('../../../inc/membership-modal') %>
+</body>
+</html>

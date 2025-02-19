@@ -1,0 +1,73 @@
+@import '../../../../../foundation/variables';
+@import '../../../../../foundation/mixins';
+
+.p-email {
+    background-color: $c-bg-main-sub;
+    .c-breadcrumbs {
+        background-color: $c-bg-main;
+    }
+    &-section {
+        .u-h-lv2 {
+            padding-top: $m-s;
+            padding-bottom: $m-m;
+            background-color: $c-bg-main;
+        }
+        .c-form {
+            padding: 0;
+            background-color: transparent;
+            @include for-desktop {
+                max-width: 1012px;
+                margin: 0 auto;
+            }
+            label {
+                margin-top: $m-ss;
+            }
+        }
+        .c-contents {
+            margin-top: $m-m;
+            padding: $m-s;
+            background-color: #fff;
+            border-radius: $b-r-s;
+            @include for-desktop {
+                max-width: 1012px;
+                margin: $m-ml auto;
+                padding: $m-ml;
+                border-radius: 12px;
+            }
+        }
+    }
+    &-block {
+        padding-bottom: 80px;
+        background-color: $c-bg-main-sub;
+        .u-fs-16 {
+            margin-bottom: $m-s;
+        }
+        .p-tab-wrap {
+            padding: $m-m $m-s $m-s;
+        }
+    }
+    .l-grid {
+        display: block;
+        @include for-desktop {
+            display: grid;
+                gap: 20px;
+                & > div {
+                    .c-btn--reset,
+                    .c-btn {
+                        margin: 0;
+                    }
+                    &:first-child {
+                        .c-btn--reset{
+                            margin-left: auto;
+                        }
+                    }
+                    &:last-child {
+
+                    }
+                }
+        }
+    }
+    & + .l-footer {
+        background-color: $c-bg-main-sub;
+    }
+}

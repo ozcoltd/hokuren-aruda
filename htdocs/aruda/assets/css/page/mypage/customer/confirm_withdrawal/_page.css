@@ -1,0 +1,80 @@
+.p-email {
+  background-color: #F0F0F0;
+}
+
+.p-email .c-breadcrumbs {
+  background-color: #FFFFFF;
+}
+
+.p-email-section .u-h-lv2 {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
+}
+
+.p-email-section .c-form {
+  padding: 0;
+  background-color: transparent;
+}
+
+@media (min-width: 769px) {
+  .p-email-section .c-form {
+    max-width: 1012px;
+    margin: 0 auto;
+  }
+}
+
+.p-email-section .c-form label {
+  margin-top: 8px;
+}
+
+.p-email-section .c-contents {
+  margin-top: 32px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+@media (min-width: 769px) {
+  .p-email-section .c-contents {
+    max-width: 1012px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 12px;
+  }
+}
+
+.p-email-block {
+  padding-bottom: 80px;
+  background-color: #F0F0F0;
+}
+
+.p-email-block .u-fs-16 {
+  margin-bottom: 16px;
+}
+
+.p-email-block .p-tab-wrap {
+  padding: 32px 16px 16px;
+}
+
+.p-email .l-grid {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .p-email .l-grid {
+    display: grid;
+    gap: 20px;
+  }
+  .p-email .l-grid > div .c-btn--reset,
+  .p-email .l-grid > div .c-btn {
+    margin: 0;
+  }
+  .p-email .l-grid > div:first-child .c-btn--reset {
+    margin-left: auto;
+  }
+}
+
+.p-email + .l-footer {
+  background-color: #F0F0F0;
+}
