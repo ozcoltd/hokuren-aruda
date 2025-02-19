@@ -163,6 +163,45 @@
   }
 }
 
+.p-machine-detail .c-exhibition-hall-contact .l-grid {
+  display: block;
+  align-items: center;
+}
+
+.p-machine-detail .c-exhibition-hall-contact .l-grid .c-btn {
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .p-machine-detail .c-exhibition-hall-contact .l-grid {
+    display: flex;
+  }
+  .p-machine-detail .c-exhibition-hall-contact .l-grid .c-btn {
+    height: 40px;
+  }
+}
+
+.p-machine-detail .u-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #4B4B4B;
+  font-size: 24px;
+}
+
+@media (min-width: 769px) {
+  .p-machine-detail .u-tel {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+
+.p-machine-detail .u-tel .u-ico {
+  margin-top: 7px;
+  margin-right: 5px;
+}
+
 .p-machine-detail-btn {
   padding: 48px 16px;
   background-color: #F0F0F0;

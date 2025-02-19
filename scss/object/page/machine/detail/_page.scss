@@ -144,6 +144,38 @@
             }
         }
     }
+
+    .c-exhibition-hall-contact {
+        .l-grid {
+            display: block;
+            align-items: center;
+            .c-btn {
+                margin: 0 auto;
+            }
+            @include for-desktop {
+                display: flex;
+                .c-btn {
+                    height: 40px;
+                }
+            }
+        }
+    }
+    .u-tel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        color: $c-text;
+        font-size: 24px;
+        @include for-desktop {
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+        .u-ico {
+            margin-top: 7px;
+            margin-right: 5px;
+        }
+    }
     &-btn {
         padding: $m-l $m-s;
         background-color: $c-bg-main-sub;
