@@ -133,6 +133,30 @@
   }
 }
 
+.p-mypage-info .c-more-block {
+  height: 41px;
+  margin-top: 32px;
+  padding: 0;
+}
+
+.p-mypage-info .c-more-block.is-open {
+  margin-top: 0;
+}
+
+.p-mypage-info .c-more-block .c-info__list {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #DDDDDD;
+}
+
+.p-mypage-info .c-more-block__contents {
+  opacity: 0;
+}
+
+.p-mypage-info .c-more-block__btn {
+  background-color: #fff;
+}
+
 .p-mypage-history {
   padding: 40px 16px 80px;
   background-color: #F0F0F0;

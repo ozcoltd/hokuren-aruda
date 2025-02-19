@@ -46,6 +46,25 @@
             background-color: $c-bg-main;
             border-radius: $b-r-s;
         }
+        .c-more-block {
+            height: 41px;
+            margin-top: 32px;
+            padding: 0;
+            &.is-open {
+                margin-top: 0;
+            }
+            .c-info__list {
+                margin-top: 16px;
+                padding-top: 16px;
+                border-top: 1px solid #DDDDDD;
+            }
+            &__contents {
+                opacity: 0;
+            }
+            &__btn {
+                background-color: #fff;
+            }
+        }
     }
     .c-mypage-btn-block {
         @include for-desktop {
